@@ -5007,10 +5007,10 @@
         "n": "Número: o número a ser multiplicado pelo vetor.",
         "x": "Número: o número a ser multiplicado pelo valor x do vetor",
         "y": "Número: o número a ser multiplicado pelo valor y do vetor",
-        "z": "Número: (opcional) o número a ser multiplicado pelo valor z do vetor",
+        "z": "Número (opcional): o número a ser multiplicado pelo valor z do vetor",
         "arr": "Número[]: a array a ser multiplicada pelos valores do vetor",
         "v": "p5.Vector: o vetor a ser multiplicado pelos valores do vetor original",
-        "target": "p5.Vector: (opcional) o vetor que receberá o resultado",
+        "target": "p5.Vector (opcional): o vetor que receberá o resultado",
         "v0": "p5.Vector: um vetor a ser multiplicado",
         "v1": "p5.Vector: um vetor a ser multiplicado"
       }
@@ -5023,17 +5023,17 @@
         "n": "Número: o número pelo qual o vetor será dividido",
         "x": "Número: o número pelo qual o valor x do vetor será dividido",
         "y": "Número: o número pelo qual o valor y do vetor será dividido",
-        "z": "Número: (opcional) o número pelo qual o valor z do vetor será dividido",
+        "z": "Número (opcional): o número pelo qual o valor z do vetor será dividido",
         "arr": "Número[]: a array pelo qual os valores do vetor serão divididos",
         "v": "p5.Vector: o vetor cujos valores irão dividir o vetor original",
-        "target": "p5.Vector: (opcional) o vetor que receberá o resultado",
+        "target": "p5.Vector (opcional): o vetor que receberá o resultado",
         "v0": "p5.Vector: um vetor a ser dividido",
         "v1": "p5.Vector: um vetor cujos valores irão dividir o vetor original"
       }
     },
     "mag": {
       "description": [
-        "Calcula a magnitude (comprimento) de um vetor, e retorna o resultado como um número decimal (float). Corresponde à equação <code>sqrt(x*x + y*y + z*z)</code>."
+        "Calcula a magnitude (comprimento) de um vetor, e retorna um número. Corresponde à equação <code>sqrt(x*x + y*y + z*z)</code>."
       ],
       "returns": "Número: magnitude do vetor",
       "params": {
@@ -5042,7 +5042,7 @@
     },
     "magSq": {
       "description": [
-        "Calcula a magnitude (comprimento) quadrada do vetor, e retorna o valor como um número decimal (float). Corresponde à equação <em>(x*x + y*y + z*z)</em>. É mais veloz caso o comprimento real não seja necessário ao comparar vetores."
+        "Calcula a magnitude (comprimento) quadrada do vetor, e retorna um número. Corresponde à equação <em>(x*x + y*y + z*z)</em>. É mais veloz caso o comprimento real não seja necessário ao comparar vetores."
       ],
       "returns": "Número: magnitude quadrada do vetor"
     },
@@ -5053,8 +5053,8 @@
       "returns": "Número: o produto escalar",
       "params": {
         "x": "Número: componente x do vetor",
-        "y": "Número: (opcional) componente y do vetor",
-        "z": "Número: (opcional) componente z do vetor",
+        "y": "Número (opcional): componente y do vetor",
+        "z": "Número (opcional): componente z do vetor",
         "value": "p5.Vector: os valores de um vetor, ou um <a href=\"#/p5.Vector\">p5.Vector</a>",
         "v1": "<a href=\"#/p5.Vector\">p5.Vector</a>: o primeiro vetor",
         "v2": "<a href=\"#/p5.Vector\">p5.Vector</a>: o segundo vetor"
@@ -5129,7 +5129,7 @@
       "params": {
         "angle": "Número: o ângulo de rotação",
         "v": "vetor a ser rotacionado",
-        "target": "p5.Vector: (opcional) um vetor para receber o resultado"
+        "target": "p5.Vector (opcional): um vetor para receber o resultado"
       }
     },
     "angleBetween": {
@@ -5151,103 +5151,103 @@
         "v": "p5.Vector: o vetor para interpolar",
         "v1": "p5.Vector: o primeiro vetor",
         "v2": "p5.Vector: o segundo vetor",
-        "target": "p5.Vector: (opcional) o vetor para receber o resultado"
+        "target": "p5.Vector (opcional): o vetor para receber o resultado"
       }
     },
     "reflect": {
       "description": [
-        "Reflect the incoming vector about a normal to a line in 2D, or about a normal to a plane in 3D This method acts on the vector directly"
+        "Reflete o vetor incidente, resultando em sua normal como uma linha em 2D, ou um plano em 3D. Este método age diretamente no vetor."
       ],
       "params": {
-        "surfaceNormal": "p5.Vector: the <a href=\"#/p5.Vector\">p5.Vector</a> to reflect about, will be normalized by this method"
+        "surfaceNormal": "p5.Vector: o <a href=\"#/p5.Vector\">p5.Vector</a> a ser refletido, que será normalizado pelo método."
       }
     },
     "array": {
       "description": [
-        "Return a representation of this vector as a float array. This is only for temporary use. If used in any other fashion, the contents should be copied by using the <b>p5.Vector.<a href=\"#/p5.Vector/copy\">copy()</a></b> method to copy into your own array."
+        "Retorna uma representação do vetor como uma array de números. Isto é somente para uso temporário. Se utilizado de outra maneira, o conteúdo deve ser copiado usando o método <b>p5.Vector.<a href=\"#/p5.Vector/copy\">copy()</a></b> para criar uma nova array."
       ],
-      "returns": "Number[]: an Array with the 3 values"
+      "returns": "Número[]: uma Array com três valores"
     },
     "equals": {
       "description": [
-        "Equality check against a <a href=\"#/p5.Vector\">p5.Vector</a>"
+        "Checa se o vetor é igual a outro."
       ],
-      "returns": "Boolean: whether the vectors are equals",
+      "returns": "Boolean: retorna verdadeiro (true) caso os vetores sejam iguais, ou falso (false) caso não sejam",
       "params": {
-        "x": "Number: (Optional) the x component of the vector",
-        "y": "Number: (Optional) the y component of the vector",
-        "z": "Number: (Optional) the z component of the vector",
-        "value": "p5.Vector|Array: the vector to compare"
+        "x": "Número (opcional): o componente x do vetor",
+        "y": "Número (opcional): o componente y do vetor",
+        "z": "Número (opcional): o componente z do vetor",
+        "value": "p5.Vector|Array: o vetor a ser comparado"
       }
     },
     "fromAngle": {
-      "description": ["Make a new 2D vector from an angle"],
-      "returns": "p5.Vector: the new <a href=\"#/p5.Vector\">p5.Vector</a> object",
+      "description": ["Faz um novo vetor 2D a partir de um ângulo."],
+      "returns": "p5.Vector: um novo <a href=\"#/p5.Vector\">p5.Vector</a>",
       "params": {
-        "angle": "Number: the desired angle, in radians (unaffected by <a href=\"#/p5/angleMode\">angleMode</a>)",
-        "length": "Number: (Optional) the length of the new vector (defaults to 1)"
+        "angle": "Número: o ângulo desejado em radianos (não é afetado pelo modo de ângulo — <a href=\"#/p5/angleMode\">angleMode</a>)",
+        "length": "Número (opcional): o comprimento do novo vetor — caso não seja declarado, utiliza o valor 1 por padrão"
       }
     },
     "fromAngles": {
       "description": [
-        "Make a new 3D vector from a pair of ISO spherical angles"
+        "Cria um novo vetor 3D a partir de um par de ângulos esférico. Utiliza o padrão norte-americado para a (<a href=\"https://www.iso.org/standard/64973.html\" target=\"_blank\">ISO</a>)."
       ],
-      "returns": "p5.Vector: the new <a href=\"#/p5.Vector\">p5.Vector</a> object",
+      "returns": "p5.Vector: o novo <a href=\"#/p5.Vector\">p5.Vector</a>",
       "params": {
-        "theta": "Number: the polar angle, in radians (zero is up)",
-        "phi": "Number: the azimuthal angle, in radians  (zero is out of the screen)",
-        "length": "Number: (Optional) the length of the new vector (defaults to 1)"
+        "theta": "Número: o ângulo polar (também conhecido como colatidude ou ângulo zenital), em radianos (zero é o ponto superior)",
+        "phi": "Número: azimute (ou longitude), em radianos (zero é para fora da tela)",
+        "length": "Número (opcional): o comprimento do novo vetor — caso não seja especificado, é utilizado como padrão o valor 1"
       }
     },
     "random2D": {
-      "description": ["Make a new 2D unit vector from a random angle"],
-      "returns": "p5.Vector: the new <a href=\"#/p5.Vector\">p5.Vector</a> object"
+      "description": ["Cria um novo vetor unitário 2D a partir de um ângulo aleatório."],
+      "returns": "p5.Vector: um novo <a href=\"#/p5.Vector\">p5.Vector</a>"
     },
     "random3D": {
-      "description": ["Make a new random 3D unit vector."],
-      "returns": "p5.Vector: the new <a href=\"#/p5.Vector\">p5.Vector</a> object"
+      "description": ["Cria um novo vetor unitário 3D aleatório."],
+      "returns": "p5.Vector: um novo <a href=\"#/p5.Vector\">p5.Vector</a>"
     }
   },
   "p5.Font": {
-    "description": ["Base class for font handling"],
+    "description": ["Classe base para o uso de fontes."],
     "params": {
-      "pInst": "P5: (Optional) pointer to p5 instance"
+      "pInst": "P5 (opcional): ponteiro para a instância do p5"
     },
     "font": {
-      "description": ["Underlying opentype font implementation"]
+      "description": ["Implementação subjacente de fontes opentype."]
     },
     "textBounds": {
       "description": [
-        "Returns a tight bounding box for the given text string using this font"
+        "Retorna um retângulo contornando o texto dado, usando a fonte escolhida."
       ],
-      "returns": "Object: a rectangle object with properties: x, y, w, h",
+      "returns": "Objeto: um retângulo com as propriedades x, y, largura, e altura",
       "params": {
-        "line": "String: a line of text",
-        "x": "Number: x-position",
-        "y": "Number: y-position",
-        "fontSize": "Number: (Optional) font size to use (optional) Default is 12.",
-        "options": "Object: (Optional) opentype options (optional)  opentype fonts contains alignment and baseline options.  Default is 'LEFT' and 'alphabetic'"
+        "line": "String: um texto",
+        "x": "Número: coordenada x",
+        "y": "Número: coordenada y",
+        "fontSize": "Número (opcional): o tamanho da fonte a ser utilizada — o padrão é 12",
+        "options": "Objeto (opcional): opções opentype — fontes opentype possuem opções de alinhamento e linha de base, sendo o padrão 'LEFT' e 'alphabetic'"
       }
     },
     "textToPoints": {
       "description": [
-        "Computes an array of points following the path for specified text"
+        "Calcula uma array de pontos correspondendo ao contorno do texto especificado."
       ],
-      "returns": "Array: an array of points, each with x, y, alpha (the path angle)",
+      "returns": "Array: uma array de pontos, cada um consistindo em x, y, e alpha (o ângulo do traço)",
       "params": {
-        "txt": "String: a line of text",
-        "x": "Number: x-position",
-        "y": "Number: y-position",
-        "fontSize": "Number: font size to use (optional)",
-        "options": "Object: (Optional) an (optional) object that can contain: sampleFactor - the ratio of path-length to number of samples (default=.1); higher values yield more points and are therefore more precise simplifyThreshold - if set to a non-zero value, collinear points will be be removed from the polygon; the value represents the threshold angle to use when determining whether two edges are collinear"
+        "txt": "String: o texto a ser convertido em pontos",
+        "x": "Número: coordenada x",
+        "y": "Número: coordenada y",
+        "fontSize": "Número (opcional): tamanho da fonte a ser utilizada",
+        "options": "Objeto (opcional): um objeto que pode conter: <br/>sampleFactor - a proporção de pontos por segmento de traço, sendo que quanto maior o valor, mais pontos, e portanto mais precisão (o padrão é 1). <br/>simplifyThreshold - se este valor não for 0, pontos colineares serão removidos do polígono. O valor representa o ângulo limite para determinar se dois pontos são colineares ou não."
       }
     }
   },
   "p5.Camera": {
     "description": [
-      "This class describes a camera for use in p5's <a href=\"https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5\"> WebGL mode</a>. It contains camera position, orientation, and projection information necessary for rendering a 3D scene. ",
-      "New p5.Camera objects can be made through the <a href=\"#/p5/createCamera\">createCamera()</a> function and controlled through the methods described below. A camera created in this way will use a default position in the scene and a default perspective projection until these properties are changed through the various methods available. It is possible to create multiple cameras, in which case the current camera can be set through the <a href=\"#/p5/setCamera\">setCamera()</a> method. ",
-      "Note: The methods below operate in two coordinate systems: the 'world' coordinate system describe positions in terms of their relationship to the origin along the X, Y and Z axes whereas the camera's 'local' coordinate system describes positions from the camera's point of view: left-right, up-down, and forward-backward. The <a href=\"#/p5.Camera/move\">move()</a> method, for instance, moves the camera along its own axes, whereas the <a href=\"#/p5.Camera/setPosition\">setPosition()</a> method sets the camera's position in world-space. ",
+      "Esta classe descreve a câmera a ser utilizada no <a href=\"https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5\"> modo WebGL</a> do p5. Ela contém a posição da câmera, orientação, e informação de projeção necessária para renderizar uma cena 3D. ",
+      "Novos objetos p5.Camera podem ser criados através da função <a href=\"#/p5/createCamera\">createCamera()</a>, e controlados a partir dos métodos descritos abaixo. A câmera criada dessa forma utilizará a posição e projeção de perspectiva padrão até que estas propriedades sejam modificadas através dos métodos disponíveis. É possível criar múltiplas câmeras, e então alternar entre elas utilizando o método <a href=\"#/p5/setCamera\">setCamera()</a> ",
+      "Nota: Os métodos abaixo operam em dois sistemas de coordenadas — o sistema do 'mundo' se refere às posições em relação à origem ao longo dos eixos X, Y e Z. O sistema 'local' da câmera se refere a posições a partir do ponto de vista da própria câmera: esquerda-direita, cima-baixo, frente-trás. O método <a href=\"#/p5.Camera/move\">move()</a>, por exemplo, move a câmera em seus próprios eixos, enquanto <a href=\"#/p5.Camera/setPosition\">setPosition()</a> define a posição da câmera em relação ao espaço-mundo. ",
       "The camera object propreties <code>eyeX, eyeY, eyeZ, centerX, centerY, centerZ, upX, upY, upZ</code> which describes camera position, orientation, and projection are also accessible via the camera object generated using <a href=\"#/p5/createCamera\">createCamera()</a>"
     ],
     "params": {
