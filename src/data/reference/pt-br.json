@@ -5089,7 +5089,7 @@
       "returns": "p5.Vector: o <a href=\"#/p5.Vector\">p5.Vector</a> normalizado",
       "params": {
         "v": "p5.Vector: o vetor a ser normalizado",
-        "target": "p5.Vector: o vetor para receber o resultado (opcional)"
+        "target": "p5.Vector (opcional): o vetor para receber o resultado"
       }
     },
     "limit": {
@@ -5172,7 +5172,7 @@
       "description": [
         "Checa se o vetor é igual a outro."
       ],
-      "returns": "Boolean: retorna verdadeiro (true) caso os vetores sejam iguais, ou falso (false) caso não sejam",
+      "returns": "Booleano: retorna true (verdadeiro) caso os vetores sejam iguais, ou false (falso) caso não sejam",
       "params": {
         "x": "Número (opcional): o componente x do vetor",
         "y": "Número (opcional): o componente y do vetor",
@@ -5190,12 +5190,12 @@
     },
     "fromAngles": {
       "description": [
-        "Cria um novo vetor 3D a partir de um par de ângulos esférico. Utiliza o padrão norte-americado para a (<a href=\"https://www.iso.org/standard/64973.html\" target=\"_blank\">ISO</a>)."
+        "Cria um novo vetor 3D a partir de um par de ângulos em coordenadas esféricas. Utiliza o padrão norte-americano (<a href=\"https://www.iso.org/standard/64973.html\" target=\"_blank\">ISO</a>)."
       ],
       "returns": "p5.Vector: o novo <a href=\"#/p5.Vector\">p5.Vector</a>",
       "params": {
-        "theta": "Número: o ângulo polar (também conhecido como colatidude ou ângulo zenital), em radianos (zero é o ponto superior)",
-        "phi": "Número: azimute (ou longitude), em radianos (zero é para fora da tela)",
+        "theta": "Número: ângulo polar (também conhecido como colatidude ou ângulo zenital) — ângulo que o vetor faz com o eixo Z positivo, em radianos; 0 significa para cima",
+        "phi": "Número: azimute (ou longitude) — ângulo que a projeção do vetor sobre o eixo XY faz com o eixo X positivo, em radianos",
         "length": "Número (opcional): o comprimento do novo vetor — caso não seja especificado, é utilizado como padrão o valor 1"
       }
     },
@@ -5231,9 +5231,9 @@
     },
     "textToPoints": {
       "description": [
-        "Calcula uma array de pontos correspondendo ao contorno do texto especificado."
+        "Calcula uma array de pontos que segue o contorno do texto especificado."
       ],
-      "returns": "Array: uma array de pontos, cada um consistindo em x, y, e alpha (o ângulo do traço)",
+      "returns": "Array: uma array de pontos, cada um consistindo em x, y, e alpha (o ângulo do contorno)",
       "params": {
         "txt": "String: o texto a ser convertido em pontos",
         "x": "Número: coordenada x",
@@ -5248,7 +5248,7 @@
       "Esta classe descreve a câmera a ser utilizada no <a href=\"https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5\"> modo WebGL</a> do p5. Ela contém a posição da câmera, orientação, e informação de projeção necessária para renderizar uma cena 3D. ",
       "Novos objetos p5.Camera podem ser criados através da função <a href=\"#/p5/createCamera\">createCamera()</a>, e controlados a partir dos métodos descritos abaixo. A câmera criada dessa forma utilizará a posição e projeção de perspectiva padrão até que estas propriedades sejam modificadas através dos métodos disponíveis. É possível criar múltiplas câmeras, e então alternar entre elas utilizando o método <a href=\"#/p5/setCamera\">setCamera()</a> ",
       "Nota: Os métodos abaixo operam em dois sistemas de coordenadas — o sistema do 'mundo' se refere às posições em relação à origem ao longo dos eixos X, Y e Z. O sistema 'local' da câmera se refere a posições a partir do ponto de vista da própria câmera: esquerda-direita, cima-baixo, frente-trás. O método <a href=\"#/p5.Camera/move\">move()</a>, por exemplo, move a câmera em seus próprios eixos, enquanto <a href=\"#/p5.Camera/setPosition\">setPosition()</a> define a posição da câmera em relação ao espaço-mundo. ",
-      "The camera object propreties <code>eyeX, eyeY, eyeZ, centerX, centerY, centerZ, upX, upY, upZ</code> which describes camera position, orientation, and projection are also accessible via the camera object generated using <a href=\"#/p5/createCamera\">createCamera()</a>"
+      "As propriedades <code>eyeX, eyeY, eyeZ, centerX, centerY, centerZ, upX, upY, upZ</code> que descrevem a posição, orientação e projeção da câmera, também são acessíveis a partir do objeto criado utilizando <a href=\"#/p5/createCamera\">createCamera()</a>"
     ],
     "params": {
       "rendererGL": "RendererGL: instance of WebGL renderer"
