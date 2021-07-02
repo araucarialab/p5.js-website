@@ -1356,7 +1356,7 @@
     },
     "storeItem": {
       "description": [
-        "Stores a value in local storage under the key name.  Local storage is saved in the browser and persists  between browsing sessions and page reloads.  The key can be the name of the variable but doesn't  have to be. To retrieve stored items  see <a href=\"#/p5/getItem\">getItem</a>. Sensitive data such as passwords or personal information  should not be stored in local storage."
+        "Armazena um valor(value) no local storage sob o nome da chave (key). O armazenamento local é salvo no navegador e permanece salvo entre as sessões de navegação e recarregamentos de página. A chave (key) pode ser o nome da variável, mas não obrigatoriamente. Para recuperar os itens armazenados, consulte <a href=\"#/p5/getItem\">getItem</a>. Dados sensíveis como senhas ou infromações pessoais não devem ser armazenados no armazenamento local."
       ],
       "params": {
         "key": "String",
@@ -1365,21 +1365,21 @@
     },
     "getItem": {
       "description": [
-        "Returns the value of an item that was stored in local storage  using storeItem()"
+        "Retorna o valor de um item que foi armazenado do armazenamento local usando storeItem()"
       ],
-      "returns": "Number|Object|String|Boolean|p5.Color|p5.Vector: Value of stored item",
+      "returns": "Number|Object|String|Boolean|p5.Color|p5.Vector: valor do item armazenado",
       "params": {
-        "key": "String: name that you wish to use to store in local storage"
+        "key": "String: nome que você deseja utilizar para armazenar no armazenar no armazenamento local"
       }
     },
     "clearStorage": {
       "description": [
-        "Clears all local storage items set with storeItem()  for the current domain."
+        "Esvazia todos os itens armazenados localmente configurados com storeItem() para o domínio atual."
       ]
     },
     "removeItem": {
       "description": [
-        "Removes an item that was stored with storeItem()"
+        "Remove um item que foi armazenado com storeItem()"
       ],
       "params": {
         "key": "String"
@@ -1387,7 +1387,7 @@
     },
     "createStringDict": {
       "description": [
-        "Creates a new instance of p5.StringDict using the key-value pair  or the object you provide."
+        "Cria uma nova instancia de p5.StringDict utilizando o par chave-valor (key-value) ou o objeto que você fornecer."
       ],
       "returns": "p5.StringDict: ",
       "params": {
@@ -1398,7 +1398,7 @@
     },
     "createNumberDict": {
       "description": [
-        "Creates a new instance of <a href=\"#/p5.NumberDict\">p5.NumberDict</a> using the key-value pair  or object you provide."
+        "Cria uma nova instancia de <a href=\"#/p5.NumberDict\">p5.NumberDict</a> utilizando o par chave-valor (key-value) ou o objeto que você fornecer"
       ],
       "returns": "p5.NumberDict: ",
       "params": {
@@ -1409,82 +1409,82 @@
     },
     "select": {
       "description": [
-        "Searches the page for the first element that matches the given CSS selector string (can be an ID, class, tag name or a combination) and returns it as a <a href=\"#/p5.Element\">p5.Element</a>. The DOM node itself can be accessed with .elt. Returns null if none found. You can also specify a container to search within."
+        "Busca a pagina o primeiro elemento que corresponde a string do seletor CSS determinada (pode ser uma ID, classe, tag ou uma combinação) e o retorna como um <a href=\"#/p5.Element\">p5.Element</a>. O node do DOM pode ser acessado com .elt. Retorna nulo se nenhum for encontrado. Você também pode especificar um container dentro do qual a pesquisa será feita."
       ],
-      "returns": "p5.Element|null: <a href=\"#/p5.Element\">p5.Element</a> containing node found",
+      "returns": "p5.Element|null: <a href=\"#/p5.Element\">p5.Element</a> contendo o node encontrado",
       "params": {
-        "selectors": "String: CSS selector string of element to search for",
-        "container": "String|p5.Element|HTMLElement: (Optional) CSS selector string, <a href=\"#/p5.Element\">p5.Element</a>, or  HTML element to search within"
+        "selectors": "String: string do seletor CSS do elemento a ser buscado",
+        "container": "String|p5.Element|HTMLElement (Opcional): string do seletor CSS, <a href=\"#/p5.Element\">p5.Element</a>  , ou elemento HTML dentro do qual deve ser buscado "
       }
     },
     "selectAll": {
       "description": [
-        "Searches the page for elements that match the given CSS selector string (can be an ID a class, tag name or a combination) and returns them as <a href=\"#/p5.Element\">p5.Element</a>s in an array. The DOM node itself can be accessed with .elt. Returns an empty array if none found. You can also specify a container to search within."
+        "Busca na pagina todos os elementos que correspondem a string do seletor CSS determinada (pode ser uma ID, classe, tag ou uma combinação) e os retornam como <a href=\"#/p5.Element\">p5.Element</a>s em um array(array?). O node do DOM pode ser acessado com .elt. Retorna um array vazio se nada for encondrado. Você também pode especificar um container dentro do qual a pesquisa será feita."
       ],
-      "returns": "p5.Element[]: Array of <a href=\"#/p5.Element\">p5.Element</a>s containing nodes found",
+      "returns": "p5.Element[]: Uma array de <a href=\"#/p5.Element\">p5.Element</a>s contendo os nodes encontrados",
       "params": {
-        "selectors": "String: CSS selector string of elements to search for",
-        "container": "String|p5.Element|HTMLElement: (Optional) CSS selector string, <a href=\"#/p5.Element\">p5.Element</a>  , or HTML element to search within"
+        "selectors": "String: string do seletor CSS do elemento a ser buscado",
+        "container": "String|p5.Element|HTMLElement (Opcional): string do seletor CSS, <a href=\"#/p5.Element\">p5.Element</a>, ou elemento HTML dentro do qual deve ser buscado "
       }
     },
     "removeElements": {
       "description": [
-        "Removes all elements created by p5, except any canvas / graphics elements created by <a href=\"#/p5/createCanvas\">createCanvas</a> or <a href=\"#/p5/createGraphics\">createGraphics</a>. Event handlers are removed, and element is removed from the DOM."
+        "Remove todos os elementos criados pelo p5, exceto o canvas ou elementos gráficos criados por <a href=\"#/p5/createCanvas\">createCanvas</a> ou <a href=\"#/p5/createGraphics\">createGraphics</a>. !! Event handlers e o elemento são removidos do DOM."
       ]
     },
     "changed": {
       "description": [
-        "The .<a href=\"#/p5.Element/changed\">changed()</a> function is called when the value of an element changes. This can be used to attach an element specific event listener."
+        "A função <a href=\"#/p5.Element/changed\">changed()</a> é chamada quando o valor de um elemento é alterado. Pode ser utilizada !! para anexar um !!event listener específico de um elemeto. "
       ],
       "params": {
-        "fxn": "Function|Boolean: function to be fired when the value of  an element changes.  if <code>false</code> is passed instead, the previously  firing function will no longer fire."
+        "fxn": "Função | Booleano: função a ser disparada quando o valor de um elemento é alterado. Se  <code>false</code> (falso) for passado como parâmetro, a função disparadora anterior não será mais disparada."
       }
     },
     "input": {
       "description": [
-        "The .<a href=\"#/p5.Element/input\">input()</a> function is called when any user input is detected with an element. The input event is often used to detect keystrokes in a input element, or changes on a slider element. This can be used to attach an element specific event listener."
+        "A função <a href=\"#/p5.Element/input\">input()</a> é chamada quando é detectado aulgum input do usuário dentro de um elemento. O evento de input normalmente é usado para detectar pressionamentos de teclas em um elemento de input ou  alterações em um elemento de controle (slider). Pode ser utilizada !! para anexar um !!event listener específico de um elemeto."
       ],
       "params": {
-        "fxn": "Function|Boolean: function to be fired when any user input is  detected within the element.  if <code>false</code> is passed instead, the previously  firing function will no longer fire."
+        "fxn": "Função | Booleano: função a ser disparada quando algum input do usuário é detectado dentro do elemento. Se  <code>false</code> for passado como parâmetro, a função disparadora anterior não será mais disparada."
       }
     },
     "createDiv": {
       "description": [
-        "Creates a <code>&lt;div&gt;&lt;/div&gt;</code> element in the DOM with given inner HTML."
+        "Cria um elemento <code>&lt;div&gt;&lt;/div&gt;</code> no DOM com o HTML interno fornecido."
       ],
-      "returns": "p5.Element: pointer to <a href=\"#/p5.Element\">p5.Element</a> holding created node",
+      "returns": "p5.Element: ponteiro para <a href=\"#/p5.Element\">p5.Element</a> que contém o node criado.",
       "params": {
-        "html": "String: (Optional) inner HTML for element created"
+        "html": "String (Opcional):  HTML interno para o elemento criado."
       }
     },
     "createP": {
       "description": [
-        "Creates a <code>&lt;p&gt;&lt;/p&gt;</code> element in the DOM with given inner HTML. Used for paragraph length text."
+        "Cria um elemento <code>&lt;p&gt;&lt;/p&gt;</code> (parágrafo) no DOM com o HTML interno fornecido."
       ],
-      "returns": "p5.Element: pointer to <a href=\"#/p5.Element\">p5.Element</a> holding created node",
+      "returns": "p5.Element: ponteiro para <a href=\"#/p5.Element\">p5.Element</a> que contém o node criado.",
       "params": {
-        "html": "String: (Optional) inner HTML for element created"
+        "html": "String(Opcional):  HTML interno para o elemento criado."
       }
     },
     "createSpan": {
       "description": [
-        "Creates a <code>&lt;span&gt;&lt;/span&gt;</code> element in the DOM with given inner HTML."
+        "Cria um elemento <code>&lt;span&gt;&lt;/span&gt;</code> no DOM com o HTML interno fornecido."
       ],
-      "returns": "p5.Element: pointer to <a href=\"#/p5.Element\">p5.Element</a> holding created node",
+      "returns": "p5.Element: ponteiro para <a href=\"#/p5.Element\">p5.Element</a> que contém o node criado.",
       "params": {
-        "html": "String: (Optional) inner HTML for element created"
+        "html": "String(Opcional):  HTML interno para o elemento criado."
       }
     },
     "createImg": {
       "description": [
-        "Creates an <code>&lt;img&gt;</code> element in the DOM with given src and alternate text."
+        "Cria um elemento <code>&lt;img&gt;</code> no DOM com a fonte (src) e o texto altenativo (alt) fornecidos."
       ],
-      "returns": "p5.Element: pointer to <a href=\"#/p5.Element\">p5.Element</a> holding created node",
+      "returns": "p5.Element: ponteiro para <a href=\"#/p5.Element\">p5.Element</a> que contém o node criado.",
       "params": {
-        "src": "String: src path or url for image",
-        "alt": "String: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Img#Attributes\">alternate text</a> to be used if image does not load. You can use also an empty string (<code>\"\"</code>) if that an image is not intended to be viewed.",
-        "crossOrigin": "String: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_settings_attributes\">crossOrigin property</a> of the <code>img</code> element; use either 'anonymous' or 'use-credentials' to retrieve the image with cross-origin access (for later use with <code>canvas</code>. if an empty string(<code>\"\"</code>) is passed, CORS is not used",
-        "successCallback": "Function: (Optional) callback to be called once image data is loaded with the <a href=\"#/p5.Element\">p5.Element</a> as argument"
+        "src": "String: !! endereço da imagem, pode ser a fonte (src) do arquivo ou uma url.",
+        "alt": "String: <a href=\"https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Img#attr-alt\">texto alternativo</a> (alt) atributo da imagem usado caso o arquivo não possa ser carregado. Você também pode usar uma string vazia (<code>\"\"</code>) caso a intençao seja que a imagem não seja vista.",
+        "crossOrigin": "String: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_settings_attributes\">atributo crossorigin</a> do elemento <code>&lt;img&gt;</code>; ",
+        "successCallback": "Função (Opcional) callback a ser chamada quando os dados da image são carregados com o <a href=\"#/p5.Element\">p5.Element</a> como argumento"
       }
     },
     "createA": {
