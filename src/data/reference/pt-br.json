@@ -1,43 +1,43 @@
 {
-  "h1": "Reference",
-  "reference-search": "Search reference",
-  "reference-description1": "Can't find what you're looking for? You may want to check out",
-  "reference-description3": "You can also download an offline version of the reference.",
-  "reference-contribute2": "Please let us know.",
-  "reference-error1": "Notice any errors or typos?",
-  "reference-error3": "Please feel free to edit ",
-  "reference-error5": "and issue a pull request!",
-  "reference-example": "Example",
-  "reference-description": "Description",
-  "reference-extends": "Extends",
-  "reference-parameters": "Parameters",
-  "reference-syntax": "Syntax",
+  "h1": "Referência",
+  "reference-search": "Buscar referência",
+  "reference-description1": "Não encontrou o que você estava buscando? Você pode tentar em",
+  "reference-description3": "Você também pode baixar uma versão off-line da Referência.",
+  "reference-contribute2": "Por favor nos comunique.",
+  "reference-error1": "Encontrou algum erro?",
+  "reference-error3": "Por favor fique à vontade para editar ",
+  "reference-error5": "e iniciar um pull request!",
+  "reference-example": "Exemplo",
+  "reference-description": "Descrição",
+  "reference-extends": "Extensões",
+  "reference-parameters": "Parâmetros",
+  "reference-syntax": "Sintaxe",
   "reference-returns": "Returns",
-  "Environment": "Environment",
-  "Color": "Color",
-  "Color Conversion": "Color Conversion",
-  "Creating & Reading": "Creating & Reading",
-  "Setting": "Setting",
-  "Shape": "Shape",
-  "2D Primitives": "2D Primitives",
-  "Attributes": "Attributes",
-  "Curves": "Curves",
-  "Vertex": "Vertex",
-  "Constants": "Constants",
-  "Structure": "Structure",
+  "Environment": "Ambiente",
+  "Color": "Cor",
+  "Color Conversion": "Conversão de cor",
+  "Creating & Reading": "Criando e lendo",
+  "Setting": "Configuração",
+  "Shape": "Forma",
+  "2D Primitives": "2D Primitivos",
+  "Attributes": "Atributos",
+  "Curves": "Curvas",
+  "Vertex": "Vértices",
+  "Constants": "Constantes",
+  "Structure": "Estrutura",
   "DOM": "DOM",
-  "Rendering": "Rendering",
-  "Foundation": "Foundation",
-  "Transform": "Transform",
-  "Data": "Data",
+  "Rendering": "Renderização",
+  "Foundation": "Fundação",
+  "Transform": "Transformar",
+  "Data": "Dados",
   "LocalStorage": "LocalStorage",
-  "Dictionary": "Dictionary",
-  "Events": "Events",
-  "Acceleration": "Acceleration",
-  "Keyboard": "Keyboard",
+  "Dictionary": "Dicionário",
+  "Events": "Eventos",
+  "Acceleration": "Aceleração",
+  "Keyboard": "Teclado",
   "Mouse": "Mouse",
-  "Touch": "Touch",
-  "Image": "Image",
+  "Touch": "Toque",
+  "Image": "Imagem",
   "Loading & Displaying": "Loading & Displaying",
   "Pixels": "Pixels",
   "IO": "IO",
@@ -46,25 +46,25 @@
   "Table": "Table",
   "Math": "Math",
   "Calculation": "Calculation",
-  "Vector": "Vector",
+  "Vector": "Vetor",
   "Noise": "Noise",
-  "Random": "Random",
-  "Trigonometry": "Trigonometry",
-  "Typography": "Typography",
+  "Random": "Aleatório",
+  "Trigonometry": "Trigonometria",
+  "Typography": "Tipografia",
   "Array Functions": "Array Functions",
-  "Conversion": "Conversion",
+  "Conversion": "Conversão",
   "String Functions": "String Functions",
-  "Time & Date": "Time & Date",
-  "3D Primitives": "3D Primitives",
-  "Lights, Camera": "Lights, Camera",
-  "Interaction": "Interaction",
-  "Lights": "Lights",
-  "3D Models": "3D Models",
+  "Time & Date": "Hora e Data",
+  "3D Primitives": "3D Primitivos",
+  "Lights, Camera": "Luz, Câmera",
+  "Interaction": "Interação",
+  "Lights": "Luzes",
+  "3D Models": "Modelos 3D",
   "Material": "Material",
-  "Camera": "Camera",
+  "Camera": "Câmera",
   "p5": {
-    "description": [
-      "This is the p5 instance constructor. ",
+    "descrição": [
+      "Esse é o construtor de instância p5. ",
       "A p5 instance holds all the properties and methods related to a p5 sketch. It expects an incoming sketch closure and it can also take an optional node parameter for attaching the generated p5 canvas to a node. The sketch closure takes the newly created p5 instance as its sole argument and may optionally set <a href=\"#/p5/preload\">preload()</a>, <a href=\"#/p5/setup\">setup()</a>, and/or <a href=\"#/p5/draw\">draw()</a> properties on it for running a sketch. ",
       "A p5 sketch can run in \"global\" or \"instance\" mode: \"global\" - all properties and methods are attached to the window \"instance\" - all properties and methods are bound to this p5 object"
     ],
@@ -115,18 +115,14 @@
       }
     },
     "alpha": {
-      "description": [
-        "Extracts the alpha value from a color or pixel array."
-      ],
+      "description": ["Extracts the alpha value from a color or pixel array."],
       "returns": "Number: the alpha value",
       "params": {
         "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> object, color components,  or CSS color"
       }
     },
     "blue": {
-      "description": [
-        "Extracts the blue value from a color or pixel array."
-      ],
+      "description": ["Extracts the blue value from a color or pixel array."],
       "returns": "Number: the blue value",
       "params": {
         "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> object, color components,  or CSS color"
@@ -160,9 +156,7 @@
       }
     },
     "green": {
-      "description": [
-        "Extracts the green value from a color or pixel array."
-      ],
+      "description": ["Extracts the green value from a color or pixel array."],
       "returns": "Number: the green value",
       "params": {
         "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> object, color components,  or CSS color"
@@ -200,9 +194,7 @@
       }
     },
     "red": {
-      "description": [
-        "Extracts the red value from a color or pixel array."
-      ],
+      "description": ["Extracts the red value from a color or pixel array."],
       "returns": "Number: the red value",
       "params": {
         "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> object, color components,  or CSS color"
@@ -710,14 +702,10 @@
       }
     },
     "VERSION": {
-      "description": [
-        "Version of this p5.js."
-      ]
+      "description": ["Version of this p5.js."]
     },
     "P2D": {
-      "description": [
-        "The default, two-dimensional renderer."
-      ]
+      "description": ["The default, two-dimensional renderer."]
     },
     "WEBGL": {
       "description": [
@@ -912,9 +900,7 @@
       }
     },
     "noCursor": {
-      "description": [
-        "Hides the cursor from view."
-      ]
+      "description": ["Hides the cursor from view."]
     },
     "displayWidth": {
       "description": [
@@ -1266,9 +1252,7 @@
       }
     },
     "resetMatrix": {
-      "description": [
-        "Replaces the current matrix with the identity matrix."
-      ]
+      "description": ["Replaces the current matrix with the identity matrix."]
     },
     "rotate": {
       "description": [
@@ -1378,9 +1362,13 @@
       ]
     },
     "removeItem": {
+<<<<<<< HEAD
       "description": [
         "Remove um item que foi armazenado com storeItem()"
       ],
+=======
+      "description": ["Removes an item that was stored with storeItem()"],
+>>>>>>> 76cce7594afbf92230715bb767bb912c4535e9f3
       "params": {
         "key": "String"
       }
@@ -2484,9 +2472,7 @@
       }
     },
     "fract": {
-      "description": [
-        "Calculates the fractional part of a number."
-      ],
+      "description": ["Calculates the fractional part of a number."],
       "returns": "Number: fractional part of x, i.e, {x}",
       "params": {
         "num": "Number: Number whose fractional part needs to be found out"
@@ -3082,9 +3068,7 @@
       "returns": "Integer: the current year"
     },
     "plane": {
-      "description": [
-        "Draw a plane with given a width and height"
-      ],
+      "description": ["Draw a plane with given a width and height"],
       "params": {
         "width": "Number: (Optional) width of the plane",
         "height": "Number: (Optional) height of the plane",
@@ -3093,9 +3077,7 @@
       }
     },
     "box": {
-      "description": [
-        "Draw a box with given width, height and depth"
-      ],
+      "description": ["Draw a box with given width, height and depth"],
       "params": {
         "width": "Number: (Optional) width of the box",
         "Height": "Number: (Optional) height of the box",
@@ -3199,9 +3181,7 @@
       }
     },
     "noDebugMode": {
-      "description": [
-        "Turns off debugMode() in a 3D sketch."
-      ]
+      "description": ["Turns off debugMode() in a 3D sketch."]
     },
     "ambientLight": {
       "description": [
@@ -3327,9 +3307,7 @@
       }
     },
     "model": {
-      "description": [
-        "Render a 3d model to the screen."
-      ],
+      "description": ["Render a 3d model to the screen."],
       "params": {
         "model": "p5.Geometry: Loaded 3d model to be rendered"
       }
@@ -3824,34 +3802,26 @@
       }
     },
     "addClass": {
-      "description": [
-        "Adds specified class to the element."
-      ],
+      "description": ["Adds specified class to the element."],
       "params": {
         "class": "String: name of class to add"
       }
     },
     "removeClass": {
-      "description": [
-        "Removes specified class from the element."
-      ],
+      "description": ["Removes specified class from the element."],
       "params": {
         "class": "String: name of class to remove"
       }
     },
     "hasClass": {
-      "description": [
-        "Checks if specified class already set to element"
-      ],
+      "description": ["Checks if specified class already set to element"],
       "returns": "Boolean: a boolean value if element has specified class",
       "params": {
         "c": "String: class name of class to check"
       }
     },
     "toggleClass": {
-      "description": [
-        "Toggles element class"
-      ],
+      "description": ["Toggles element class"],
       "params": {
         "c": "String: class name to toggle"
       }
@@ -3915,9 +3885,7 @@
       }
     },
     "removeAttribute": {
-      "description": [
-        "Removes an attribute on the specified element."
-      ],
+      "description": ["Removes an attribute on the specified element."],
       "params": {
         "attr": "String: attribute to remove"
       }
@@ -4040,9 +4008,7 @@
       }
     },
     "get": {
-      "description": [
-        "Returns the value stored at the given key."
-      ],
+      "description": ["Returns the value stored at the given key."],
       "returns": "Number|String: the value stored at that key",
       "params": {
         "the": "Number|String: key you want to access"
@@ -4058,9 +4024,7 @@
       }
     },
     "create": {
-      "description": [
-        "Creates a new key-value pair in the Dictionary."
-      ],
+      "description": ["Creates a new key-value pair in the Dictionary."],
       "params": {
         "key": "Number|String",
         "value": "Number|String",
@@ -4097,14 +4061,10 @@
     }
   },
   "p5.StringDict": {
-    "description": [
-      "A simple Dictionary class for Strings."
-    ]
+    "description": ["A simple Dictionary class for Strings."]
   },
   "p5.NumberDict": {
-    "description": [
-      "A simple Dictionary class for Numbers."
-    ],
+    "description": ["A simple Dictionary class for Numbers."],
     "add": {
       "description": [
         "Add the given number to the value currently stored at the given key. The sum then replaces the value previously stored in the Dictionary."
@@ -4174,15 +4134,11 @@
       "elt": "String: DOM node that is wrapped"
     },
     "src": {
-      "description": [
-        "Path to the media element source."
-      ],
+      "description": ["Path to the media element source."],
       "returns": "String: src"
     },
     "play": {
-      "description": [
-        "Play an HTML5 media element."
-      ]
+      "description": ["Play an HTML5 media element."]
     },
     "stop": {
       "description": [
@@ -4190,9 +4146,7 @@
       ]
     },
     "pause": {
-      "description": [
-        "Pauses an HTML5 media element."
-      ]
+      "description": ["Pauses an HTML5 media element."]
     },
     "loop": {
       "description": [
@@ -4240,9 +4194,7 @@
       }
     },
     "duration": {
-      "description": [
-        "Returns the duration of the HTML5 media element."
-      ],
+      "description": ["Returns the duration of the HTML5 media element."],
       "returns": "Number: duration"
     },
     "onended": {
@@ -4273,9 +4225,7 @@
       ]
     },
     "hideControls": {
-      "description": [
-        "Hide the default mediaElement controls."
-      ]
+      "description": ["Hide the default mediaElement controls."]
     },
     "addCue": {
       "description": [
@@ -4320,9 +4270,7 @@
       ]
     },
     "type": {
-      "description": [
-        "File type (image, text, etc.)"
-      ]
+      "description": ["File type (image, text, etc.)"]
     },
     "subtype": {
       "description": [
@@ -4330,14 +4278,10 @@
       ]
     },
     "name": {
-      "description": [
-        "File name"
-      ]
+      "description": ["File name"]
     },
     "size": {
-      "description": [
-        "File size"
-      ]
+      "description": ["File size"]
     },
     "data": {
       "description": [
@@ -4357,14 +4301,10 @@
       "height": "Number"
     },
     "width": {
-      "description": [
-        "Image width."
-      ]
+      "description": ["Image width."]
     },
     "height": {
-      "description": [
-        "Image height."
-      ]
+      "description": ["Image height."]
     },
     "pixels": {
       "description": [
@@ -4491,9 +4431,7 @@
       }
     },
     "reset": {
-      "description": [
-        "Starts an animated GIF over at the beginning state."
-      ]
+      "description": ["Starts an animated GIF over at the beginning state."]
     },
     "getCurrentFrame": {
       "description": [
@@ -4510,9 +4448,7 @@
       }
     },
     "numFrames": {
-      "description": [
-        "Returns the number of frames in an animated GIF"
-      ],
+      "description": ["Returns the number of frames in an animated GIF"],
       "returns": "Number: "
     },
     "play": {
@@ -4521,9 +4457,7 @@
       ]
     },
     "pause": {
-      "description": [
-        "Pauses an animated GIF."
-      ]
+      "description": ["Pauses an animated GIF."]
     },
     "delay": {
       "description": [
@@ -4541,9 +4475,7 @@
       "extension": "String (Optional)"
     },
     "write": {
-      "description": [
-        "Writes data to the PrintWriter stream"
-      ],
+      "description": ["Writes data to the PrintWriter stream"],
       "params": {
         "data": "Array: all data to be written by the PrintWriter"
       }
@@ -4562,9 +4494,7 @@
       ]
     },
     "close": {
-      "description": [
-        "Closes the PrintWriter"
-      ]
+      "description": ["Closes the PrintWriter"]
     }
   },
   "p5.Table": {
@@ -4595,9 +4525,7 @@
       }
     },
     "removeRow": {
-      "description": [
-        "Removes a row from the table object."
-      ],
+      "description": ["Removes a row from the table object."],
       "params": {
         "id": "Integer: ID number of the row to remove"
       }
@@ -4680,15 +4608,11 @@
       }
     },
     "getColumnCount": {
-      "description": [
-        "Returns the total number of columns in a Table."
-      ],
+      "description": ["Returns the total number of columns in a Table."],
       "returns": "Integer: Number of columns in this table"
     },
     "getRowCount": {
-      "description": [
-        "Returns the total number of rows in a Table."
-      ],
+      "description": ["Returns the total number of rows in a Table."],
       "returns": "Integer: Number of rows in this table"
     },
     "removeTokens": {
@@ -4920,9 +4844,7 @@
       }
     },
     "removeChild": {
-      "description": [
-        "Removes the element specified by name or index."
-      ],
+      "description": ["Removes the element specified by name or index."],
       "params": {
         "name": "String|Integer: element name or index"
       }
@@ -4987,9 +4909,7 @@
       }
     },
     "setContent": {
-      "description": [
-        "Sets the element's content."
-      ],
+      "description": ["Sets the element's content."],
       "params": {
         "text": "String: the new content"
       }
@@ -5013,19 +4933,13 @@
       "z": "Number: (Optional) z component of the vector"
     },
     "x": {
-      "description": [
-        "The x component of the vector"
-      ]
+      "description": ["The x component of the vector"]
     },
     "y": {
-      "description": [
-        "The y component of the vector"
-      ]
+      "description": ["The y component of the vector"]
     },
     "z": {
-      "description": [
-        "The z component of the vector"
-      ]
+      "description": ["The z component of the vector"]
     },
     "toString": {
       "description": [
@@ -5083,324 +4997,294 @@
       ],
       "params": {
         "x": "Number: the x component of the vector to subtract",
-        "y": "Number: (Optional) the y component of the vector to subtract",
-        "z": "Number: (Optional) the z component of the vector to subtract",
+        "y": "Number: (optional) the y component of the vector to subtract",
+        "z": "Number: (optional) the z component of the vector to subtract",
         "value": "p5.Vector|Number[]: the vector to subtract",
         "v1": "p5.Vector: a <a href=\"#/p5.Vector\">p5.Vector</a> to subtract from",
         "v2": "p5.Vector: a <a href=\"#/p5.Vector\">p5.Vector</a> to subtract",
-        "target": "p5.Vector: (Optional) the vector to receive the result (Optional)"
+        "target": "p5.Vector: (optional) the vector to receive the result (Optional)"
       }
     },
     "mult": {
       "description": [
-        "Multiplies the vector by a scalar, multiplies the x, y, and z components from a vector, or multiplies the x, y, and z components of two independent vectors. When multiplying a vector by a scalar, the x, y, and z components of the vector are all multiplied by the scalar. When multiplying a vector by a vector, the x, y, z components of both vectors are multiplied by each other (for example, with two vectors a and b: a.x * b.x, a.y * b.y, a.z * b.z). The static version of this method creates a new <a href=\"#/p5.Vector\">p5.Vector</a> while the non static version acts on the vector directly. Additionally, you may provide arguments to this function as an array. See the examples for more context."
+        "Este método pode multiplicar o vetor por um valor escalar, multiplicar os valores x, y e z de um vetor, ou multiplicar os componentes x, y e z de dois vetores independentes. Ao multiplicar um vetor por um valor escalar, cada variável que o compõe será multiplicada pelo valor. Ao multiplicar dois vetores, os valores dos vetores serão multiplicados individualmente um pelo outro -- por exemplo, com dois vetores A e B, teremos como resultado: [A.x * B.x, A.y * B.y, A.z * B.z].<br />A versão estática do método retorna um novo <a href=\"#/p5.Vector\">p5.Vector</a>, enquanto a versão não-estática modifica o vetor diretamente.<br />Além disso, você pode utilizar uma array como argumento. Veja os exemplos para compreender o método em seu contexto."
       ],
       "params": {
-        "n": "Number: The number to multiply with the vector",
-        "x": "Number: The number to multiply with the x component of the vector",
-        "y": "Number: The number to multiply with the y component of the vector",
-        "z": "Number: (Optional) The number to multiply with the z component of the vector",
-        "arr": "Number[]: The array to multiply with the components of the vector",
-        "v": "p5.Vector: The vector to multiply with the components of the original vector",
-        "target": "p5.Vector: (Optional) the vector to receive the result (Optional)",
-        "v0": "p5.Vector",
-        "v1": "p5.Vector"
+        "n": "Número: o número a ser multiplicado pelo vetor.",
+        "x": "Número: o número a ser multiplicado pelo valor x do vetor",
+        "y": "Número: o número a ser multiplicado pelo valor y do vetor",
+        "z": "Número (opcional): o número a ser multiplicado pelo valor z do vetor",
+        "arr": "Número[]: a array a ser multiplicada pelos valores do vetor",
+        "v": "p5.Vector: o vetor a ser multiplicado pelos valores do vetor original",
+        "target": "p5.Vector (opcional): o vetor que receberá o resultado",
+        "v0": "p5.Vector: um vetor a ser multiplicado",
+        "v1": "p5.Vector: um vetor a ser multiplicado"
       }
     },
     "div": {
       "description": [
-        "Divides the vector by a scalar, divides a vector by the x, y, and z arguments, or divides the x, y, and z components of two vectors against each other. When dividing a vector by a scalar, the x, y, and z components of the vector are all divided by the scalar. When dividing a vector by a vector, the x, y, z components of the source vector are treated as the dividend, and the x, y, z components of the argument is treated as the divisor (for example with two vectors a and b: a.x / b.x, a.y / b.y, a.z / b.z). The static version of this method creates a new <a href=\"#/p5.Vector\">p5.Vector</a> while the non static version acts on the vector directly. Additionally, you may provide arguments to this function as an array. See the examples for more context."
+        "Este método pode dividir o vetor por um valor escalar, dividir os valores x, y e z de um vetor, ou dividir os componentes x, y e z de dois vetores independentes. Ao dividir um vetor por um valor escalar, cada variável que o compõe será dividida pelo valor. Ao dividir um vetor por outro, cada valor do vetor original será dividido pelo valor correspondente do outro -- por exemplo, com dois vetores A e B, teremos como resultado: [A.x / B.x, A.y / B.y, A.z / B.z].<br />A versão estática do método retorna um novo <a href=\"#/p5.Vector\">p5.Vector</a>, enquanto a versão não-estática modifica o vetor diretamente.<br />Além disso, você pode utilizar uma array como argumento. Veja os exemplos para compreender o método em seu contexto."
       ],
       "params": {
-        "n": "Number: The number to divide the vector by",
-        "x": "Number: The number to divide with the x component of the vector",
-        "y": "Number: The number to divide with the y component of the vector",
-        "z": "Number: (Optional) The number to divide with the z component of the vector",
-        "arr": "Number[]: The array to divide the components of the vector by",
-        "v": "p5.Vector: The vector to divide the components of the original vector by",
-        "target": "p5.Vector: (Optional) the vector to receive the result (Optional)",
-        "v0": "p5.Vector",
-        "v1": "p5.Vector"
+        "n": "Número: o número pelo qual o vetor será dividido",
+        "x": "Número: o número pelo qual o valor x do vetor será dividido",
+        "y": "Número: o número pelo qual o valor y do vetor será dividido",
+        "z": "Número (opcional): o número pelo qual o valor z do vetor será dividido",
+        "arr": "Número[]: a array pelo qual os valores do vetor serão divididos",
+        "v": "p5.Vector: o vetor cujos valores irão dividir o vetor original",
+        "target": "p5.Vector (opcional): o vetor que receberá o resultado",
+        "v0": "p5.Vector: um vetor a ser dividido",
+        "v1": "p5.Vector: um vetor cujos valores irão dividir o vetor original"
       }
     },
     "mag": {
       "description": [
-        "Calculates the magnitude (length) of the vector and returns the result as a float (this is simply the equation sqrt(x*x + y*y + z*z).)"
+        "Calcula a magnitude (comprimento) de um vetor, e retorna um número. Corresponde à equação <code>sqrt(x*x + y*y + z*z)</code>."
       ],
-      "returns": "Number: magnitude of the vector",
+      "returns": "Número: magnitude do vetor",
       "params": {
-        "vecT": "p5.Vector: the vector to return the magnitude of"
+        "vecT": "p5.Vector: o vetor que se quer saber a magnitude"
       }
     },
     "magSq": {
       "description": [
-        "Calculates the squared magnitude of the vector and returns the result as a float (this is simply the equation <em>(x*x + y*y + z*z)</em>.) Faster if the real length is not required in the case of comparing vectors, etc."
+        "Calcula a magnitude (comprimento) quadrada do vetor, e retorna um número. Corresponde à equação <em>(x*x + y*y + z*z)</em>. É mais veloz caso o comprimento real não seja necessário ao comparar vetores."
       ],
-      "returns": "Number: squared magnitude of the vector"
+      "returns": "Número: magnitude quadrada do vetor"
     },
     "dot": {
       "description": [
-        "Calculates the dot product of two vectors. The version of the method that computes the dot product of two independent vectors is a static method. See the examples for more context."
+        "Calcula o produto escalar de dois vetores. A versão deste método que computa o produto escalar de dois vetores independentes é o método estático. Veja os exemplos para compreender o método em seu contexto."
       ],
-      "returns": "Number: the dot product",
+      "returns": "Número: o produto escalar",
       "params": {
-        "x": "Number: x component of the vector",
-        "y": "Number: (Optional) y component of the vector",
-        "z": "Number: (Optional) z component of the vector",
-        "value": "p5.Vector: value component of the vector or a <a href=\"#/p5.Vector\">p5.Vector</a>",
-        "v1": "p5.Vector: the first <a href=\"#/p5.Vector\">p5.Vector</a>",
-        "v2": "p5.Vector: the second <a href=\"#/p5.Vector\">p5.Vector</a>"
+        "x": "Número: componente x do vetor",
+        "y": "Número (opcional): componente y do vetor",
+        "z": "Número (opcional): componente z do vetor",
+        "value": "p5.Vector: os valores de um vetor, ou um <a href=\"#/p5.Vector\">p5.Vector</a>",
+        "v1": "<a href=\"#/p5.Vector\">p5.Vector</a>: o primeiro vetor",
+        "v2": "<a href=\"#/p5.Vector\">p5.Vector</a>: o segundo vetor"
       }
     },
     "cross": {
       "description": [
-        "Calculates and returns a vector composed of the cross product between two vectors. Both the static and non static methods return a new <a href=\"#/p5.Vector\">p5.Vector</a>. See the examples for more context."
+        "Calcula e retorna o produto vetorial entre dois vetores. Tanto o modo estático quando o modo não-estático retornam um novo <a href=\"#/p5.Vector\">p5.Vector</a>. Veja os exemplos para compreender o método em seu contexto."
       ],
-      "returns": "p5.Vector: <a href=\"#/p5.Vector\">p5.Vector</a> composed of cross product",
+      "returns": "p5.Vector: <a href=\"#/p5.Vector\">p5.Vector</a> resultante do produto escalar",
       "params": {
-        "v": "p5.Vector: <a href=\"#/p5.Vector\">p5.Vector</a> to be crossed",
-        "v1": "p5.Vector: the first <a href=\"#/p5.Vector\">p5.Vector</a>",
-        "v2": "p5.Vector: the second <a href=\"#/p5.Vector\">p5.Vector</a>"
+        "v": "p5.Vector: <a href=\"#/p5.Vector\">p5.Vector</a> a ser comparado",
+        "v1": "p5.Vector: o primeiro <a href=\"#/p5.Vector\">p5.Vector</a>",
+        "v2": "p5.Vector: o segundo <a href=\"#/p5.Vector\">p5.Vector</a>"
       }
     },
     "dist": {
       "description": [
-        "Calculates the Euclidean distance between two points (considering a point as a vector object)."
+        "Calcula a distância euclidiana entre dois pontos, considerando um ponto como um vetor."
       ],
-      "returns": "Number: the distance",
+      "returns": "Número: a distância",
       "params": {
-        "v": "p5.Vector: the x, y, and z coordinates of a <a href=\"#/p5.Vector\">p5.Vector</a>",
-        "v1": "p5.Vector: the first <a href=\"#/p5.Vector\">p5.Vector</a>",
-        "v2": "p5.Vector: the second <a href=\"#/p5.Vector\">p5.Vector</a>"
+        "v": "p5.Vector: o <a href=\"#/p5.Vector\">p5.Vector</a> para calcular a distância",
+        "v1": "p5.Vector: o primeiro <a href=\"#/p5.Vector\">p5.Vector</a>",
+        "v2": "p5.Vector: o segundo <a href=\"#/p5.Vector\">p5.Vector</a>"
       }
     },
     "normalize": {
       "description": [
-        "Normalize the vector to length 1 (make it a unit vector)."
+        "Normalizar o vetor para comprimento 1 — transformá-lo em um vetor unitário."
       ],
-      "returns": "p5.Vector: normalized <a href=\"#/p5.Vector\">p5.Vector</a>",
+      "returns": "p5.Vector: o <a href=\"#/p5.Vector\">p5.Vector</a> normalizado",
       "params": {
-        "v": "p5.Vector: the vector to normalize",
-        "target": "p5.Vector: (Optional) the vector to receive the result (Optional)"
+        "v": "p5.Vector: o vetor a ser normalizado",
+        "target": "p5.Vector (opcional): o vetor para receber o resultado"
       }
     },
     "limit": {
       "description": [
-        "Limit the magnitude of this vector to the value used for the <b>max</b> parameter."
+        "Limita a magnitude (comprimento) do vetor ao valor dado como parâmetro."
       ],
       "params": {
-        "max": "Number: the maximum magnitude for the vector"
+        "max": "Número: valor máximo para a magnitude do vetor"
       }
     },
     "setMag": {
       "description": [
-        "Set the magnitude of this vector to the value used for the <b>len</b> parameter."
+        "Transforma a magnitude (comprimento) do vetor no valor dado como parâmetro."
       ],
       "params": {
-        "len": "Number: the new length for this vector"
+        "len": "Número: o novo comprimento do vetor"
       }
     },
     "heading": {
       "description": [
-        "Calculate the angle of rotation for this vector(only 2D vectors). p5.Vectors created using <a src=\"#/p5/createVector\">createVector()</a> will take the current <a = src=\"#/p5/angleMode\">angleMode</a> into consideration, and give the angle in radians or degree accordingly."
+        "Calcula o ângulo de rotação de um vetor 2D. <a href=\"#/p5.Vector\">p5.Vectors</a> criados utilizando a função <a src=\"#/p5/createVector\">createVector()</a> utilizarão graus ou radianos, de acordo com o modo de ângulo (<a = src=\"#/p5/angleMode\">angleMode</a>) definido no código."
       ],
-      "returns": "Number: the angle of rotation"
+      "returns": "Número: o ângulo de rotação"
     },
     "setHeading": {
       "description": [
-        "Rotate the vector to a specific angle (only 2D vectors), magnitude remains the same"
+        "Rotaciona um vetor 2D até um ângulo específico. A magnitude (comprimento) permanece a mesma."
       ],
       "params": {
-        "angle": "Number: the angle of rotation"
+        "angle": "Número: o ângulo de rotação"
       }
     },
     "rotate": {
       "description": [
-        "Rotate the vector by an angle (only 2D vectors), magnitude remains the same"
+        "Rotaciona um vetor em 2D pelo ângulo dado como parâmetro. A magnitude (comprimento) permanece a mesma."
       ],
       "params": {
-        "angle": "Number: the angle of rotation",
-        "v": "p5.Vector",
-        "target": "p5.Vector: (Optional) the vector to receive the result (Optional)"
+        "angle": "Número: o ângulo de rotação",
+        "v": "vetor a ser rotacionado",
+        "target": "p5.Vector (opcional): um vetor para receber o resultado"
       }
     },
     "angleBetween": {
       "description": [
-        "Calculates and returns the angle (in radians) between two vectors."
+        "Calcula e retorna o ângulo entre dois vetores em radianos."
       ],
-      "returns": "Number: the angle between (in radians)",
+      "returns": "Número: o ângulo entre os vetores (em radianos)",
       "params": {
-        "value": "p5.Vector: the x, y, and z components of a <a href=\"#/p5.Vector\">p5.Vector</a>"
+        "value": "p5.Vector: os componentes x, y e z de um <a href=\"#/p5.Vector\">p5.Vector</a>"
       }
     },
     "lerp": {
-      "description": [
-        "Linear interpolate the vector to another vector"
-      ],
+      "description": ["Interpolação linear entre dois vetores."],
       "params": {
-        "x": "Number: the x component",
-        "y": "Number: the y component",
-        "z": "Number: the z component",
-        "amt": "Number: the amount of interpolation; some value between 0.0  (old vector) and 1.0 (new vector). 0.9 is very near  the new vector. 0.5 is halfway in between.",
-        "v": "p5.Vector: the <a href=\"#/p5.Vector\">p5.Vector</a> to lerp to",
-        "v1": "p5.Vector",
-        "v2": "p5.Vector",
-        "target": "p5.Vector: (Optional) the vector to receive the result (Optional)"
+        "x": "Número: o componente x do vetor",
+        "y": "Número: o componente y do vetor",
+        "z": "Número: o componente z do vetor",
+        "amt": "Número: a quatia de interpolação — um valor entre 0.0 (primeiro vetor) e 1.0 (segundo vetor). 0.9 é bem próximo do segundo vetor, 0.5 é entre os dois.",
+        "v": "p5.Vector: o vetor para interpolar",
+        "v1": "p5.Vector: o primeiro vetor",
+        "v2": "p5.Vector: o segundo vetor",
+        "target": "p5.Vector (opcional): o vetor para receber o resultado"
       }
     },
     "reflect": {
       "description": [
-        "Reflect the incoming vector about a normal to a line in 2D, or about a normal to a plane in 3D This method acts on the vector directly"
+        "Reflete o vetor incidente, resultando em sua normal como uma linha em 2D, ou um plano em 3D. Este método age diretamente no vetor."
       ],
       "params": {
-        "surfaceNormal": "p5.Vector: the <a href=\"#/p5.Vector\">p5.Vector</a> to reflect about, will be normalized by this method"
+        "surfaceNormal": "p5.Vector: o <a href=\"#/p5.Vector\">p5.Vector</a> a ser refletido, que será normalizado pelo método."
       }
     },
     "array": {
       "description": [
-        "Return a representation of this vector as a float array. This is only for temporary use. If used in any other fashion, the contents should be copied by using the <b>p5.Vector.<a href=\"#/p5.Vector/copy\">copy()</a></b> method to copy into your own array."
+        "Retorna uma representação do vetor como uma array de números. Isto é somente para uso temporário. Se utilizado de outra maneira, o conteúdo deve ser copiado usando o método <b>p5.Vector.<a href=\"#/p5.Vector/copy\">copy()</a></b> para criar uma nova array."
       ],
-      "returns": "Number[]: an Array with the 3 values"
+      "returns": "Número[]: uma Array com três valores"
     },
     "equals": {
       "description": [
-        "Equality check against a <a href=\"#/p5.Vector\">p5.Vector</a>"
+        "Checa se o vetor é igual a outro."
       ],
-      "returns": "Boolean: whether the vectors are equals",
+      "returns": "Booleano: retorna true (verdadeiro) caso os vetores sejam iguais, ou false (falso) caso não sejam",
       "params": {
-        "x": "Number: (Optional) the x component of the vector",
-        "y": "Number: (Optional) the y component of the vector",
-        "z": "Number: (Optional) the z component of the vector",
-        "value": "p5.Vector|Array: the vector to compare"
+        "x": "Número (opcional): o componente x do vetor",
+        "y": "Número (opcional): o componente y do vetor",
+        "z": "Número (opcional): o componente z do vetor",
+        "value": "p5.Vector|Array: o vetor a ser comparado"
       }
     },
     "fromAngle": {
-      "description": [
-        "Make a new 2D vector from an angle"
-      ],
-      "returns": "p5.Vector: the new <a href=\"#/p5.Vector\">p5.Vector</a> object",
+      "description": ["Faz um novo vetor 2D a partir de um ângulo."],
+      "returns": "p5.Vector: um novo <a href=\"#/p5.Vector\">p5.Vector</a>",
       "params": {
-        "angle": "Number: the desired angle, in radians (unaffected by <a href=\"#/p5/angleMode\">angleMode</a>)",
-        "length": "Number: (Optional) the length of the new vector (defaults to 1)"
+        "angle": "Número: o ângulo desejado em radianos (não é afetado pelo modo de ângulo — <a href=\"#/p5/angleMode\">angleMode</a>)",
+        "length": "Número (opcional): o comprimento do novo vetor — caso não seja declarado, utiliza o valor 1 por padrão"
       }
     },
     "fromAngles": {
       "description": [
-        "Make a new 3D vector from a pair of ISO spherical angles"
+        "Cria um novo vetor 3D a partir de um par de ângulos em coordenadas esféricas. Utiliza o padrão norte-americano (<a href=\"https://www.iso.org/standard/64973.html\" target=\"_blank\">ISO</a>)."
       ],
-      "returns": "p5.Vector: the new <a href=\"#/p5.Vector\">p5.Vector</a> object",
+      "returns": "p5.Vector: o novo <a href=\"#/p5.Vector\">p5.Vector</a>",
       "params": {
-        "theta": "Number: the polar angle, in radians (zero is up)",
-        "phi": "Number: the azimuthal angle, in radians  (zero is out of the screen)",
-        "length": "Number: (Optional) the length of the new vector (defaults to 1)"
+        "theta": "Número: ângulo polar (também conhecido como colatidude ou ângulo zenital) — ângulo que o vetor faz com o eixo Z positivo, em radianos; 0 significa para cima",
+        "phi": "Número: azimute (ou longitude) — ângulo que a projeção do vetor sobre o eixo XY faz com o eixo X positivo, em radianos",
+        "length": "Número (opcional): o comprimento do novo vetor — caso não seja especificado, é utilizado como padrão o valor 1"
       }
     },
     "random2D": {
-      "description": [
-        "Make a new 2D unit vector from a random angle"
-      ],
-      "returns": "p5.Vector: the new <a href=\"#/p5.Vector\">p5.Vector</a> object"
+      "description": ["Cria um novo vetor unitário 2D a partir de um ângulo aleatório."],
+      "returns": "p5.Vector: um novo <a href=\"#/p5.Vector\">p5.Vector</a>"
     },
     "random3D": {
-      "description": [
-        "Make a new random 3D unit vector."
-      ],
-      "returns": "p5.Vector: the new <a href=\"#/p5.Vector\">p5.Vector</a> object"
+      "description": ["Cria um novo vetor unitário 3D aleatório."],
+      "returns": "p5.Vector: um novo <a href=\"#/p5.Vector\">p5.Vector</a>"
     }
   },
   "p5.Font": {
-    "description": [
-      "Base class for font handling"
-    ],
+    "description": ["Classe base para o uso de fontes."],
     "params": {
-      "pInst": "P5: (Optional) pointer to p5 instance"
+      "pInst": "P5 (opcional): ponteiro para a instância do p5"
     },
     "font": {
-      "description": [
-        "Underlying opentype font implementation"
-      ]
+      "description": ["Implementação subjacente de fontes opentype."]
     },
     "textBounds": {
       "description": [
-        "Returns a tight bounding box for the given text string using this font"
+        "Retorna um retângulo contornando o texto dado, usando a fonte escolhida."
       ],
-      "returns": "Object: a rectangle object with properties: x, y, w, h",
+      "returns": "Objeto: um retângulo com as propriedades x, y, largura, e altura",
       "params": {
-        "line": "String: a line of text",
-        "x": "Number: x-position",
-        "y": "Number: y-position",
-        "fontSize": "Number: (Optional) font size to use (optional) Default is 12.",
-        "options": "Object: (Optional) opentype options (optional)  opentype fonts contains alignment and baseline options.  Default is 'LEFT' and 'alphabetic'"
+        "line": "String: um texto",
+        "x": "Número: coordenada x",
+        "y": "Número: coordenada y",
+        "fontSize": "Número (opcional): o tamanho da fonte a ser utilizada — o padrão é 12",
+        "options": "Objeto (opcional): opções opentype — fontes opentype possuem opções de alinhamento e linha de base, sendo o padrão 'LEFT' e 'alphabetic'"
       }
     },
     "textToPoints": {
       "description": [
-        "Computes an array of points following the path for specified text"
+        "Calcula uma array de pontos que segue o contorno do texto especificado."
       ],
-      "returns": "Array: an array of points, each with x, y, alpha (the path angle)",
+      "returns": "Array: uma array de pontos, cada um consistindo em x, y, e alpha (o ângulo do contorno)",
       "params": {
-        "txt": "String: a line of text",
-        "x": "Number: x-position",
-        "y": "Number: y-position",
-        "fontSize": "Number: font size to use (optional)",
-        "options": "Object: (Optional) an (optional) object that can contain: sampleFactor - the ratio of path-length to number of samples (default=.1); higher values yield more points and are therefore more precise simplifyThreshold - if set to a non-zero value, collinear points will be be removed from the polygon; the value represents the threshold angle to use when determining whether two edges are collinear"
+        "txt": "String: o texto a ser convertido em pontos",
+        "x": "Número: coordenada x",
+        "y": "Número: coordenada y",
+        "fontSize": "Número (opcional): tamanho da fonte a ser utilizada",
+        "options": "Objeto (opcional): um objeto que pode conter: <br/>sampleFactor - a proporção de pontos por segmento de traço, sendo que quanto maior o valor, mais pontos, e portanto mais precisão (o padrão é 1). <br/>simplifyThreshold - se este valor não for 0, pontos colineares serão removidos do polígono. O valor representa o ângulo limite para determinar se dois pontos são colineares ou não."
       }
     }
   },
   "p5.Camera": {
     "description": [
-      "This class describes a camera for use in p5's <a href=\"https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5\"> WebGL mode</a>. It contains camera position, orientation, and projection information necessary for rendering a 3D scene. ",
-      "New p5.Camera objects can be made through the <a href=\"#/p5/createCamera\">createCamera()</a> function and controlled through the methods described below. A camera created in this way will use a default position in the scene and a default perspective projection until these properties are changed through the various methods available. It is possible to create multiple cameras, in which case the current camera can be set through the <a href=\"#/p5/setCamera\">setCamera()</a> method. ",
-      "Note: The methods below operate in two coordinate systems: the 'world' coordinate system describe positions in terms of their relationship to the origin along the X, Y and Z axes whereas the camera's 'local' coordinate system describes positions from the camera's point of view: left-right, up-down, and forward-backward. The <a href=\"#/p5.Camera/move\">move()</a> method, for instance, moves the camera along its own axes, whereas the <a href=\"#/p5.Camera/setPosition\">setPosition()</a> method sets the camera's position in world-space. ",
-      "The camera object propreties <code>eyeX, eyeY, eyeZ, centerX, centerY, centerZ, upX, upY, upZ</code> which describes camera position, orientation, and projection are also accessible via the camera object generated using <a href=\"#/p5/createCamera\">createCamera()</a>"
+      "Esta classe descreve a câmera a ser utilizada no <a href=\"https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5\"> modo WebGL</a> do p5. Ela contém a posição da câmera, orientação, e informação de projeção necessária para renderizar uma cena 3D. ",
+      "Novos objetos p5.Camera podem ser criados através da função <a href=\"#/p5/createCamera\">createCamera()</a>, e controlados a partir dos métodos descritos abaixo. A câmera criada dessa forma utilizará a posição e projeção de perspectiva padrão até que estas propriedades sejam modificadas através dos métodos disponíveis. É possível criar múltiplas câmeras, e então alternar entre elas utilizando o método <a href=\"#/p5/setCamera\">setCamera()</a> ",
+      "Nota: Os métodos abaixo operam em dois sistemas de coordenadas — o sistema do 'mundo' se refere às posições em relação à origem ao longo dos eixos X, Y e Z. O sistema 'local' da câmera se refere a posições a partir do ponto de vista da própria câmera: esquerda-direita, cima-baixo, frente-trás. O método <a href=\"#/p5.Camera/move\">move()</a>, por exemplo, move a câmera em seus próprios eixos, enquanto <a href=\"#/p5.Camera/setPosition\">setPosition()</a> define a posição da câmera em relação ao espaço-mundo. ",
+      "As propriedades <code>eyeX, eyeY, eyeZ, centerX, centerY, centerZ, upX, upY, upZ</code> que descrevem a posição, orientação e projeção da câmera, também são acessíveis a partir do objeto criado utilizando <a href=\"#/p5/createCamera\">createCamera()</a>"
     ],
     "params": {
       "rendererGL": "RendererGL: instance of WebGL renderer"
     },
     "eyeX": {
-      "description": [
-        "camera position value on x axis"
-      ]
+      "description": ["camera position value on x axis"]
     },
     "eyeY": {
-      "description": [
-        "camera position value on y axis"
-      ]
+      "description": ["camera position value on y axis"]
     },
     "eyeZ": {
-      "description": [
-        "camera position value on z axis"
-      ]
+      "description": ["camera position value on z axis"]
     },
     "centerX": {
-      "description": [
-        "x coordinate representing center of the sketch"
-      ]
+      "description": ["x coordinate representing center of the sketch"]
     },
     "centerY": {
-      "description": [
-        "y coordinate representing center of the sketch"
-      ]
+      "description": ["y coordinate representing center of the sketch"]
     },
     "centerZ": {
-      "description": [
-        "z coordinate representing center of the sketch"
-      ]
+      "description": ["z coordinate representing center of the sketch"]
     },
     "upX": {
-      "description": [
-        "x component of direction 'up' from camera"
-      ]
+      "description": ["x component of direction 'up' from camera"]
     },
     "upY": {
-      "description": [
-        "y component of direction 'up' from camera"
-      ]
+      "description": ["y component of direction 'up' from camera"]
     },
     "upZ": {
-      "description": [
-        "z component of direction 'up' from camera"
-      ]
+      "description": ["z component of direction 'up' from camera"]
     },
     "perspective": {
       "description": [
@@ -5414,17 +5298,13 @@
     },
     "frustum": {},
     "pan": {
-      "description": [
-        "Panning rotates the camera view to the left and right."
-      ],
+      "description": ["Panning rotates the camera view to the left and right."],
       "params": {
         "angle": "Number: amount to rotate camera in current <a href=\"#/p5/angleMode\">angleMode</a> units. Greater than 0 values rotate counterclockwise (to the left)."
       }
     },
     "tilt": {
-      "description": [
-        "Tilting rotates the camera view up and down."
-      ],
+      "description": ["Tilting rotates the camera view up and down."],
       "params": {
         "angle": "Number: amount to rotate camera in current <a href=\"#/p5/angleMode\">angleMode</a> units. Greater than 0 values rotate counterclockwise (to the left)."
       }
@@ -5466,9 +5346,7 @@
     }
   },
   "p5.Geometry": {
-    "description": [
-      "p5 Geometry class"
-    ],
+    "description": ["p5 Geometry class"],
     "params": {
       "detailX": "Integer: (Optional) number of vertices on horizontal surface",
       "detailY": "Integer: (Optional) number of vertices on horizontal surface",
@@ -5485,14 +5363,10 @@
       ]
     },
     "averageNormals": {
-      "description": [
-        "Averages the vertex normals. Used in curved surfaces"
-      ]
+      "description": ["Averages the vertex normals. Used in curved surfaces"]
     },
     "averagePoleNormals": {
-      "description": [
-        "Averages pole normals. Used in spherical primitives"
-      ]
+      "description": ["Averages pole normals. Used in spherical primitives"]
     },
     "normalize": {
       "description": [
@@ -5501,9 +5375,7 @@
     }
   },
   "p5.Shader": {
-    "description": [
-      "Shader class for WEBGL Mode"
-    ],
+    "description": ["Shader class for WEBGL Mode"],
     "params": {
       "renderer": "p5.RendererGL: an instance of p5.RendererGL that will provide the GL context for this new p5.Shader",
       "vertSrc": "String: source code for the vertex shader (as a string)",
@@ -5558,9 +5430,7 @@
       "wet": "AudioNode: (Optional) Effects that extend this class should connect  to the wet signal to this gain node, so that dry and wet  signals are mixed properly."
     },
     "amp": {
-      "description": [
-        "Set the output volume of the filter."
-      ],
+      "description": ["Set the output volume of the filter."],
       "params": {
         "vol": "Number: (Optional) amplitude between 0 and 1.0",
         "rampTime": "Number: (Optional) create a fade that lasts until rampTime",
@@ -5576,9 +5446,7 @@
       }
     },
     "drywet": {
-      "description": [
-        "Adjust the dry/wet value."
-      ],
+      "description": ["Adjust the dry/wet value."],
       "params": {
         "fade": "Number: (Optional) The desired drywet value (0 - 1.0)"
       }
@@ -5592,9 +5460,7 @@
       }
     },
     "disconnect": {
-      "description": [
-        "Disconnect all output."
-      ]
+      "description": ["Disconnect all output."]
     }
   },
   "p5.Filter": {
@@ -5622,9 +5488,7 @@
       }
     },
     "set": {
-      "description": [
-        "Set the frequency and the resonance of the filter."
-      ],
+      "description": ["Set the frequency and the resonance of the filter."],
       "params": {
         "freq": "Number: (Optional) Frequency in Hz, from 10 to 22050",
         "res": "Number: (Optional) Resonance (Q) from 0.001 to 1000",
@@ -5748,22 +5612,16 @@
       }
     },
     "connect": {
-      "description": [
-        "Connect to a p5.sound / Web Audio object."
-      ],
+      "description": ["Connect to a p5.sound / Web Audio object."],
       "params": {
         "unit": "Object: A p5.sound or Web Audio object"
       }
     },
     "disconnect": {
-      "description": [
-        "Disconnect all outputs"
-      ]
+      "description": ["Disconnect all outputs"]
     },
     "pan": {
-      "description": [
-        "Pan between Left (-1) and Right (1)"
-      ],
+      "description": ["Pan between Left (-1) and Right (1)"],
       "params": {
         "panning": "Number: Number between -1 and 1",
         "timeFromNow": "Number: schedule this event to happen  seconds from now"
@@ -5885,17 +5743,13 @@
       }
     },
     "attack": {
-      "description": [
-        "Getters and Setters"
-      ]
+      "description": ["Getters and Setters"]
     },
     "decay": {},
     "sustain": {},
     "release": {},
     "amp": {
-      "description": [
-        "MonoSynth amp"
-      ],
+      "description": ["MonoSynth amp"],
       "returns": "Number: new volume value",
       "params": {
         "vol": "Number: desired volume",
@@ -5903,17 +5757,13 @@
       }
     },
     "connect": {
-      "description": [
-        "Connect to a p5.sound / Web Audio object."
-      ],
+      "description": ["Connect to a p5.sound / Web Audio object."],
       "params": {
         "unit": "Object: A p5.sound or Web Audio object"
       }
     },
     "disconnect": {
-      "description": [
-        "Disconnect all outputs"
-      ]
+      "description": ["Disconnect all outputs"]
     },
     "dispose": {
       "description": [
@@ -5926,17 +5776,13 @@
       "Base class for monophonic synthesizers. Any extensions of this class should follow the API and implement the methods below in order to remain compatible with p5.PolySynth();"
     ],
     "connect": {
-      "description": [
-        "Connect to p5 objects or Web Audio Nodes"
-      ],
+      "description": ["Connect to p5 objects or Web Audio Nodes"],
       "params": {
         "unit": "Object"
       }
     },
     "disconnect": {
-      "description": [
-        "Disconnect from soundOut"
-      ]
+      "description": ["Disconnect from soundOut"]
     }
   },
   "p5.PolySynth": {
@@ -5953,9 +5799,7 @@
       ]
     },
     "polyvalue": {
-      "description": [
-        "A PolySynth must have at least 1 voice, defaults to 8"
-      ]
+      "description": ["A PolySynth must have at least 1 voice, defaults to 8"]
     },
     "AudioVoice": {
       "description": [
@@ -6016,17 +5860,13 @@
       }
     },
     "connect": {
-      "description": [
-        "Connect to a p5.sound / Web Audio object."
-      ],
+      "description": ["Connect to a p5.sound / Web Audio object."],
       "params": {
         "unit": "Object: A p5.sound or Web Audio object"
       }
     },
     "disconnect": {
-      "description": [
-        "Disconnect all outputs"
-      ]
+      "description": ["Disconnect all outputs"]
     },
     "dispose": {
       "description": [
@@ -6054,9 +5894,7 @@
       "returns": "Boolean: "
     },
     "play": {
-      "description": [
-        "Play the p5.SoundFile"
-      ],
+      "description": ["Play the p5.SoundFile"],
       "params": {
         "startTime": "Number: (Optional) (optional) schedule playback to start (in seconds from now).",
         "rate": "Number: (Optional) (optional) playback rate",
@@ -6121,9 +5959,7 @@
       "returns": "Boolean: "
     },
     "stop": {
-      "description": [
-        "Stop soundfile playback."
-      ],
+      "description": ["Stop soundfile playback."],
       "params": {
         "startTime": "Number: (Optional) (optional) schedule event to occur  in seconds from now"
       }
@@ -6149,9 +5985,7 @@
       }
     },
     "getPan": {
-      "description": [
-        "Returns the current stereo pan position (-1.0 to 1.0)"
-      ],
+      "description": ["Returns the current stereo pan position (-1.0 to 1.0)"],
       "returns": "Number: Returns the stereo pan setting of the Oscillator  as a number between -1.0 (left) and 1.0 (right).  0.0 is center and default."
     },
     "rate": {
@@ -6163,9 +5997,7 @@
       }
     },
     "duration": {
-      "description": [
-        "Returns the duration of a sound file in seconds."
-      ],
+      "description": ["Returns the duration of a sound file in seconds."],
       "returns": "Number: The duration of the soundFile in seconds."
     },
     "currentTime": {
@@ -6190,9 +6022,7 @@
       "returns": "Number: [channels]"
     },
     "sampleRate": {
-      "description": [
-        "Return the sample rate of the sound file."
-      ],
+      "description": ["Return the sample rate of the sound file."],
       "returns": "Number: [sampleRate]"
     },
     "frames": {
@@ -6233,9 +6063,7 @@
       }
     },
     "disconnect": {
-      "description": [
-        "Disconnects the output of this p5sound object."
-      ]
+      "description": ["Disconnects the output of this p5sound object."]
     },
     "setPath": {
       "description": [
@@ -6247,9 +6075,7 @@
       }
     },
     "setBuffer": {
-      "description": [
-        "Replace the current Audio Buffer with a new Buffer."
-      ],
+      "description": ["Replace the current Audio Buffer with a new Buffer."],
       "params": {
         "buf": "Array: Array of Float32 Array(s). 2 Float32 Arrays  will create a stereo source. 1 will create  a mono source."
       }
@@ -6450,9 +6276,7 @@
     ],
     "returns": "Tone.Signal: A Signal object from the Tone.js library",
     "fade": {
-      "description": [
-        "Fade to value, for smooth transitions"
-      ],
+      "description": ["Fade to value, for smooth transitions"],
       "params": {
         "value": "Number: Value to set this signal",
         "secondsFromNow": "Number: (Optional) Length of fade, in seconds from now"
@@ -6505,19 +6329,13 @@
       "Use the <code><a href=\"#/p5.Envelope/play\">play</a></code> method to play the entire envelope, the <code><a href=\"#/p5.Envelope/ramp\">ramp</a></code> method for a pingable trigger, or <code><a href=\"#/p5.Envelope/triggerAttack\">triggerAttack</a></code>/ <code><a href=\"#/p5.Envelope/triggerRelease\">triggerRelease</a></code> to trigger noteOn/noteOff."
     ],
     "attackTime": {
-      "description": [
-        "Time until envelope reaches attackLevel"
-      ]
+      "description": ["Time until envelope reaches attackLevel"]
     },
     "attackLevel": {
-      "description": [
-        "Level once attack is complete."
-      ]
+      "description": ["Level once attack is complete."]
     },
     "decayTime": {
-      "description": [
-        "Time until envelope reaches decayLevel."
-      ]
+      "description": ["Time until envelope reaches decayLevel."]
     },
     "decayLevel": {
       "description": [
@@ -6525,19 +6343,13 @@
       ]
     },
     "releaseTime": {
-      "description": [
-        "Duration of the release portion of the envelope."
-      ]
+      "description": ["Duration of the release portion of the envelope."]
     },
     "releaseLevel": {
-      "description": [
-        "Level at the end of the release."
-      ]
+      "description": ["Level at the end of the release."]
     },
     "set": {
-      "description": [
-        "Reset the envelope with a series of time/value pairs."
-      ],
+      "description": ["Reset the envelope with a series of time/value pairs."],
       "params": {
         "attackTime": "Number: Time (in seconds) before level  reaches attackLevel",
         "attackLevel": "Number: Typically an amplitude between  0.0 and 1.0",
@@ -6793,9 +6605,7 @@
       ]
     },
     "process": {
-      "description": [
-        "Process an input by connecting it to the EQ"
-      ],
+      "description": ["Process an input by connecting it to the EQ"],
       "params": {
         "src": "Object: Audio source"
       }
@@ -6815,17 +6625,13 @@
       ]
     },
     "process": {
-      "description": [
-        "Connect an audio sorce"
-      ],
+      "description": ["Connect an audio sorce"],
       "params": {
         "src": "Object: Input source"
       }
     },
     "set": {
-      "description": [
-        "Set the X,Y,Z position of the Panner"
-      ],
+      "description": ["Set the X,Y,Z position of the Panner"],
       "returns": "Array: Updated x, y, z values as an array",
       "params": {
         "xVal": "Number",
@@ -6835,27 +6641,19 @@
       }
     },
     "positionX": {
-      "description": [
-        "Getter and setter methods for position coordinates"
-      ],
+      "description": ["Getter and setter methods for position coordinates"],
       "returns": "Number: updated coordinate value"
     },
     "positionY": {
-      "description": [
-        "Getter and setter methods for position coordinates"
-      ],
+      "description": ["Getter and setter methods for position coordinates"],
       "returns": "Number: updated coordinate value"
     },
     "positionZ": {
-      "description": [
-        "Getter and setter methods for position coordinates"
-      ],
+      "description": ["Getter and setter methods for position coordinates"],
       "returns": "Number: updated coordinate value"
     },
     "orient": {
-      "description": [
-        "Set the X,Y,Z position of the Panner"
-      ],
+      "description": ["Set the X,Y,Z position of the Panner"],
       "returns": "Array: Updated x, y, z values as an array",
       "params": {
         "xVal": "Number",
@@ -6865,36 +6663,26 @@
       }
     },
     "orientX": {
-      "description": [
-        "Getter and setter methods for orient coordinates"
-      ],
+      "description": ["Getter and setter methods for orient coordinates"],
       "returns": "Number: updated coordinate value"
     },
     "orientY": {
-      "description": [
-        "Getter and setter methods for orient coordinates"
-      ],
+      "description": ["Getter and setter methods for orient coordinates"],
       "returns": "Number: updated coordinate value"
     },
     "orientZ": {
-      "description": [
-        "Getter and setter methods for orient coordinates"
-      ],
+      "description": ["Getter and setter methods for orient coordinates"],
       "returns": "Number: updated coordinate value"
     },
     "setFalloff": {
-      "description": [
-        "Set the rolloff factor and max distance"
-      ],
+      "description": ["Set the rolloff factor and max distance"],
       "params": {
         "maxDistance": "Number (Optional)",
         "rolloffFactor": "Number (Optional)"
       }
     },
     "maxDist": {
-      "description": [
-        "Maxium distance between the source and the listener"
-      ],
+      "description": ["Maxium distance between the source and the listener"],
       "returns": "Number: updated value",
       "params": {
         "maxDistance": "Number"
@@ -6971,9 +6759,7 @@
       }
     },
     "amp": {
-      "description": [
-        "Set the output level of the delay effect."
-      ],
+      "description": ["Set the output level of the delay effect."],
       "params": {
         "volume": "Number: amplitude between 0 and 1.0",
         "rampTime": "Number: (Optional) create a fade that lasts rampTime",
@@ -6981,17 +6767,13 @@
       }
     },
     "connect": {
-      "description": [
-        "Send output to a p5.sound or web audio object"
-      ],
+      "description": ["Send output to a p5.sound or web audio object"],
       "params": {
         "unit": "Object"
       }
     },
     "disconnect": {
-      "description": [
-        "Disconnect all output."
-      ]
+      "description": ["Disconnect all output."]
     }
   },
   "p5.Reverb": {
@@ -7021,9 +6803,7 @@
       }
     },
     "amp": {
-      "description": [
-        "Set the output level of the reverb effect."
-      ],
+      "description": ["Set the output level of the reverb effect."],
       "params": {
         "volume": "Number: amplitude between 0 and 1.0",
         "rampTime": "Number: (Optional) create a fade that lasts rampTime",
@@ -7031,17 +6811,13 @@
       }
     },
     "connect": {
-      "description": [
-        "Send output to a p5.sound or web audio object"
-      ],
+      "description": ["Send output to a p5.sound or web audio object"],
       "params": {
         "unit": "Object"
       }
     },
     "disconnect": {
-      "description": [
-        "Disconnect all output."
-      ]
+      "description": ["Disconnect all output."]
     }
   },
   "p5.Convolver": {
@@ -7061,9 +6837,7 @@
       ]
     },
     "process": {
-      "description": [
-        "Connect a source to the convolver."
-      ],
+      "description": ["Connect a source to the convolver."],
       "params": {
         "src": "Object: p5.sound / Web Audio object with a sound  output."
       }
@@ -7129,18 +6903,14 @@
       "tatums": "Number: (Optional) Divisions of a beat, e.g. use 1/4, or 0.25 for a quater note (default is 1/16, a sixteenth note)"
     },
     "setBPM": {
-      "description": [
-        "Set the tempo of this part, in Beats Per Minute."
-      ],
+      "description": ["Set the tempo of this part, in Beats Per Minute."],
       "params": {
         "BPM": "Number: Beats Per Minute",
         "rampTime": "Number: (Optional) Seconds from now"
       }
     },
     "getBPM": {
-      "description": [
-        "Returns the tempo, in Beats Per Minute, of this part."
-      ],
+      "description": ["Returns the tempo, in Beats Per Minute, of this part."],
       "returns": "Number: "
     },
     "start": {
@@ -7160,9 +6930,7 @@
       }
     },
     "noLoop": {
-      "description": [
-        "Tell the part to stop looping."
-      ]
+      "description": ["Tell the part to stop looping."]
     },
     "stop": {
       "description": [
@@ -7181,9 +6949,7 @@
       }
     },
     "addPhrase": {
-      "description": [
-        "Add a p5.Phrase to this Part."
-      ],
+      "description": ["Add a p5.Phrase to this Part."],
       "params": {
         "phrase": "p5.Phrase: reference to a p5.Phrase"
       }
@@ -7230,24 +6996,16 @@
       "parts": "p5.Part: (Optional) One or multiple parts, to be played in sequence."
     },
     "start": {
-      "description": [
-        "Start playback of the score."
-      ]
+      "description": ["Start playback of the score."]
     },
     "stop": {
-      "description": [
-        "Stop playback of the score."
-      ]
+      "description": ["Stop playback of the score."]
     },
     "pause": {
-      "description": [
-        "Pause playback of the score."
-      ]
+      "description": ["Pause playback of the score."]
     },
     "loop": {
-      "description": [
-        "Loop playback of the score."
-      ]
+      "description": ["Loop playback of the score."]
     },
     "noLoop": {
       "description": [
@@ -7255,9 +7013,7 @@
       ]
     },
     "setBPM": {
-      "description": [
-        "Set the tempo for all parts in the score"
-      ],
+      "description": ["Set the tempo for all parts in the score"],
       "params": {
         "BPM": "Number: Beats Per Minute",
         "rampTime": "Number: Seconds from now"
@@ -7265,9 +7021,7 @@
     }
   },
   "p5.SoundLoop": {
-    "description": [
-      "SoundLoop"
-    ],
+    "description": ["SoundLoop"],
     "params": {
       "callback": "Function: this function will be called on each iteration of theloop",
       "interval": "Number|String: (Optional) amount of time (if a number) or beats (if a string, following <a href = \"https://github.com/Tonejs/Tone.js/wiki/Time\">Tone.Time</a> convention) for each iteration of the loop. Defaults to 1 second."
@@ -7283,25 +7037,19 @@
       ]
     },
     "start": {
-      "description": [
-        "Start the loop"
-      ],
+      "description": ["Start the loop"],
       "params": {
         "timeFromNow": "Number: (Optional) schedule a starting time"
       }
     },
     "stop": {
-      "description": [
-        "Stop the loop"
-      ],
+      "description": ["Stop the loop"],
       "params": {
         "timeFromNow": "Number: (Optional) schedule a stopping time"
       }
     },
     "pause": {
-      "description": [
-        "Pause the loop"
-      ],
+      "description": ["Pause the loop"],
       "params": {
         "timeFromNow": "Number: (Optional) schedule a pausing time"
       }
@@ -7321,19 +7069,13 @@
       ]
     },
     "timeSignature": {
-      "description": [
-        "number of quarter notes in a measure (defaults to 4)"
-      ]
+      "description": ["number of quarter notes in a measure (defaults to 4)"]
     },
     "interval": {
-      "description": [
-        "length of the loops interval"
-      ]
+      "description": ["length of the loops interval"]
     },
     "iterations": {
-      "description": [
-        "how many times the callback has been called so far"
-      ]
+      "description": ["how many times the callback has been called so far"]
     }
   },
   "p5.Compressor": {
@@ -7360,9 +7102,7 @@
       }
     },
     "set": {
-      "description": [
-        "Set the paramters of a compressor."
-      ],
+      "description": ["Set the paramters of a compressor."],
       "params": {
         "attack": "Number: The amount of time (in seconds) to reduce the gain by 10dB,  default = .003, range 0 - 1",
         "knee": "Number: A decibel value representing the range above the  threshold where the curve smoothly transitions to the \"ratio\" portion.  default = 30, range 0 - 40",
@@ -7372,54 +7112,42 @@
       }
     },
     "attack": {
-      "description": [
-        "Get current attack or set value w/ time ramp"
-      ],
+      "description": ["Get current attack or set value w/ time ramp"],
       "params": {
         "attack": "Number: (Optional) Attack is the amount of time (in seconds) to reduce the gain by 10dB,  default = .003, range 0 - 1",
         "time": "Number: (Optional) Assign time value to schedule the change in value"
       }
     },
     "knee": {
-      "description": [
-        "Get current knee or set value w/ time ramp"
-      ],
+      "description": ["Get current knee or set value w/ time ramp"],
       "params": {
         "knee": "Number: (Optional) A decibel value representing the range above the  threshold where the curve smoothly transitions to the \"ratio\" portion.  default = 30, range 0 - 40",
         "time": "Number: (Optional) Assign time value to schedule the change in value"
       }
     },
     "ratio": {
-      "description": [
-        "Get current ratio or set value w/ time ramp"
-      ],
+      "description": ["Get current ratio or set value w/ time ramp"],
       "params": {
         "ratio": "Number: (Optional) The amount of dB change in input for a 1 dB change in output  default = 12, range 1 - 20",
         "time": "Number: (Optional) Assign time value to schedule the change in value"
       }
     },
     "threshold": {
-      "description": [
-        "Get current threshold or set value w/ time ramp"
-      ],
+      "description": ["Get current threshold or set value w/ time ramp"],
       "params": {
         "threshold": "Number: The decibel value above which the compression will start taking effect  default = -24, range -100 - 0",
         "time": "Number: (Optional) Assign time value to schedule the change in value"
       }
     },
     "release": {
-      "description": [
-        "Get current release or set value w/ time ramp"
-      ],
+      "description": ["Get current release or set value w/ time ramp"],
       "params": {
         "release": "Number: The amount of time (in seconds) to increase the gain by 10dB  default = .25, range 0 - 1",
         "time": "Number: (Optional) Assign time value to schedule the change in value"
       }
     },
     "reduction": {
-      "description": [
-        "Return the current reduction value"
-      ],
+      "description": ["Return the current reduction value"],
       "returns": "Number: Value of the amount of gain reduction that is applied to the signal"
     }
   },
@@ -7468,9 +7196,7 @@
       "framesPerPeak": "Number: (Optional) Defaults to 20."
     },
     "isDetected": {
-      "description": [
-        "isDetected is set to true when a peak is detected."
-      ]
+      "description": ["isDetected is set to true when a peak is detected."]
     },
     "update": {
       "description": [
@@ -7496,30 +7222,22 @@
       "A gain node is usefull to set the relative volume of sound. It's typically used to build mixers."
     ],
     "setInput": {
-      "description": [
-        "Connect a source to the gain node."
-      ],
+      "description": ["Connect a source to the gain node."],
       "params": {
         "src": "Object: p5.sound / Web Audio object with a sound  output."
       }
     },
     "connect": {
-      "description": [
-        "Send output to a p5.sound or web audio object"
-      ],
+      "description": ["Send output to a p5.sound or web audio object"],
       "params": {
         "unit": "Object"
       }
     },
     "disconnect": {
-      "description": [
-        "Disconnect all output."
-      ]
+      "description": ["Disconnect all output."]
     },
     "amp": {
-      "description": [
-        "Set the output level of the gain node."
-      ],
+      "description": ["Set the output level of the gain node."],
       "params": {
         "volume": "Number: amplitude between 0 and 1.0",
         "rampTime": "Number: (Optional) create a fade that lasts rampTime",
@@ -7560,15 +7278,11 @@
       }
     },
     "getAmount": {
-      "description": [
-        "Return the distortion amount, typically between 0-1."
-      ],
+      "description": ["Return the distortion amount, typically between 0-1."],
       "returns": "Number: Unbounded distortion amount.  Normal values range from 0-1."
     },
     "getOversample": {
-      "description": [
-        "Return the oversampling."
-      ],
+      "description": ["Return the oversampling."],
       "returns": "String: Oversample can either be 'none', '2x', or '4x'."
     }
   }
