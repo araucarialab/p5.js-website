@@ -1362,13 +1362,9 @@
       ]
     },
     "removeItem": {
-<<<<<<< HEAD
       "description": [
         "Remove um item que foi armazenado com storeItem()"
       ],
-=======
-      "description": ["Removes an item that was stored with storeItem()"],
->>>>>>> 76cce7594afbf92230715bb767bb912c4535e9f3
       "params": {
         "key": "String"
       }
