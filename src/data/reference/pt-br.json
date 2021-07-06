@@ -1468,7 +1468,7 @@
         "src": "String: !! endereço da imagem, pode ser a fonte (src) do arquivo ou uma url.",
         "alt": "String: <a href=\"https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Img#attr-alt\">texto alternativo</a> (alt) atributo da imagem usado caso o arquivo não possa ser carregado. Você também pode usar uma string vazia (<code>\"\"</code>) caso a intençao seja que a imagem não seja vista.",
         "crossOrigin": "String: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_settings_attributes\">atributo crossorigin</a> do elemento <code>&lt;img&gt;</code>; ",
-        "successCallback": "Função (Opcional) callback a ser chamada quando os dados da image são carregados com o <a href=\"#/p5.Element\">p5.Element</a> como argumento"
+        "successCallback (Opcional)": "Função  callback a ser chamada quando os dados da image são carregados com o <a href=\"#/p5.Element\">p5.Element</a> como argumento"
       }
     },
     "createA": {
@@ -3963,24 +3963,24 @@
     }
   },
   "JSON": {
-    "stringify": {
-      "description": [
-        "From <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify\">the MDN entry</a>: The JSON.stringify() method converts a JavaScript object or value to a JSON <a href=\"#/p5/string\">string</a>."
-      ],
-      "params": {
-        "object": "Object: :Javascript object that you would like to convert to JSON"
+  "stringify": {
+    "description": [
+      "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify\">entrada MDN</a>: O método JSON.stringify() converte um objeto ou valor JavaScript em uma <a href=\"#/p5/string\">string</a> JSON."
+    ],
+    "params": {
+      "object": "Objeto: Objeto Javascript que você gostaria de converter para JSON"
       }
     }
   },
   "console": {
-    "log": {
-      "description": [
-        "Prints a message to your browser's web console. When using p5, you can use <a href=\"#/p5/print\">print</a> and <a href=\"#/p5/console/log\">console.log</a> interchangeably. ",
-        "The console is opened differently depending on which browser you are using. Here are links on how to open the console in <a href=\"https://developer.mozilla.org/en-US/docs/Tools/Web_Console/Opening_the_Web_Console\">Firefox</a> , <a href=\"https://developers.google.com/web/tools/chrome-devtools/open\">Chrome</a>, <a href=\"https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/console\">Edge</a>, and <a href=\"https://support.apple.com/en-ca/guide/safari/sfri20948/mac\">Safari</a>. With the <a href=\"https://editor.p5js.org/\">online p5 editor</a> the console is embedded directly in the page underneath the code editor. ",
-        "From <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Console/log\">the MDN entry</a>: The Console method log() outputs a message to the web console. The message may be a single <a href=\"#/p5/string\">string</a> (with optional substitution values), or it may be any one or more JavaScript <a href=\"#/p5/object\">objects</a>."
-      ],
-      "params": {
-        "message": "String|Expression|Object: :Message that you would like to print to the console"
+      "log": {
+        "description": [
+          "Imprime uma mensagem no console da web do seu navegador. Ao usar o p5, você pode usar <a href=\"#/p5/print\">print</a> (imprimir) e <a href=\"#/p5/console/log\">console.log</a> indistintamente. ",
+          "O console é aberto de forma diferente dependendo de qual navegador você está usando. Aqui estão os links sobre como abrir o console no <a href=\"https://developer.mozilla.org/en-US/docs/Tools/Web_Console/Opening_the_Web_Console\">Firefox</a> , <a href=\"https://developers.google.com/web/tools/chrome-devtools/open\">Chrome</a>, <a href=\"https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/console\">Edge</a>, e <a href=\"https://support.apple.com/en-ca/guide/safari/sfri20948/mac\">Safari</a>. Com o  <a href=\"https://editor.p5js.org/\">editor online do p5 </a> o console é incorporado diretamente na página abaixo do editor de código. ",
+          "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Console/log\">entrada MDN</a>: O método do console log() tem como saída uma mensagem para o console da web. A mensagem pode ser uma única <a href=\"#/p5/string\">string</a> (com valores de substituição opcionais), ou pode ser qualquer um ou mais <a href=\"#/p5/object\">objetos</a> JavaScript."
+        ],
+        "params": {
+          "message": "String|Expressão|Objeto: Mensagem que você gostaria de imprimir no console."
       }
     }
   },
