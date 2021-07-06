@@ -38,11 +38,11 @@ home:
     iniciantes e qualquer outra pessoa! p5.js é gratuito e de código livre porque
     acreditamos que sofware e as ferramentas para aprendê-lo devem ser acessíveis a todos.
   p1x2: >-
-    Using the metaphor of a sketch, p5.js has a full set of drawing
-    functionality. However, you’re not limited to your drawing canvas. You can
-    think of your whole browser page as your sketch, including HTML5 objects for
-    text, input, video, webcam, and sound.
-  p2xh2: Community
+    Usando o sketch como metáfora, o p5.js tem um conjunto completo de funcionalidades
+    para desenho. Entretanto, você não está limitado ao seu canvas de desenho. Você pode
+    pensar na página do browser inteira como seu sketch, incluinto objetos de HTML5 para
+    textos, comandos, vídeos, uso da webcam e sons.
+  p2xh2: Comunidade
   p2x1: >-
     We are a community of, and in solidarity with, people from every gender
     identity and expression, sexual orientation, race, ethnicity, language,
