@@ -1147,10 +1147,10 @@ para o primeiro ponto de controle{
     },
     "while": {
       "description": [
-        "<a href=\"#/p5/while\">while</a> creates a loop that is useful for executing one section of code multiple times. ",
-        "With a 'while loop', the code inside of the loop body (between the curly braces) is run repeatedly until the test condition (inside of the parenthesis) evaluates to false. The condition is tested before executing the code body with <a href=\"#/p5/while\">while</a>, so if the condition is initially false the loop body, or statement, will never execute. ",
-        "As with any loop, it is important to ensure that the loop can 'exit', or that the test condition will eventually evaluate to false. This is to keep your loop from trying to run an infinite amount of times, which can crash your browser. ",
-        "From <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while\">the MDN entry</a>: The while statement creates a loop that executes a specified statement as long as the test condition evaluates to true.The condition is evaluated before executing the statement."
+        "<a href=\"#/p5/while\">while</a> (enquanto) cria um loop que é útil para executar uma seção de código várias vezes. ",
+        "Com um 'loop while', o código dentro do corpo do loop (entre as chaves) é executado repetidamente até que a condição de teste (dentro dos parênteses) seja avaliada como false (falsa). A condição é testada antes de executar o corpo do código com <a href=\"#/p5/while\">while</a>, então, se a condição for inicialmente falsa, o corpo do loop, ou instrução, nunca serão executados. ",
+        "Como acontece com qualquer loop, é importante garantir que o loop possa 'sair' ou que a condição de teste acabe sendo avaliada como falsa. Isso evita que seu loop tente ser executado uma quantidade infinita de vezes, o que pode travar seu navegador. ",
+        "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while\">entrada MDN</a>: A instrução while cria um loop que executa uma instrução especificada, desde que a condição de teste seja avaliada como true (verdadeira). A condição é avaliada antes de executar a instrução."
       ]
     },
     "createCanvas": {
