@@ -1,4 +1,3 @@
-para o primeiro ponto de controle{
   "h1": "Referência",
   "reference-search": "Buscar referência",
   "reference-description1": "Não encontrou o que você estava buscando? Você pode tentar em",
@@ -1493,7 +1492,7 @@ para o primeiro ponto de controle{
       ],
       "returns": "p5.Element: ponteiro para <a href=\"#/p5.Element\">p5.Element</a> que contém o node criado.",
       "params": {
-        "src": "String: !! endereço da imagem, pode ser a fonte (src) do arquivo ou uma url.",
+        "src": "String: fonte (src) da Imagem, pode ser o endereço do arquivo ou uma url.",
         "alt": "String: <a href=\"https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Img#attr-alt\">texto alternativo</a> (alt) atributo da imagem usado caso o arquivo não possa ser carregado. Você também pode usar uma string vazia (<code>\"\"</code>) caso a intençao seja que a imagem não seja vista.",
         "crossOrigin": "String: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_settings_attributes\">atributo crossorigin</a> do elemento <code>&lt;img&gt;</code>; ",
         "successCallback (Opcional)": "Função  callback a ser chamada quando os dados da image são carregados com o <a href=\"#/p5.Element\">p5.Element</a> como argumento"
@@ -1501,55 +1500,61 @@ para o primeiro ponto de controle{
     },
     "createA": {
       "description": [
-        "Creates an <code>&lt;a&gt;&lt;/a&gt;</code> element in the DOM for including a hyperlink."
+        "Cia um elemento <code>&lt;a&gt;&lt;/a&gt;</code> no DOM com um hyperlink (hiperligação)."
       ],
-      "returns": "p5.Element: pointer to <a href=\"#/p5.Element\">p5.Element</a> holding created node",
+      "returns": "p5.Element: ponteiro para o <a href=\"#/p5.Element\">p5.Element</a> contendo o node (nó) criado ",
       "params": {
-        "href": "String: url of page to link to",
-        "html": "String: inner html of link element to display",
-        "target": "String: (Optional) target where new link should open,  could be _blank, _self, _parent, _top."
+        "href": "String: url da página a ser vinculada",
+        "html": "String: HTML interno do elemento.",
+        "target": "String (Opcional): atributo target, este atributo define a forma como o hyperlink (hiperligação) será aberta. Podem ser definidos os valores: _blank, _self, _parent, _top."
       }
     },
     "createSlider": {
       "description": [
-        "Creates a slider <code>&lt;input&gt;&lt;/input&gt;</code> element in the DOM. Use .size() to set the display length of the slider."
+        "Cria um elemento de <code>&lt;input&gt;&lt;/input&gt;</code> em forma de slider (controle deslizante) no DOM. Use .size() para configurar o comprimento do slider (controle deslizante)."
       ],
-      "returns": "p5.Element: pointer to <a href=\"#/p5.Element\">p5.Element</a> holding created node",
+      "returns": "p5.Element: ponteiro para um <a href=\"#/p5.Element\">p5.Element</a> contendo o node (nó) criado ",
       "params": {
-        "min": "Number: minimum value of the slider",
-        "max": "Number: maximum value of the slider",
-        "value": "Number: (Optional) default value of the slider",
-        "step": "Number: (Optional) step size for each tick of the slider (if step is set to 0, the slider will move continuously from the minimum to the maximum value)"
+        "min": "Número: valor mínimo do slider",
+        "max": "Número: valor máximo do slider",
+        "value": "Número(Opcional) valor padrão do slider",
+        "step": "Número: (Opcional) tamanho do !! step (passo) para cada marcação do slider (se o step (passo) é configurado como 0, o slider vai se movimentar continuamente entre o valor mínimo e o máximo)"
       }
     },
     "createButton": {
       "description": [
-        "Creates a <code>&lt;button&gt;&lt;/button&gt;</code> element in the DOM. Use .size() to set the display size of the button. Use .mousePressed() to specify behavior on press."
+        "Cia um elemento <code>&lt;button&gt;&lt;/button&gt;</code> no DOM. Use .size() para configurara o tamanho do botão. Use .mousePressed() para especificar o comportamento ao pressionar."
       ],
-      "returns": "p5.Element: pointer to <a href=\"#/p5.Element\">p5.Element</a> holding created node",
+      "returns": "p5.Element: ponteiro para um <a href=\"#/p5.Element\">p5.Element</a> contendo o node (nó) criado",
       "params": {
-        "label": "String: label displayed on the button",
-        "value": "String: (Optional) value of the button"
+        "label": "String: label (etiqueta) exibida no botão",
+        "value": "String (Opcional): valor do botão"
       }
     },
     "createCheckbox": {
       "description": [
-        "Creates a checkbox <code>&lt;input&gt;&lt;/input&gt;</code> element in the DOM. Calling .checked() on a checkbox returns if it is checked or not"
+        "Cria um elemento de <code>&lt;input&gt;&lt;/input&gt;</code> em forma de checkbox (caixas de seleção) no DOM. Chamando .checked() on a checkbox retorna true (verdadeiro) se ela estiver marcada ou false (falso) caso não esteja."
       ],
-      "returns": "p5.Element: pointer to <a href=\"#/p5.Element\">p5.Element</a> holding created node",
+      "returns": "p5.Element: pontero para um <a href=\"#/p5.Element\">p5.Element</a> contendo o node (nó) criado",
       "params": {
-        "label": "String: (Optional) label displayed after checkbox",
-        "value": "Boolean: (Optional) value of the checkbox; checked is true, unchecked is false"
+        "label": "String (Opcional): label (etiqueta) exibida após a checkbox",
+        "value": "Booleano (Ocional): valor da checkbox; se a caixa estiver marcada o valor será true (verdadeiro), se a caixa estiver desmarcada será false (falso)"
       }
     },
     "createSelect": {
       "description": [
-        "Creates a dropdown menu <code>&lt;select&gt;&lt;/select&gt;</code> element in the DOM. It also helps to assign select-box methods to <a href=\"#/p5.Element\">p5.Element</a> when selecting existing select box. <ul> <li><code>.option(name, [value])</code> can be used to set options for the select after it is created.</li> <li><code>.value()</code> will return the currently selected option.</li> <li><code>.selected()</code> will return current dropdown element which is an instance of <a href=\"#/p5.Element\">p5.Element</a></li> <li><code>.selected(value)</code> can be used to make given option selected by default when the page first loads.</li> <li><code>.disable()</code> marks whole of dropdown element as disabled.</li> <li><code>.disable(value)</code> marks given option as disabled</li> </ul>"
+        "Cria um elemento de seleção <code>&lt;select&gt;&lt;/select&gt;</code> em forma de lista suspensa no DOM. Também ajuda a atribuir métodos de caixa de seleção a <a href=\"#/p5.Element\"> p5.Element </a> ao selecionar a caixa de seleção existente.
+        <ul> <li><code>.option(name, [value])</code> pode ser utilizado para configurar opções para a selecão depois de criada.</li>
+        <li><code>.value()</code> retornará a opção selecionada no momento.</li>
+        <li><code>.selected()</code> retornará o elemento da lista suspensa atual que é uma instância do <a href=\"#/p5.Element\">p5.Element</a>.</li>
+        <li><code>.selected(value)</code> pode ser usado para tornar determinado item selecionado por padrão quando a página é carregada pela primeira vez.</li>
+        <li><code>.disable()</code> marca toda lista suspensa como desativada.</li>
+        <li><code>.disable(value)</code> marca o item determinado como desativado.</li> </ul>"
       ],
       "returns": "p5.Element: ",
       "params": {
-        "multiple": "Boolean: (Optional) true if dropdown should support multiple selections",
-        "existing": "Object: DOM select element"
+        "multiple": "Booleano (Opcional): true (verdadeiro) se o elemento suportar várias seleções",
+        "existing": "Objeto: elemento de seleção do DOM"
       }
     },
     "createRadio": {
