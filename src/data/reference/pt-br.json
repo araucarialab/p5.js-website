@@ -75,25 +75,25 @@ para o primeiro ponto de controle{
     },
     "describe": {
       "description": [
-        "Creates a screen reader accessible description for the canvas. The first parameter should be a string with a description of the canvas. The second parameter is optional. If specified, it determines how the description is displayed. ",
-        "<code class=\"language-javascript\">describe(text, LABEL)</code> displays the description to all users as a <a href=\"https://en.wikipedia.org/wiki/Museum_label\" target=\"_blank\"> tombstone or exhibit label/caption</a> in a <code class=\"language-javascript\"><div class=\"p5Label\"></div></code> adjacent to the canvas. You can style it as you wish in your CSS. ",
-        "<code class=\"language-javascript\">describe(text, FALLBACK)</code> makes the description accessible to screen-reader users only, in <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\"> a sub DOM inside the canvas element</a>. If a second parameter is not specified, by default, the description will only be available to screen-reader users."
+        "Cria uma descrição acessível a leitores de tela para a canvas. O primeiro parâmetro deve ser uma string com a descrição da canvas. O segundo parâmetro é opcional. Se especificado, ele determina como a descrição será mostrada.",
+        "<code class=\"language-javascript\">describe(texto, LABEL)</code> apresenta a descrição a todas as pessoas como uma <a href=\"https://en.wikipedia.org/wiki/Museum_label\" target=\"_blank\">ETIQUETA DE MUSEU *****</a> em uma <code class=\"language-javascript\"><div class=\"p5Label\"></div></code> próxima à canvas. Você pode utilizar CSS para alterar a aparência dessa legenda.",
+        "<code class=\"language-javascript\">describe(texto, FALLBACK)</code> torna a descrição acessível somente para pessoas utilizando leitores de tela, em um <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\"> sub DOM dentro do elemento canvas</a>. Se um segundo parâmetro não for especificado, por padrão, a descrição somente será acessível para pessoas que utilizem leitores de tela."
       ],
       "params": {
         "text": "String: descrição do canvas",
-        "display": "Constant: (Optional) ou LABEL ou FALLBACK"
+        "display": "Constante (opcional): LABEL ou FALLBACK"
       }
     },
     "describeElement": {
       "description": [
-        "Esta função cria uma descrição compreensível para elementos - shapes ou grupos de shapes que só tem signficado juntos — no canvas. O primeiro parâmetro deve ter o nome do elemento. O segundo parâmetro deve ser uma string com a descrição do elemento. O terceiro parâmetor é opcional. Se especificado, ele determina como a descrição do elemento será mostrada. ",
-        "<code class=\"language-javascript\">describeElement(name, text, LABEL)</code> mostra a descrição do elemento a todos os usuários como uma <a href=\"https://en.wikipedia.org/wiki/Museum_label\" target=\"_blank\"> tombstone ou exibe a label/caption</a> em uma <code class=\"language-javascript\"><div class=\"p5Label\"></div></code> adjacente ao canvas. Você pode definir o style como quiser no seu CSS. ",
-        "<code class=\"language-javascript\">describeElement(name, text, FALLBACK)</code> torna a descrição do elemento screen readable (compreensível) apenas aos usuários, em <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\"> um sub DOM dentro do elemento canvas</a>. Se um segundo parâmetro não for definido, por padrão a descrição do elemento estará disponível apenas como leitura compreensível aos usuários."
+        "Esta função cria uma descrição acessível a leitores de tela para elementos - shapes ou grupos de shapes que só tem signficado juntos — no canvas. O primeiro parâmetro deve ter o nome do elemento. O segundo parâmetro deve ser uma string com a descrição do elemento. O terceiro parâmetor é opcional. Se especificado, ele determina como a descrição do elemento será mostrada.",
+        "<code class=\"language-javascript\">describeElement(nome, texto, LABEL)</code> mostra a descrição do elemento a todas as pessoas como uma <a href=\"https://en.wikipedia.org/wiki/Museum_label\" target=\"_blank\">ETIQUETA DE MUSEU *****/caption</a> em uma <code class=\"language-javascript\"><div class=\"p5Label\"></div></code> adjacente à canvas. Você pode definir o estilo como quiser no seu CSS.",
+        "<code class=\"language-javascript\">describeElement(nome, texto, FALLBACK)</code> torna a descrição do elemento acessível somente a pessoas que estejam utilizando leitores de tela, em <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\">um sub DOM dentro do elemento canvas</a>. Se um segundo parâmetro não for definido, por padrão a descrição do elemento estará disponível apenas a pessoas que façam uso de leitores de tela."
       ],
       "params": {
         "name": "String: nome do elemento",
         "text": "String: descrição do elemento",
-        "display": "Constant: (Optional) ou LABEL ou FALLBACK "
+        "display": "Constante (opcional): LABEL ou FALLBACK "
       }
     },
     "textOutput": {
