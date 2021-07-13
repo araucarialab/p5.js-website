@@ -932,37 +932,37 @@
     },
     "windowResized": {
       "description": [
-        "The <a href=\"#/p5/windowResized\">windowResized()</a> function is called once every time the browser window is resized. This is a good place to resize the canvas or do any other adjustments to accommodate the new window size."
+        "A função <a href=\"#/p5/windowResized\">windowResized()</a> é chamada a cada vez que a janela do browser muda de tamanho. É um bom lugar para redimensionar a canvas ou fazer quaisquer outros ajustes para acomodar o novo tamanho da janela."
       ],
       "params": {
-        "event": "Object: (Optional) optional Event callback argument."
+        "event": "Objeto (opcional): argumentos do evento de callback."
       }
     },
     "width": {
       "description": [
-        "System variable that stores the width of the drawing canvas. This value is set by the first parameter of the <a href=\"#/p5/createCanvas\">createCanvas()</a> function. For example, the function call createCanvas(320, 240) sets the width variable to the value 320. The value of width defaults to 100 if <a href=\"#/p5/createCanvas\">createCanvas()</a> is not used in a program."
+        "Variável global embutida na biblioteca p5.js que armazena a largura da canvas. Este valor é definido pelo primeiro parâmetro da função <a href=\"#/p5/createCanvas\">createCanvas()</a>. Por exemplo, a chamada de função <code>createCanvas(320, 240)</code> atribui à variável <code>width</code> o valor 320. Se a função <a href=\"#/p5/createCanvas\">createCanvas()</a> não for chamada no programa, o valor padrão para a largura é 100."
       ]
     },
     "height": {
       "description": [
-        "System variable that stores the height of the drawing canvas. This value is set by the second parameter of the <a href=\"#/p5/createCanvas\">createCanvas()</a> function. For example, the function call createCanvas(320, 240) sets the height variable to the value 240. The value of height defaults to 100 if <a href=\"#/p5/createCanvas\">createCanvas()</a> is not used in a program."
+        "Variável global embutida na biblioteca p5.js que armazena a altura da canvas. Este valor é definido pelo segundo parâmetro da função <a href=\"#/p5/createCanvas\">createCanvas()</a>. Por exemplo, a chamada de função <code>createCanvas(320, 240)</code> atribui à variável <code>height</code> o valor 240. Se a função <a href=\"#/p5/createCanvas\">createCanvas()</a> não for chamada no programa, o valor padrão para a altura é 100."
       ]
     },
     "fullscreen": {
       "description": [
-        "If argument is given, sets the sketch to fullscreen or not based on the value of the argument. If no argument is given, returns the current fullscreen state. Note that due to browser restrictions this can only be called on user input, for example, on mouse press like the example below."
+        "Se um argumento for passado, configura o sketch para telaa cheia baseado no valor deste argument. Caso contrário, retorna se o sketch está em tela cheia ou não. Note que, dado as restrições dos browsers, só é possível chamar essa função a partir de interação direta como, por exemplo, o clique do mouse."
       ],
-      "returns": "Boolean: current fullscreen state",
+      "returns": "Booleano: se o sketch está em tela cheia (true) ou não (false)",
       "params": {
-        "val": "Boolean: (Optional) whether the sketch should be in fullscreen mode or not"
+        "val": "Boolean (opcional): se o sketch deve rodar em tela cheia (true) ou não (false)"
       }
     },
     "pixelDensity": {
       "description": [
-        "Sets the pixel scaling for high pixel density displays. By default pixel density is set to match display density, call pixelDensity(1) to turn this off. Calling <a href=\"#/p5/pixelDensity\">pixelDensity()</a> with no arguments returns the current pixel density of the sketch."
+        "Define a escala dos pixels para telas de alta densidade. Por padrão, a densidade de pixels é igual a densidade da tela — chame <code>pixelDensity(1)</code> para que isso não aconteça. Chamar <a href=\"#/p5/pixelDensity\">pixelDensity()</a> sem argumentos retorna a densidade de pixels atual do sketch."
       ],
       "params": {
-        "val": "Number: whether or how much the sketch should scale"
+        "val": "Número: se ou quanto o sketch deve ser redimensionado"
       }
     },
     "displayDensity": {
