@@ -967,27 +967,30 @@
     },
     "displayDensity": {
       "description": [
-        "Returns the pixel density of the current display the sketch is running on."
+        "Retorna a densidade de pixels da tela em que o sketch está sendo executado."
       ],
-      "returns": "Number: current pixel density of the display"
+      "returns": "Número: densidade de pixels da tela"
     },
     "getURL": {
       "description": [
-        "Gets the current URL. Note: when using the p5 Editor, this will return an empty object because the sketch is embedded in an iframe. It will work correctly if you view the sketch using sketch the edtior's present or share URLs."
+        "Retorna a URL atual.",
+        "Nota: ao utilizar o editor da p5, essa função retornará um objeto vazio, pois o objeto está embutido em uma iFrame. Ela funcionará corretamente se você visualizar o sketch utilizando o modo de apresentação, ou URLs compartilháveis."
       ],
-      "returns": "String: url"
+      "returns": "String: URL"
     },
     "getURLPath": {
       "description": [
-        "Gets the current URL path as an array. Note: when using the p5 Editor, this will return an empty object because the sketch is embedded in an iframe. It will work correctly if you view the sketch using sketch the edtior's present or share URLs."
+        "Retorna o caminho da URL atual como uma array.",
+        "Nota: ao utilizar o editor da p5, essa função retornará um objeto vazio, pois o objeto está embutido em uma iFrame. Ela funcionará corretamente se você visualizar o sketch utilizando o modo de apresentação, ou URLs compartilháveis."
       ],
-      "returns": "String[]: path components"
+      "returns": "String[]: os componentes do caminho da URL"
     },
     "getURLParams": {
       "description": [
-        "Gets the current URL params as an Object. Note: when using the p5 Editor, this will return an empty object because the sketch is embedded in an iframe. It will work correctly if you view the sketch using sketch the edtior's present or share URLs."
+        "Retorna os parâmetros da URL atual como um objeto.",
+        "Nota: ao utilizar o editor da p5, essa função retornará um objeto vazio, pois o objeto está embutido em uma iFrame. Ela funcionará corretamente se você visualizar o sketch utilizando o modo de apresentação, ou URLs compartilháveis."
       ],
-      "returns": "Object: URL params"
+      "returns": "Objeto: parâmetros da URL"
     },
     "preload": {
       "description": [
