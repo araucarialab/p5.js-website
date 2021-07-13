@@ -114,29 +114,19 @@
       }
     },
     "alpha": {
-<<<<<<< HEAD
       "description": [
         "Extrai o valor de alpha de uma cor ou de um pixel array."
       ],
       "returns": "Number: o valor de alpha",
-=======
-      "description": ["Extracts the alpha value from a color or pixel array."],
-      "returns": "Number: the alpha value",
->>>>>>> 2c5a488f13190632e75f66461b5a804a200eceb1
       "params": {
         "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> objeto, componentes de cor ou cor CSS"
       }
     },
     "blue": {
-<<<<<<< HEAD
       "description": [
         "Extrai o valor de azul de uma cor ou de um pixel array."
       ],
       "returns": "Number: o valor de azul",
-=======
-      "description": ["Extracts the blue value from a color or pixel array."],
-      "returns": "Number: the blue value",
->>>>>>> 2c5a488f13190632e75f66461b5a804a200eceb1
       "params": {
         "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> objeto, componentes de cor ou cor CSS"
       }
@@ -169,15 +159,10 @@
       }
     },
     "green": {
-<<<<<<< HEAD
       "description": [
         "Extrai o valor de verde de uma cor ou de uma pixel array."
       ],
       "returns": "Number: o valor de verde",
-=======
-      "description": ["Extracts the green value from a color or pixel array."],
-      "returns": "Number: the green value",
->>>>>>> 2c5a488f13190632e75f66461b5a804a200eceb1
       "params": {
         "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> objeto, componente da cor ou cor em CSS"
       }
@@ -214,15 +199,10 @@
       }
     },
     "red": {
-<<<<<<< HEAD
       "description": [
         "Extrai o valor de vermelho de uma cor ou de uma pixel array."
       ],
       "returns": "Number: o valor de vermelho",
-=======
-      "description": ["Extracts the red value from a color or pixel array."],
-      "returns": "Number: the red value",
->>>>>>> 2c5a488f13190632e75f66461b5a804a200eceb1
       "params": {
         "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> objeto, componentes da cor ou cor em CSS"
       }
@@ -1559,51 +1539,58 @@
     },
     "createRadio": {
       "description": [
-        "Creates a radio button element in the DOM.It also helps existing radio buttons assign methods of <a href=\"#/p5.Element/\">p5.Element</a>. <ul> <li><code>.option(value, [label])</code> can be used to create a new option for the element. If an option with a value already exists, it will be returned. Optionally, a label can be provided as second argument for the option.</li> <li><code>.remove(value)</code> can be used to remove an option for the element.</li> <li><code>.value()</code> method will return the currently selected value.</li> <li><code>.selected()</code> method will return the currently selected input element.</li> <li><code>.selected(value)</code> method will select the option and return it.</li> <li><code>.disable(Boolean)</code> method will enable/disable the whole radio button element.</li> </ul>"
+        "Cria um elemento HTML de <code>&lt;input&gt;&lt;/input&gt;</code> do tipo botão de escolha <a href= \"https:\/\/developer.mozilla.org\/pt-BR\/docs\/Web\/HTML\/Element\/input#:~:text=radio%3A%20Um%20bot%C3%A3o,de%20cada%20vez..\">(tipe = \"radio\")</a> no DOM. Também auxilia a atribuir métodos de <a href=\"#/p5.Element/\">p5.Element</a> a botões de escolha (radio) existentes.
+        <ul> <li>O método <code>.option(value, [label])</code> pode ser utilizado para criar um novo item para o elemento. Se já existir um item com o valor indicado, o método retornará este item. Opcionalmente, um label (etiqueta) pode ser fornecido como segundo argumento para o item.</li>
+        <li>O método <code>.remove(value)</code> pode ser utilizado para remover um item do elemento.</li>
+        <li>O método <code>.value()</code> retorna o valor do item selecionado no momento.</li>
+        <li>O método <code>.selected()</code> retorna o elemento de input selecionado no momento.</li>
+        <li>O método <code>.selected(value)</code> marca um item como selecionado, retorna ele mesmo.</li>
+        <li>O método <code>.disable(Boolean)</code> desativa/ativa o elemento todo.</li> </ul>"
       ],
-      "returns": "p5.Element: pointer to <a href=\"#/p5.Element\">p5.Element</a> holding created node",
+      "returns": "p5.Element: ponteiro para um <a href=\"#/p5.Element\">p5.Element</a> contendo o node (nó) criado.",
       "params": {
-        "containerElement": "Object: An container HTML Element either a div or span inside which all existing radio inputs will be considered as options.",
-        "name": "String: (Optional) A name parameter for each Input Element."
+        "containerElement": "Objeto: Um elemento container de HTML, pode ser um <code>&lt;div&gt;&lt;/div&gt;</code> ou <code>&lt;span&gt;&lt;/span&gt;</code>, dentro do qual todas os inputs existentes serão considerados como itens do botão de escolha.",
+        "name": "String (Opcional): parâmetro nome para cada elemnto de input."
       }
     },
     "createColorPicker": {
       "description": [
-        "Creates a colorPicker element in the DOM for color input. The .value() method will return a hex string (#rrggbb) of the color. The .color() method will return a p5.Color object with the current chosen color."
+        "Cria um elemento no DOM para input de cor. O método <code>.value()<code> retorna uma string HEX (#rrggbb) da cor. O método <code>.color()<code> retorna um objeto p5.Color com a selecão de cor atual."
       ],
-      "returns": "p5.Element: pointer to <a href=\"#/p5.Element\">p5.Element</a> holding created node",
+      "returns": "p5.Element: ponteiro para um <a href=\"#/p5.Element\">p5.Element</a> contendo o node (nó) criado.",
       "params": {
-        "value": "String|p5.Color: (Optional) default color of element"
+        "value": "String|p5.Color (Opcional): cor padrão do elemento."
       }
     },
     "createInput": {
       "description": [
-        "Creates an <code>&lt;input&gt;&lt;/input&gt;</code> element in the DOM for text input. Use .<a href=\"#/p5.Element/size\">size()</a> to set the display length of the box."
+        "Cria um elemento de <code>&lt;input&gt;&lt;/input&gt;</code> de texto no DOM. Use .<a href=\"#/p5.Element/size\">size()</a> para configurar o tamanho da caixa de texto."
       ],
-      "returns": "p5.Element: pointer to <a href=\"#/p5.Element\">p5.Element</a> holding created node",
+      "returns": "p5.Element: ponteiro para um <a href=\"#/p5.Element\">p5.Element</a> contendo o node (nó) do DOM criado.",
       "params": {
-        "value": "String: default value of the input box",
-        "type": "String: (Optional) type of text, ie text, password etc. Defaults to text.  Needs a value to be specified first."
+        "value": "String: default valor padrão da caixa de texto do input",
+        "type": "String (Opcional): tipo do texto, por ex.: \"text\", \"password\" etc. Por padrão o tipo definido é \"text\"."
       }
     },
     "createFileInput": {
       "description": [
-        "Creates an <code>&lt;input&gt;&lt;/input&gt;</code> element in the DOM of type 'file'. This allows users to select local files for use in a sketch."
+        "Cria um elemento de <code>&lt;input&gt;&lt;/input&gt;</code> de arquivo no DOM. Permite que usuários carreguem arquivos locais para utilizar em um sketch."
       ],
-      "returns": "p5.Element: pointer to <a href=\"#/p5.Element\">p5.Element</a> holding created DOM element",
+      "returns": "p5.Element: ponteiro para um <a href=\"#/p5.Element\">p5.Element</a> contendo o node (nó) do DOM criado.",
       "params": {
-        "callback": "Function: callback function for when a file is loaded",
-        "multiple": "Boolean: (Optional) optional, to allow multiple files to be selected"
+        "callback": "Função: Funcão callback para quando o arquivo é carregado.",
+        "multiple": "Booleano (Opcional): permite que múltiplos arquivos sejam selecionados."
       }
     },
     "createVideo": {
       "description": [
-        "Creates an HTML5 <code>&lt;video&gt;</code> element in the DOM for simple playback of audio/video. Shown by default, can be hidden with .<a href=\"#/p5.Element/hide\">hide()</a> and drawn into canvas using <a href=\"#/p5/image\">image()</a>. The first parameter can be either a single string path to a video file, or an array of string paths to different formats of the same video. This is useful for ensuring that your video can play across different browsers, as each supports different formats. See <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats'>this page</a> for further information about supported formats."
+        "Cria um elemento de <code>&lt;video&gt;</code> HTML5 no DOM para a reprodução simples de áudio/video. O elemento de vídeo é definido como visível por padrão, pode ser ocultado com o método .<a href=\"#/p5.Element/hide\">hide()</a>  e desenhado no canvas utilizando <a href=\"#/p5/image\">image()</a>.
+        O primeiro parâmetro pode ser uma única string com o caminho para um arquivo de vídeo ou uma array de strings com endereços de arquivos de videos em diferentes formatos de arquivo. Isso é útil para garantir que seu vídeo possa ser reproduzido em diferentes navegadores, já que cada um suporta formatos diferentes. Você pode encontrar mais informações sobre os formatos de mídias suportados <a href = \"https:\/\/developer.mozilla.org\/pt-BR/docs/Web/Media/Formats\"> aqui </a>."
       ],
-      "returns": "p5.MediaElement: pointer to video <a href=\"#/p5.Element\">p5.Element</a>",
+      "returns": "p5.MediaElement: ponteiro para um <a href=\"#/p5.Element\">p5.Element</a> de vídeo.",
       "params": {
-        "src": "String|String[]: path to a video file, or array of paths for  supporting different browsers",
-        "callback": "Function: (Optional) callback function to be called upon  'canplaythrough' event fire, that is, when the  browser can play the media, and estimates that  enough data has been loaded to play the media  up to its end without having to stop for  further buffering of content"
+        "src": "String | String[]: endereço do arquivo de video ou uma array de endereços de arquivos de video em formatos diferentes.",
+        "callback": "Função (Optional): função callback chamada no disparo do evento 'canplaythrough', ou seja, quando a mídia está pronta para ser reproduzida, e estima que já foram carregados dados suficientes para reproduzir a mídia sem interrupcões para mais buffering."
       }
     },
     "createAudio": {
