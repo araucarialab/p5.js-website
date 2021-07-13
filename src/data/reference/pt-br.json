@@ -863,37 +863,38 @@
     "FALLBACK": {},
     "print": {
       "description": [
-        "The <a href=\"#/p5/print\">print()</a> function writes to the console area of your browser. This function is often helpful for looking at the data a program is producing. This function creates a new line of text for each call to the function. Individual elements can be separated with quotes (\"\") and joined with the addition operator (+). ",
-        "Note that calling print() without any arguments invokes the window.print() function which opens the browser's print dialog. To print a blank line to console you can write print('\\n')."
+        "A função <a href=\"#/p5/print\">print()</a> escreve uma mensagem no console do browser. Essa função é útil para que possamos observar os dados produzidos enquanto o programa está em execução — por exemplo, para verificar o valor de uma variável em um ponto específico do código. A função cria uma nova linha de texto a cada vez que é chamada. Textos (strings) devem estar entre aspas (\"\"), e podem ser unidos a outros elementos através do operador de adição (+). Por exemplo, podemos escrever <code>print(\"O valor de x é \" + x + \", e de y é \" + y)</code>.",
+        "Também é possível utilizar <a href=\"https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Template_literals\" target=\"_blank\">template strings</a>, colocando o texto entre acentos graves (``) e colocando as variáveis dentro de chaves, após um cifrão (${}). O exemplo anterior ficaria: <code>print(`O valor de x é ${x}, e de y é ${y}`)</code>",
+        "Note que chamar a função print() sem nenhum argumento invoca a função window.print(), que abre a janela de impressão do browser. Para escrever uma linha em branco no console, você pode escrever print(\"\\n\")."
       ],
       "params": {
-        "contents": "Any: any combination of Number, String, Object, Boolean,  Array to print"
+        "contents": "Qualquer: qualquer combinação de números, Strings, objetos, booleanos ou lista para escrever no console"
       }
     },
     "frameCount": {
       "description": [
-        "The system variable <a href=\"#/p5/frameCount\">frameCount</a> contains the number of frames that have been displayed since the program started. Inside <a href=\"#/p5/setup\">setup()</a> the value is 0, after the first iteration of draw it is 1, etc."
+        "A variável do sistema***** <a href=\"#/p5/frameCount\">frameCount</a> contém o número de quadros (frames) que foram mostrados desde que o programa iniciou. Dentro de <a href=\"#/p5/setup\">setup()</a> o valor é 0, depois da primeira iteração de <a href=\"#/p5/draw\">draw()</a> é 1, etc."
       ]
     },
     "deltaTime": {
       "description": [
-        "The system variable <a href=\"#/p5/deltaTime\">deltaTime</a> contains the time difference between the beginning of the previous frame and the beginning of the current frame in milliseconds. ",
-        "This variable is useful for creating time sensitive animation or physics calculation that should stay constant regardless of frame rate."
+        "A variável do sistema***** <a href=\"#/p5/deltaTime\">deltaTime</a> contém a diferença de tempo entre o início do quadro (frame) anterior e o início do quadro atual em milissegundos.",
+        "Essa variável é útil para criar animações que dependem do tempo, ou cálculos de física que devam permanecem constantes mesmo que haja variação na taxa de quadros."
       ]
     },
     "focused": {
       "description": [
-        "Confirms if the window a p5.js program is in is \"focused,\" meaning that the sketch will accept mouse or keyboard input. This variable is \"true\" if the window is focused and \"false\" if not."
+        "Confirma que a janela do sketch está em foco, ou seja, que ela irá aceitar interação de mouse ou teclado. Essa variável retorna <code>true</code> (verdadeiro) caso a janela esteja em foco, e <code>false</code> (falso) caso não esteja."
       ]
     },
     "cursor": {
       "description": [
-        "Sets the cursor to a predefined symbol or an image, or makes it visible if already hidden. If you are trying to set an image as the cursor, the recommended size is 16x16 or 32x32 pixels. The values for parameters x and y must be less than the dimensions of the image."
+        "Configura o cursor como uma imagem ou símbolo específico, ou o torna visível caso não esteja. Se você estiver buscando utilizar uma imagem como cursor, o tamanho recomendado é 16x16 ou 32x32 pixels. Os valores para os parâmetros x e y devem ser menores do que o tamanho da imagem."
       ],
       "params": {
-        "type": "String|Constant: Built-In: either ARROW, CROSS, HAND, MOVE, TEXT and WAIT  Native CSS properties: 'grab', 'progress', 'cell' etc.  External: path for cursor's images  (Allowed File extensions: .cur, .gif, .jpg, .jpeg, .png)  For more information on Native CSS cursors and url visit:  <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/cursor\">https://developer.mozilla.org/en-US/docs/Web/CSS/cursor</a>",
-        "x": "Number: (Optional) the horizontal active spot of the cursor (must be less than 32)",
-        "y": "Number: (Optional) the vertical active spot of the cursor (must be less than 32)"
+        "type": "String|Constante: embutidas: ARROW, CROSS, HAND, MOVE, TEXT ou WAIT; propriedades nativas do CSS: 'grab', 'progress', 'cell', etc.; externas: endereço da imagem do cursor (extensões permitidas: .cur, .gif, .jpg, .jpeg, .png). Para mais informações em cursores nativos do CSS e URLs visite <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/cursor\">https://developer.mozilla.org/en-US/docs/Web/CSS/cursor</a>.",
+        "x": "Número (opcional): o ponto ativo do cursor — o ponto em que ele clica — em relação ao eixo horizontal (precisa ser menor do que 32, e menor do que a imagem)",
+        "y": "Número (opcional): o ponto ativo do cursor — o ponto em que ele clica — em relação ao eixo vertical (precisa ser menor do que 32, e menor do que a imagem)"
       }
     },
     "frameRate": {
