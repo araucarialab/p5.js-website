@@ -863,22 +863,23 @@
     "FALLBACK": {},
     "print": {
       "description": [
-        "A função <a href=\"#/p5/print\">print()</a> escreve uma mensagem no console do browser. Essa função é útil para que possamos observar os dados produzidos enquanto o programa está em execução — por exemplo, para verificar o valor de uma variável em um ponto específico do código. A função cria uma nova linha de texto a cada vez que é chamada. Textos (strings) devem estar entre aspas (\"\"), e podem ser unidos a outros elementos através do operador de adição (+). Por exemplo, podemos escrever <code>print(\"O valor de x é \" + x + \", e de y é \" + y)</code>.",
-        "Também é possível utilizar <a href=\"https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Template_literals\" target=\"_blank\">template strings</a>, colocando o texto entre acentos graves (``) e colocando as variáveis dentro de chaves, após um cifrão (${}). O exemplo anterior ficaria: <code>print(`O valor de x é ${x}, e de y é ${y}`)</code>",
+        "A função <a href=\"#/p5/print\">print()</a> escreve uma mensagem no console do browser. Essa função é útil para que possamos observar os dados produzidos enquanto o programa está em execução — por exemplo, para verificar o valor de uma variável em um ponto específico do código. A função cria uma nova linha de texto a cada vez que é chamada. O argumento da função podem ser quaisquer valores válidos da linguagem, como cadeias de caracteres (strings / texto), números, variáveis, booleanos, objetos, arrays, expressões, etc.",
+        "Para imprimir valores de tipos diferentes, podemos separá-los por vírgulas (,). Para juntar uma ou mais strings à variável que queremos verificar, como no exemplo acima, é possível utilizar o operador de adição (+) — que neste caso transforma o número em String. Por exemplo, podemos escrever <code>print(\"O valor de x é \" + x + \", e de y é \" + y)</code>.",
+        "Também é possível utilizar <a href=\"https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Template_literals\" target=\"_blank\">template strings</a>, que é uma forma de escrever strings que permite embutir outros valores. Para tal, utilizamos acentos graves (``). Os caracteres são colocados entre os acentos, e quaisquer variáveis, expressões, ou outros valores que não strings são colocados após um cifrão, entre chaves (${}). O exemplo anterior fica: <code>print(`O valor de x é ${x}, e de y é ${y}`)</code>",
         "Note que chamar a função print() sem nenhum argumento invoca a função window.print(), que abre a janela de impressão do browser. Para escrever uma linha em branco no console, você pode escrever print(\"\\n\")."
       ],
       "params": {
-        "contents": "Qualquer: qualquer combinação de números, Strings, objetos, booleanos ou lista para escrever no console"
+        "contents": "Qualquer: qualquer sequência de números, Strings, objetos, booleanos ou array para escrever no console"
       }
     },
     "frameCount": {
       "description": [
-        "A variável do sistema***** <a href=\"#/p5/frameCount\">frameCount</a> contém o número de quadros (frames) que foram mostrados desde que o programa iniciou. Dentro de <a href=\"#/p5/setup\">setup()</a> o valor é 0, depois da primeira iteração de <a href=\"#/p5/draw\">draw()</a> é 1, etc."
+        "A variável global <a href=\"#/p5/frameCount\">frameCount</a>, embutida na biblioteca p5.js, contém o número de quadros (frames) que foram mostrados desde que o programa iniciou. Dentro de <a href=\"#/p5/setup\">setup()</a> o valor é 0, depois da primeira iteração de <a href=\"#/p5/draw\">draw()</a> é 1, etc."
       ]
     },
     "deltaTime": {
       "description": [
-        "A variável do sistema***** <a href=\"#/p5/deltaTime\">deltaTime</a> contém a diferença de tempo entre o início do quadro (frame) anterior e o início do quadro atual em milissegundos.",
+        "A variável global <a href=\"#/p5/deltaTime\">deltaTime</a>, embutida na biblioteca p5.js, contém a diferença de tempo entre o início do quadro (frame) anterior e o início do quadro atual em milissegundos.",
         "Essa variável é útil para criar animações que dependem do tempo, ou cálculos de física que devam permanecem constantes mesmo que haja variação na taxa de quadros."
       ]
     },
