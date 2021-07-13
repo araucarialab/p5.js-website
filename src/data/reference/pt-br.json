@@ -900,35 +900,34 @@
     },
     "frameRate": {
       "description": [
-        "Specifies the number of frames to be displayed every second. For example, the function call frameRate(30) will attempt to refresh 30 times a second. If the processor is not fast enough to maintain the specified rate, the frame rate will not be achieved. Setting the frame rate within <a href=\"#/p5/setup\">setup()</a> is recommended. The default frame rate is based on the frame rate of the display (here also called \"refresh rate\"), which is set to 60 frames per second on most computers. A frame rate of 24 frames per second (usual for movies) or above will be enough for smooth animations. This is the same as setFrameRate(val). ",
-        "Calling <a href=\"#/p5/frameRate\">frameRate()</a> with no arguments returns the current framerate. The draw function must run at least once before it will return a value. This is the same as <a href=\"#/p5/getFrameRate\">getFrameRate()</a>. ",
-        "Calling <a href=\"#/p5/frameRate\">frameRate()</a> with arguments that are not of the type numbers or are non positive also returns current framerate."
+        "Especifica a taxa de quadros, ou seja, o número de quadros (frames) a serem mostrados a cada segundo. Por exemplo, chamar a função <code>frameRate(30)</code> fará com que a canvas tente atualizar-se 30 vezes por segundo. Caso o processador não seja rápido o suficiente para manter a frequência especificada, a taxa de quadros não será atingida. É recomendado configurar a taxa de quadro dentro de <a href=\"#/p5/setup\">setup()</a>. A taxa de quadro padrão é baseada na taxa da tela (também conhecida como taxa de atualização), que na maioria dos computadores corresponde a 60 quadros por segundo (fps). Uma taxa de quadros igual ou superior a 24 quadros por segundo (valor típico de filmes) é suficiente para animações fluidas. Isto é o mesmo que <code>setFrameRate(valor)</code>",
+        "Chamar <a href=\"#/p5/frameRate\">frameRate()</a> sem nenhum argumento, ou com argumentos que não sejam números positivos, retorna a taxa de quadros atual. A função draw() precisa rodar ao menos uma vez antes de retornar um valor. Isto é o mesmo que <a href=\"#/p5/getFrameRate\">getFrameRate()</a>."
       ],
       "params": {
-        "fps": "Number: number of frames to be displayed every second"
+        "fps": "Número: número de quadros a serem mostrados em um segundo"
       }
     },
     "noCursor": {
-      "description": ["Hides the cursor from view."]
+      "description": ["Esconde o cursor."]
     },
     "displayWidth": {
       "description": [
-        "System variable that stores the width of the screen display according to The default <a href=\"#/p5/pixelDensity\">pixelDensity</a>. This is used to run a full-screen program on any display size. To return actual screen size, multiply this by pixelDensity."
+        "Variável global embutida na biblioteca p5.js que armazena a largura da tela de acordo com a densidade de pixels (<a href=\"#/p5/pixelDensity\">pixelDensity</a>) padrão. Isto é utilizado para executar o programa em tela cheia independente do tamanho da tela. Para obter a largura real da tela, multiplique este número pela <a href=\"#/p5/pixelDensity\">pixelDensity</a>."
       ]
     },
     "displayHeight": {
       "description": [
-        "System variable that stores the height of the screen display according to The default <a href=\"#/p5/pixelDensity\">pixelDensity</a>. This is used to run a full-screen program on any display size. To return actual screen size, multiply this by pixelDensity."
+        "Variável global embutida na biblioteca p5.js que armazena a altura da tela de acordo com a densidade de pixels (<a href=\"#/p5/pixelDensity\">pixelDensity</a>) padrão. Isto é utilizado para executar o programa em tela cheia independente do tamanho da tela. Para obter a altura real da tela, multiplique este número pela <a href=\"#/p5/pixelDensity\">pixelDensity</a>."
       ]
     },
     "windowWidth": {
       "description": [
-        "System variable that stores the width of the inner window, it maps to window.innerWidth."
+        "Variável global embutida na biblioteca p5.js que armazena a largura interna da janela. É o mesmo que a propriedade window.innerWidth."
       ]
     },
     "windowHeight": {
       "description": [
-        "System variable that stores the height of the inner window, it maps to window.innerHeight."
+        "Variável global embutida na biblioteca p5.js que armazena a altura interna da janela. É o mesmo que a propriedade window.innerHeight."
       ]
     },
     "windowResized": {
