@@ -1,3 +1,4 @@
+{
   "h1": "Referência",
   "reference-search": "Buscar referência",
   "reference-description1": "Não encontrou o que você estava buscando? Você pode tentar em",
@@ -98,7 +99,7 @@
     "textOutput": {
       "description": [
         "<code class=\"language-javascript\">textOutput()</code> cria uma descrição em inglês das formas presentes na canvas de forma acessível a leitores de tela. A descrição geral da canvas inclui tamanho, cor, e o número de elementos na tela. Exemplo: 'Your output is a, 400 by 400 pixels, lavender blue canvas containing the following 4 shapes:\" (em português: \"Seu resultado é uma canvas lavanda-azulado, de 400 por 400 pixels, contendo as seguintes formas:\"), seguida de uma lista descrevendo a cor, posição e área de cada forma — exemplo: \"orange ellipse at top left covering 1% of the canvas\" (em português: uma elipse alaranjada no canto superior esquerdo cobrindo 1% da canvas). Cada elemento pode ser selecionado para acessar mais detalhes. Uma tabela de elementos também é fornecida. Nesta tabela são descritas a forma, cor, localização, coordenadas e área — exemplo: \"orange ellipse location=top left area=2\" (em português: \"laranja | elipse | localização = superior esquerda | área = 2\").",
-        "<code class=\"language-javascript\">textOutput()</code> e <code class=\"language-javascript\">texOutput(FALLBACK)</code> disponibilizam a descrição em <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\">um sub DOM dentro do elemento canvas</a>, sendo acessível através do uso de leitores de tela. <code class=\"language-javascript\">textOutput(LABEL)</code> cria um elemento <code class=\"language-javascript\">\<div\></code> ao lado da canvas para conter o texto. Isto pode ser interessante para que pessoas que não utilizam leitores de tela possam visualizar a descrição enquanto programam. Porém, é importante notar que usar o parâmetro LABEL no código final irá criar redundância para leitores de tela. Recomendamos utilizar LABEL somente como parte do desenvolvimento do código, e removê-lo antes de publicar e compartilhar seu código com pessoas que utilizam leitores de tela."
+        "<code class=\"language-javascript\">textOutput()</code> e <code class=\"language-javascript\">texOutput(FALLBACK)</code> disponibilizam a descrição em <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\">um sub DOM dentro do elemento canvas</a>, sendo acessível através do uso de leitores de tela. <code class=\"language-javascript\">textOutput(LABEL)</code> cria um elemento <code class=\"language-javascript\">div</code> ao lado da canvas para conter o texto. Isto pode ser interessante para que pessoas que não utilizam leitores de tela possam visualizar a descrição enquanto programam. Porém, é importante notar que usar o parâmetro LABEL no código final irá criar redundância para leitores de tela. Recomendamos utilizar LABEL somente como parte do desenvolvimento do código, e removê-lo antes de publicar e compartilhar seu código com pessoas que utilizam leitores de tela."
       ],
       "params": {
         "display": "Constante (opcional): FALLBACK ou LABEL "
@@ -107,7 +108,7 @@
     "gridOutput": {
       "description": [
         "<code class=\"language-javascript\">gridOutput()</code> mostra o conteúdo da canvas na forma de uma tabela HTML (grade), baseando-se na localização de cada forma. Uma breve descrição da canvas em inglês é disponibilizada antes das informações da tabela. Esta descrição inclui: cor do fundo, tamanho da canvas, número de objetos, e tipos de objetos — exemplo: \"lavender blue canvas is 200 by 200 and contains 4 objects - 3 ellipses 1 rectangle\" (em português: \"canvas lavanda-azulada mede 200 por 200 pixels e contém 4 objetos — 3 elipses 1 retângulo\"). A tabela descreve o conteúdo espacialmente, cada elemento é posicionado em uma célula da tabela a depender de sua posição. Cada célula apresenta a cor e o tipo de forma do elemento correspondente — exemplo: \"orange ellipse\" (em português: \"elipse laranja\"). As descrições podem ser selecionadas individualmente para mais detalhes. Também disponibiliza uma lista descritiva contendo forma, cor, localização e área de cada elemento — examplo: \"orange ellipse location=top left area=1%\" (em português: \"laranja | elipse | localização = topo esquerdo | área = 1%).",
-        "<code class=\"language-javascript\">gridOutput()</code> e <code class=\"language-javascript\">gridOutput(FALLBACK)</code> disponibilizam a descrição em <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\">um sub DOM dentro do elemento canvas</a>, sendo acessível através do uso de leitores de tela. <code class=\"language-javascript\">gridOutput(LABEL)</code> cria um elemento <code class=\"language-javascript\">\<div\></code> ao lado da canvas para conter o texto. Isto pode ser interessante para que pessoas que não utilizam leitores de tela possam visualizar a descrição enquanto programam. Porém, é importante notar que usar o parâmetro LABEL no código final irá criar redundância para leitores de tela. Recomendamos utilizar LABEL somente como parte do desenvolvimento do código, e removê-lo antes de publicar e compartilhar seu código com pessoas que utilizam leitores de tela."
+        "<code class=\"language-javascript\">gridOutput()</code> e <code class=\"language-javascript\">gridOutput(FALLBACK)</code> disponibilizam a descrição em <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\">um sub DOM dentro do elemento canvas</a>, sendo acessível através do uso de leitores de tela. <code class=\"language-javascript\">gridOutput(LABEL)</code> cria um elemento <code class=\"language-javascript\">div</code> ao lado da canvas para conter o texto. Isto pode ser interessante para que pessoas que não utilizam leitores de tela possam visualizar a descrição enquanto programam. Porém, é importante notar que usar o parâmetro LABEL no código final irá criar redundância para leitores de tela. Recomendamos utilizar LABEL somente como parte do desenvolvimento do código, e removê-lo antes de publicar e compartilhar seu código com pessoas que utilizam leitores de tela."
       ],
       "params": {
         "display": "Constante (opcional): FALLBACK ou LABEL"
@@ -1527,13 +1528,7 @@
     },
     "createSelect": {
       "description": [
-        "Cria um elemento de seleção <code>&lt;select&gt;&lt;/select&gt;</code> em forma de lista suspensa no DOM. Também ajuda a atribuir métodos de caixa de seleção a <a href=\"#/p5.Element\"> p5.Element </a> ao selecionar a caixa de seleção existente.
-        <ul> <li><code>.option(name, [value])</code> pode ser utilizado para configurar opções para a selecão depois de criada.</li>
-        <li><code>.value()</code> retornará a opção selecionada no momento.</li>
-        <li><code>.selected()</code> retornará o elemento da lista suspensa atual que é uma instância do <a href=\"#/p5.Element\">p5.Element</a>.</li>
-        <li><code>.selected(value)</code> pode ser usado para tornar determinado item selecionado por padrão quando a página é carregada pela primeira vez.</li>
-        <li><code>.disable()</code> marca toda lista suspensa como desativada.</li>
-        <li><code>.disable(value)</code> marca o item determinado como desativado.</li> </ul>"
+        "Cria um elemento de seleção <code>&lt;select&gt;&lt;/select&gt;</code> em forma de lista suspensa no DOM. Também ajuda a atribuir métodos de caixa de seleção a <a href=\"#/p5.Element\"> p5.Element </a> ao selecionar a caixa de seleção existente. <li><code>.option(name, [value])</code> pode ser utilizado para configurar opções para a selecão depois de criada.</li><li><code>.value()</code> retornará a opção selecionada no momento.</li><li><code>.selected()</code> retornará o elemento da lista suspensa atual que é uma instância do <a href=\"#/p5.Element\">p5.Element</a>.</li><li><code>.selected(value)</code> pode ser usado para tornar determinado item selecionado por padrão quando a página é carregada pela primeira vez.</li><li><code>.disable()</code> marca toda lista suspensa como desativada.</li><li><code>.disable(value)</code> marca o item determinado como desativado.</li> </ul>"
       ],
       "returns": "p5.Element: ",
       "params": {
@@ -1543,13 +1538,7 @@
     },
     "createRadio": {
       "description": [
-        "Cria um elemento HTML de <code>&lt;input&gt;&lt;/input&gt;</code> do tipo botão de escolha <a href= \"https:\/\/developer.mozilla.org\/pt-BR\/docs\/Web\/HTML\/Element\/input#:~:text=radio%3A%20Um%20bot%C3%A3o,de%20cada%20vez..\">(tipe = \"radio\")</a> no DOM. Também auxilia a atribuir métodos de <a href=\"#/p5.Element/\">p5.Element</a> a botões de escolha (radio) existentes.
-        <ul> <li>O método <code>.option(value, [label])</code> pode ser utilizado para criar um novo item para o elemento. Se já existir um item com o valor indicado, o método retornará este item. Opcionalmente, um label (etiqueta) pode ser fornecido como segundo argumento para o item.</li>
-        <li>O método <code>.remove(value)</code> pode ser utilizado para remover um item do elemento.</li>
-        <li>O método <code>.value()</code> retorna o valor do item selecionado no momento.</li>
-        <li>O método <code>.selected()</code> retorna o elemento de input selecionado no momento.</li>
-        <li>O método <code>.selected(value)</code> marca um item como selecionado, retorna ele mesmo.</li>
-        <li>O método <code>.disable(Boolean)</code> desativa/ativa o elemento todo.</li> </ul>"
+        "Cria um elemento HTML de <code>&lt;input&gt;&lt;/input&gt;</code> do tipo botão de escolha <a href= \"https:\/\/developer.mozilla.org\/pt-BR\/docs\/Web\/HTML\/Element\/input#:~:text=radio%3A%20Um%20bot%C3%A3o,de%20cada%20vez..\">(tipe = \"radio\")</a> no DOM. Também auxilia a atribuir métodos de <a href=\"#/p5.Element/\">p5.Element</a> a botões de escolha (radio) existentes.<ul> <li>O método <code>.option(value, [label])</code> pode ser utilizado para criar um novo item para o elemento. Se já existir um item com o valor indicado, o método retornará este item. Opcionalmente, um label (etiqueta) pode ser fornecido como segundo argumento para o item.</li><li>O método <code>.remove(value)</code> pode ser utilizado para remover um item do elemento.</li><li>O método <code>.value()</code> retorna o valor do item selecionado no momento.</li><li>O método <code>.selected()</code> retorna o elemento de input selecionado no momento.</li><li>O método <code>.selected(value)</code> marca um item como selecionado, retorna ele mesmo.</li><li>O método <code>.disable(Boolean)</code> desativa/ativa o elemento todo.</li> </ul>"
       ],
       "returns": "p5.Element: ponteiro para um <a href=\"#/p5.Element\">p5.Element</a> contendo o node (nó) criado.",
       "params": {
@@ -1588,8 +1577,7 @@
     },
     "createVideo": {
       "description": [
-        "Cria um elemento de <code>&lt;video&gt;</code> HTML5 no DOM para a reprodução simples de áudio/video. O elemento de vídeo é definido como visível por padrão, pode ser ocultado com o método .<a href=\"#/p5.Element/hide\">hide()</a>  e desenhado no canvas utilizando <a href=\"#/p5/image\">image()</a>.
-        O primeiro parâmetro pode ser uma única string com o caminho para um arquivo de vídeo ou uma array de strings com endereços de arquivos de videos em diferentes formatos de arquivo. Isso é útil para garantir que seu vídeo possa ser reproduzido em diferentes navegadores, já que cada um suporta formatos diferentes. Você pode encontrar mais informações sobre os formatos de mídias suportados <a href = \"https:\/\/developer.mozilla.org\/pt-BR/docs/Web/Media/Formats\"> aqui </a>."
+        "Cria um elemento de <code>&lt;video&gt;</code> HTML5 no DOM para a reprodução simples de áudio/video. O elemento de vídeo é definido como visível por padrão, pode ser ocultado com o método .<a href=\"#/p5.Element/hide\">hide()</a>  e desenhado no canvas utilizando <a href=\"#/p5/image\">image()</a>. O primeiro parâmetro pode ser uma única string com o caminho para um arquivo de vídeo ou uma array de strings com endereços de arquivos de videos em diferentes formatos de arquivo. Isso é útil para garantir que seu vídeo possa ser reproduzido em diferentes navegadores, já que cada um suporta formatos diferentes. Você pode encontrar mais informações sobre os formatos de mídias suportados <a href = \"https:\/\/developer.mozilla.org\/pt-BR/docs/Web/Media/Formats\"> aqui </a>."
       ],
       "returns": "p5.MediaElement: ponteiro para um <a href=\"#/p5.Element\">p5.Element</a> de vídeo.",
       "params": {
@@ -1599,9 +1587,7 @@
     },
     "createAudio": {
       "description": [
-        "Cria um elemento de <code>&lt;audio&gt;</code> HTML5 no DOM element in the DOM para a reprodução simples de áudio. Por definição, o elemento de áudio é criado como um elemento oculto (hidden).
-        O primeiro parâmetro pode ser uma única string com o caminho para um arquivo de áudio ou uma array de strings com endereços de arquivos de áudio em diferentes formatos de arquivo.
-        Isso é útil para garantir que seu vídeo possa ser reproduzido em diferentes navegadores, já que cada um suporta formatos diferentes. Você pode encontrar mais informações sobre os formatos de mídias suportados <a href = \"https:\/\/developer.mozilla.org\/pt-BR/docs/Web/Media/Formats\"> aqui </a>."
+        "Cria um elemento de <code>&lt;audio&gt;</code> HTML5 no DOM element in the DOM para a reprodução simples de áudio. Por definição, o elemento de áudio é criado como um elemento oculto (hidden). O primeiro parâmetro pode ser uma única string com o caminho para um arquivo de áudio ou uma array de strings com endereços de arquivos de áudio em diferentes formatos de arquivo. Isso é útil para garantir que seu vídeo possa ser reproduzido em diferentes navegadores, já que cada um suporta formatos diferentes. Você pode encontrar mais informações sobre os formatos de mídias suportados <a href = \"https:\/\/developer.mozilla.org\/pt-BR/docs/Web/Media/Formats\"> aqui </a>."
       ],
       "returns": "p5.MediaElement: ponteiro para um <a href=\"#/p5.Element\">p5.Element</a> de áudio.",
       "params": {
@@ -3628,6 +3614,7 @@
       "params": {
         "soundFile": "p5.SoundFile: p5.SoundFile that you wish to save",
         "fileName": "String: name of the resulting .wav file."
+        }
       }
   },
   "p5.Color": {
