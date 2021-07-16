@@ -80,13 +80,13 @@
         "<code class=\"language-javascript\">describe(texto, FALLBACK)</code> torna a descrição acessível somente para pessoas utilizando leitores de tela, em um <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\"> sub DOM dentro do elemento canvas</a>. Se um segundo parâmetro não for especificado, por padrão, a descrição somente será acessível para pessoas que utilizem leitores de tela."
       ],
       "params": {
-        "text": "String: descrição do canvas",
+        "text": "String: descrição da canvas",
         "display": "Constante (opcional): LABEL ou FALLBACK"
       }
     },
     "describeElement": {
       "description": [
-        "Esta função cria uma descrição acessível a leitores de tela para elementos - shapes ou grupos de shapes que só tem signficado juntos — no canvas. O primeiro parâmetro deve ter o nome do elemento. O segundo parâmetro deve ser uma string com a descrição do elemento. O terceiro parâmetor é opcional. Se especificado, ele determina como a descrição do elemento será mostrada.",
+        "Esta função cria uma descrição acessível a leitores de tela para elementos - formas ou grupos de formas que só tem signficado juntas — na canvas. O primeiro parâmetro deve ser o nome do elemento. O segundo parâmetro deve ser uma string com a descrição do elemento. O terceiro parâmetro é opcional. Se especificado, ele determina como a descrição do elemento será mostrada.",
         "<code class=\"language-javascript\">describeElement(nome, texto, LABEL)</code> mostra a descrição do elemento a todas as pessoas como uma <a href=\"https://en.wikipedia.org/wiki/Museum_label\" target=\"_blank\">ETIQUETA DE MUSEU *****/caption</a> em uma <code class=\"language-javascript\"><div class=\"p5Label\"></div></code> adjacente à canvas. Você pode definir o estilo como quiser no seu CSS.",
         "<code class=\"language-javascript\">describeElement(nome, texto, FALLBACK)</code> torna a descrição do elemento acessível somente a pessoas que estejam utilizando leitores de tela, em <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility\" target=\"_blank\">um sub DOM dentro do elemento canvas</a>. Se um segundo parâmetro não for definido, por padrão a descrição do elemento estará disponível apenas a pessoas que façam uso de leitores de tela."
       ],
@@ -145,7 +145,7 @@
       "description": [
         "Cria um objeto para armazenar variáveis do tipo cor. Os parâmetros são interpretados como valores RGB ou HSB dependendo do modo de cor definido (<a href=\"#/p5/colorMode\">colorMode()</a>). O modo padrão usa valores RGB de 0 a 255 e, logo, a função color(255, 204, 0) retornará um amarelo claro.",
         "Note que se apenas um valor for fornecido ao <a href=\"#/p5/color\">color()</a> ele será interpretado como um valor em escala de cinza. Adicionando um segundo valor ele será interpretado como alpha (transparência). Quando três valores forem fornecidos eles serão interpretados como RGB (vermelho, verde e azul) ou HSB (matiz, saturação e brilho). Adicionando um quarto valor ele será usado como alpha (transparência).",
-        "Também é possível passar à função um único argumento do tipo string. Assim, ele será interpretado como qualquer cor web nomeável, cores hex (#), RGB ou RGBA. Nesse caso, um valor para alpha não será possível pois a função não suporta um argumento do tipo número após uma string. Para cores com transparência, use o padrão RGBA."
+        "Também é possível passar à função um único argumento do tipo string. Assim, ele será interpretado como qualquer cor web nomeável, cores hex (#), rgb() ou rgba() (ver exemplos). Nesse caso, um valor para alpha não será possível pois a função não suporta um argumento do tipo número após uma string. Para cores com transparência, use o padrão RGBA."
       ],
       "returns": "p5.Color: a cor resultante",
       "params": {
@@ -154,7 +154,7 @@
         "v1": "Número: valor do vermelho em modo RGB ou da matiz de cor no modo HSB",
         "v2": "Número: valor do verde em modo RGB ou da saturação de cor no modo HSB",
         "v3": "Número: valor do azul em modo RGB ou do brilho de cor no modo HSB",
-        "value": "String: nome da cor web ou cor hex",
+        "value": "String: string de cor — os formatos possíveis são: rgb() ou rgba() com números inteiros (0-255) ou porcentagens, hex de 3 ou de 6 dígitos, ou nomes de cores",
         "values": "Número[]: uma array contendo os valores de vermelho, verde, azul e alpha (transparência) da cor final",
         "color": "p5.Color"
       }
@@ -192,55 +192,54 @@
     },
     "lightness": {
       "description": [
-        "Extrai o valor de brilho de uma cor em HSL ou de uma pixel array."
+        "Extrai o valor do brilho de uma cor ou array de pixels seguindo o modo de cor HSL."
       ],
-      "returns": "Number: o brilho",
+      "returns": "Número: o valor do brilho da cor especificada",
       "params": {
-        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> objeto, componentes da cor ou cor em CSS"
+        "color": "p5.Color | Número[] | String: objeto <a href=\"#/p5.Color\">p5.Color</a>, valores dos componentes da cor ou cor CSS"
       }
     },
     "red": {
       "description": [
-        "Extrai o valor de vermelho de uma cor ou de uma pixel array."
+        "Extrai o valor de vermelho de uma cor ou de uma array de pixels."
       ],
-      "returns": "Number: o valor de vermelho",
+      "returns": "Número: o valor de vermelho presente na cor especificada",
       "params": {
-        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> objeto, componentes da cor ou cor em CSS"
+        "color": "p5.Color | Número[] | String: objeto <a href=\"#/p5.Color\">p5.Color</a>, valores dos componentes da cor ou cor CSS"
       }
     },
     "saturation": {
       "description": [
-        "Extrai o valor de saturação da cor ou de uma pixel array. ",
-        "A Saturação funciona diferente em HSB e HSL. Esta função retornará a saturação em HSB quando o objeto utilizar cor em HSB (ou quando utilizar uma pixel array com as cores em HSB), mas usará a saturação em HSL como padrão (caso não seja fornecido outro)."
+        "Extrai o valor de saturação da cor ou de uma array ded pixels",
+        "A Saturação funciona de forma diferente em HSB e HSL. Esta função retornará a saturação no modo HSB quando a cor ou array de pixels utilizar este formato, mas usará a saturação em HSL como padrão (caso não seja fornecido outro)."
       ],
-      "returns": "Number: o valor de saturação",
+      "returns": "Number: o valor de saturação da cor especificada",
       "params": {
-        "color": "p5.Color|Number[]|String: <a href=\"#/p5.Color\">p5.Color</a> objeto, componentes da cor ou cor em CSS"
+        "color": "p5.Color | Número[] | String: objeto <a href=\"#/p5.Color\">p5.Color</a>, valores dos componentes da cor ou cor CSS"
       }
     },
     "background": {
       "description": [
-        "A função <a href=\"#/p5/background\">background()</a> configura a cor de fundo do canvas p5.js. A cor padrão é transparente. Esta função geralmente é usada com <a href=\"#/p5/draw\">draw()</a> para limpar a tela no início de cada frame, mas pode ser usada dentro de <a href=\"#/p5/setup\">setup()</a> para configurar o fundo no primeiro frame da animação ou se o fundo precisa ser configurado apenas uma vez. ",
-        "A cor é especificada em RGB, HSB ou HSL, dependendo do <a href=\"#/p5/colorMode\">colorMode</a> usado. (O modo padrão de cores é RGB, com cada indo de 0 a 255). O alpha (transparência) padrão também vai de 0 a 255. ",
-        "Se a string tem apenas um argumento, RGB, RGBA e Hex CSS e todas as cores por nome serão suportadas. Nesse caso, um valor para alpha não será possível porque a string não suporta dois argumento, o formato RGBA deverá ser usado. ",
-        "Um objeto <a href=\"#/p5.Color\">p5.Color</a> também pode ser utilizado para configurar a cor de fundo. ",
-        "O <a href=\"#/p5.Image\">p5.Image</a> também pode ser utilizado para configurar uma imagem de fundo."
+        "A função <a href=\"#/p5/background\">background()</a> configura a cor de fundo da canvas. A cor padrão é transparente. Esta função geralmente é usada dentro de <a href=\"#/p5/draw\">draw()</a> para limpar a tela no início de cada frame, mas pode ser usada dentro de <a href=\"#/p5/setup\">setup()</a> para configurar o fundo no primeiro frame da animação ou se o fundo precisa ser configurado apenas uma vez.",
+        "A cor é especificada em RGB, HSB ou HSL, dependendo do <a href=\"#/p5/colorMode\">colorMode()</a> usado. (O modo padrão de cores é RGB, com cada atributo indo de 0 a 255). O alpha (transparência) padrão também vai de 0 a 255.",
+        "Também é possível passar à função um único argumento do tipo string. Assim, ele será interpretado como qualquer cor web nomeável, cores hex (#), rgb() ou rgba() (ver exemplos). Nesse caso, um valor para alpha não será possível pois a função não suporta um argumento do tipo número após uma string. Para cores com transparência, use o padrão RGBA.",
+        "Um objeto <a href=\"#/p5.Color\">p5.Color</a> também pode ser utilizado para configurar a cor de fundo, ou ainda uma <a href=\"#/p5.Image\">p5.Image</a> pode ser utilizada para configurar uma imagem de fundo."
       ],
       "params": {
         "color": "p5.Color: qualquer valor criado pela função <a href=\"#/p5/color\">color()</a>",
-        "colorstring": "String: color string, os formatos possíveis são:: integer  rgb() ou rgba(), percentage rgb() ou rgba(), hex de 3 ou de 6 dígitos",
-        "a": "Number: (Optional) a opacidade do fundo em relação ao intervalo de cor que está sendo utilizado (por padrão: 0 a 255)",
-        "gray": "Number: específica um valor entre branco e preto (escala de cinza)",
-        "v1": "Number: o valor de vermelho ou de matiz (dependendo do formato de cor sendo utilizado)",
-        "v2": "Number: o valor de verde ou de saturação (dependendo do formato de cor sendo utilizado)",
-        "v3": "Number: o valor de azul ou de brilho (dependendo do formato de cor sendo utilizado)",
-        "values": "Number[]: uma array contendo vermelho, verde, azul e o alpha da cor",
-        "image": "p5.Image: imagem criada com o <a href=\"#/p5/loadImage\">loadImage()</a> ou com o <a href=\"#/p5/createImage\">createImage()</a>, para configurar o fundo (deve ser do mesmo tamanho da janela do sketch)"
+        "colorstring": "String: string de cor — os formatos possíveis são: rgb() ou rgba() com números inteiros (0-255) ou porcentagens, hex de 3 ou de 6 dígitos, ou nomes de cores",
+        "a": "Número (opcional): a opacidade (alpha) do fundo em relação ao intervalo de cor que está sendo utilizado (por padrão: 0 a 255)",
+        "gray": "Número: específica um valor entre branco e preto (escala de cinza)",
+        "v1": "Número: valor do vermelho em modo RGB ou da matiz de cor no modo HSB",
+        "v2": "Número: valor do verde em modo RGB ou da saturação de cor no modo HSB",
+        "v3": "Número: valor do azul em modo RGB ou do brilho de cor no modo HSB",
+        "values": "Número[]: uma array contendo vermelho, verde, azul e o alpha (opacidade) da cor",
+        "image": "p5.Image: imagem criada com os métodos <a href=\"#/p5/loadImage\">loadImage()</a> ou <a href=\"#/p5/createImage\">createImage()</a>, para configurar o fundo (deve ser do mesmo tamanho da janela do sketch)"
       }
     },
     "clear": {
       "description": [
-        "Limpa os pixels do buffer (memória temporária). Esta função limpa apenas o canvas, ela não limpará os objetos criados pelos métodos do tipo createX(), como o <a href=\"#/p5/createVideo\">createVideo()</a> ou o <a href=\"#/p5/createDiv\">createDiv()</a>. Diferentemente do contexto principal dos gráficos, os pixels em gráficos adicionais criados com <a href=\"#/p5/createGraphics\">createGraphics()</a> podem ser inteiramente ou parcialmente transparentes. Esta função limpa tudo para tornar os pixels 100% transparentes."
+        "Limpa os pixels do buffer (memória temporária). Esta função limpa apenas a canvas, ela não limpará os objetos criados pelos métodos do tipo createX(), como o <a href=\"#/p5/createVideo\">createVideo()</a> ou o <a href=\"#/p5/createDiv\">createDiv()</a>. Diferentemente do contexto principal dos gráficos, os pixels em gráficos adicionais criados com <a href=\"#/p5/createGraphics\">createGraphics()</a> podem ser inteiramente ou parcialmente transparentes. Esta função limpa tudo para tornar os pixels 100% transparentes."
       ]
     },
     "colorMode": {
@@ -303,8 +302,8 @@
     },
     "erase": {
       "description": [
-        "Qualquer desenho criado depois do <a href=\"#/p5/erase\">erase()</a> será subtraído (apagado) do canvas. Areas apagadas mostrarão a página web abaixo do cancas. Essa subtração pode ser cancelada com <a href=\"#/p5/noErase\">noErase()</a>. ",
-        "Desenhos feitos com <a href=\"#/p5/image\">image()</a> e <a href=\"#/p5/background\"> background()</a> entre <a href=\"#/p5/erase\">erase()</a> e <a href=\"#/p5/noErase\">noErase()</a> não apagará o canvas mas funcionará normalmente."
+        "Qualquer desenho criado depois do <a href=\"#/p5/erase\">erase()</a> será subtraído (apagado) da canvas. Areas apagadas mostrarão a página web abaixo do cancas. Essa subtração pode ser cancelada com <a href=\"#/p5/noErase\">noErase()</a>. ",
+        "Desenhos feitos com <a href=\"#/p5/image\">image()</a> e <a href=\"#/p5/background\"> background()</a> entre <a href=\"#/p5/erase\">erase()</a> e <a href=\"#/p5/noErase\">noErase()</a> não apagará a canvas mas funcionará normalmente."
       ],
       "params": {
         "strengthFill": "Number: (Optional) Um número (0-255) que define a intensidade do apagamento do preenchimento da geometria. O valor padrão quando nenhum outro valor for fornecido é de 255, resultando em intensidade total.",
@@ -381,7 +380,7 @@
     },
     "quad": {
       "description": [
-        "Desenha um quadrilátero no canvas. Similar ao retângulo mas os ângulos não são necessariamente 90 graus. O primeiro par de parâmetros (x1,y1) define o primeiro vértice, os pares subsequentes vão em sentido horário ou anti-horário. Argumentos no eixo z funcionam apenas quando o quad() está em WEBGL."
+        "Desenha um quadrilátero na canvas. Similar ao retângulo mas os ângulos não são necessariamente 90 graus. O primeiro par de parâmetros (x1,y1) define o primeiro vértice, os pares subsequentes vão em sentido horário ou anti-horário. Argumentos no eixo z funcionam apenas quando o quad() está em WEBGL."
       ],
       "params": {
         "x1": "Number: a coordenada x do primeiro ponto",
@@ -402,7 +401,7 @@
     },
     "rect": {
       "description": [
-        "Desenha um retângulo no canvas. O retângulo é uma geometria de quatro lados com todos os ângulos iguais a 90 graus. Por padrão, os dois primeiros parâmetros configuram a localização do canto superior esquerdo, o terceiro define a largura e o quarto define a altura. A maneira em que esses parâmetros são interpretados pode ser modificada pela função <a href=\"#/p5/rectMode\">rectMode()</a>. ",
+        "Desenha um retângulo na canvas. O retângulo é uma geometria de quatro lados com todos os ângulos iguais a 90 graus. Por padrão, os dois primeiros parâmetros configuram a localização do canto superior esquerdo, o terceiro define a largura e o quarto define a altura. A maneira em que esses parâmetros são interpretados pode ser modificada pela função <a href=\"#/p5/rectMode\">rectMode()</a>. ",
         "O quinto, sexto, sétimo e oitavo parâmetros, se especificados, determinam o raio dos cantos superiores esquerdo e direito e dos inferiores esquerdo e direito, respectivamente. Um raio de canto omitido utilizará o valor anteriormente especificado na lista de parâmetros."
       ],
       "params": {
@@ -435,7 +434,7 @@
     },
     "triangle": {
       "description": [
-        "Desenha um triângulo no canvas. Um triângulo é um plano criado pela ligação de três pontos. Os primeiros dois argumentos especificam o primeiro ponto, os dois argumentos do meio especificam o segundo ponto e os dois últimos argumentos especificam o terceiro ponto."
+        "Desenha um triângulo na canvas. Um triângulo é um plano criado pela ligação de três pontos. Os primeiros dois argumentos especificam o primeiro ponto, os dois argumentos do meio especificam o segundo ponto e os dois últimos argumentos especificam o terceiro ponto."
       ],
       "params": {
         "x1": "Number: coordenada x do primeiro ponto",
@@ -531,7 +530,7 @@
     "bezierDetail": {
       "description": [
         "Define a resolução em que a curva Bezier é mostrada. O valor padrão é 20. ",
-        "Leve em consideração que essa função só é útil quando estiver renderizando em WEBGL, o canvas padrão não usa essa informação."
+        "Leve em consideração que essa função só é útil quando estiver renderizando em WEBGL, a canvas padrão não usa essa informação."
       ],
       "params": {
         "detail": "Number: resolução das curvas"
@@ -1434,7 +1433,7 @@
     },
     "removeElements": {
       "description": [
-        "Remove todos os elementos criados pelo p5, exceto o canvas ou elementos gráficos criados por <a href=\"#/p5/createCanvas\">createCanvas</a> ou <a href=\"#/p5/createGraphics\">createGraphics</a>. !! Event handlers e o elemento são removidos do DOM."
+        "Remove todos os elementos criados pelo p5, exceto a canvas ou elementos gráficos criados por <a href=\"#/p5/createCanvas\">createCanvas</a> ou <a href=\"#/p5/createGraphics\">createGraphics</a>. !! Event handlers e o elemento são removidos do DOM."
       ]
     },
     "changed": {
@@ -1586,7 +1585,7 @@
     },
     "createVideo": {
       "description": [
-        "Cria um elemento de <code>&lt;video&gt;</code> HTML5 no DOM para a reprodução simples de áudio/video. O elemento de vídeo é definido como visível por padrão, pode ser ocultado com o método .<a href=\"#/p5.Element/hide\">hide()</a>  e desenhado no canvas utilizando <a href=\"#/p5/image\">image()</a>. O primeiro parâmetro pode ser uma única string com o caminho para um arquivo de vídeo ou uma array de strings com endereços de arquivos de videos em diferentes formatos de arquivo. Isso é útil para garantir que seu vídeo possa ser reproduzido em diferentes navegadores, já que cada um suporta formatos diferentes. Você pode encontrar mais informações sobre os formatos de mídias suportados <a href = \"https:\/\/developer.mozilla.org\/pt-BR/docs/Web/Media/Formats\"> aqui </a>."
+        "Cria um elemento de <code>&lt;video&gt;</code> HTML5 no DOM para a reprodução simples de áudio/video. O elemento de vídeo é definido como visível por padrão, pode ser ocultado com o método .<a href=\"#/p5.Element/hide\">hide()</a>  e desenhado na canvas utilizando <a href=\"#/p5/image\">image()</a>. O primeiro parâmetro pode ser uma única string com o caminho para um arquivo de vídeo ou uma array de strings com endereços de arquivos de videos em diferentes formatos de arquivo. Isso é útil para garantir que seu vídeo possa ser reproduzido em diferentes navegadores, já que cada um suporta formatos diferentes. Você pode encontrar mais informações sobre os formatos de mídias suportados <a href = \"https:\/\/developer.mozilla.org\/pt-BR/docs/Web/Media/Formats\"> aqui </a>."
       ],
       "returns": "p5.MediaElement: ponteiro para um <a href=\"#/p5.Element\">p5.Element</a> de vídeo.",
       "params": {
@@ -1608,7 +1607,7 @@
     "AUDIO": {},
     "createCapture": {
       "description": [
-        "Cria um novo elemento <code>&lt;video&gt;</code> HTML5 que contém o fluxo de áudio e vídeo de uma webcam. O elemento de vídeo é definido como visível por padrão, pode ser ocultado com o método .<a href=\"#/p5.Element/hide\">hide()</a>  e desenhado no canvas utilizando <a href=\"#/p5/image\">image()</a>. A propriedade loadedmetadata pode ser utilizada para detectar quando o elemento for totalmente carregado (ver o segundo exemplo). ",
+        "Cria um novo elemento <code>&lt;video&gt;</code> HTML5 que contém o fluxo de áudio e vídeo de uma webcam. O elemento de vídeo é definido como visível por padrão, pode ser ocultado com o método .<a href=\"#/p5.Element/hide\">hide()</a>  e desenhado na canvas utilizando <a href=\"#/p5/image\">image()</a>. A propriedade loadedmetadata pode ser utilizada para detectar quando o elemento for totalmente carregado (ver o segundo exemplo). ",
         " !! More specific properties of the feed can be passing in a Constraints object. See the <a href='http://w3c.github.io/mediacapture-main/getusermedia.html#media-track-constraints'> W3C spec</a> for possible properties. Note that not all of these are supported by all browsers. ",
         "<em>Nota de segurança</em>: Devido a especificações de segurança dos navegadores é preciso solicitar ao usuário permissão para utilizar entradas de mídia como a webcam, para isso o método <a href=\"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/API\/MediaDevices\/getUserMedia\"> .getUserMedia() </a> é utilizado dentro da função <a href=\"#/p5/createCapture\">createCapture()</a>, também por razões de segurança este método só pode ser executado quando o código está rodando localmente ou sob o protocolo HTTPS."
       ],
