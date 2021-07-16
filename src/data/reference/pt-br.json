@@ -565,7 +565,8 @@
     },
     "curve": {
       "description": [
-        "Draws a curved line on the screen between two points, given as the middle four parameters. The first two parameters are a control point, as if the curve came from this point even though it's not drawn. The last two parameters similarly describe the other control point. <br /><br /> Longer curves can be created by putting a series of <a href=\"#/p5/curve\">curve()</a> functions together or using <a href=\"#/p5/curveVertex\">curveVertex()</a>. An additional function called <a href=\"#/p5/curveTightness\">curveTightness()</a> provides control for the visual quality of the curve. The <a href=\"#/p5/curve\">curve()</a> function is an implementation of Catmull-Rom splines."
+        "Draws a curved line on the screen between two points, given as the middle four parameters. The first two parameters are a control point, as if the curve came from this point even though it's not drawn. The last two parameters similarly describe the other control point.",
+        "Longer curves can be created by putting a series of <a href=\"#/p5/curve\">curve()</a> functions together or using <a href=\"#/p5/curveVertex\">curveVertex()</a>. An additional function called <a href=\"#/p5/curveTightness\">curveTightness()</a> provides control for the visual quality of the curve. The <a href=\"#/p5/curve\">curve()</a> function is an implementation of Catmull-Rom splines."
       ],
       "params": {
         "x1": "Number: coordenada x for the beginning control point",
@@ -1587,7 +1588,7 @@
     },
     "createAudio": {
       "description": [
-        "Cria um elemento de <code>&lt;audio&gt;</code> HTML5 no DOM element in the DOM para a reprodução simples de áudio. Por definição, o elemento de áudio é criado como um elemento oculto (hidden). O primeiro parâmetro pode ser uma única string com o caminho para um arquivo de áudio ou uma array de strings com endereços de arquivos de áudio em diferentes formatos de arquivo. Isso é útil para garantir que seu vídeo possa ser reproduzido em diferentes navegadores, já que cada um suporta formatos diferentes. Você pode encontrar mais informações sobre os formatos de mídias suportados <a href = \"https:\/\/developer.mozilla.org\/pt-BR/docs/Web/Media/Formats\"> aqui </a>."
+        "Cria um elemento de <code>&lt;audio&gt;</code> HTML5 no DOM element in the DOM para a reprodução simples de áudio. Por definição, o elemento de áudio é criado como um elemento oculto (hidden). O primeiro parâmetro pode ser uma única string com o caminho para um arquivo de áudio ou uma array de strings com endereços de arquivos de áudio em diferentes formatos de arquivo. Isso é útil para garantir que seu vídeo possa ser reproduzido em diferentes navegadores, já que cada um suporta formatos diferentes. Você pode encontrar mais informações sobre os formatos de mídias suportados <a href = \"https:\/\/developer.mozilla.org\/pt-BR/docs/Web/Media/Formats\">aqui</a>."
       ],
       "returns": "p5.MediaElement: ponteiro para um <a href=\"#/p5.Element\">p5.Element</a> de áudio.",
       "params": {
@@ -2499,7 +2500,10 @@
     },
     "noise": {
       "description": [
-        "Returns the Perlin noise value at specified coordinates. Perlin noise is a random sequence generator producing a more naturally ordered, harmonic succession of numbers compared to the standard <b>random()</b> function. It was invented by Ken Perlin in the 1980s and been used since in graphical applications to produce procedural textures, natural motion, shapes, terrains etc.<br /><br /> The main difference to the <b>random()</b> function is that Perlin noise is defined in an infinite n-dimensional space where each pair of coordinates corresponds to a fixed semi-random value (fixed only for the lifespan of the program; see the <a href=\"#/p5/noiseSeed\">noiseSeed()</a> function). p5.js can compute 1D, 2D and 3D noise, depending on the number of coordinates given. The resulting value will always be between 0.0 and 1.0. The noise value can be animated by moving through the noise space as demonstrated in the example above. The 2nd and 3rd dimension can also be interpreted as time.<br /><br />The actual noise is structured similar to an audio signal, in respect to the function's use of frequencies. Similar to the concept of harmonics in physics, perlin noise is computed over several octaves which are added together for the final result. <br /><br />Another way to adjust the character of the resulting sequence is the scale of the input coordinates. As the function works within an infinite space the value of the coordinates doesn't matter as such, only the distance between successive coordinates does (eg. when using <b>noise()</b> within a loop). As a general rule the smaller the difference between coordinates, the smoother the resulting noise sequence will be. Steps of 0.005-0.03 work best for most applications, but this will differ depending on use."
+        "Returns the Perlin noise value at specified coordinates. Perlin noise is a random sequence generator producing a more naturally ordered, harmonic succession of numbers compared to the standard <b>random()</b> function. It was invented by Ken Perlin in the 1980s and been used since in graphical applications to produce procedural textures, natural motion, shapes, terrains etc.",
+        "The main difference to the <b>random()</b> function is that Perlin noise is defined in an infinite n-dimensional space where each pair of coordinates corresponds to a fixed semi-random value (fixed only for the lifespan of the program; see the <a href=\"#/p5/noiseSeed\">noiseSeed()</a> function). p5.js can compute 1D, 2D and 3D noise, depending on the number of coordinates given. The resulting value will always be between 0.0 and 1.0. The noise value can be animated by moving through the noise space as demonstrated in the example above. The 2nd and 3rd dimension can also be interpreted as time.",
+        "The actual noise is structured similar to an audio signal, in respect to the function's use of frequencies. Similar to the concept of harmonics in physics, perlin noise is computed over several octaves which are added together for the final result. ",
+        "Another way to adjust the character of the resulting sequence is the scale of the input coordinates. As the function works within an infinite space the value of the coordinates doesn't matter as such, only the distance between successive coordinates does (eg. when using <b>noise()</b> within a loop). As a general rule the smaller the difference between coordinates, the smoother the resulting noise sequence will be. Steps of 0.005-0.03 work best for most applications, but this will differ depending on use."
       ],
       "returns": "Number: Perlin noise value (between 0 and 1) at specified  coordinates",
       "params": {
@@ -3228,7 +3232,7 @@
         "A maximum of 5 directionalLight can be active at one time"
       ],
       "params": {
-        "v1": "Number: red or hue value (depending on the current color mode),",
+        "v1": "Number: red or hue value (depending on the current color mode)",
         "v2": "Number: green or saturation value",
         "v3": "Number: blue or brightness value",
         "position": "p5.Vector: the direction of the light",
@@ -3244,7 +3248,7 @@
         "A maximum of 5 pointLight can be active at one time"
       ],
       "params": {
-        "v1": "Number: red or hue value (depending on the current color mode),",
+        "v1": "Number: red or hue value (depending on the current color mode)",
         "v2": "Number: green or saturation value",
         "v3": "Number: blue or brightness value",
         "x": "Number: x axis position",
@@ -3277,7 +3281,7 @@
         "A maximum of 5 spotLight can be active at one time"
       ],
       "params": {
-        "v1": "Number: red or hue value (depending on the current color mode),",
+        "v1": "Number: red or hue value (depending on the current color mode)",
         "v2": "Number: green or saturation value",
         "v3": "Number: blue or brightness value",
         "x": "Number: x axis position",
@@ -3393,7 +3397,7 @@
         "Ambient material for geometry with a given color. Ambient material defines the color the object reflects under any lighting. For example, if the ambient material of an object is pure red, but the ambient lighting only contains green, the object will not reflect any light. Here's an <a href=\"https://p5js.org/examples/3d-materials.html\">example containing all possible materials</a>."
       ],
       "params": {
-        "v1": "Number: gray value, red or hue value  (depending on the current color mode),",
+        "v1": "Number: gray value, red or hue value  (depending on the current color mode)",
         "v2": "Number: (Optional) green or saturation value",
         "v3": "Number: (Optional) blue or brightness value",
         "color": "Number[]|String|p5.Color: color, color Array, or CSS color string"
@@ -3404,7 +3408,7 @@
         "Sets the emissive color of the material used for geometry drawn to the screen. This is a misnomer in the sense that the material does not actually emit light that effects surrounding polygons. Instead, it gives the appearance that the object is glowing. An emissive material will display at full strength even if there is no light for it to reflect."
       ],
       "params": {
-        "v1": "Number: gray value, red or hue value  (depending on the current color mode),",
+        "v1": "Number: gray value, red or hue value  (depending on the current color mode)",
         "v2": "Number: (Optional) green or saturation value",
         "v3": "Number: (Optional) blue or brightness value",
         "a": "Number: (Optional) opacity",
@@ -5015,7 +5019,9 @@
     },
     "mult": {
       "description": [
-        "Este método pode multiplicar o vetor por um valor escalar, multiplicar os valores x, y e z de um vetor, ou multiplicar os componentes x, y e z de dois vetores independentes. Ao multiplicar um vetor por um valor escalar, cada variável que o compõe será multiplicada pelo valor. Ao multiplicar dois vetores, os valores dos vetores serão multiplicados individualmente um pelo outro -- por exemplo, com dois vetores A e B, teremos como resultado: [A.x * B.x, A.y * B.y, A.z * B.z].<br />A versão estática do método retorna um novo <a href=\"#/p5.Vector\">p5.Vector</a>, enquanto a versão não-estática modifica o vetor diretamente.<br />Além disso, você pode utilizar uma array como argumento. Veja os exemplos para compreender o método em seu contexto."
+        "Este método pode multiplicar o vetor por um valor escalar, multiplicar os valores x, y e z de um vetor, ou multiplicar os componentes x, y e z de dois vetores independentes. Ao multiplicar um vetor por um valor escalar, cada variável que o compõe será multiplicada pelo valor. Ao multiplicar dois vetores, os valores dos vetores serão multiplicados individualmente um pelo outro -- por exemplo, com dois vetores A e B, teremos como resultado: [A.x * B.x, A.y * B.y, A.z * B.z].",
+        "A versão estática do método retorna um novo <a href=\"#/p5.Vector\">p5.Vector</a>, enquanto a versão não-estática modifica o vetor diretamente.",
+        "Além disso, você pode utilizar uma array como argumento. Veja os exemplos para compreender o método em seu contexto."
       ],
       "params": {
         "n": "Número: o número a ser multiplicado pelo vetor.",
@@ -5031,7 +5037,9 @@
     },
     "div": {
       "description": [
-        "Este método pode dividir o vetor por um valor escalar, dividir os valores x, y e z de um vetor, ou dividir os componentes x, y e z de dois vetores independentes. Ao dividir um vetor por um valor escalar, cada variável que o compõe será dividida pelo valor. Ao dividir um vetor por outro, cada valor do vetor original será dividido pelo valor correspondente do outro -- por exemplo, com dois vetores A e B, teremos como resultado: [A.x / B.x, A.y / B.y, A.z / B.z].<br />A versão estática do método retorna um novo <a href=\"#/p5.Vector\">p5.Vector</a>, enquanto a versão não-estática modifica o vetor diretamente.<br />Além disso, você pode utilizar uma array como argumento. Veja os exemplos para compreender o método em seu contexto."
+        "Este método pode dividir o vetor por um valor escalar, dividir os valores x, y e z de um vetor, ou dividir os componentes x, y e z de dois vetores independentes. Ao dividir um vetor por um valor escalar, cada variável que o compõe será dividida pelo valor. Ao dividir um vetor por outro, cada valor do vetor original será dividido pelo valor correspondente do outro -- por exemplo, com dois vetores A e B, teremos como resultado: [A.x / B.x, A.y / B.y, A.z / B.z].",
+        "A versão estática do método retorna um novo <a href=\"#/p5.Vector\">p5.Vector</a>, enquanto a versão não-estática modifica o vetor diretamente.",
+        "Além disso, você pode utilizar uma array como argumento. Veja os exemplos para compreender o método em seu contexto."
       ],
       "params": {
         "n": "Número: o número pelo qual o vetor será dividido",
@@ -5253,7 +5261,9 @@
         "x": "Número: coordenada x",
         "y": "Número: coordenada y",
         "fontSize": "Número (opcional): tamanho da fonte a ser utilizada",
-        "options": "Objeto (opcional): um objeto que pode conter: <br/>sampleFactor - a proporção de pontos por segmento de traço, sendo que quanto maior o valor, mais pontos, e portanto mais precisão (o padrão é 1). <br/>simplifyThreshold - se este valor não for 0, pontos colineares serão removidos do polígono. O valor representa o ângulo limite para determinar se dois pontos são colineares ou não."
+        "options": "Objeto (opcional): um objeto que pode conter: ",
+        "sampleFactor - a proporção de pontos por segmento de traço, sendo que quanto maior o valor, mais pontos, e portanto mais precisão (o padrão é 1). ",
+        "simplifyThreshold - se este valor não for 0, pontos colineares serão removidos do polígono. O valor representa o ângulo limite para determinar se dois pontos são colineares ou não."
       }
     }
   },
@@ -5473,7 +5483,9 @@
   },
   "p5.Filter": {
     "description": [
-      "A p5.Filter uses a Web Audio Biquad Filter to filter the frequency response of an input source. Subclasses include: <a href=\"/reference/#/p5.LowPass\"><code>p5.LowPass</code></a>: Allows frequencies below the cutoff frequency to pass through, and attenuates frequencies above the cutoff.<br/> <a href=\"/reference/#/p5.HighPass\"><code>p5.HighPass</code></a>: The opposite of a lowpass filter. <br/> <a href=\"/reference/#/p5.BandPass\"><code>p5.BandPass</code></a>: Allows a range of frequencies to pass through and attenuates the frequencies below and above this frequency range.<br/>  ",
+      "A p5.Filter uses a Web Audio Biquad Filter to filter the frequency response of an input source. Subclasses include: <a href=\"/reference/#/p5.LowPass\"><code>p5.LowPass</code></a>: Allows frequencies below the cutoff frequency to pass through, and attenuates frequencies above the cutoff.",
+      "<a href=\"/reference/#/p5.HighPass\"><code>p5.HighPass</code></a>: The opposite of a lowpass filter.",
+      "<a href=\"/reference/#/p5.BandPass\"><code>p5.BandPass</code></a>: Allows a range of frequencies to pass through and attenuates the frequencies below and above this frequency range.",
       "The <code>.res()</code> method controls either width of the bandpass, or resonance of the low/highpass cutoff frequency. ",
       "This class extends <a href = \"/reference/#/p5.Effect\">p5.Effect</a>. Methods <a href = \"/reference/#/p5.Effect/amp\">amp()</a>, <a href = \"/reference/#/p5.Effect/chain\">chain()</a>, <a href = \"/reference/#/p5.Effect/drywet\">drywet()</a>, <a href = \"/reference/#/p5.Effect/connect\">connect()</a>, and <a href = \"/reference/#/p5.Effect/disconnect\">disconnect()</a> are available."
     ],
@@ -6533,7 +6545,7 @@
     },
     "start": {
       "description": [
-        "Start processing audio input. This enables the use of other AudioIn methods like getLevel(). Note that by default, AudioIn is not connected to p5.sound's output. So you won't hear anything unless you use the connect() method.<br/> ",
+        "Start processing audio input. This enables the use of other AudioIn methods like getLevel(). Note that by default, AudioIn is not connected to p5.sound's output. So you won't hear anything unless you use the connect() method.",
         "Certain browsers limit access to the user's microphone. For example, Chrome only allows access from localhost and over https. For this reason, you may want to include an errorCallback—a function that is called in case the browser won't provide mic access."
       ],
       "params": {
@@ -6548,7 +6560,7 @@
     },
     "connect": {
       "description": [
-        "Connect to an audio unit. If no parameter is provided, will connect to the master output (i.e. your speakers).<br/>"
+        "Connect to an audio unit. If no parameter is provided, will connect to the master output (i.e. your speakers)."
       ],
       "params": {
         "unit": "Object: (Optional) An object that accepts audio input,  such as an FFT"
@@ -6556,12 +6568,12 @@
     },
     "disconnect": {
       "description": [
-        "Disconnect the AudioIn from all audio units. For example, if connect() had been called, disconnect() will stop sending signal to your speakers.<br/>"
+        "Disconnect the AudioIn from all audio units. For example, if connect() had been called, disconnect() will stop sending signal to your speakers."
       ]
     },
     "getLevel": {
       "description": [
-        "Read the Amplitude (volume level) of an AudioIn. The AudioIn class contains its own instance of the Amplitude class to help make it easy to get a microphone's volume level. Accepts an optional smoothing value (0.0 < 1.0). <em>NOTE: AudioIn must .start() before using .getLevel().</em><br/>"
+        "Read the Amplitude (volume level) of an AudioIn. The AudioIn class contains its own instance of the Amplitude class to help make it easy to get a microphone's volume level. Accepts an optional smoothing value (0.0 < 1.0). <em>NOTE: AudioIn must .start() before using .getLevel().</em>"
       ],
       "returns": "Number: Volume level (between 0.0 and 1.0)",
       "params": {
@@ -6570,7 +6582,7 @@
     },
     "amp": {
       "description": [
-        "Set amplitude (volume) of a mic input between 0 and 1.0. <br/>"
+        "Set amplitude (volume) of a mic input between 0 and 1.0. "
       ],
       "params": {
         "vol": "Number: between 0 and 1.0",
@@ -6591,7 +6603,7 @@
     "setSource": {
       "description": [
         "Set the input source. Accepts a number representing a position in the array returned by getSources(). This is only available in browsers that support <a title=\"MediaDevices.enumerateDevices() - Web APIs | MDN\" target=\"_blank\" href= \"<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/enumerateDevices\"\">https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/enumerateDevices\"</a> <blockquote> ",
-        "navigator.mediaDevices.enumerateDevices()</a>.<br/> </blockquote>"
+        "navigator.mediaDevices.enumerateDevices()</a>.</blockquote>"
       ],
       "params": {
         "num": "Number: position of input source in the array"
@@ -6877,7 +6889,8 @@
     },
     "toggleImpulse": {
       "description": [
-        "If you have used <code>.addImpulse()</code> to add multiple impulses to a p5.Convolver, then you can use this method to toggle between the items in the <code>.impulses</code> Array. Accepts a parameter to identify which impulse you wish to use, identified either by its original filename (String) or by its position in the <code>.impulses </code> Array (Number).<br/> You can access the objects in the .impulses Array directly. Each Object has two attributes: an <code>.audioBuffer</code> (type: Web Audio <a href=\" http://webaudio.github.io/web-audio-api/#the-audiobuffer-interface\"> AudioBuffer)</a> and a <code>.name</code>, a String that corresponds with the original filename."
+        "If you have used <code>.addImpulse()</code> to add multiple impulses to a p5.Convolver, then you can use this method to toggle between the items in the <code>.impulses</code> Array. Accepts a parameter to identify which impulse you wish to use, identified either by its original filename (String) or by its position in the <code>.impulses </code> Array (Number).",
+        "You can access the objects in the .impulses Array directly. Each Object has two attributes: an <code>.audioBuffer</code> (type: Web Audio <a href=\" http://webaudio.github.io/web-audio-api/#the-audiobuffer-interface\"> AudioBuffer)</a> and a <code>.name</code>, a String that corresponds with the original filename."
       ],
       "params": {
         "id": "String|Number: Identify the impulse by its original filename  (String), or by its position in the  <code>.impulses</code> Array (Number)."
@@ -7191,11 +7204,11 @@
   "p5.PeakDetect": {
     "description": [
       "PeakDetect works in conjunction with p5.FFT to look for onsets in some or all of the frequency spectrum.  ",
-      " To use p5.PeakDetect, call <code>update</code> in the draw loop and pass in a p5.FFT object.  ",
-      " You can listen for a specific part of the frequency spectrum by setting the range between <code>freq1</code> and <code>freq2</code>.   ",
-      "<code>threshold</code> is the threshold for detecting a peak, scaled between 0 and 1. It is logarithmic, so 0.1 is half as loud as 1.0.  ",
-      " The update method is meant to be run in the draw loop, and <b>frames</b> determines how many loops must pass before another peak can be detected. For example, if the frameRate() = 60, you could detect the beat of a 120 beat-per-minute song with this equation: <code> framesPerPeak = 60 / (estimatedBPM / 60 );</code>   ",
-      " Based on example contribtued by @b2renger, and a simple beat detection explanation by <a href=\"http://www.airtightinteractive.com/2013/10/making-audio-reactive-visuals/\" target=\"_blank\">Felix Turner</a>. "
+      "To use p5.PeakDetect, call <code>update</code> in the draw loop and pass in a p5.FFT object.  ",
+      "You can listen for a specific part of the frequency spectrum by setting the range between <code>freq1</code> and <code>freq2</code>.",
+      "<code>threshold</code> is the threshold for detecting a peak, scaled between 0 and 1. It is logarithmic, so 0.1 is half as loud as 1.0.",
+      "The update method is meant to be run in the draw loop, and <b>frames</b> determines how many loops must pass before another peak can be detected. For example, if the frameRate() = 60, you could detect the beat of a 120 beat-per-minute song with this equation: <code> framesPerPeak = 60 / (estimatedBPM / 60 );</code>   ",
+      "Based on example contribtued by @b2renger, and a simple beat detection explanation by <a href=\"http://www.airtightinteractive.com/2013/10/making-audio-reactive-visuals/\" target=\"_blank\">Felix Turner</a>. "
     ],
     "params": {
       "freq1": "Number: (Optional) lowFrequency - defaults to 20Hz",
