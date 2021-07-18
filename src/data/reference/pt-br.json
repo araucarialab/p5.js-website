@@ -302,17 +302,17 @@
     },
     "erase": {
       "description": [
-        "Qualquer desenho criado depois do <a href=\"#/p5/erase\">erase()</a> será subtraído (apagado) da canvas. Areas apagadas mostrarão a página web abaixo do cancas. Essa subtração pode ser cancelada com <a href=\"#/p5/noErase\">noErase()</a>. ",
-        "Desenhos feitos com <a href=\"#/p5/image\">image()</a> e <a href=\"#/p5/background\"> background()</a> entre <a href=\"#/p5/erase\">erase()</a> e <a href=\"#/p5/noErase\">noErase()</a> não apagará a canvas mas funcionará normalmente."
+        "Qualquer desenho criado depois do <a href=\"#/p5/erase\">erase()</a> será subtraído (apagado) da canvas. Áreas apagadas mostrarão a página web abaixo da canvas. Essa subtração pode ser cancelada com <a href=\"#/p5/noErase\">noErase()</a>. ",
+        "Desenhos feitos com <a href=\"#/p5/image\">image()</a> e <a href=\"#/p5/background\"> background()</a> entre <a href=\"#/p5/erase\">erase()</a> e <a href=\"#/p5/noErase\">noErase()</a> não apagará a canvas, e funcionará normalmente."
       ],
       "params": {
-        "strengthFill": "Number: (Optional) Um número (0-255) que define a intensidade do apagamento do preenchimento da geometria. O valor padrão quando nenhum outro valor for fornecido é de 255, resultando em intensidade total.",
-        "strengthStroke": "Number: (Optional) Um número (0-255) que define a intensidade do apagamento do contorno da geometria. O valor padrão quando nenhum outro valor for fornecido é de 255, resultando em intensidade total."
+        "strengthFill": "Número (opcional): Um número (0-255) que define a opacidade do apagamento do preenchimento da forma. O valor padrão quando nenhum outro valor for fornecido é de 255, resultando em transparência total.",
+        "strengthStroke": "Número (opcional): Um número (0-255) que define a opacidade do apagamento do contorno da forma. O valor padrão quando nenhum outro valor for fornecido é de 255, resultando em transparência total."
       }
     },
     "noErase": {
       "description": [
-        "Determina o final do apagamento iniciado com <a href=\"#/p5/erase\">erase()</a>. O <a href=\"#/p5/fill\">fill()</a>, <a href=\"#/p5/stroke\">stroke()</a>, e <a href=\"#/p5/blendMode\">blendMode()</a> retornarão ao que eles eram antes de chamar o <a href=\"#/p5/erase\">erase()</a>."
+        "Determina o fim do apagamento iniciado com <a href=\"#/p5/erase\">erase()</a>. O <a href=\"#/p5/fill\">fill()</a>, <a href=\"#/p5/stroke\">stroke()</a>, e <a href=\"#/p5/blendMode\">blendMode()</a> retornarão ao que eram antes de chamar o <a href=\"#/p5/erase\">erase()</a>."
       ]
     },
     "arc": {
