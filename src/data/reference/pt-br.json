@@ -1654,62 +1654,61 @@
     },
     "pAccelerationY": {
       "description": [
-        "A variável global <code>pAccelerationX</code>, embutida na biblioteca p5.js, armazena a aceleração do dispositivo no eixo Y no frame anterior ao atual. O valor é representado como metros por segundo ao quadrado."
+        "A variável global <code>pAccelerationY</code>, embutida na biblioteca p5.js, armazena a aceleração do dispositivo no eixo Y no frame anterior ao atual. O valor é representado como metros por segundo ao quadrado."
       ]
     },
     "pAccelerationZ": {
       "description": [
-        "A variável global <code>pAccelerationX</code>, embutida na biblioteca p5.js, armazena a aceleração do dispositivo no eixo Z no frame anterior ao atual. O valor é representado como metros por segundo ao quadrado."
+        "A variável global <code>pAccelerationZ</code>, embutida na biblioteca p5.js, armazena a aceleração do dispositivo no eixo Z no frame anterior ao atual. O valor é representado como metros por segundo ao quadrado."
       ]
     },
     "rotationX": {
       "description": [
-        "The system variable rotationX always contains the rotation of the device along the x axis. If the sketch <a href=\"#/p5/angleMode\"> angleMode()</a> is set to DEGREES, the value will be -180 to 180. If it is set to RADIANS, the value will be -PI to PI. ",
-        "Note: The order the rotations are called is important, ie. if used together, it must be called in the order Z-X-Y or there might be unexpected behaviour."
+        "A variável global <code>rotationX</code>, embutida na biblioteca p5.js, armazena a rotação do dispositivo em relação ao eixo X. Se o modo de ângulo do sketch (<a href=\"#/p5/angleMode\">angleMode()</a>) estiver definido como graus (DEGREES), o valor será entre -180 e 180. Caso esteja definido como radianos (RADIANS), o valor será entre -PI e PI.",
+        "Nota: A ordem em que as rotações são chamas é importate. Se usadas em conjunto, é preciso chamá-las na ordem Z-X-Y, ou é possível que aconteçam comportamentos inesperados."
       ]
     },
     "rotationY": {
       "description": [
-        "The system variable rotationY always contains the rotation of the device along the y axis. If the sketch <a href=\"#/p5/angleMode\"> angleMode()</a> is set to DEGREES, the value will be -90 to 90. If it is set to RADIANS, the value will be -PI/2 to PI/2. ",
-        "Note: The order the rotations are called is important, ie. if used together, it must be called in the order Z-X-Y or there might be unexpected behaviour."
+        "A variável global <code>rotationY</code>, embutida na biblioteca p5.js, armazena a rotação do dispositivo em relação ao eixo Y. Se o modo de ângulo do sketch (<a href=\"#/p5/angleMode\">angleMode()</a>) estiver definido como graus (DEGREES), o valor será entre -90 e 90. Caso esteja definido como radianos (RADIANS), o valor será entre -PI/2 e PI/2.",
+        "Nota: A ordem em que as rotações são chamas é importate. Se usadas em conjunto, é preciso chamá-las na ordem Z-X-Y, ou é possível que aconteçam comportamentos inesperados."
       ]
     },
     "rotationZ": {
       "description": [
-        "The system variable rotationZ always contains the rotation of the device along the z axis. If the sketch <a href=\"#/p5/angleMode\"> angleMode()</a> is set to DEGREES, the value will be 0 to 360. If it is set to RADIANS, the value will be 0 to 2*PI. ",
-        "Unlike rotationX and rotationY, this variable is available for devices with a built-in compass only. ",
-        "Note: The order the rotations are called is important, ie. if used together, it must be called in the order Z-X-Y or there might be unexpected behaviour."
+        "A variável global <code>rotationZ</code>, embutida na biblioteca p5.js, armazena a rotação do dispositivo em relação ao eixo Z. Se o modo de ângulo do sketch (<a href=\"#/p5/angleMode\">angleMode()</a>) estiver definido como graus (DEGREES), o valor será entre 0 e 360. Caso esteja definido como radianos (RADIANS), o valor será entre 0 e 2*PI.",
+        "Nota: A ordem em que as rotações são chamas é importate. Se usadas em conjunto, é preciso chamá-las na ordem Z-X-Y, ou é possível que aconteçam comportamentos inesperados."
       ]
     },
     "pRotationX": {
       "description": [
-        "The system variable pRotationX always contains the rotation of the device along the x axis in the frame previous to the current frame. If the sketch <a href=\"#/p5/angleMode\"> angleMode()</a> is set to DEGREES, the value will be -180 to 180. If it is set to RADIANS, the value will be -PI to PI. ",
-        "pRotationX can also be used with rotationX to determine the rotate direction of the device along the X-axis."
+        "A variável global <code>pRotationX</code>, embutida na biblioteca p5.js, armazena a rotação do dispositivo em relação ao eixo X no frame anterior ao atual. Se o modo de ângulo do sketch (<a href=\"#/p5/angleMode\">angleMode()</a>) estiver definido como graus (DEGREES), o valor será entre -180 e 180. Caso esteja definido como radianos (RADIANS), o valor será entre -PI e PI.",
+        "<code>pRotationX</code> pode ser utilizada em conjunto com <a href=\"#/p5/rotationX\"><code>rotationX</code></a> para determinar a direção de rotação do dispositivo no eixo X."
       ]
     },
     "pRotationY": {
       "description": [
-        "The system variable pRotationY always contains the rotation of the device along the y axis in the frame previous to the current frame. If the sketch <a href=\"#/p5/angleMode\"> angleMode()</a> is set to DEGREES, the value will be -90 to 90. If it is set to RADIANS, the value will be -PI/2 to PI/2. ",
-        "pRotationY can also be used with rotationY to determine the rotate direction of the device along the Y-axis."
+        "A variável global <code>pRotationY</code>, embutida na biblioteca p5.js, armazena a rotação do dispositivo em relação ao eixo Y no frame anterior ao atual. Se o modo de ângulo do sketch (<a href=\"#/p5/angleMode\">angleMode()</a>) estiver definido como graus (DEGREES), o valor será entre -90 e 90. Caso esteja definido como radianos (RADIANS), o valor será entre -PI/2 e PI/2.",
+        "<code>pRotationY</code> pode ser utilizada em conjunto com <code><a href=\"#/p5/rotationY\">rotationY</a></code> para determinar a direção de rotação do dispositivo no eixo Y."
       ]
     },
     "pRotationZ": {
       "description": [
-        "The system variable pRotationZ always contains the rotation of the device along the z axis in the frame previous to the current frame. If the sketch <a href=\"#/p5/angleMode\"> angleMode()</a> is set to DEGREES, the value will be 0 to 360. If it is set to RADIANS, the value will be 0 to 2*PI. ",
-        "pRotationZ can also be used with rotationZ to determine the rotate direction of the device along the Z-axis."
+        "A variável global <code>pRotationZ</code>, embutida na biblioteca p5.js, armazena a rotação do dispositivo em relação ao eixo Z no frame anterior ao atual. Se o modo de ângulo do sketch (<a href=\"#/p5/angleMode\">angleMode()</a>) estiver definido como graus (DEGREES), o valor será entre 0 e 360. Caso esteja definido como radianos (RADIANS), o valor será entre 0 e 2*PI.",
+        "<code>pRotationZ</code> pode ser utilizada em conjunto com <code><a href=\"#/p5/rotationZ\">rotationZ</a></code> para determinar a direção de rotação do dispositivo no eixo Z."
       ]
     },
     "turnAxis": {
       "description": [
-        "When a device is rotated, the axis that triggers the <a href=\"#/p5/deviceTurned\">deviceTurned()</a> method is stored in the turnAxis variable. The turnAxis variable is only defined within the scope of deviceTurned()."
+        "Quanto o dispositivo é rotacionado, o método <a href=\"#/p5/deviceTurned\"><code>deviceTurned()</code></a> é acionado, e o eixo de rotação é armazenado na variável <code>turnAxis</code>. Essa variável só é definida dentro do escopo de <code>deviceTurned()</code>."
       ]
     },
     "setMoveThreshold": {
       "description": [
-        "The <a href=\"#/p5/setMoveThreshold\">setMoveThreshold()</a> function is used to set the movement threshold for the <a href=\"#/p5/deviceMoved\">deviceMoved()</a> function. The default threshold is set to 0.5."
+        "A função <a href=\"#/p5/setMoveThreshold\"><code>setMoveThreshold()</code></a> é utilizada para definir o limiar da função <a href=\"#/p5/deviceMoved\"><code>deviceMoved()</code></a>. O limiar padrão é 0.5."
       ],
       "params": {
-        "value": "Number: The threshold value"
+        "value": "Número: o valor do limiar"
       }
     },
     "setShakeThreshold": {
