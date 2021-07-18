@@ -1629,37 +1629,37 @@
     },
     "deviceOrientation": {
       "description": [
-        "The system variable deviceOrientation always contains the orientation of the device. The value of this variable will either be set 'landscape' or 'portrait'. If no data is available it will be set to 'undefined'. either LANDSCAPE or PORTRAIT."
+        "A variável global <code>deviceOrientation</code>, embutida na biblioteca p5.js, armazena a orientação do dispositivo em que o sketch está sendo executado. O valor da variável será LANDSCAPE (horizontal) ou PORTRAIT (vertical). Se nenhuma informação estiver disponível, o valor será <i>undefined</i> (indefinido)."
       ]
     },
     "accelerationX": {
       "description": [
-        "The system variable accelerationX always contains the acceleration of the device along the x axis. Value is represented as meters per second squared."
+        "A variável global <code>accelerationX</code>, embutida na biblioteca p5.js, armazena a aceleração do dispositivo no eixo X. O valor é representado como metros por segundo ao quadrado."
       ]
     },
     "accelerationY": {
       "description": [
-        "The system variable accelerationY always contains the acceleration of the device along the y axis. Value is represented as meters per second squared."
+        "A variável global <code>accelerationY</code>, embutida na biblioteca p5.js, armazena a aceleração do dispositivo no eixo Y. O valor é representado como metros por segundo ao quadrado."
       ]
     },
     "accelerationZ": {
       "description": [
-        "The system variable accelerationZ always contains the acceleration of the device along the z axis. Value is represented as meters per second squared."
+        "A variável global <code>accelerationZ</code>, embutida na biblioteca p5.js, armazena a aceleração do dispositivo no eixo Z. O valor é representado como metros por segundo ao quadrado."
       ]
     },
     "pAccelerationX": {
       "description": [
-        "The system variable pAccelerationX always contains the acceleration of the device along the x axis in the frame previous to the current frame. Value is represented as meters per second squared."
+        "A variável global <code>pAccelerationX</code>, embutida na biblioteca p5.js, armazena a aceleração do dispositivo no eixo X no frame anterior ao atual. O valor é representado como metros por segundo ao quadrado."
       ]
     },
     "pAccelerationY": {
       "description": [
-        "The system variable pAccelerationY always contains the acceleration of the device along the y axis in the frame previous to the current frame. Value is represented as meters per second squared."
+        "A variável global <code>pAccelerationX</code>, embutida na biblioteca p5.js, armazena a aceleração do dispositivo no eixo Y no frame anterior ao atual. O valor é representado como metros por segundo ao quadrado."
       ]
     },
     "pAccelerationZ": {
       "description": [
-        "The system variable pAccelerationZ always contains the acceleration of the device along the z axis in the frame previous to the current frame. Value is represented as meters per second squared."
+        "A variável global <code>pAccelerationX</code>, embutida na biblioteca p5.js, armazena a aceleração do dispositivo no eixo Z no frame anterior ao atual. O valor é representado como metros por segundo ao quadrado."
       ]
     },
     "rotationX": {
