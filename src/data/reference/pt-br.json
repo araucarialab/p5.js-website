@@ -1705,7 +1705,7 @@
     },
     "setMoveThreshold": {
       "description": [
-        "A função <a href=\"#/p5/setMoveThreshold\"><code>setMoveThreshold()</code></a> é utilizada para definir o limiar da função <a href=\"#/p5/deviceMoved\"><code>deviceMoved()</code></a>. O limiar padrão é 0.5."
+        "A função <a href=\"#/p5/setMoveThreshold\"><code>setMoveThreshold()</code></a> é utilizada para definir o limiar de movimento da função <a href=\"#/p5/deviceMoved\"><code>deviceMoved()</code></a>. O valor limiar padrão é 0.5."
       ],
       "params": {
         "value": "Número: o valor do limiar"
@@ -1713,26 +1713,27 @@
     },
     "setShakeThreshold": {
       "description": [
-        "The <a href=\"#/p5/setShakeThreshold\">setShakeThreshold()</a> function is used to set the movement threshold for the <a href=\"#/p5/deviceShaken\">deviceShaken()</a> function. The default threshold is set to 30."
+        "A função <a href=\"#/p5/setShakeThreshold\"><code>setShakeThreshold()</code></a> é utilizada para definir o limiar de movimento da função <a href=\"#/p5/deviceShaken\"><code>deviceShaken()</code></a>. O valor limiar padrão é 30."
       ],
       "params": {
-        "value": "Number: The threshold value"
+        "value": "Número: o valor do limiar"
       }
     },
     "deviceMoved": {
       "description": [
-        "The <a href=\"#/p5/deviceMoved\">deviceMoved()</a> function is called when the device is moved by more than the threshold value along X, Y or Z axis. The default threshold is set to 0.5. The threshold value can be changed using <a href=\"https://p5js.org/reference/#/p5/setMoveThreshold\">setMoveThreshold()</a>."
+        "A função <a href=\"#/p5/deviceMoved\"><code>deviceMoved()</code></a> é chamada quando o dispositivo for movido para além do limiar em qualquer um dos eixos (X, Y ou Z). O valor limiar padrão é 0.5, e pode ser alterado através da função <a href=\"#/p5/setMoveThreshold\"><code>setMoveThreshold()</code></a>."
       ]
     },
     "deviceTurned": {
       "description": [
-        "The <a href=\"#/p5/deviceTurned\">deviceTurned()</a> function is called when the device rotates by more than 90 degrees continuously. ",
-        "The axis that triggers the <a href=\"#/p5/deviceTurned\">deviceTurned()</a> method is stored in the turnAxis variable. The <a href=\"#/p5/deviceTurned\">deviceTurned()</a> method can be locked to trigger on any axis: X, Y or Z by comparing the turnAxis variable to 'X', 'Y' or 'Z'."
+        "A função <a href=\"#/p5/deviceTurned\"><code>deviceTurned()</code></a> é chamada quando o dispositivo for rotacionado mais de 90 graus contínuos em qualquer eixo (X, Y ou Z).",
+        "O eixo que dispara este método é armazenado na variável <a href=\"#/p5/turnAxis\"><code>turnAxis</code></a>. Assim, é possível direcionar sua execução para eixos específicos ao comparar a variável <a href=\"#/p5/turnAxis\"><code>turnAxis</code></a> com 'X', 'Y' ou 'Z'"
       ]
     },
     "deviceShaken": {
       "description": [
-        "The <a href=\"#/p5/deviceShaken\">deviceShaken()</a> function is called when the device total acceleration changes of accelerationX and accelerationY values is more than the threshold value. The default threshold is set to 30. The threshold value can be changed using <a href=\"https://p5js.org/reference/#/p5/setShakeThreshold\">setShakeThreshold()</a>."
+        "A função <a href=\"#/p5/deviceShaken\"><code>deviceShaken()</code></a> é chamada quando a aceleração total do dispositivo nos eixos X (<a href=\"#/p5/accelerationX\"><code>accelerationX</code></a>) e Y (<a href=\"#/p5/accelerationY\"><code>accelerationY</code></a>) for superior ao valor limiar.",
+        "Por padrão, este valor é 30, mas pode ser alterado através da função <a href=\"#/p5/setShakeThreshold\"><code>setShakeThreshold()</code></a>."
       ]
     },
     "keyIsPressed": {
