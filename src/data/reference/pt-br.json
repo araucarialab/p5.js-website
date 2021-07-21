@@ -1738,54 +1738,56 @@
     },
     "keyIsPressed": {
       "description": [
-        "The boolean system variable <a href=\"#/p5/keyIsPressed\">keyIsPressed</a> is true if any key is pressed and false if no keys are pressed."
+        "A variável booleana global <a href=\"#/p5/keyIsPressed\"><code>keyIsPressed</code></a> é <code>true</code> (verdadeira) quando uma tecla está pressionada, e <code>false</code> (falsa) quando não."
       ]
     },
     "key": {
       "description": [
-        "The system variable key always contains the value of the most recent key on the keyboard that was typed. To get the proper capitalization, it is best to use it within <a href=\"#/p5/keyTyped\">keyTyped()</a>. For non-ASCII keys, use the <a href=\"#/p5/keyCode\">keyCode</a> variable."
+        "A variável global <code>key</code> armazena o valor da última tecla que foi pressionada no teclado. Para garantir que o resultado transmita a informação correta em relação a minúsculas ou maiúsculas, é melhor utilizá-la dentro da função <a href=\"#/p5/keyTyped\"><code>keyTyped()</code></a>. Para teclas especiais ou caracteres fora do padrão <a href=\"https://pt.wikipedia.org/wiki/ASCII\" target=\"_blank\">ASCII</a>, utilize a variável <a href=\"#/p5/keyCode\"><code>keyCode</code></a>."
       ]
     },
     "keyCode": {
       "description": [
-        "The variable keyCode is used to detect special keys such as BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW. You can also check for custom keys by looking up the keyCode of any key on a site like this: <a href=\"http://keycode.info/\">keycode.info</a>."
+        "A variável global <code>keyCode</code> armazena o código correspondente à última tecla que foi pressionada no teclado. Diferente da variável <a href=\"#/p5/key\"><code>key</code></a>, <code>keyCode</code> permite detectar teclas especiais. Para tal, é preciso comparar a variável com o código correspondente à tecla especial desejada, ou com as constantes correspondentes como <code>BACKSPACE</code>, <code>DELETE</code>, <code>ENTER</code>, <code>RETURN</code>, <code>TAB</code>, <code>ESCAPE</code>, <code>SHIFT</code>, <code>CONTROL</code>, <code>OPTION</code>, <code>ALT</code>, <code>UP_ARROW</code> (seta superior), <code>DOWN_ARROW</code> (seta inferior), <code>LEFT_ARROW</code> (seta esquerda), <code>RIGHT_ARROW</code> (seta direita). Você também pode utilizar um site como <a href=\"http://keycode.info/\">keycode.info</a> para encontrar o código da tecla (key code) de qualquer tecla em seu teclado."
       ]
     },
     "keyPressed": {
       "description": [
-        "The <a href=\"#/p5/keyPressed\">keyPressed()</a> function is called once every time a key is pressed. The keyCode for the key that was pressed is stored in the <a href=\"#/p5/keyCode\">keyCode</a> variable. ",
-        "For non-ASCII keys, use the keyCode variable. You can check if the keyCode equals BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW. ",
-        "For ASCII keys, the key that was pressed is stored in the key variable. However, it does not distinguish between uppercase and lowercase. For this reason, it is recommended to use <a href=\"#/p5/keyTyped\">keyTyped()</a> to read the key variable, in which the case of the variable will be distinguished. ",
-        "Because of how operating systems handle key repeats, holding down a key may cause multiple calls to <a href=\"#/p5/keyTyped\">keyTyped()</a> (and <a href=\"#/p5/keyReleased\">keyReleased()</a> as well). The rate of repeat is set by the operating system and how each computer is configured. Browsers may have different default behaviors attached to various key events. To prevent any default behavior for this event, add \"return false\" to the end of the method."
+        "A função <code>keyPressed()</code> é chamada a cada vez que uma tecla é pressionada. O código da tecla e seu valor são então armazenados nas variáveis <a href=\"#/p5/keyCode\"><code>keyCode</code></a> e <a href=\"#/p5/key\"><code>key</code></a>.",
+        "Para caracteres dentro do padrão <a href=\"https://pt.wikipedia.org/wiki/ASCII\" target=\"_blank\">ASCII</a>, o valor da tecla é armazenado na variável <a href=\"#/p5/key\"><code>key</code></a>. No entanto, a distinção entre maiúsculas e minúsculas não é garantida. Caso essa distinção seja necessária, é recomendado ler a variável dentro da função <a href=\"#/p5/keyTyped\"><code>keyTyped()</code></a>.",
+        "Para caracteres fora do padrão <a href=\"https://pt.wikipedia.org/wiki/ASCII\" target=\"_blank\">ASCII</a>, o código da tecla é armazenado na variável <a href=\"#/p5/keyCode\"><code>keyCode</code></a>. Ela permite detectar teclas especiais ao ser comparada com o código correspondente à tecla especial desejada, ou com as constantes correspondentes como <code>BACKSPACE</code>, <code>DELETE</code>, <code>ENTER</code>, <code>RETURN</code>, <code>TAB</code>, <code>ESCAPE</code>, <code>SHIFT</code>, <code>CONTROL</code>, <code>OPTION</code>, <code>ALT</code>, <code>UP_ARROW</code> (seta superior), <code>DOWN_ARROW</code> (seta inferior), <code>LEFT_ARROW</code> (seta esquerda), <code>RIGHT_ARROW</code> (seta direita).",
+        "Por causa da forma com que os sistemas operacionais tratam repetições nas teclas, pressionar continuamente uma tecla pode causar chamadas múltiplas aos métodos <code>keyPressed()</code>, <a href=\"#/p5/keyTyped\">keyTyped()</a> e <a href=\"#/p5/keyReleased\">keyReleased()</a>. A frequência de repetição é definida pelo sistema operacional, e pela configuração de cada dispositivo. Navegadores podem ter comportamentos diferentes relacionados a cada evento de tecla. Para previnir qualquer comportamento padrão, adicione <code>return false</code> ao fim do método."
       ],
       "params": {
-        "event": "Object: (Optional) optional KeyboardEvent callback argument."
+        "event": "Objeto (opcional): argumento de callback do tipo <a href=\"https://developer.mozilla.org/pt-BR/docs/Web/API/KeyboardEvent\">KeyboardEvent</a> (evento de teclado)"
       }
     },
     "keyReleased": {
       "description": [
-        "The <a href=\"#/p5/keyReleased\">keyReleased()</a> function is called once every time a key is released. See <a href=\"#/p5/key\">key</a> and <a href=\"#/p5/keyCode\">keyCode</a> for more information. Browsers may have different default behaviors attached to various key events. To prevent any default behavior for this event, add \"return false\" to the end of the method."
+        "A função <code>keyReleased()</code> é chamada a cada vez que uma tecla é liberada após ser pressionada. Veja <a href=\"#/p5/key\"><code>key</code></a> e <a href=\"#/p5/keyCode\"><code>keyCode</code></a> para mais detalhes.",
+        "Navegadores podem ter comportamentos diferentes relacionados a cada evento de tecla. Para previnir qualquer comportamento padrão, adicione <code>return false</code> ao fim do método."
       ],
       "params": {
-        "event": "Object: (Optional) optional KeyboardEvent callback argument."
+        "event": "Objeto (opcional): argumento de callback do tipo <a href=\"https://developer.mozilla.org/pt-BR/docs/Web/API/KeyboardEvent\">KeyboardEvent</a> (evento de teclado)"
       }
     },
     "keyTyped": {
       "description": [
-        "The <a href=\"#/p5/keyTyped\">keyTyped()</a> function is called once every time a key is pressed, but action keys such as Backspace, Delete, Ctrl, Shift, and Alt are ignored. If you are trying to detect a keyCode for one of these keys, use the <a href=\"#/p5/keyPressed\">keyPressed()</a> function instead. The most recent key typed will be stored in the key variable. ",
-        "Because of how operating systems handle key repeats, holding down a key will cause multiple calls to <a href=\"#/p5/keyTyped\">keyTyped()</a> (and <a href=\"#/p5/keyReleased\">keyReleased()</a> as well). The rate of repeat is set by the operating system and how each computer is configured. Browsers may have different default behaviors attached to various key events. To prevent any default behavior for this event, add \"return false\" to the end of the method."
+        "A função <code>keyTyped()</code> é chamada a cada vez que uma tecla é pressionada, mas teclas de ação como Backspace, Delete, Ctrl, Shift, e Alt são ignoradas. A última tecla pressionada é armazenada na variável <a href=\"#/p5/key\"><code>key</code></a>. Caso esteja buscando o código da tecla, utilize a função <a href=\"#/p5/keyPressed\"><code>keyPressed()</code></a>.",
+        "Por causa da forma com que os sistemas operacionais tratam repetições nas teclas, pressionar continuamente uma tecla pode causar chamadas múltiplas aos métodos <code>keyTyped()</code>, <a href=\"#/p5/keyPressed\"><code>keyPressed()</code></a> e <a href=\"#/p5/keyReleased\"><code>keyReleased()</code></a>. A frequência de repetição é definida pelo sistema operacional, e pela configuração de cada dispositivo. Navegadores podem ter comportamentos diferentes relacionados a cada evento de tecla. Para previnir qualquer comportamento padrão, adicione <code>return false</code> ao fim do método."
       ],
       "params": {
-        "event": "Object: (Optional) optional KeyboardEvent callback argument."
+        "event": "Objeto (opcional): argumento de callback do tipo <a href=\"https://developer.mozilla.org/pt-BR/docs/Web/API/KeyboardEvent\">KeyboardEvent</a> (evento de teclado)"
       }
     },
     "keyIsDown": {
       "description": [
-        "The <a href=\"#/p5/keyIsDown\">keyIsDown()</a> function checks if the key is currently down, i.e. pressed. It can be used if you have an object that moves, and you want several keys to be able to affect its behaviour simultaneously, such as moving a sprite diagonally. You can put in any number representing the keyCode of the key, or use any of the variable <a href=\"#/p5/keyCode\">keyCode</a> names listed <a href=\"http://p5js.org/reference/#p5/keyCode\">here</a>."
+        "A função <code>keyIsDown()</code> verifica se alguma tecla está sendo pressionada. Ela pode ser utilizada caso você queira que diversas teclas afetem o comportamento de um objeto simultaneamente. Por exemplo, você pode querer que um objeto mova diagonalmente somente se as setas esquerda e superior estejam pressionadas ao mesmo tempo.",
+        "Você pode verificar qualquer tecla através do seu código de tecla (key code), ou utilizar uma das contantes: <code>BACKSPACE</code>, <code>DELETE</code>, <code>ENTER</code>, <code>RETURN</code>, <code>TAB</code>, <code>ESCAPE</code>, <code>SHIFT</code>, <code>CONTROL</code>, <code>OPTION</code>, <code>ALT</code>, <code>UP_ARROW</code> (seta superior), <code>DOWN_ARROW</code> (seta inferior), <code>LEFT_ARROW</code> (seta esquerda), <code>RIGHT_ARROW</code> (seta direita)."
       ],
-      "returns": "Boolean: whether key is down or not",
+      "returns": "Booleano: se a tecla está pressionada ou não",
       "params": {
-        "code": "Number: The key to check for."
+        "code": "Número: A tecla a ser verificada"
       }
     },
     "movedX": {
