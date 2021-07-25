@@ -2,49 +2,49 @@
 
 # p5js website
 
-## How To Contribute
+## Como contribuir
 
-Known bugs and intended new features are tracked using [GitHub issues](https://github.com/processing/p5.js-website/issues). If you'd like to start working on an existing issue, comment on the issue that you plan to work on it so other contributors know it's being handled and can offer help. Once you have completed your work on this issue, [submit a pull request (PR)](https://github.com/processing/p5.js/blob/main/contributor_docs/preparing_a_pull_request.md) against the p5.js main branch. In the description field of the PR, include "resolves #XXXX" tagging the issue you are fixing. If the PR addresses the issue but doesn't completely resolve it (ie the issue should remain open after your PR is merged), write "addresses #XXXX".
+Bugs já conhecidos e intenções de novas funções são monitorados usando o [GitHub issues](https://github.com/processing/p5.js-website/issues). Se você quer começar a trabalhar em um issue deixe um comentário no issue que você pretende trabalhar para que outros colaboradores saibam que esse problema está sendo resolvido e possam oferecer ajuda. Assim que você terminar de resolver esse issue, [faça um pull request (PR)](https://github.com/processing/p5.js/blob/main/contributor_docs/preparing_a_pull_request.md) (em português: pedido para incorporar) ao branch principal do p5.js. No campo de descrição do PR inclua "resolves #XXXX" (em português: "resolve o issue número #XXXX"), marcando o issue que você está consertando. Se o PR não resolve o issue por completo você pode colocar a descrição como "addresses #XXXX" (em português: "referente ao issue número #XXXX").
 
-If you discover a bug or have an idea for a new feature you'd like to add, begin by submitting an issue. Please do not simply submit a pull request containing the fix or new feature without making an issue first, we will probably not be able to accept it. Once you have gotten some feedback on the issue and a go ahead to address it, you can follow the process above to add the fix or feature.
+Se você descobrir um bug ou tem uma ideia para uma nova função que você gostaria de adicionar, comece abrindo um issue. Por favor não faça um pull request contendo a resolução do bug ou a nova função sem abrir um issue antes, nós provavelmente não vamos aceitar o PR. Assim que você tiver alguma resposta sobre o issue e uma autorização para resolvê-lo você pode seguir o processo descrito acima para resolver o bug ou adicionar a nova função.
 
-We recognize all types of contributions. This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Add yourself to the [p5.js repository readme](https://github.com/processing/p5.js/blob/main/README.md#contributors) by following the [instructions here](https://github.com/processing/p5.js/issues/2309)!
+Nós reconhecemos todos os tipos de contribuição. Esse projeto segue a especificação tipo [all-contributors](https://github.com/kentcdodds/all-contributors). Você pode adicionar a si mesmo no [p5.js repository readme](https://github.com/processing/p5.js/blob/main/README.md#contributors) seguindo [essas instruções](https://github.com/processing/p5.js/issues/2309)!
 
 
-## Setup
+## Configurações para visualização off-line do site
 
-0. Ensure Java is installed. Not installed?  Head over to https://java.oracle.com
-1. Install [node.js](https://nodejs.org/en/download/).
-2. [Clone this repository](https://help.github.com/articles/cloning-a-repository/). 
-3. Navigate to the `p5.js-website` directory in the terminal and type `npm install`.
+0. Veja se o Java está instalado. Não está? Visite https://java.oracle.com
+1. Instale o [node.js](https://nodejs.org/en/download/).
+2. [Clone este repositório](https://help.github.com/articles/cloning-a-repository/).
+3. Vá até a pasta `p5.js-website` pelo terminal e digite `npm install`.
 
-## Running
+## Visualizando o site off-line
 
-Once you've setup the site, type `npm run watch` to run the website. This should open a window in your browser with the site running at http://localhost:9000.
+Assim que você tiver configurado o site, digite `npm run watch` para rodar o site. Isso deve abrir uma nova janela no seu browser com o site rodando no endereço http://localhost:9000.
 
-## File structure
+## Estrutura de arquivos
 
-* __See note about what to include in pull requests [here](https://github.com/processing/p5.js/blob/main/contributor_docs/preparing_a_pull_request.md).__
-* `src/` – All the pieces for generating the built site. __Edits should be made here.__
-  * `assets/` – All static files (imgs, css, fonts, js, p5_featured homepage sketches)
-    * Note: if you make edits here you must restart the server to see your changes. To see changes immediately, you can edit the assets files in the dist directory, but need to copy and paste your updated work here for it to be saved.
-  * `data/` – translation files
+* __Veja a not sobre o que incluir nos pull requests [aqui](https://github.com/processing/p5.js/blob/main/contributor_docs/preparing_a_pull_request.md).__
+* `src/` – Todas as peças para gerar o site. __Alterações devem ser feitas aqui.__
+  * `assets/` – Todos os arquivos fixos (imgs, css, fonts, js, p5_featured homepage sketches)
+    * Observação: se você fizer alterações aqui você deve reiniciar o servidor para ver as mudanças. Para ver as mudanças imediatamente você pode editar os arquivos asset na pasta dist mas precisa copiar e colar suas alterações aqui para que sejam salvas.
+  * `data/` – arquivos para traduções.
   * `templates/`
-    * `layouts/` – default.hbs is main page template
+    * `layouts/` – default.hbs é o template da página principal.
     * `pages/` – Contains each of the pages of the p5 site, these get inserted in `{{> body }}` tag of default layout. Note that for some pages (ex: learn, teach, and libraries) the hbs files are built from ejs files in the `data/` folder. When this is the case, you will find a README file inside that page's folder with notes about how this works.
     * `partials/` – These are reusable pieces that can get added to any page or layout, they correspond to other `{{> filename }}` tags in the pages or default layout.
 * `dist/` – Where the rendered files are stored, this gets generated via `grunt server` but does not get added to pull requests as it is auto-built online.
 * `Gruntfile.js` – This file contains all the tasks for using assemble and YAML to generate the final, static site. It uses the taskrunner [grunt](http://gruntjs.com/).
 
-## Tools
+## Ferramentas
 
 * [Assemble](http://assemble.io/) is used to build a static site out of all the layouts and yml data.
 * [grunt-assemble-i18n](https://github.com/assemble/grunt-assemble-i18n) renders a set of pages for each language specified in the gruntfile, based on the handlebars templates and yml data. There is not a lot of documentation, but this [example](https://github.com/LaurentGoderre/i18n-demo) demonstrates the functionality well.
 * [assemble-contrib-permalinks](https://github.com/assemble/assemble-permalinks) allows us to customize the permalinks (file structure of the rendered static site).
 
-## Add yourself to contributors!
+## Adicione a si mesmo como colaborador!
 
-If you've contributed to this website (or any other part of the p5.js project), add yourself [here](https://github.com/processing/p5.js#contributors). Instructions to do this can be found at the bottom of the section.
+Se você contribuiu com esse website (ou qualquer outra parte do projeto p5.js), adicione a si mesmo [aqui](https://github.com/processing/p5.js#contributors). Instruções para fazer isso podem ser encontradas no final dessa seção.
 
 ## Etc
 * [Instructions for contributing to website translation/internationalization](https://github.com/processing/p5.js-website/blob/main/contributor_docs/i18n_contribution.md)
@@ -52,4 +52,4 @@ If you've contributed to this website (or any other part of the p5.js project), 
 
 ## Externally hosted language versions
 * [https://p5js.jp](https://p5js.jp/) - 日本語 (Japanese), translated and hosted by [Katsuya Endoh](https://enkatsu.org/)
-
+* 
