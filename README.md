@@ -31,25 +31,25 @@ Assim que você tiver configurado o site, digite `npm run watch` para rodar o si
   * `data/` – arquivos para traduções.
   * `templates/`
     * `layouts/` – default.hbs é o template da página principal.
-    * `pages/` – Contains each of the pages of the p5 site, these get inserted in `{{> body }}` tag of default layout. Note that for some pages (ex: learn, teach, and libraries) the hbs files are built from ejs files in the `data/` folder. When this is the case, you will find a README file inside that page's folder with notes about how this works.
-    * `partials/` – These are reusable pieces that can get added to any page or layout, they correspond to other `{{> filename }}` tags in the pages or default layout.
-* `dist/` – Where the rendered files are stored, this gets generated via `grunt server` but does not get added to pull requests as it is auto-built online.
-* `Gruntfile.js` – This file contains all the tasks for using assemble and YAML to generate the final, static site. It uses the taskrunner [grunt](http://gruntjs.com/).
+    * `pages/` – Contém cada uma das páginas do site do p5, estas são inseridas com a tag `{{> body }}` no layout padrão. Note que em algumas páginas (por exemplo: learn, teach e libraries) os arquivos hbs são construídos de arquivos ejs que estão na pasta `data/`. Quando esse for o caso você encontrará um arquivo README dentro da pasta com instruções de como eles funcionam.
+    * `partials/` – Estas são partes reutilizáveis que podem ser inseridas em qualquer página ou layout. Elas correspondem a outra tag `{{> filename }}` nas páginas ou no layout padrão.
+* `dist/` – É onde as páginas geradas são armazenadas. Estas são geradas via `grunt server` mas não são adicionadas ao pull request por se construírem sozinhas online.
+* `Gruntfile.js` – Este arquivo contém todas as tarefas para usar o Assemble e os para os YAML usados no site final. Ele usa o taskrunner [grunt](http://gruntjs.com/).
 
 ## Ferramentas
 
-* [Assemble](http://assemble.io/) is used to build a static site out of all the layouts and yml data.
-* [grunt-assemble-i18n](https://github.com/assemble/grunt-assemble-i18n) renders a set of pages for each language specified in the gruntfile, based on the handlebars templates and yml data. There is not a lot of documentation, but this [example](https://github.com/LaurentGoderre/i18n-demo) demonstrates the functionality well.
-* [assemble-contrib-permalinks](https://github.com/assemble/assemble-permalinks) allows us to customize the permalinks (file structure of the rendered static site).
+* [Assemble](http://assemble.io/) é usado para construir a parte fixa do site a partir dos layouts e dos arquivos yml.
+* [grunt-assemble-i18n](https://github.com/assemble/grunt-assemble-i18n) gera um conjunto de páginas para cada língua especificada no gruntfile baseadas nos templates e nos arquivos yml. A documentação é limitada mas este [examplo](https://github.com/LaurentGoderre/i18n-demo) demonstra bem a sua funcionalidade.
+* [assemble-contrib-permalinks](https://github.com/assemble/assemble-permalinks) nos permite customizar os permalinks (estrutura de arquivos do site).
 
 ## Adicione a si mesmo como colaborador!
 
 Se você contribuiu com esse website (ou qualquer outra parte do projeto p5.js), adicione a si mesmo [aqui](https://github.com/processing/p5.js#contributors). Instruções para fazer isso podem ser encontradas no final dessa seção.
 
 ## Etc
-* [Instructions for contributing to website translation/internationalization](https://github.com/processing/p5.js-website/blob/main/contributor_docs/i18n_contribution.md)
-* [Introducción a p5.js](https://github.com/processing/p5.js-getting-started-es) - The repository for the book and PDF production of [Introducción a p5.js](http://p5js.org/books/).
+* [Instruções para colaborar com a tradução/internacionalização do website](https://github.com/processing/p5.js-website/blob/main/contributor_docs/i18n_contribution.md)
+* [Introducción a p5.js](https://github.com/processing/p5.js-getting-started-es) - Repositório do livro e PDF [Introducción a p5.js](http://p5js.org/books/).
 
 ## Externally hosted language versions
-* [https://p5js.jp](https://p5js.jp/) - 日本語 (Japanese), translated and hosted by [Katsuya Endoh](https://enkatsu.org/)
-* 
+* [https://p5js.jp](https://p5js.jp/) - 日本語 (Japanese), traduzido e hospedado por [Katsuya Endoh](https://enkatsu.org/)
+*
