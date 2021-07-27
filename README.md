@@ -22,7 +22,7 @@ Para facilitar a compreensão, estamos identificando os commits nesse repositór
 📸 [Instagram](https://instagram.com/p5jsbrasil)
 
 <br>
---- <br>
+
 ## Tradução do ReadME original
 ## Como contribuir
 
