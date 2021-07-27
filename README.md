@@ -12,7 +12,7 @@ Parte do site do p5.js está sendo traduzida pelo projeto *Internacionalização
 
 Para facilitar a compreensão, estamos identificando os commits nesse repositório desta maneira:
 - tradução:<br>
-🇧🇷 área: função, função, função
+🇧🇷 área: função, função, função<br>
 🇧🇷 área: nome do exemplo
 
 - outros:<br>
