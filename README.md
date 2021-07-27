@@ -22,9 +22,8 @@ Para facilitar a compreensão, estamos identificando os commits nesse repositór
 📸 [Instagram](https://instagram.com/p5jsbrasil)
 
 <br>
----
-# Tradução do ReadME original
-
+--- <br>
+## Tradução do ReadME original
 ## Como contribuir
 
 Bugs já conhecidos e intenções de novas funções são monitorados usando o [GitHub issues](https://github.com/processing/p5.js-website/issues). Se você quer começar a trabalhar em um issue deixe um comentário no issue que você pretende trabalhar para que outros colaboradores saibam que esse problema está sendo resolvido e possam oferecer ajuda. Assim que você terminar de resolver esse issue, [faça um pull request (PR)](https://github.com/processing/p5.js/blob/main/contributor_docs/preparing_a_pull_request.md) (em português: pedido para incorporar) ao branch principal do p5.js. No campo de descrição do PR inclua "resolves #XXXX" (em português: "resolve o issue número #XXXX"), marcando o issue que você está consertando. Se o PR não resolve o issue por completo você pode colocar a descrição como "addresses #XXXX" (em português: "referente ao issue número #XXXX").
