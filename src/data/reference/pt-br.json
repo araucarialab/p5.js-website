@@ -1001,38 +1001,38 @@
     },
     "preload": {
       "description": [
-        "Called directly before <a href=\"#/p5/setup\">setup()</a>, the <a href=\"#/p5/preload\">preload()</a> function is used to handle asynchronous loading of external files in a blocking way. If a preload function is defined, <a href=\"#/p5/setup\">setup()</a> will wait until any load calls within have finished. Nothing besides load calls (<a href=\"#/p5/loadImage\">loadImage</a>, <a href=\"#/p5/loadJSON\">loadJSON</a>, <a href=\"#/p5/loadFont\">loadFont</a>, <a href=\"#/p5/loadStrings\">loadStrings</a>, etc.) should be inside the preload function. If asynchronous loading is preferred, the load methods can instead be called in <a href=\"#/p5/setup\">setup()</a> or anywhere else with the use of a callback parameter. ",
-        "By default the text \"loading...\" will be displayed. To make your own loading page, include an HTML element with id \"p5_loading\" in your page. More information <a href=\"http://bit.ly/2kQ6Nio\">here</a>."
+        "A função <a href=\"#/p5/preload\">preload()</a> é usada para lidar com o carregamento síncrono de arquivos externos de forma bloqueadora (blocking) e deve ser chamada diretamente antes de <a href=\"#/p5/setup\">setup()</a>. Quando há um bloco de <a href=\"#/p5/preload\">preload()</a> o restante do código esperará até que tudo nele seja concluído antes de ser executado. Observe que apenas chamadas de carregamento (<a href=\"#/p5/loadImage\">loadImage</a>, <a href=\"#/p5/loadJSON\">loadJSON</a>, <a href=\"#/p5/loadFont\">loadFont</a>, <a href=\"#/p5/loadStrings\">loadStrings</a> , etc.) devem estar dentro deste bloco, todas as outras inicializações devem acontecer no <a href=\"#/p5/setup\">setup()</a>. Os métodos de carregamento quando chamados fora de <a href=\"#/p5/preload\">preload()</a> ocorrem de forma assíncrona não bloqueadora (non-blocking), podendo haver nesse caso um parâmetro de <a href=\"https://github.com/processing/p5.js/wiki/p5.js-overview#callbacks\">callback</a>. Mais informações sobre chamadas assíncronas e carregamento de arquivos <a href=\"https://github.com/processing/p5.js/wiki/p5.js-overview#asynchronous-calls-and-file-loading\">aqui</a>.",
+        "Por definição o texto \"loading...\" será exibido durante o carregamento dos arquivos. Para fazer sua própria página de carregamento, inclua um elemento HTML com <code>id=\"p5_loading\"</code> em sua página. Veja mais informações sobre como configurar sua tela de carregamento <a href=\"<a href=\"https://github.com/processing/p5.js/wiki/p5.js-overview#loading-screen\">aqui</a>. "
       ]
     },
     "setup": {
       "description": [
-        "The <a href=\"#/p5/setup\">setup()</a> function is called once when the program starts. It's used to define initial environment properties such as screen size and background color and to load media such as images and fonts as the program starts. There can only be one <a href=\"#/p5/setup\">setup()</a> function for each program and it shouldn't be called again after its initial execution. ",
-        "Note: Variables declared within <a href=\"#/p5/setup\">setup()</a> are not accessible within other functions, including <a href=\"#/p5/draw\">draw()</a>."
+        "A função <a href=\"#/p5/setup\">setup()</a> é chaada quando o programa começa. É utilizada para definir propriedades do ambiente como o tamanho da canvas e cor do a cor de fundo da canvas. Também pode conter chamadas de carregamento de mídias (<a href=\"#/p5/loadImage\">loadImage</a>, <a href=\"#/p5/loadJSON\">loadJSON</a>, <a href=\"#/p5/loadFont\">loadFont</a>, <a href=\"#/p5/loadStrings\">loadStrings</a>, etc.). Só pode haver um bloco de <a href=\"#/p5/setup\">setup()</a> por programa, não podendo ser chamado novamente após a execução inicial.",
+        "Nota: váriaveis declaradas dentro de <a href=\"#/p5/setup\">setup()</a> não são acessíveis em outras funções, incluindo <a href=\"#/p5/draw\">draw()</a>."
       ]
     },
     "draw": {
       "description": [
-        "Called directly after <a href=\"#/p5/setup\">setup()</a>, the <a href=\"#/p5/draw\">draw()</a> function continuously executes the lines of code contained inside its block until the program is stopped or <a href=\"#/p5/noLoop\">noLoop()</a> is called. Note if <a href=\"#/p5/noLoop\">noLoop()</a> is called in <a href=\"#/p5/setup\">setup()</a>, <a href=\"#/p5/draw\">draw()</a> will still be executed once before stopping. <a href=\"#/p5/draw\">draw()</a> is called automatically and should never be called explicitly. ",
-        "It should always be controlled with <a href=\"#/p5/noLoop\">noLoop()</a>, <a href=\"#/p5/redraw\">redraw()</a> and <a href=\"#/p5/loop\">loop()</a>. After <a href=\"#/p5/noLoop\">noLoop()</a> stops the code in <a href=\"#/p5/draw\">draw()</a> from executing, <a href=\"#/p5/redraw\">redraw()</a> causes the code inside <a href=\"#/p5/draw\">draw()</a> to execute once, and <a href=\"#/p5/loop\">loop()</a> will cause the code inside <a href=\"#/p5/draw\">draw()</a> to resume executing continuously. ",
-        "The number of times <a href=\"#/p5/draw\">draw()</a> executes in each second may be controlled with the <a href=\"#/p5/frameRate\">frameRate()</a> function. ",
-        "There can only be one <a href=\"#/p5/draw\">draw()</a> function for each sketch, and <a href=\"#/p5/draw\">draw()</a> must exist if you want the code to run continuously, or to process events such as <a href=\"#/p5/mousePressed\">mousePressed()</a>. Sometimes, you might have an empty call to <a href=\"#/p5/draw\">draw()</a> in your program, as shown in the above example. ",
-        "It is important to note that the drawing coordinate system will be reset at the beginning of each <a href=\"#/p5/draw\">draw()</a> call. If any transformations are performed within <a href=\"#/p5/draw\">draw()</a> (ex: scale, rotate, translate), their effects will be undone at the beginning of <a href=\"#/p5/draw\">draw()</a>, so transformations will not accumulate over time. On the other hand, styling applied (ex: fill, stroke, etc) will remain in effect."
+        "A função <a href=\"#/p5/draw\">draw()</a>, geralmente chamada logo após o <a href=\"#/p5/setup\">setup()</a>, executa continuamente as linhas de código contidas dentro do bloco até que o programa seja parado. Atenção, <a href=\"#/p5/draw\">draw()</a> é chamada automaticamente e não deve ser chamada explicitamente. ",
+        "Esta função pode ser controlada por <a href=\"#/p5/noLoop\">noLoop()</a>, <a href=\"#/p5/redraw\">redraw()</a> and <a href=\"#/p5/loop\">loop()</a>. Para parar a execução dó códio dentro de <a href=\"#/p5/draw\">draw()</a> deve ser utilizada a função <a href=\"#/p5/noLoop\">noLoop()</a>. Importante observar que se a função <a href=\"#/p5/noLoop\">noLoop()</a> for chamada dentro do bloco <a href=\"#/p5/setup\">setup()</a>, a função <a href=\"#/p5/draw\">draw()</a> será executada uma vez antes de ser pausada. Com a execução pausada, a função <a href=\"#/p5/redraw\">redraw()</a> faz com que o código dentro de <a href=\"#/p5/draw\">draw()</a> seja executado uma única vez. Já a função <a href=\"#/p5/loop\">loop()</a> fará com que o código volte a ser executado continuamente.",
+        "A função <a href=\"#/p5/frameRate\">frameRate()</a> especifica a taxa de quadros por segundo, alterando o numero de vezes que a função <a href=\"#/p5/draw\">draw()</a> será executada por segundo. Por definição o valor do <a href=\"#/p5/frameRate\">frameRate()</a> é baseada na taxa da tela (também conhecida como taxa de atualização), que na maioria dos computadores corresponde a 60 quadros por segundo (fps).",
+        "Atenção, só pode haver um bloco de <a href=\"#/p5/draw\">draw()</a> por sketch. Nâo é obrigatório que exista o bloco <a href=\"#/p5/draw\">draw()</a> no sketch, no entando, se você deseja que seu código seja executado continuamente ou se você deseja acionar eventos como <a href=\"#/p5/mousePressed\">mousePressed()</a>, é recomendado usar a função <a href=\"#/p5/draw\">draw()</a>. Por vezes poderá haver um chamada vazia de <a href=\"#/p5/draw\">draw()</a> em seu sketch, como mostrado no exemplo acima. ",
+        "É importante lembrar que o sistema de coordenadas é resetado no início de cada chamada de <a href=\"#/p5/draw\">draw()</a>. Por isso, se alguma transformação for realizada dentro de <a href=\"#/p5/draw\">draw()</a> (ex: <a href=\"#/p5/scale\">scale()</a>, <a href=\"#/p5/rotate\">rotate()</a>, <a href=\"#/p5/translate\">translate()</a>), seus efeitos serão desfeitos na nova chamada e as transformações não serão acumuladas ao longo da execução do programa. Já os estilos aplicados (ex: <a href=\"#/p5/fill\">fill()</a>, <a href=\"#/p5/stroke\">stroke()</a>, etc) permanecem na nova chamada."
       ]
     },
     "remove": {
       "description": [
-        "Removes the entire p5 sketch. This will remove the canvas and any elements created by p5.js. It will also stop the draw loop and unbind any properties or methods from the window global scope. It will leave a variable p5 in case you wanted to create a new p5 sketch. If you like, you can set p5 = null to erase it. While all functions and variables and objects created by the p5 library will be removed, any other global variables created by your code will remain."
+        "Remove o sketch feito com P5.js completamente. Esta função remove todos os elementos criados com P5.js, inclusive a Canvas. Também para a execução de <a href=\"#/p5/draw\">draw()</a> e desvincula todas as propriedades e métodos vinculados ao objeto window no escopo global. A função deixa uma nova variável <code>p5</code> caso você queira criar um novo sketch com p5.js, caso contrário você pode configurar <code> p5 = null </code> para apagar a variável. Embora todas as funções, variáveis ​​e objetos criados pela biblioteca p5 sejam removidos, quaisquer outras variáveis ​​globais criadas por seu código permanecerão."
       ]
     },
     "disableFriendlyErrors": {
       "description": [
-        "Allows for the friendly error system (FES) to be turned off when creating a sketch, which can give a significant boost to performance when needed. See <a href='https://github.com/processing/p5.js/wiki/Optimizing-p5.js-Code-for-Performance#disable-the-friendly-error-system-fes'> disabling the friendly error system</a>."
+        "Desativa o Sistema de Erro Amigável (em inglês Friendly Errors Sistem ou FES) durante a criação do sketch. Quando você usa o arquivo p5.js não minimizado (no lugar de p5.min.js), há um sistema de erro amigável (FES) que irá avisá-lo, por exemplo, se você inserir argumentos inesperados em uma função. Este sistema de verificação de erros pode reduzir significativamente a velocidade do seu código (até ~ 10x em alguns casos), por isso desativar o FES pode melhorar o desempenho quando for preciso. Veja mais informaçãos sobre a desabilitação do FES <a href='https://github.com/processing/p5.js/wiki/Optimizing-p5.js-Code-for-Performance#disable-the-friendly-error-system-fes'> aqui</a>."
       ]
     },
     "let": {
       "description": [
-        "Creates and names a new variable. A variable is a container for a value. ",
+        "Creates and names a new variable. A variable is a container for a value.",
         "Variables that are declared with <a href=\"#/p5/let\">let</a> will have block-scope. This means that the variable only exists within the <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block\"> block</a> that it is created within. ",
         "From <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let\">the MDN entry</a>: Declares a block scope local variable, optionally initializing it to a value."
       ]
@@ -1446,7 +1446,7 @@
     },
     "input": {
       "description": [
-        "A função <a href=\"#/p5.Element/input\">input()</a> é chamada quando é detectado aulgum input do usuário dentro de um elemento. O evento de input normalmente é usado para detectar pressionamentos de teclas em um elemento de input ou  alterações em um elemento de controle (slider). Pode ser utilizada !! para anexar um !!event listener específico de um elemeto."
+        "A função <a href=\"#/p5.Element/input\">input()</a> é chamada quando é detectado aulgum input do usuário dentro de um elemento. O evento de input normalmente é usado para detectar pressionamentos de teclas em um elemento de input ou  alterações em um elemento slider (controle deslizante). Pode ser utilizada !! para anexar um !!event listener específico de um elemeto."
       ],
       "params": {
         "fxn": "Função | Booleano: função a ser disparada quando algum input do usuário é detectado dentro do elemento. Se  <code>false</code> for passado como parâmetro, a função disparadora anterior não será mais disparada."
@@ -1510,8 +1510,8 @@
       "params": {
         "min": "Número: valor mínimo do slider",
         "max": "Número: valor máximo do slider",
-        "value": "Número(Opcional) valor padrão do slider",
-        "step": "Número: (Opcional) tamanho do !! step (passo) para cada marcação do slider (se o step (passo) é configurado como 0, o slider vai se movimentar continuamente entre o valor mínimo e o máximo)"
+        "value": "Número (opcional): valor padrão do slider",
+        "step": "Número (opcional); valor do incremento para cada marcação do slider (se o valor do incremento for 0, o slider vai se movimentar continuamente entre o valor mínimo e o máximo)"
       }
     },
     "createButton": {
