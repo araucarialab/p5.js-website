@@ -2,6 +2,28 @@
 
 # p5js website
 
+## Introdução a versão brasileira
+
+Parte do site do p5.js está sendo traduzida pelo projeto *Internacionalização e popularização do p5.js para falantes de português*, desenvolvido por @mardefronteira, @jlbrsl, @katzesoundz e @araucarialab, durante o programa de Fellowship da Processing Foundation de 2021. Você pode colaborar com correções, sugestões e outras traduções através do [GitHub issues deste repositório](https://github.com/araucarialab/p5.js-website/issues). As diretrizes de tradução se encontram [aqui](https://github.com/araucarialab/p5.js-website/issues/1#issue-948080732).
+
+## Padronização de commits
+
+Para facilitar a compreensão, estamos identificando os commits nesse repositório desta maneira:
+- tradução:
+🇧🇷 área: função, função, função
+
+- outros:
+🚮 limpeza do código
+🐛 correção de bugs
+
+## Redes sociais do projeto
+
+🐦 [Twitter](https://twitter.com/p5jsbrasil)
+📸 [Instagram](https://instagram.com/p5jsbrasil)
+
+
+# Tradução do ReadME original
+
 ## Como contribuir
 
 Bugs já conhecidos e intenções de novas funções são monitorados usando o [GitHub issues](https://github.com/processing/p5.js-website/issues). Se você quer começar a trabalhar em um issue deixe um comentário no issue que você pretende trabalhar para que outros colaboradores saibam que esse problema está sendo resolvido e possam oferecer ajuda. Assim que você terminar de resolver esse issue, [faça um pull request (PR)](https://github.com/processing/p5.js/blob/main/contributor_docs/preparing_a_pull_request.md) (em português: pedido para incorporar) ao branch principal do p5.js. No campo de descrição do PR inclua "resolves #XXXX" (em português: "resolve o issue número #XXXX"), marcando o issue que você está consertando. Se o PR não resolve o issue por completo você pode colocar a descrição como "addresses #XXXX" (em português: "referente ao issue número #XXXX").
@@ -38,7 +60,7 @@ Assim que você tiver configurado o site, digite `npm run watch` para rodar o si
 
 ## Ferramentas
 
-* [Assemble](http://assemble.io/) é usado para construir a parte fixa do site a partir dos layouts e dos arquivos yml.
+* [Assemble](http://assemble.io/) é usado para gerar ao website a partir dos layouts e dos arquivos yml.
 * [grunt-assemble-i18n](https://github.com/assemble/grunt-assemble-i18n) gera um conjunto de páginas para cada língua especificada no gruntfile baseadas nos templates e nos arquivos yml. A documentação é limitada mas este [examplo](https://github.com/LaurentGoderre/i18n-demo) demonstra bem a sua funcionalidade.
 * [assemble-contrib-permalinks](https://github.com/assemble/assemble-permalinks) nos permite customizar os permalinks (estrutura de arquivos do site).
 
@@ -52,4 +74,3 @@ Se você contribuiu com esse website (ou qualquer outra parte do projeto p5.js),
 
 ## Externally hosted language versions
 * [https://p5js.jp](https://p5js.jp/) - 日本語 (Japanese), traduzido e hospedado por [Katsuya Endoh](https://enkatsu.org/)
-*
