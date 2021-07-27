@@ -4,13 +4,16 @@
 
 ## Introdução a versão brasileira
 
-Parte do site do p5.js está sendo traduzida pelo projeto *Internacionalização e popularização do p5.js para falantes de português*, desenvolvido por @mardefronteira, @jlbrsl, @katzesoundz e @araucarialab, durante o programa de Fellowship da Processing Foundation de 2021. Você pode colaborar com correções, sugestões e outras traduções através do [GitHub issues deste repositório](https://github.com/araucarialab/p5.js-website/issues). As diretrizes de tradução se encontram [aqui](https://github.com/araucarialab/p5.js-website/issues/1#issue-948080732).
+Parte do site do p5.js está sendo traduzida pelo projeto *Internacionalização e popularização do p5.js para falantes de português*, desenvolvido por [@mardefronteira](https://github.com/mardefronteira), [@jlbrsl](https://github.com/jlbrsl), [@katzesoundz](https://github.com/katzesoundz) e [@araucarialab](https://github.com/araucarialab), durante o programa de Fellowship da Processing Foundation de 2021. Neste projeto, nos comprometemos a traduzir a referência, portanto, caso queira contribuir, os exemplos são um bom lugar para começar. Você pode colaborar com correções, sugestões e outras traduções através do [GitHub issues deste repositório](https://github.com/araucarialab/p5.js-website/issues). As diretrizes de tradução se encontram [aqui](https://github.com/araucarialab/p5.js-website/issues/1#issue-948080732).
+
+⚠️ Antes de iniciar uma tradução, por favor [abra um issue](https://github.com/araucarialab/p5.js-website/issues) para avisar a comunidade da parte que você pretende traduzir. Dessa maneira outros podem colaborar e evitamos repetir traduções.
 
 ## Padronização de commits
 
 Para facilitar a compreensão, estamos identificando os commits nesse repositório desta maneira:
 - tradução:<br>
 🇧🇷 área: função, função, função
+🇧🇷 área: nome do exemplo
 
 - outros:<br>
 🚮 limpeza do código <br>
@@ -18,8 +21,8 @@ Para facilitar a compreensão, estamos identificando os commits nesse repositór
 
 ## Redes sociais do projeto
 
-🐦 [Twitter](https://twitter.com/p5jsbrasil)<br>
-📸 [Instagram](https://instagram.com/p5jsbrasil)
+🐦 [Twitter: @p5jsbrasil](https://twitter.com/p5jsbrasil)<br>
+📸 [Instagram: @p5jsbrasil](https://instagram.com/p5jsbrasil)
 
 <br>
 
