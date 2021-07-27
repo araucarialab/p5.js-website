@@ -9,35 +9,20 @@ Parte do site do p5.js está sendo traduzida pelo projeto *Internacionalização
 ## Padronização de commits
 
 Para facilitar a compreensão, estamos identificando os commits nesse repositório desta maneira:
-<<<<<<< HEAD
 - tradução:<br>
 🇧🇷 área: função, função, função
 
 - outros:<br>
 🚮 limpeza do código <br>
-=======
-- tradução:
-🇧🇷 área: função, função, função
-
-- outros:
-🚮 limpeza do código
->>>>>>> 64fc3f7ff7584ad63afd7c1fb041fa9935eef491
 🐛 correção de bugs
 
 ## Redes sociais do projeto
 
-<<<<<<< HEAD
 🐦 [Twitter](https://twitter.com/p5jsbrasil)<br>
 📸 [Instagram](https://instagram.com/p5jsbrasil)
 
 <br>
 ---
-=======
-🐦 [Twitter](https://twitter.com/p5jsbrasil)
-📸 [Instagram](https://instagram.com/p5jsbrasil)
-
-
->>>>>>> 64fc3f7ff7584ad63afd7c1fb041fa9935eef491
 # Tradução do ReadME original
 
 ## Como contribuir
