@@ -460,25 +460,25 @@
     },
     "noSmooth": {
       "description": [
-        "Draws all geometry with jagged (aliased) edges. Note that <a href=\"#/p5/smooth\">smooth()</a> is active by default in 2D mode, so it is necessary to call <a href=\"#/p5/noSmooth\">noSmooth()</a> to disable smoothing of geometry, images, and fonts. In 3D mode, <a href=\"#/p5/noSmooth\">noSmooth()</a> is enabled by default, so it is necessary to call <a href=\"#/p5/smooth\">smooth()</a> if you would like smooth (antialiased) edges on your geometry."
+        "Mostra toda a geometria com os contornos serrilhados. Note que <a href=\"#/p5/smooth\">smooth()</a> é ativado por padrão no modo 2D, logo, é necessário chamar <a href=\"#/p5/noSmooth\">noSmooth()</a> para desabilitar a suavização da geometria, imagens e fontes. No modo 3D, <a href=\"#/p5/noSmooth\">noSmooth()</a> está ativado por padrão, logo, é necessário chamar <a href=\"#/p5/smooth\">smooth()</a> se você quiser uma geometria suavizada (antialiased) no seu contorno."
       ]
     },
     "rectMode": {
       "description": [
-        "Modifies the location from which rectangles are drawn by changing the way in which parameters given to <a href=\"#/p5/rect\">rect()</a> are interpreted. ",
-        "The default mode is CORNER, which interprets the first two parameters as the upper-left corner of the shape, while the third and fourth parameters are its width and height. ",
-        "rectMode(CORNERS) interprets the first two parameters as the location of one of the corners, and the third and fourth parameters as the location of the diagonally opposite corner. Note, the rectangle is drawn between the coordinates, so it is not neccesary that the first corner be the upper left corner. ",
-        "rectMode(CENTER) interprets the first two parameters as the shape's center point, while the third and fourth parameters are its width and height. ",
-        "rectMode(RADIUS) also uses the first two parameters as the shape's center point, but uses the third and fourth parameters to specify half of the shape's width and height respectively. ",
+        "Modifica a localização de onde os retângulos são criados através da mudança da maneira em que os parâmetros <a href=\"#/p5/rect\">rect()</a> são interpretados. ",
+        "O modo padrão é CORNER, que interpretada os primeiros dois parâmetros como o canto superior esquerdo da shape, enquanto o terceiro e o quarto parâmetros são sua largura e altura. ",
+        "rectMode(CORNERS) interpreta os dois primeiros parâmetros como a localização de um dos cantos e o segundo e terceiro parâmetros como a localização do canto diagonalmente oposto. Note que o retângulo é criado entre as coordenadas, não sendo necessário que o primeiro canto seja o superior esquerdo. ",
+        "rectMode(CENTER) interpreta os dois primeiros parâmetros como o ponto central da shape, enquanto o terceiro e o quarto parâmetros são sua largura e altura. ",
+        "rectMode(RADIUS) também usa os dois primeiros parâmetros como o ponto central da shape, mas usa o terceiro e quarto parâmetros para especificar metade da largura e da altura. ",
         "O parâmetro para este método deve ser escrito em CAPS porque eles são predefinidos como constantes e Javascript é uma linguagem que diferencia maiúsculas de minúsculas (case-sensitive)."
       ],
       "params": {
-        "mode": "Constant: either CORNER, CORNERS, CENTER, or RADIUS"
+        "mode": "Constant: ou CORNER, CORNERS, CENTER, ou RADIUS"
       }
     },
     "smooth": {
       "description": [
-        "Desenha todas as geometrias com as boardas suavizadas (anti-aliased). <a href=\"#/p5/smooth\">smooth()</a> também melhorará a qualidade de uma imagem redimensionada. Leve em consideração que <a href=\"#/p5/smooth\">smooth()</a> está ativado por padrão no modo 2D; <a href=\"#/p5/noSmooth\">noSmooth()</a> também pode ser utilizado para desabilitar a suavização de uma geometria, imagem ou fonte. No modo 3D <a href=\"#/p5/noSmooth\">noSmooth()</a> está ligado por padrão, logo, é necessário usar <a href=\"#/p5/smooth\">smooth()</a> se você quiser suavizar (antialiased) as bordas da geometria."
+        "Desenha todas as geometrias com as boardas suavizadas (antialiased). <a href=\"#/p5/smooth\">smooth()</a> também melhorará a qualidade de uma imagem redimensionada. Leve em consideração que <a href=\"#/p5/smooth\">smooth()</a> está ativado por padrão no modo 2D; <a href=\"#/p5/noSmooth\">noSmooth()</a> também pode ser utilizado para desabilitar a suavização de uma geometria, imagem ou fonte. No modo 3D <a href=\"#/p5/noSmooth\">noSmooth()</a> está ligado por padrão, logo, é necessário usar <a href=\"#/p5/smooth\">smooth()</a> se você quiser suavizar (antialiased) as bordas da geometria."
       ]
     },
     "strokeCap": {
@@ -509,8 +509,8 @@
     },
     "bezier": {
       "description": [
-        "Draws a cubic Bezier curve on the screen. These curves are defined by a series of anchor and control points. The first two parameters specify the first anchor point and the last two parameters specify the other anchor point, which become the first and last points on the curve. The middle parameters specify the two control points which define the shape of the curve. Approximately speaking, control points \"pull\" the curve towards them. ",
-        "Bezier curves were developed by French automotive engineer Pierre Bezier, and are commonly used in computer graphics to define gently sloping curves. See also <a href=\"#/p5/curve\">curve()</a>."
+        "Cria uma curva de Bezier cúbico. Estas curvas são definidas por uma série de pontos âncora e de controle. Os dois primeiros parâmetros especificam o primeiro ponto âncora e os dois últimos parâmetros definem o outro ponto âncora, que se tornam o primeiro e último pontos da cuva. Os parâmetros do meio especificam dois pontos de controle que definem a forma da curva. Os pontos de controle \"puxam\" a curva em direção a eles. ",
+        "As curvas Bezier foram desenvolvidas pelo engenheiro automotivo francês Pierre Bezier e são utilizadas geralmente em gráficos de computador para definir curvas suaves. Veja também <a href=\"#/p5/curve\">curve()</a>."
       ],
       "params": {
         "x1": "Number: coordenada x para o primeiro ponto âncora",
@@ -538,9 +538,9 @@
     },
     "bezierPoint": {
       "description": [
-        "Given the x or y co-ordinate values of control and anchor points of a bezier curve, it evaluates the x or y coordinate of the bezier at position t. The parameters a and d are the x or y coordinates of first and last points on the curve while b and c are of the control points.The final parameter t is the position of the resultant point which is given between 0 and 1. This can be done once with the x coordinates and a second time with the y coordinates to get the location of a bezier curve at t."
+        "Dadas as coordenadas x ou y dos pontos de controle e dos pontos âncora de uma curva bezier, esse parâmetro avalia as coordenadas bezier na posição t. Os parâmetros a e d são as coordenadas x ou y do primeiro e do último pontos na curva, enquanto b e c são os pontos de controle. O último parâmetro é a posição do ponto resultante, representado por um valor entre 0 e 1. Isso pode ser feito primeiramente com as coordenadas x e em uma segunda vez com as coordenadas y para identificar a posição de uma curva bezier em t."
       ],
-      "returns": "Number: the value of the Bezier at position t",
+      "returns": "Number: o valor de Bezier na posição t",
       "params": {
         "a": "Number: coordenada do primeiro ponto da curva",
         "b": "Number: coordenada do primeiro ponto de controle",
@@ -551,9 +551,9 @@
     },
     "bezierTangent": {
       "description": [
-        "Evaluates the tangent to the Bezier at position t for points a, b, c, d. The parameters a and d are the first and last points on the curve, and b and c are the control points. The final parameter t varies between 0 and 1."
+        "Avalia a tangente ao Bezier na posição t para os pontos a, b, c, d. Os parâmetros a e d são o primeiro e último pontos na curva, b e c são os pontos de controle. O último parâmetro t varia entre 0 e 1."
       ],
-      "returns": "Number: the tangent at position t",
+      "returns": "Number: a tangente na posição t",
       "params": {
         "a": "Number: coordenada do primeiro ponto da curva",
         "b": "Number: coordenada do primeiro ponto de controle",
@@ -564,65 +564,65 @@
     },
     "curve": {
       "description": [
-        "Draws a curved line on the screen between two points, given as the middle four parameters. The first two parameters are a control point, as if the curve came from this point even though it's not drawn. The last two parameters similarly describe the other control point.",
-        "Longer curves can be created by putting a series of <a href=\"#/p5/curve\">curve()</a> functions together or using <a href=\"#/p5/curveVertex\">curveVertex()</a>. An additional function called <a href=\"#/p5/curveTightness\">curveTightness()</a> provides control for the visual quality of the curve. The <a href=\"#/p5/curve\">curve()</a> function is an implementation of Catmull-Rom splines."
+        "Cria uma linha curva entre dois pontos, dada pelos quatro parâmetros do meio. Os dois primeiros parâmetros são um ponto de controle, como se a curva viesse desse ponto mesmo ele não aparecendo na tela. Os dois últimos parâmetros similarmente descrevem o outro ponto de controle.",
+        "Curvas mais longas podem ser criadas usando uma série de funções <a href=\"#/p5/curve\">curve()</a> em conjunto ou usando <a href=\"#/p5/curveVertex\">curveVertex()</a>. Uma função adicionada chamada <a href=\"#/p5/curveTightness\">curveTightness()</a> faz o controle da qualidade visual da curva. A função <a href=\"#/p5/curve\">curve()</a> é uma implementação de splines Catmull-Rom."
       ],
       "params": {
-        "x1": "Number: coordenada x for the beginning control point",
-        "y1": "Number: coordenada y for the beginning control point",
-        "x2": "Number: coordenada x for the first point",
-        "y2": "Number: coordenada y for the first point",
-        "x3": "Number: coordenada x for the second point",
-        "y3": "Number: coordenada y for the second point",
-        "x4": "Number: coordenada x for the ending control point",
-        "y4": "Number: coordenada y for the ending control point",
-        "z1": "Number: coordenada z for the beginning control point",
-        "z2": "Number: coordenada z for the first point",
-        "z3": "Number: coordenada z for the second point",
-        "z4": "Number: coordenada z for the ending control point"
+        "x1": "Number: coordenada x do ponto de controle inicial",
+        "y1": "Number: coordenada y do ponto de controle inicial",
+        "x2": "Number: coordenada x do primeiro ponto",
+        "y2": "Number: coordenada y do primeiro ponto",
+        "x3": "Number: coordenada x do segundo ponto",
+        "y3": "Number: coordenada y do segundo ponto",
+        "x4": "Number: coordenada x do ponto de controle final",
+        "y4": "Number: coordenada y do ponto de controle final",
+        "z1": "Number: coordenada z do ponto de controle inicial",
+        "z2": "Number: coordenada z do primeiro ponto",
+        "z3": "Number: coordenada z do segundo ponto",
+        "z4": "Number: coordenada z do ponto de controle final"
       }
     },
     "curveDetail": {
       "description": [
-        "Sets the resolution at which curves display. The default value is 20 while the minimum value is 3. ",
-        "This function is only useful when using the WEBGL renderer as the default canvas renderer does not use this information."
+        "Define a resolução em que a curva será mostrada. O valor padrão é 20, enquanto o valor mínimo é 3. ",
+        "Esta função só é útil quando estiver usando o WEBGL renderer, já que o renderer padrão não usa essa informação."
       ],
       "params": {
-        "resolution": "Number: resolution of the curves"
+        "resolution": "Number: resolução das curvas"
       }
     },
     "curveTightness": {
       "description": [
-        "Modifies the quality of forms created with <a href=\"#/p5/curve\">curve()</a> and <a href=\"#/p5/curveVertex\">curveVertex()</a>.The parameter tightness determines how the curve fits to the vertex points. The value 0.0 is the default value for tightness (this value defines the curves to be Catmull-Rom splines) and the value 1.0 connects all the points with straight lines. Values within the range -5.0 and 5.0 will deform the curves but will leave them recognizable and as values increase in magnitude, they will continue to deform."
+        "Modifica a qualidade das formas criadas com <a href=\"#/p5/curve\">curve()</a> e <a href=\"#/p5/curveVertex\">curveVertex()</a>. O parâmetro tightness determina como a curva se encaixa nos pontos de vértice. O valor padrão é 0.0 (esse valor define as curvas como splines Catmull-Rom) e o valor 1.0 conecta todos os pontos com linhas retas. Valores no intervalo entre -5.0 e 5.0 vão deformar as curvas mas ainda deixaram elas reconhecíveis, ao aumentar a magnitude dos valores eles continuarão a deformar."
       ],
       "params": {
-        "amount": "Number: amount of deformation from the original vertices"
+        "amount": "Number: quantidade de deformação dos vértices originais"
       }
     },
     "curvePoint": {
       "description": [
-        "Evaluates the curve at position t for points a, b, c, d. The parameter t varies between 0 and 1, a and d are control points of the curve, and b and c are the start and end points of the curve. This can be done once with the x coordinates and a second time with the y coordinates to get the location of a curve at t."
+        "Avalia a curva na posição t para os pontos a, b, c, d. O parâmetro t varia entre 0 e 1, a e d são os pontos de controle da curva, b e c são os pontos de início e de final da curva. Isso pode ser feito primeiramente com as coordenadas x e em uma segunda vez com as coordenadas y para identificar a posição de uma curva bezier em t."
       ],
-      "returns": "Number: bezier value at position t",
+      "returns": "Number: valor bezier na posição t",
       "params": {
-        "a": "Number: coordinate of first control point of the curve",
-        "b": "Number: coordinate of first point",
-        "c": "Number: coordinate of second point",
-        "d": "Number: coordinate of second control point",
-        "t": "Number: value between 0 and 1"
+        "a": "Number: coordenada do primeiro ponto de controle da curva",
+        "b": "Number: coordenada do primeiro ponto",
+        "c": "Number: coordenada do segundo ponto",
+        "d": "Number: coordenada do segundo ponto de controle da curva",
+        "t": "Number: valor entre 0 e 1"
       }
     },
     "curveTangent": {
       "description": [
-        "Evaluates the tangent to the curve at position t for points a, b, c, d. The parameter t varies between 0 and 1, a and d are points on the curve, and b and c are the control points."
+        "Avalia a curva na posição t para os pontos a, b, c, d. O parâmetro t varia entre 0 e 1, a e d são os pontos da curva, b e c são os pontos de controle."
       ],
-      "returns": "Number: the tangent at position t",
+      "returns": "Number: a tangente na posição t",
       "params": {
-        "a": "Number: coordinate of first control point",
-        "b": "Number: coordinate of first point on the curve",
-        "c": "Number: coordinate of second point on the curve",
-        "d": "Number: coordinate of second conrol point",
-        "t": "Number: value between 0 and 1"
+        "a": "Number: coordenada do primeiro ponto de controle",
+        "b": "Number: coordenada do primeiro ponto na curva",
+        "c": "Number: coordenada do segundo ponto na curva",
+        "d": "Number: coordenada do segundo ponto de controle",
+        "t": "Number: valor entre 0 e 1"
       }
     },
     "beginContour": {
