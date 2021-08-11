@@ -24,7 +24,7 @@ function draw() {
 
   // Coordenadas são usadas para desenhas todas as formas geométricas, não apenas pontos.
   // Parâmetros para diferentes funções são usadas para diferentes
-  // proposito. Por exemplo, os primeiros dois parâmetros para line()
+  // propósitos. Por exemplo, os primeiros dois parâmetros para line()
   // especificam as coordenadas do primeiro ponto de extremidade e os segundos
   // dois parâmetros especificam o segundo ponto de extremidade
   stroke(0, 153, 255);
