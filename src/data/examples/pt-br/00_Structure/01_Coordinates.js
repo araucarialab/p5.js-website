@@ -1,39 +1,39 @@
 /*
  * @name Coordinates
- * @description All shapes drawn to the screen have a position that is
- * specified as a coordinate. All coordinates are measured as the distance from
- * the origin in units of pixels. The origin [0, 0] is the coordinate in the
- * upper left of the window and the coordinate in the lower right is [width-1,
+ * @description Todas as formas geométricas desenhadas na tela possuem uma posição que
+ * que é especificada como uma coordenada. Todas as coordenas são medidas como a distâncias da
+ * da origem (origin) em unidades de pixels. A origem [0, 0] é a coordenada do
+ * canto superior esquerdo da janela, e a coordenada no canto inferior direito é [width-1
  * height-1].
  */
 function setup() {
   // Sets the screen to be 720 pixels wide and 400 pixels high
+  // Define a tela para ter 720 pixels de largura e 400 pixels de altura
   createCanvas(720, 400);
 }
 
 function draw() {
-  // Set the background to black and turn off the fill color
+  // Define o fundo para ser preto e desabilita o preenchimento de cor
   background(0);
   noFill();
 
-  // The two parameters of the point() method each specify
-  // coordinates.
-  // The first parameter is the x-coordinate and the second is the Y
+  // Os dois parâmetros do método point(), cada um especifica as coordenadas.
+  // O primeiro parâmetro é a coordenada X e o segundo é o Y
   stroke(255);
   point(width * 0.5, height * 0.5);
   point(width * 0.5, height * 0.25);
 
-  // Coordinates are used for drawing all shapes, not just points.
-  // Parameters for different functions are used for different
-  // purposes. For example, the first two parameters to line()
-  // specify the coordinates of the first endpoint and the second
-  // two parameters specify the second endpoint
+  // Coordenadas são usadas para desenhas todas as formas geométricas, não apenas pontos.
+  // Parâmetros para diferentes funções são usadas para diferentes
+  // proposito. Por exemplo, os primeiros dois parâmetros para line()
+  // especificam as coordenadas do primeiro ponto de extremidade e os segundos
+  // dois parâmetros especificam o segundo ponto de extremidade
   stroke(0, 153, 255);
   line(0, height * 0.33, width, height * 0.33);
 
-  // By default, the first two parameters to rect() are the
-  // coordinates of the upper-left corner and the second pair
-  // is the width and height
+  // Por padrão, os primeiros dois parâmetros de rect() são as
+  // coordenadas do canta superior esquerdo, e o segundo par
+  // é a largura e a altura
   stroke(255, 153, 0);
   rect(width * 0.25, height * 0.1, width * 0.5, height * 0.8);
 }
