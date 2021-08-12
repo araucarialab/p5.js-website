@@ -1,23 +1,23 @@
 /*
  * @name Loop
- * @description The code inside the draw() function runs continuously from top
- * to bottom until the program is stopped.
- */
+ * @description O código dentro da função draw() executa continuamento do topo
+ * até o fundo, até que o programa seja parado.
+*/
 let y = 100;
 
-// The statements in the setup() function
-// execute once when the program begins
+// As instruções na função setup()
+// executam uma vez quando o programa é iniciado
 function setup() {
-  createCanvas(720, 400); // Size must be the first statement
-  stroke(255); // Set line drawing color to white
+  createCanvas(720, 400); // Tamanho deve ser a primeira instrução
+  stroke(255); // Define o cor da linha a ser desenhada como branco
   frameRate(30);
 }
-// The statements in draw() are executed until the
-// program is stopped. Each statement is executed in
-// sequence and after the last line is read, the first
-// line is executed again.
+// As instruções dentro de draw() são executadas até que
+// o programa seja parado. Cada instrução é executada em
+// sequência e depois que a última linha é lida, a primeira
+// linha é executada novamente.
 function draw() {
-  background(0); // Set the background to black
+  background(0); // Define a cor do fundo como preto
   y = y - 1;
   if (y < 0) {
     y = height;

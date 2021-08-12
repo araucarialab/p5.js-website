@@ -1,27 +1,27 @@
 /*
  * @name No Loop
- * @description The noLoop() function causes draw() to only execute once.
- * Without calling noLoop(), the code inside draw() is run continually.
+ * @description A função noLoop() provoca que a função draw() seja executada apenas uma vez.
+ * Sem chamar noLoop(), o código dentro de draw() é executado continuamente.
  */
 let y;
 
-// The statements in the setup() function
-// execute once when the program begins
+// As instruções na função setup()
+// executam uma vez quando o programa é iniciado
 function setup() {
-  // createCanvas should be the first statement
+  // createCavnas deve ser a primeira instrução
   createCanvas(720, 400);
-  stroke(255); // Set line drawing color to white
+  stroke(255); // Define o cor da linha a ser desenhada como branco
   noLoop();
 
   y = height * 0.5;
 }
 
-// The statements in draw() are executed until the
-// program is stopped. Each statement is executed in
-// sequence and after the last line is read, the first
-// line is executed again.
+// As instruções dentro de draw() são executadas até que
+// o programa seja parado. Cada instrução é executada em
+// sequência e depois que a última linha é lida, a primeira
+// linha é executada novamente.
 function draw() {
-  background(0); // Set the background to black
+  background(0); // Define a cor do fundo como preto
   y = y - 1;
   if (y < 0) {
     y = height;
