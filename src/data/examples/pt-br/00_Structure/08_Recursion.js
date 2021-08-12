@@ -26,7 +26,6 @@ function drawCircle(x, radius, level) {
   fill(tt);
   ellipse(x, height / 2, radius * 2, radius * 2);
   if (level > 1) {  
-    // 'level' decreases by 1 at every step and thus makes the terminating condition
     // 'level' diminui na razão de 1 para cada passo e assim faz com que a condição terminal
     // seja atingível
     level = level - 1;  
