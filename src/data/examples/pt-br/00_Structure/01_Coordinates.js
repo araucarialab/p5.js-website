@@ -3,7 +3,7 @@
  * @description Todas as formas geométricas desenhadas na tela possuem uma posição que
  * que é especificada como uma coordenada. Todas as coordenas são medidas como a distâncias da
  * da origem (origin) em unidades de pixels. A origem [0, 0] é a coordenada do
- * canto superior esquerdo da janela, e a coordenada no canto inferior direito é [width-1
+ * canto superior esquerdo da janela, e a coordenada no canto inferior direito é [width-1,
  * height-1].
  */
 function setup() {
@@ -16,7 +16,8 @@ function draw() {
   background(0);
   noFill();
 
-  // Os dois parâmetros do método point(), cada um especifica as coordenadas.
+  // Os dois parâmetros do método point(), cada um especifica
+  // as coordenadas.
   // O primeiro parâmetro é a coordenada X e o segundo é o Y
   stroke(255);
   point(width * 0.5, height * 0.5);

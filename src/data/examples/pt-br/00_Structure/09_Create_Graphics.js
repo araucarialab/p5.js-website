@@ -1,7 +1,7 @@
 /*
  * @name Create Graphics
  * @description Cria e retorna um novo objeto p5.Renderer. Use esta
- * class caso você precise desenhar em um buffer gráfico desvínculado da tela. Os dois parâmetros
+ * classe caso você precise desenhar em um buffer gráfico desvínculado da tela. Os dois parâmetros
  * definem a largura e altura em pixels.
  */
 
