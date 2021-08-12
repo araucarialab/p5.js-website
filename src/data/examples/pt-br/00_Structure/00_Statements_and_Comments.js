@@ -12,7 +12,7 @@ function setup() {
 }
 
 // A função background é uma instrução que orienta o computador
-// sobre qual cor (ou valor cinza) o background da tela deve assumir
+// sobre qual cor (ou valor cinza) o fundo da tela deve assumir
 function draw() {
    background(204, 153, 0);
 }
