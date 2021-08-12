@@ -24,7 +24,6 @@ function draw() {
   pg.stroke(255);
   pg.ellipse(mouseX - 150, mouseY - 75, 60, 60);
 
-  //Draw the offscreen buffer to the screen with image()
   //Desenha o buffer gráfico desvínculado da tela com image()
   image(pg, 150, 75);
 }
