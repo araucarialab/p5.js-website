@@ -1,8 +1,8 @@
 /*
  *@name Functions
- *@description The drawTarget() function makes it easy to draw many distinct
- *targets. Each call to drawTarget() specifies the position, size, and number of
- *rings for each target.
+ *@description a função drawTarget() faz com que seja fácil desenhar muitos
+ *alvos distintos. Cada chamada para drawTarget() especifica a posição, tamanho, e número de
+ *aneis para cada alvo.
  */
 
 function setup() {
