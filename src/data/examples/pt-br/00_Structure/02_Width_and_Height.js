@@ -1,6 +1,6 @@
 /*
  * @name Width and Height
- * @description As variáveis 'width' e 'height' contem a
+ * @description As variáveis 'width' e 'height' contém a
  * largura e a altura da janela de exibição como definida na função createCanvas().
  */
 function setup() {
