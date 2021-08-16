@@ -3469,75 +3469,75 @@ Isso redimensionará o modelo para uma escala apropriada para p5. Você também 
     },
     "camera": {
       "description": [
-        "Sets the camera position for a 3D sketch. Parameters for this function define the position for the camera, the center of the sketch (where the camera is pointing), and an up direction (the orientation of the camera). ",
-        "This function simulates the movements of the camera, allowing objects to be viewed from various angles. Remember, it does not move the objects themselves but the camera instead. For example when centerX value is positive, the camera is rotating to the right side of the sketch, so the object would seem like moving to the left. ",
-        "See this <a href = \"https://www.openprocessing.org/sketch/740258\">example</a> to view the position of your camera. ",
-        "When called with no arguments, this function creates a default camera equivalent to camera(0, 0, (height/2.0) / tan(PI*30.0 / 180.0), 0, 0, 0, 0, 1, 0);"
+        "Define a posição da câmera para um sketch 3D. Os parâmetros para esta função definem a posição da câmera, o centro do sketch (para onde a câmera está apontando) e uma direção para cima (a orientação da câmera). ",
+        "Esta função simula os movimentos da câmera, permitindo que os objetos sejam visualizados de vários ângulos. Lembre-se de que ele não move os próprios objetos, mas sim a câmera. Por exemplo, quando o valor centerX é positivo, a câmera está girando para o lado direito do sketch, então o objeto parece estar se movendo para a esquerda. ",
+        "Veja este  <a href = \"https://www.openprocessing.org/sketch/740258\">exemplo</a> para ver a posição de sua câmera. ",
+        "Quando chamada sem argumentos, esta função cria uma câmera padrão equivalente à camera(0, 0, (height/2.0) / tan(PI*30.0 / 180.0), 0, 0, 0, 0, 1, 0);"
       ],
       "params": {
-        "x": "Number: (Optional) camera position value on x axis",
-        "y": "Number: (Optional) camera position value on y axis",
-        "z": "Number: (Optional) camera position value on z axis",
-        "centerX": "Number: (Optional) x coordinate representing center of the sketch",
-        "centerY": "Number: (Optional) y coordinate representing center of the sketch",
-        "centerZ": "Number: (Optional) z coordinate representing center of the sketch",
-        "upX": "Number: (Optional) x component of direction 'up' from camera",
-        "upY": "Number: (Optional) y component of direction 'up' from camera",
-        "upZ": "Number: (Optional) z component of direction 'up' from camera"
+        "x": "Número (opcional): valor da posição da câmera no eixo x",
+        "y": "Número (opcional): valor da posição da câmera no eixo y",
+        "z": "Número (opcional): valor da posição da câmera no eixo z",
+        "centerX": "Número (opcional): coordenada x representando o centro do sketch",
+        "centerY": "Número (opcional): coordenada y representando o centro do sketch",
+        "centerZ": "Número (opcional): coordenada z representando o centro do sketch",
+        "upX": "Número (opcional): componente x da direção 'para cima' da câmera",
+        "upY": "Número (opcional): componente y da direção 'para cima' da câmera",
+        "upZ": "Número (opcional): componente z da direção 'para cima' da câmera"
       }
     },
     "perspective": {
       "description": [
-        "Sets a perspective projection for the camera in a 3D sketch. This projection represents depth through foreshortening: objects that are close to the camera appear their actual size while those that are further away from the camera appear smaller. The parameters to this function define the viewing frustum (the truncated pyramid within which objects are seen by the camera) through vertical field of view, aspect ratio (usually width/height), and near and far clipping planes. ",
-        "When called with no arguments, the defaults provided are equivalent to perspective(PI/3.0, width/height, eyeZ/10.0, eyeZ<em>10.0), where eyeZ is equal to ((height/2.0) / tan(PI</em>60.0/360.0));"
+        "Define uma projeção em perspectiva para a câmera em um sketch 3D. Esta projeção representa a profundidade através da técnica de Escorço (encurtamento): os objetos que estão perto da câmera aparecem em seu tamanho real, enquanto os que estão mais distantes da câmera parecem menores. Os parâmetros para esta função definem o frustum (tronco) de visualização (a pirâmide frustum dentro da qual os objetos são vistos pela câmera) por meio do campo de visão vertical, relação de aspecto (geralmente largura / altura) e planos de recorte próximos e distantes. ",
+        "Quando chamada sem argumentos, os padrões fornecidos são equivalentes a perspective(PI/3.0, width/height, eyeZ/10.0, eyeZ<em>10.0), where eyeZ is equal to ((height/2.0) / tan(PI</em>60.0/360.0));"
       ],
       "params": {
-        "fovy": "Number: (Optional) camera frustum vertical field of view,  from bottom to top of view, in <a href=\"#/p5/angleMode\">angleMode</a> units",
-        "aspect": "Number: (Optional) camera frustum aspect ratio",
-        "near": "Number: (Optional) frustum near plane length",
-        "far": "Number: (Optional) frustum far plane length"
+        "fovy": "Número (opcional): tronco do campo de visão vertical da câmera, de baixo para cima, em <a href=\"#/p5/angleMode\">angleMode</a> graus",
+        "aspect": "Número (opcional): relação de aspecto da câmara de frustum (tronco)",
+        "near": "Número (opcional): frustum (tronco) perto do plano de comprimento",
+        "far": "Número (opcional): frustum (tronco) distante do plano de comprimento"
       }
     },
     "ortho": {
       "description": [
-        "Sets an orthographic projection for the camera in a 3D sketch and defines a box-shaped viewing frustum within which objects are seen. In this projection, all objects with the same dimension appear the same size, regardless of whether they are near or far from the camera. The parameters to this function specify the viewing frustum where left and right are the minimum and maximum x values, top and bottom are the minimum and maximum y values, and near and far are the minimum and maximum z values. If no parameters are given, the default is used: ortho(-width/2, width/2, -height/2, height/2)."
+        "Define uma projeção ortográfica para a câmera em um sketch 3D e define um frustum de visualização em forma de caixa dentro do qual os objetos são vistos. Nesta projeção, todos os objetos com a mesma dimensão aparecem do mesmo tamanho, independentemente de estarem próximos ou distantes da câmera. Os parâmetros para esta função especificam o frustum (tronco) de visualização onde esquerda e direita são os valores x mínimo e máximo, topo e fundo são os valores y mínimo e máximo e próximo e longe são os valores z mínimo e máximo. Se nenhum parâmetro for fornecido, por padrão será usado: ortho(-width/2, width/2, -height/2, height/2)."
       ],
       "params": {
-        "left": "Number: (Optional) camera frustum left plane",
-        "right": "Number: (Optional) camera frustum right plane",
-        "bottom": "Number: (Optional) camera frustum bottom plane",
-        "top": "Number: (Optional) camera frustum top plane",
-        "near": "Number: (Optional) camera frustum near plane",
-        "far": "Number: (Optional) camera frustum far plane"
+        "left": "Número (opcional): câmera frustum (tronco) do plano esquerdo",
+        "right": "Número (opcional): câmera frustum (tronco) do plano direito",
+        "bottom": "Número (opcional): câmera frustum (tronco) do plano inferior",
+        "top": "Número (opcional): câmera frustum (tronco) do plano superior",
+        "near": "Número (opcional): câmera frustum (tronco) próxima ao plano",
+        "far": "Número (opcional): câmera frustum (tronco) longe do plano"
       }
     },
     "frustum": {
       "description": [
-        "Sets a perspective matrix as defined by the parameters. ",
-        "A frustum is a geometric form: a pyramid with its top cut off. With the viewer's eye at the imaginary top of the pyramid, the six planes of the frustum act as clipping planes when rendering a 3D view. Thus, any form inside the clipping planes is visible; anything outside those planes is not visible. ",
-        "Setting the frustum changes the perspective of the scene being rendered. This can be achieved more simply in many cases by using <a href=\"https://p5js.org/reference/#/p5/perspective\">perspective()</a>."
+        "Define uma matriz de perspectiva conforme definida pelos parâmetros. ",
+        "Um frustum (tronco) é uma forma geométrica: uma pirâmide com o topo cortado. Com o olho do observador no topo imaginário da pirâmide, os seis planos do frustum atuam como planos de recorte ao renderizar uma vista 3D. Assim, qualquer forma dentro dos planos de recorte é visível; qualquer coisa fora desses planos não é visível. ",
+        "Definir o frustum muda a perspectiva da cena sendo renderizada. Isso pode ser alcançado de forma mais simples em muitos casos, usando <a href=\"https://p5js.org/reference/#/p5/perspective\">perspective()</a>."
       ],
       "params": {
-        "left": "Number: (Optional) camera frustum left plane",
-        "right": "Number: (Optional) camera frustum right plane",
-        "bottom": "Number: (Optional) camera frustum bottom plane",
-        "top": "Number: (Optional) camera frustum top plane",
-        "near": "Number: (Optional) camera frustum near plane",
-        "far": "Number: (Optional) camera frustum far plane"
+        "left": "Número (opcional): câmera frustum (tronco) do plano esquerdo",
+        "right": "Número (opcional): câmera frustum (tronco) do plano direito",
+        "bottom": "Número (opcional): câmera frustum (tronco) do plano inferior",
+        "top": "Número (opcional): câmera frustum (tronco)  do plano superior",
+        "near": "Número (opcional): câmera frustum (tronco) próxima ao plano",
+        "far": "Número (opcional): câmera frustum (tronco) longe do plano"
       }
     },
     "createCamera": {
       "description": [
-        "Creates a new <a href=\"#/p5.Camera\">p5.Camera</a> object and tells the renderer to use that camera. Returns the p5.Camera object."
+        "Cria um novo objeto <a href=\"#/p5.Camera\">p5.Camera</a> e diz ao renderizador para usar aquela câmera. Retorna o objeto p5.Camera."
       ],
-      "returns": "p5.Camera: The newly created camera object."
+      "returns": "p5.Camera: O objeto de câmera recém-criado."
     },
     "setCamera": {
       "description": [
-        "Sets rendererGL's current camera to a p5.Camera object. Allows switching between multiple cameras."
+        "Define a câmera atual do rendererGL para um objeto p5.Camera. Permite alternar entre várias câmeras."
       ],
       "params": {
-        "cam": "p5.Camera: p5.Camera object"
+        "cam": "p5.Camera: objeto p5.Camera"
       }
     },
     "setAttributes": {
