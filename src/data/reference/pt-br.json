@@ -732,37 +732,37 @@
     "WAIT": {},
     "HALF_PI": {
       "description": [
-        "HALF_PI is a mathematical constant with the value 1.57079632679489661923. It is half the ratio of the circumference of a circle to its diameter. It is useful in combination with the trigonometric functions <a href=\"#/p5/sin\">sin()</a> and <a href=\"#/p5/cos\">cos()</a>."
+        "HALF_PI é uma constante matemática com o valor 1.57079632679489661923. É a metade da razão entre a circunferência de um círculo e seu diâmetro. É útil em combinação com as funções trigonométricas <a href=\"#/p5/sin\">sin()</a> e <a href=\"#/p5/cos\">cos()</a>."
       ]
     },
     "PI": {
       "description": [
-        "PI is a mathematical constant with the value 3.14159265358979323846. It is the ratio of the circumference of a circle to its diameter. It is useful in combination with the trigonometric functions <a href=\"#/p5/sin\">sin()</a> and <a href=\"#/p5/cos\">cos()</a>."
+        "PI é uma constante matemática com o valor 3.14159265358979323846. É a razão entre a circunferência de um círculo e seu diâmetro. É útil em combinação com as funções trigonométricas <a href=\"#/p5/sin\">sin()</a> e <a href=\"#/p5/cos\">cos()</a>."
       ]
     },
     "QUARTER_PI": {
       "description": [
-        "QUARTER_PI is a mathematical constant with the value 0.7853982. It is one quarter the ratio of the circumference of a circle to its diameter. It is useful in combination with the trigonometric functions <a href=\"#/p5/sin\">sin()</a> and <a href=\"#/p5/cos\">cos()</a>."
+        "QUARTER_PI é uma constante matemática com o valor 0.7853982. É um quarto da razão entre a circunferência de um círculo e seu diâmetro. É útil em combinação com as funções trigonométricas <a href=\"#/p5/sin\">sin()</a> e <a href=\"#/p5/cos\">cos()</a>."
       ]
     },
     "TAU": {
       "description": [
-        "TAU is an alias for TWO_PI, a mathematical constant with the value 6.28318530717958647693. It is twice the ratio of the circumference of a circle to its diameter. It is useful in combination with the trigonometric functions <a href=\"#/p5/sin\">sin()</a> and <a href=\"#/p5/cos\">cos()</a>."
+        "TAU é uma abreviatura para TWO_PI, que é uma constante matemática com o valor 6.28318530717958647693. Equivale duas vezes a razão entre a circunferência de um círculo e seu diâmetro. É útil em combinação com as funções trigonométricas <a href=\"#/p5/sin\">sin()</a> e <a href=\"#/p5/cos\">cos()</a>."
       ]
     },
     "TWO_PI": {
       "description": [
-        "TWO_PI is a mathematical constant with the value 6.28318530717958647693. It is twice the ratio of the circumference of a circle to its diameter. It is useful in combination with the trigonometric functions <a href=\"#/p5/sin\">sin()</a> and <a href=\"#/p5/cos\">cos()</a>."
+        "TWO_PI é uma constante matemática com o valor 6.28318530717958647693. Equivale duas vezes a razão entre a circunferência de um círculo e seu diâmetro. É útil em combinação com as funções trigonométricas <a href=\"#/p5/sin\">sin()</a> e <a href=\"#/p5/cos\">cos()</a>."
       ]
     },
     "DEGREES": {
       "description": [
-        "Constant to be used with <a href=\"#/p5/angleMode\">angleMode()</a> function, to set the mode which p5.js interprates and calculates angles (either DEGREES or RADIANS)."
+        "Constante a ser usada com a função <a href=\"#/p5/angleMode\">angleMode()</a> , para definir o modo em que p5.js interpreta e calcula ângulos (GRAUS ou RADIANOS)."
       ]
     },
     "RADIANS": {
       "description": [
-        "Constant to be used with <a href=\"#/p5/angleMode\">angleMode()</a> function, to set the mode which p5.js interprates and calculates angles (either RADIANS or DEGREES)."
+        "Constante a ser usada com a função <a href=\"#/p5/angleMode\">angleMode()</a> , para definir o modo em que p5.js interpreta e calcula ângulos (GRAUS ou RADIANOS)."
       ]
     },
     "CORNER": {},
