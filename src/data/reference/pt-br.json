@@ -3561,94 +3561,94 @@ Isso redimensionará o modelo para uma escala apropriada para p5. Você também 
     },
     "sampleRate": {
       "description": [
-        "Returns a number representing the sample rate, in samples per second, of all sound objects in this audio context. It is determined by the sampling rate of your operating system's sound card, and it is not currently possile to change. It is often 44100, or twice the range of human hearing."
+        "retorna um número que representa a taxa de amostragem, em amostras por segundo, de todos os objetos de som neste contexto de áudio. É determinado pela taxa de amostragem da placa de som do seu sistema operacional e atualmente não é possível mudar. Freqüentemente, é 44100, ou duas vezes o alcance da audição humana. "
       ],
-      "returns": "Number: samplerate samples per second"
+      "returns": "Número: taxa de amostragem de amostras por segundo"
     },
     "freqToMidi": {
       "description": [
-        "Returns the closest MIDI note value for a given frequency."
+        "retorna o valor de nota MIDI mais próximo para uma determinada frequência."
       ],
-      "returns": "Number: MIDI note value",
+      "returns": "Número: valor da nota MIDI",
       "params": {
-        "frequency": "Number: A freqeuncy, for example, the \"A\"  above Middle C is 440Hz"
+        "frequency": "Número: uma frequência, por exemplo, o \"A\" acima do C médio é 440Hz."
       }
     },
     "midiToFreq": {
       "description": [
-        "Returns the frequency value of a MIDI note value. General MIDI treats notes as integers where middle C is 60, C# is 61, D is 62 etc. Useful for generating musical frequencies with oscillators."
+        "retorna o valor da frequência de um valor de nota MIDI. O MIDI geral trata as notas como inteiros onde o C médio é 60, o C# é 61, D é 62 etc. Útil para gerar frequências musicais com osciladores."
       ],
-      "returns": "Number: Frequency value of the given MIDI note",
+      "returns": "Número: valor de frequência da nota MIDI fornecida",
       "params": {
-        "midiNote": "Number: The number of a MIDI note"
+        "midiNote": "Número: o número de uma nota MIDI"
       }
     },
     "soundFormats": {
       "description": [
-        "List the SoundFile formats that you will include. LoadSound will search your directory for these extensions, and will pick a format that is compatable with the client's web browser. <a href=\"http://media.io/\">Here</a> is a free online file converter."
+        "Lista os formatos de SoundFile que você incluirá. O LoadSound pesquisará essas extensões em seu diretório e escolherá um formato compatível com o navegador da Web do cliente. <a href=\"http://media.io/\">Aqui</a> há um conversor de arquivos online grátis."
       ],
       "params": {
-        "formats": "String: (Optional) i.e. 'mp3', 'wav', 'ogg'"
+        "formats": "String (opcional): i.e. 'mp3', 'wav', 'ogg'"
       }
     },
     "getAudioContext": {
       "description": [
-        "Returns the Audio Context for this sketch. Useful for users who would like to dig deeper into the <a target='_blank' href= 'http://webaudio.github.io/web-audio-api/'>Web Audio API </a>.  ",
-        "Some browsers require users to startAudioContext with a user gesture, such as touchStarted in the example below."
+        "retorna o contexto de áudio para este sketch. Útil para usuários que desejam se aprofundar no <a target='_blank' href= 'http://webaudio.github.io/web-audio-api/'>Web Audio API </a>.  ",
+        "Alguns navegadores exigem que os usuários iniciem o AudioContext com um gesto do usuário, como o touchStarted no exemplo abaixo."
       ],
-      "returns": "Object: AudioContext for this sketch"
+      "returns": "Objeto: AudioContext para este sketch."
     },
     "userStartAudio": {
       "description": [
-        "It is not only a good practice to give users control over starting audio. This policy is enforced by many web browsers, including iOS and <a href=\"https://goo.gl/7K7WLu\" title=\"Google Chrome's autoplay policy\">Google Chrome</a>, which create the Web Audio API's <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/AudioContext\" title=\"Audio Context @ MDN\">Audio Context</a> in a suspended state.  ",
-        "In these browser-specific policies, sound will not play until a user interaction event (i.e. <code>mousePressed()</code>) explicitly resumes the AudioContext, or starts an audio node. This can be accomplished by calling <code>start()</code> on a <code>p5.Oscillator</code>, <code> play()</code> on a <code>p5.SoundFile</code>, or simply <code>userStartAudio()</code>.  ",
-        "<code>userStartAudio()</code> starts the AudioContext on a user gesture. The default behavior will enable audio on any mouseUp or touchEnd event. It can also be placed in a specific interaction function, such as <code>mousePressed()</code> as in the example below. This method utilizes <a href=\"https://github.com/tambien/StartAudioContext\">StartAudioContext </a>, a library by Yotam Mann (MIT Licence, 2016)."
+        "Não é apenas uma boa prática dar aos usuários controle sobre como iniciar o áudio. Esta política é aplicada por muitos navegadores da web, incluindo iOS e <a href=\"https://goo.gl/7K7WLu\" title=\"Google Chrome's autoplay policy\">Google Chrome</a>, que criou a Web Audio API <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/AudioContext\" title=\"Audio Context @ MDN\">Audio Context</a> em um estado suspenso.  ",
+        "Nessas políticas específicas do navegador, o som não será reproduzido até um evento de interação do usuário (i.e. <code>mousePressed()</code>) retoma explicitamente o AudioContext, ou inicia um audio node (nó). Isso pode ser feito chamando <code>start()</code> em um <code>p5.Oscillator</code>, <code> play()</code> em um <code>p5.SoundFile</code>, ou simplesmente <code>userStartAudio()</code>.  ",
+        "<code>userStartAudio()</code> inicia o AudioContext em um gesto do usuário. O comportamento padrão habilitará o áudio em qualquer evento mouseUp ou touchEnd. Ele também pode ser colocado em uma função de interação específica, como o <code>mousePressed()</code> como no exemplo abaixo. Este método utiliza <a href=\"https://github.com/tambien/StartAudioContext\">StartAudioContext </a>, uma biblioteca por Yotam Mann (MIT Licence, 2016)."
       ],
-      "returns": "Promise: Returns a Promise that resolves when  the AudioContext state is 'running'",
+      "returns": "Promise: retorna uma Promise que é resolvida quando o estado AudioContext está 'em execução'",
       "params": {
-        "element(s)": "Element|Array: (Optional) This argument can be an Element,  Selector String, NodeList, p5.Element,  jQuery Element, or an Array of any of those.",
-        "callback": "Function: (Optional) Callback to invoke when the AudioContext  has started"
+        "element(s)": "Elemento|Array (opcional): Este argumento pode ser um Element,  Selector String, NodeList, p5.Element,  jQuery Element, ou um Array de qualquer um desses.",
+        "callback": "Função (opcional): Callback para invocar quando o AudioContext for iniciado"
       }
     },
     "loadSound": {
       "description": [
-        "loadSound() returns a new p5.SoundFile from a specified path. If called during preload(), the p5.SoundFile will be ready to play in time for setup() and draw(). If called outside of preload, the p5.SoundFile will not be ready immediately, so loadSound accepts a callback as the second parameter. Using a <a href=\"https://github.com/processing/p5.js/wiki/Local-server\"> local server</a> is recommended when loading external files."
+        "loadSound() retorna um novo p5.SoundFile de um endereço de arquivo especificado. Se chamado durante o preload(), o p5.SoundFile estará pronto para tocar a tempo para o setup() e draw(). Se chamado fora do preload, o p5.SoundFile não estará pronto imediatamente, então o loadSound aceita um callback como segundo parâmetro. Usar um <a href=\"https://github.com/processing/p5.js/wiki/Local-server\"> servidor local</a> é recomendado ao carregar arquivos externos."
       ],
-      "returns": "SoundFile: Returns a p5.SoundFile",
+      "returns": "SoundFile: retorna um p5.SoundFile",
       "params": {
-        "path": "String|Array: Path to the sound file, or an array with  paths to soundfiles in multiple formats  i.e. ['sound.ogg', 'sound.mp3'].  Alternately, accepts an object: either  from the HTML5 File API, or a p5.File.",
-        "successCallback": "Function: (Optional) Name of a function to call once file loads",
-        "errorCallback": "Function: (Optional) Name of a function to call if there is  an error loading the file.",
-        "whileLoading": "Function: (Optional) Name of a function to call while file is loading.  This function will receive the percentage loaded  so far, from 0.0 to 1.0."
+        "path": "String|Array: endereço para o arquivo de som, ou um array com os endereços dos arquivos para os soundfiles em vários formatos   i.e. ['sound.ogg', 'sound.mp3'].  Alternativamente, aceita um objeto: tanto do arquivo de API HTML5, ou um p5.File.",
+        "successCallback": "Função (opcional): nome de uma função a ser chamada assim que o arquivo carregar",
+        "errorCallback": "Função (opcional): nome de uma função a ser chamada se houver um erro ao carregar o arquivo.",
+        "whileLoading": "Função (opcional): Nome de uma função a ser chamada durante o carregamento do arquivo. Esta função receberá a porcentagem carregada até o momento, de 0.0 a 1.0."
       }
     },
     "createConvolver": {
       "description": [
-        "Create a p5.Convolver. Accepts a path to a soundfile that will be used to generate an impulse response."
+        "Cria um p5.Convolver. Aceita um caminho para um arquivo de som que será usado para gerar uma resposta de impulso."
       ],
       "returns": "p5.Convolver: ",
       "params": {
-        "path": "String: path to a sound file",
-        "callback": "Function: (Optional) function to call if loading is successful.  The object will be passed in as the argument  to the callback function.",
-        "errorCallback": "Function: (Optional) function to call if loading is not successful.  A custom error will be passed in as the argument  to the callback function."
+        "path": "String: endereço para o arquivo de som.",
+        "callback": "Função (opcional): função a ser chamada se o carregamento for bem-sucedido. O objeto será passado como argumento para a função de callback.",
+        "errorCallback": "Função (opcional): função a ser chamada se o carregamento não for bem-sucedido. Um erro personalizado será passado como argumento para a função de callback."
       }
     },
     "setBPM": {
       "description": [
-        "Set the global tempo, in beats per minute, for all p5.Parts. This method will impact all active p5.Parts."
+        "Define o tempo global, em batidas por minuto, para todas as p5.Parts. Este método afetará todas as p5.Parts ativas."
       ],
       "params": {
-        "BPM": "Number: Beats Per Minute",
-        "rampTime": "Number: Seconds from now"
+        "BPM": "Número: Beats Por Minuto",
+        "rampTime": "Número: Daqui a segundos"
       }
     },
     "saveSound": {
       "description": [
-        "Save a p5.SoundFile as a .wav file. The browser will prompt the user to download the file to their device. For uploading audio to a server, use <a href=\"/docs/reference/#/p5.SoundFile/saveBlob\"><code>p5.SoundFile.saveBlob</code></a>."
+        "Salva um p5.SoundFile como um arquivo .wav. O navegador solicitará que o usuário baixe o arquivo em seu dispositivo. Para fazer upload de áudio para um servidor, use <a href=\"/docs/reference/#/p5.SoundFile/saveBlob\"><code>p5.SoundFile.saveBlob</code></a>."
       ],
       "params": {
-        "soundFile": "p5.SoundFile: p5.SoundFile that you wish to save",
-        "fileName": "String: name of the resulting .wav file."
+        "soundFile": "p5.SoundFile: p5.SoundFile que você deseja salvar",
+        "fileName": "String: nome do arquivo .wav resultante."
       }
     }
   },
