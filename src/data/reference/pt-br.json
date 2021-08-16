@@ -2955,148 +2955,148 @@
     },
     "match": {
       "description": [
-        "This function is used to apply a regular expression to a piece of text, and return matching groups (elements found inside parentheses) as a String array. If there are no matches, a null value will be returned. If no groups are specified in the regular expression, but the sequence matches, an array of length 1 (with the matched text as the first element of the array) will be returned. ",
-        "To use the function, first check to see if the result is null. If the result is null, then the sequence did not match at all. If the sequence did match, an array is returned. ",
-        "If there are groups (specified by sets of parentheses) in the regular expression, then the contents of each will be returned in the array. Element [0] of a regular expression match returns the entire matching string, and the match groups start at element [1] (the first group is [1], the second [2], and so on)."
+        "Esta função é usada para aplicar uma expressão regular a um trecho de texto e retornar grupos correspondentes (elementos encontrados entre parênteses) como um vetor de Strings. Se não houver correspondências, um valor nulo será retornado. Se nenhum grupo for especificado na expressão regular, mas a sequência corresponder, um vetor de comprimento 1 (com o texto correspondente como o primeiro elemento do vetor) será retornado.",
+        "Para usar a função, primeiro verifique se o resultado é nulo. Se o resultado for nulo, então a sequência não coincidiu. Se a sequência coincidiu, um vetor é retornada.",
+        "Se houver grupos (especificados por conjuntos de parênteses) na expressão regular, os conteúdos de cada um serão retornados no vetor. O elemento [0] de uma correspondência de uma expressão regular retorna toda a string correspondente e os grupos de correspondência começam no elemento [1] (o primeiro grupo é [1], o segundo [2] e assim por diante).”
       ],
-      "returns": "String[]: Array of Strings found",
+      "returns": "String[]: Vetor de Strings encontrado",
       "params": {
-        "str": "String: the String to be searched",
-        "regexp": "String: the regexp to be used for matching"
+        "str": "String: a String a ser procurada",
+        "regexp": "String: a expressão regular a ser usada para procurar correspondências"
       }
     },
     "matchAll": {
       "description": [
-        "This function is used to apply a regular expression to a piece of text, and return a list of matching groups (elements found inside parentheses) as a two-dimensional String array. If there are no matches, a null value will be returned. If no groups are specified in the regular expression, but the sequence matches, a two dimensional array is still returned, but the second dimension is only of length one. ",
-        "To use the function, first check to see if the result is null. If the result is null, then the sequence did not match at all. If the sequence did match, a 2D array is returned. ",
-        "If there are groups (specified by sets of parentheses) in the regular expression, then the contents of each will be returned in the array. Assuming a loop with counter variable i, element [i][0] of a regular expression match returns the entire matching string, and the match groups start at element [i][1] (the first group is [i][1], the second [i][2], and so on)."
+        "Esta função é usada para aplicar uma expressão regular a um trecho de texto e retornar uma lista de grupos correspondentes (elementos encontrados entre parênteses) como uma matriz de strings bidimensional. Se não houver correspondências, um valor nulo será retornado. Se nenhum grupo for especificado na expressão regular, mas a sequência corresponder, uma matriz bidimensional ainda será retornada, mas a segunda dimensão terá apenas o comprimento um.",
+        "Para usar a função, primeiro verifique se o resultado é nulo. Se o resultado for nulo, então a sequência não coincidiu. Se a sequência coincidiu, uma matriz 2D é retornada.",
+        "Se houver grupos (especificados por conjuntos de parênteses) na expressão regular, os conteúdos de cada um serão retornados na matriz. Assumindo um loop com variável de contador i, o elemento [i][0] de uma correspondência de expressão regular retorna toda a string correspondente e os grupos de correspondência começam no elemento [i][1] (o primeiro grupo é [i][1] , o segundo [i][2] e assim por diante)."
       ],
-      "returns": "String[]: 2d Array of Strings found",
+      "returns": "String[]: Array 2D de strings encontradas",
       "params": {
-        "str": "String: the String to be searched",
-        "regexp": "String: the regexp to be used for matching"
+        "str": "String: a String a ser procurada",
+        "regexp": "String: a expressão regular a ser usada para procurar correspondências"
       }
     },
     "nf": {
       "description": [
-        "Utility function for formatting numbers into strings. There are two versions: one for formatting floats, and one for formatting ints. The values for the digits, left, and right parameters should always be positive integers. (NOTE): Be cautious when using left and right parameters as it prepends numbers of 0's if the parameter if greater than the current length of the number. For example if number is 123.2 and left parameter passed is 4 which is greater than length of 123 (integer part) i.e 3 than result will be 0123.2. Same case for right parameter i.e. if right is 3 than the result will be 123.200."
+        "Função utilitária para formatar números em strings. Existem duas versões: uma para formatar floats e outra para formatar ints. Os valores dos dígitos, parâmetros esquerdo e direito devem ser sempre inteiros positivos. (NOTA): Tenha cautela ao usar os parâmetros esquerdo e direito, uma vez que eles adicionam números de 0s se o parâmetro for maior que o comprimento atual do número. Por exemplo, se o número for 123,2 e o parâmetro esquerdo passado for de 4, que é maior que o comprimento de 123 (parte inteira), ou seja, 3, o resultado será 0123,2. Mesmo caso para o parâmetro direito, ou seja, se o direito for 3, o resultado será 123,200."
       ],
-      "returns": "String: formatted String",
+      "returns": "String: String formatada",
       "params": {
-        "num": "Number|String: the Number to format",
-        "left": "Integer|String: (Optional) number of digits to the left of the  decimal point",
-        "right": "Integer|String: (Optional) number of digits to the right of the  decimal point",
-        "nums": "Array: the Numbers to format"
+        "num": "Número|String: o número a ser formatado",
+        "left": "Inteiro|String (opcional): número de dígitos à esquerda da vírgula decimal",
+        "right": "Inteiro|String (opcional):número de dígitos à direita da vírgula decimal ",
+        "nums": "Array: os números a se formatar"
       }
     },
     "nfc": {
       "description": [
-        "Utility function for formatting numbers into strings and placing appropriate commas to mark units of 1000. There are two versions: one for formatting ints, and one for formatting an array of ints. The value for the right parameter should always be a positive integer."
+        "Função utilitária para formatar números em strings e colocar vírgulas apropriadas para marcar unidades de 1000. Existem duas versões: uma para formatar ints e outra para formatar uma array de ints. O valor do parâmetro correto deve ser sempre um número inteiro positivo."
       ],
-      "returns": "String: formatted String",
+      "returns": "String: String formatada",
       "params": {
-        "num": "Number|String: the Number to format",
-        "right": "Integer|String: (Optional) number of digits to the right of the  decimal point",
-        "nums": "Array: the Numbers to format"
+        "num": "Numero|String: o número a ser formatado",
+        "right": "Inteiro|String (opcional): número de dígitos à direita da vírgula decimal",
+        "nums": "Array: os números a se formatar"
       }
     },
     "nfp": {
       "description": [
-        "Utility function for formatting numbers into strings. Similar to <a href=\"#/p5/nf\">nf()</a> but puts a \"+\" in front of positive numbers and a \"-\" in front of negative numbers. There are two versions: one for formatting floats, and one for formatting ints. The values for left, and right parameters should always be positive integers."
+        "Função utilitária para formatar números em strings. Similar a <a href=\"#/p5/nf\">nf()</a> mas coloca um \"+\" na frente de números positivos e um \"-\" na frente de números negativos. Existem duas versões: uma para formatar floats e outra para formatar ints. Os valores dos parâmetros esquerdo e direito devem ser sempre inteiros positivos. "
       ],
-      "returns": "String: formatted String",
+   "returns": "String: String formatada",
       "params": {
-        "num": "Number: the Number to format",
-        "left": "Integer: (Optional) number of digits to the left of the decimal  point",
-        "right": "Integer: (Optional) number of digits to the right of the  decimal point",
-        "nums": "Number[]: the Numbers to format"
+        "num": "Número: o número a ser formatado",
+        "left": "Número (opcional): número de dígitos à esquerda da vírgula decimal",
+        "right": "Número (opcional): número de dígitos à direita da vírgula decimal ",
+        "nums": "Número[]: os números a se formatar"
       }
     },
     "nfs": {
       "description": [
-        "Utility function for formatting numbers into strings. Similar to <a href=\"#/p5/nf\">nf()</a> but puts an additional \"_\" (space) in front of positive numbers just in case to align it with negative numbers which includes \"-\" (minus) sign. The main usecase of nfs() can be seen when one wants to align the digits (place values) of a non-negative number with some negative number (See the example to get a clear picture). There are two versions: one for formatting float, and one for formatting int. The values for the digits, left, and right parameters should always be positive integers. (IMP): The result on the canvas basically the expected alignment can vary based on the typeface you are using. (NOTE): Be cautious when using left and right parameters as it prepends numbers of 0's if the parameter if greater than the current length of the number. For example if number is 123.2 and left parameter passed is 4 which is greater than length of 123 (integer part) i.e 3 than result will be 0123.2. Same case for right parameter i.e. if right is 3 than the result will be 123.200."
+        "Função utilitária para formatar números em strings. Similar a <a href=\"#/p5/nf\">nf()</a> mas coloca um \"_\" (espaço) adicional na frente de números positivos a fim de alinhá-los com números negativos que incluem o sinal \"-\" (menos). O principal tipo de uso de nfs() pode ser visto quando se deseja alinhar os dígitos (valores de posição) de um número não negativo com algum número negativo (veja o exemplo para obter uma imagem clara). Existem duas versões: uma para formatar floats e outra para formatar ints. Os valores dos dígitos, parâmetros esquerdo e direito, devem ser sempre inteiros positivos. <br/> Importante: o resultado mostrado no Canvas do alinhamento esperado pode variar com base no tipo de fonte tipográfica que você está usando. <br/> (NOTA): Tenha cautela ao usar os parâmetros esquerdo e direito, uma vez que eles adicionam números de 0s se o parâmetro for maior que o comprimento atual do número. Por exemplo, se o número for 123,2 e o parâmetro esquerdo passado for de 4, que é maior que o comprimento de 123 (parte inteira), ou seja, 3, o resultado será 0123,2. Mesmo caso para o parâmetro direito, ou seja, se o direito for 3, o resultado será 123,200."
       ],
-      "returns": "String: formatted String",
+      "returns": "String: String formatada",
       "params": {
-        "num": "Number: the Number to format",
-        "left": "Integer: (Optional) number of digits to the left of the decimal  point",
-        "right": "Integer: (Optional) number of digits to the right of the  decimal point",
-        "nums": "Array: the Numbers to format"
+        "num": "Número: o número a ser formatado",
+        "left": "Número (opcional): número de dígitos à esquerda da vírgula decimal",
+        "right": "Número (opcional): número de dígitos à direita da vírgula decimal ",
+        "nums": "Array: os números a se formatar"
       }
     },
     "split": {
       "description": [
-        "The <a href=\"#/p5/split\">split()</a> function maps to String.split(), it breaks a String into pieces using a character or string as the delimiter. The delim parameter specifies the character or characters that mark the boundaries between each piece. A String[] array is returned that contains each of the pieces. ",
-        "The <a href=\"#/p5/splitTokens\">splitTokens()</a> function works in a similar fashion, except that it splits using a range of characters instead of a specific character or sequence."
+        "A função <a href=\"#/p5/split\">split()</a> mapeia para String.split(), ela divide uma String em pedaços usando um caractere ou string como delimitador. O parâmetro delim especifica o caractere ou caracteres que marcam os limites entre cada pedaço. Uma array de String[] é retornado contendo cada uma das peças. ",
+        "A função <a href=\"#/p5/splitTokens\">splitTokens()</a> funciona de maneira semelhante, exceto por se dividir usando um intervalo de caracteres em vez de um caractere ou sequência específica. "
       ],
-      "returns": "String[]: Array of Strings",
+      "returns": "String[]: Array de Strings",
       "params": {
-        "value": "String: the String to be split",
-        "delim": "String: the String used to separate the data"
+        "value": "String: a String a ser dividida",
+        "delim": "String: a String usada para separar os dados"
       }
     },
     "splitTokens": {
       "description": [
-        "The <a href=\"#/p5/splitTokens\">splitTokens()</a> function splits a String at one or many character delimiters or \"tokens.\" The delim parameter specifies the character or characters to be used as a boundary. ",
-        "If no delim characters are specified, any whitespace character is used to split. Whitespace characters include tab (\\t), line feed (\\n), carriage return (\\r), form feed (\\f), and space."
+        "A função <a href=\"#/p5/splitTokens\">splitTokens()</a> divide uma String em um ou mais delimitadores de caracteres ou \"tokens.\" O parâmetro delim especifica o caractere ou caracteres a serem usados como limite. "
+        "Se nenhum caractere delim for especificado, qualquer caractere de espaço em branco será usado para dividir. Os caracteres de espaço em branco incluem tab (\\t), nova linha (\\n), retorno de carro (\\r), alimentação de formulário (\\f), e espaço. "
       ],
-      "returns": "String[]: Array of Strings",
+      "returns": "String[]: Array de Strings",
       "params": {
-        "value": "String: the String to be split",
-        "delim": "String: (Optional) list of individual Strings that will be used as  separators"
+        "value": "String: a String a ser dividida",
+        "delim": "String (opcional): lista de Strings individuais que serão usadas como separadores"
       }
     },
     "trim": {
       "description": [
-        "Removes whitespace characters from the beginning and end of a String. In addition to standard whitespace characters such as space, carriage return, and tab, this function also removes the Unicode \"nbsp\" character."
+        "Remove os caracteres de espaço em branco do início e do final de uma String. Além dos caracteres de espaço em branco padrão, como espaço, retorno de carro e tab, esta função também remove o caractere Unicode \"nbsp\"."
       ],
-      "returns": "String: a trimmed String",
+      "returns": "String: uma String aparada",
       "params": {
-        "str": "String: a String to be trimmed",
-        "strs": "Array: an Array of Strings to be trimmed"
+        "str": "String: uma String a ser aparada",
+        "strs": "Array: uma Array de Strings a ser aparado"
       }
     },
     "day": {
       "description": [
-        "p5.js communicates with the clock on your computer. The <a href=\"#/p5/day\">day()</a> function returns the current day as a value from 1 - 31."
+        "p5.js se comunica com o relógio do seu computador. A função <a href=\"#/p5/day\">day()</a> retorna o dia atual como um valor de 1 - 31."
       ],
-      "returns": "Integer: the current day"
+      "returns": "Inteiro: o dia atual"
     },
     "hour": {
       "description": [
-        "p5.js communicates with the clock on your computer. The <a href=\"#/p5/hour\">hour()</a> function returns the current hour as a value from 0 - 23."
+        "p5.js se comunica com o relógio do seu computador. A função <a href=\"#/p5/hour\">hour()</a> retorna a hora atual como um valor de 0 - 23."
       ],
-      "returns": "Integer: the current hour"
+      "returns": "Inteiro: a hora atual"
     },
     "minute": {
       "description": [
-        "p5.js communicates with the clock on your computer. The <a href=\"#/p5/minute\">minute()</a> function returns the current minute as a value from 0 - 59."
+        "p5.js se comunica com o relógio do seu computador. A função <a href=\"#/p5/minute\">minute()</a> retorna o minuto atual como um valor de 0 - 59."
       ],
-      "returns": "Integer: the current minute"
+      "returns": "Inteiro: o minuto atual"
     },
     "millis": {
       "description": [
-        "Returns the number of milliseconds (thousandths of a second) since starting the sketch (when <code>setup()</code> is called). This information is often used for timing events and animation sequences."
+        "retorna o número de milissegundos (milésimos de segundo) desde que o programa começou a ser executado (quando <code>setup()</code> é chamado). Esta informação é frequentemente usada para eventos de temporização e sequências de animação."
       ],
-      "returns": "Number: the number of milliseconds since starting the sketch"
+      "returns": "Número: o número de milissegundos desde que o programa começou a ser executado "
     },
     "month": {
       "description": [
-        "p5.js communicates with the clock on your computer. The <a href=\"#/p5/month\">month()</a> function returns the current month as a value from 1 - 12."
+        "p5.js se comunica com o relógio do seu computador. A função <a href=\"#/p5/month\">month()</a> retorna o mês atual como um valor de 1 - 12."
       ],
-      "returns": "Integer: the current month"
+      "returns": "Inteiro: o mês atual"
     },
     "second": {
       "description": [
-        "p5.js communicates with the clock on your computer. The <a href=\"#/p5/second\">second()</a> function returns the current second as a value from 0 - 59."
+        "p5.js se comunica com o relógio do seu computador. A função <a href=\"#/p5/second\">second()</a> retorna o segundo atual como um valor de 0 - 59."
       ],
-      "returns": "Integer: the current second"
+      "returns": "Inteiro: o segundo atual"
     },
     "year": {
       "description": [
-        "p5.js communicates with the clock on your computer. The <a href=\"#/p5/year\">year()</a> function returns the current year as an integer (2014, 2015, 2016, etc)."
+        "p5.js se comunica com o relógio do seu computador. A função <a href=\"#/p5/year\">year()</a> retorna o ano atual como um inteiro (2014, 2015, 2016, etc)."
       ],
-      "returns": "Integer: the current year"
+      "returns": "Inteiro: o ano atual"
     },
     "plane": {
       "description": [
