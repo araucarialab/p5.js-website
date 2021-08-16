@@ -1031,108 +1031,108 @@
       ]
     },
     "let": {
-      "description": [
-        "Creates and names a new variable. A variable is a container for a value.",
-        "Variables that are declared with <a href=\"#/p5/let\">let</a> will have block-scope. This means that the variable only exists within the <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block\"> block</a> that it is created within. ",
-        "From <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let\">the MDN entry</a>: Declares a block scope local variable, optionally initializing it to a value."
+      "Descrição": [
+        "Cria e nomeia uma nova variável. Uma variável é um contêiner para um valor. ",
+        "Variáveis que são declaradas com <a href=\"#/p5/let\">let</a> terão escopo de bloco. Isso significa que a variável só existe dentro do <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block\"> bloco</a> em que foi criada. ",
+        "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let\"> entrada MDN</a>: Declara uma variável local de escopo de bloco, opcionalmente inicializando-a com um valor."
       ]
     },
     "const": {
-      "description": [
-        "Creates and names a new constant. Like a variable created with <a href=\"#/p5/let\">let</a>, a constant that is created with <a href=\"#/p5/const\">const</a> is a container for a value, however constants cannot be reassigned once they are declared. Although it is noteworthy that for non-primitive data types like objects & arrays, their elements can still be changeable. So if a variable is assigned an array, you can still add or remove elements from the array but cannot reassign another array to it. Also unlike <code>let</code>, you cannot declare variables without value using const. ",
-        "Constants have block-scope. This means that the constant only exists within the <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block\"> block</a> that it is created within. A constant cannot be redeclared within a scope in which it already exists. ",
-        "From <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const\">the MDN entry</a>: Declares a read-only named constant. Constants are block-scoped, much like variables defined using the 'let' statement. The value of a constant can't be changed through reassignment, and it can't be redeclared."
+      "Descrição": [
+        "Cria e nomeia uma nova constante. Como uma variável criada com <a href=\"#/p5/let\">let</a>, uma constante que é criada com <a href=\"#/p5/const\">const</a> é um contêiner para um valor, no entanto, as constantes não podem ser reatribuídas depois de declaradas. Embora seja digno de nota que, para tipos de dados não primitivos, como objetos e arrays, seus elementos ainda podem ser mutáveis. Portanto, se uma variável é atribuída a um array, você ainda pode adicionar ou remover elementos do array, mas não pode reatribuir outro array a ele. Ainda, ao contrário de <code>let</code>, você não pode declarar variáveis sem valor usando const. ",
+        "Constantes têm escopo de bloco. Isso significa que a constante só existe dentro do <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block\"> bloco</a> em que é criada. Uma constante não pode ser declarada novamente dentro de um escopo no qual já existe. ",
+        "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const\">entrada MDN</a>: Declara uma constante nomeada somente para leitura. As constantes têm escopo de bloco, muito parecido com as variáveis definidas usando a instrução 'let'. O valor de uma constante não pode ser alterado por meio de reatribuição e não pode ser declarado novamente."
       ]
     },
     "===": {
-      "description": [
-        "The strict equality operator <a href=\"#/p5/===\">===</a> checks to see if two values are equal and of the same type. ",
-        "A comparison expression always evaluates to a <a href=\"#/p5/boolean\">boolean</a>. ",
-        "From <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\">the MDN entry</a>: The non-identity operator returns true if the operands are not equal and/or not of the same type. ",
-        "Note: In some examples around the web you may see a double-equals-sign <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Equality\">==</a>, used for comparison instead. This is the non-strict equality operator in Javascript. This will convert the two values being compared to the same type before comparing them."
+      "Descrição": [
+        "O operador de igualdade estrita <a href=\"#/p5/===\">===</a> verifica se dois valores são iguais e do mesmo tipo. ",
+        "Uma expressão de comparação sempre avalia como um <a href=\"#/p5/boolean\">booleano</a>. ",
+        "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\">entrada MDN</a>: O operador de não identidade retorna true (verdadeiro) se os operandos não são iguais e / ou não são do mesmo tipo. ",
+        "Observação: em alguns exemplos na web, você pode ver um sinal de igual duplo <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Equality\">==</a>, usado para comparação. Este é o operador de igualdade não estrita em Javascript. Ele converterá os dois valores que estão sendo comparados ao mesmo tipo antes de compará-los.."
       ]
     },
     ">": {
-      "description": [
-        "The greater than operator <a href=\"#/p5/>\">></a> evaluates to true if the left value is greater than the right value. <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\"> There is more info on comparison operators on MDN.</a>"
+      "Descrição": [
+        "O operador maior que <a href=\"#/p5/>\">></a> é avaliado como true (verdadeiro) se o valor à esquerda for maior que o valor à direita. <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\">Mais informações sobre operadores de comparação no MDN.</a>"
       ]
     },
     ">=": {
-      "description": [
-        "The greater than or equal to operator <a href=\"#/p5/>=\">>=</a> evaluates to true if the left value is greater than or equal to the right value. ",
-        "<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\">There is more info on comparison operators on MDN.</a>"
+      "Descrição": [
+        "O operador maior que ou igual a <a href=\"#/p5/>=\">>=</a> avalia como true (verdadeiro) se o valor da esquerda for maior ou igual ao valor da direita. ",
+        "<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\">Mais informações sobre operadores de comparação no MDN.</a>"
       ]
     },
     "<": {
-      "description": [
-        "The less than operator <a href=\"#/p5/<\"><</a> evaluates to true if the left value is less than the right value. ",
-        "<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\">There is more info on comparison operators on MDN.</a>"
+      "Descrição": [
+        "O operador menor que <a href=\"#/p5/<\"><</a> avalia como true (verdadeiro) se o valor à esquerda for menor que o valor à direita. ",
+        "<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\">Mais informações sobre operadores de comparação no MDN.</a>"
       ]
     },
     "<=": {
-      "description": [
-        "The less than or equal to operator <a href=\"#/p5/<=\"><=</a> evaluates to true if the left value is less than or equal to the right value. ",
-        "<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\">There is more info on comparison operators on MDN.</a>"
+      "Descrição": [
+        "O operador menor que ou igual a <a href=\"#/p5/<=\"><=</a> avalia como true  (verdadeiro) se o valor esquerdo for menor ou igual ao valor direito. ",
+        "<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\">Mais informações sobre operadores de comparação no MDN.</a>"
       ]
     },
     "if-else": {
-      "description": [
-        "The <a href=\"#/p5/if-else\">if-else</a> statement helps control the flow of your code. ",
-        "A condition is placed between the parenthesis following 'if', when that condition evalues to <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/truthy\">truthy</a>, the code between the following curly braces is run. Alternatively, when the condition evaluates to <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/Falsy\">falsy</a>, the code between the curly braces of 'else' block is run instead. Writing an else block is optional. ",
-        "From <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else\">the MDN entry</a>: The 'if' statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement can be executed"
+      "Descrição": [
+        "A declaração <a href=\"#/p5/if-else\">if-else</a> (se/senão) ajuda a controlar o fluxo do seu código. ",
+        "Uma condição é colocada entre parênteses após 'if' (se), quando essa condição é avaliada como <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/truthy\">verdade</a>, o código entre as chaves seguintes é executado. Alternativamente, quando a condição é avalia como <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/Falsy\">falsa</a>, o código entre as chaves do bloco 'else' é executado em seu lugar. Escrever um bloco else é opcional. ",
+        "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else\">entrada MDN</a>: A declaração 'if' executa uma instrução se uma condição especificada for verdadeira. Se a condição for falsa, outra instrução pode ser executada."
       ]
     },
     "function": {
-      "description": [
-        "Creates and names a <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions\">function</a>. A <a href=\"#/p5/function\">function</a> is a set of statements that perform a task. ",
-        "Optionally, functions can have parameters. <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/Parameter\">Parameters</a> are variables that are scoped to the function, that can be assigned a value when calling the function.Multiple parameters can be given by seperating them with commmas. ",
-        "From <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function\">the MDN entry</a>: Declares a function with the specified parameters."
+      "Descrição": [
+        "Cria e nomeia uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions\">função</a>. Uma <a href=\"#/p5/function\">função</a> é um conjunto de instruções que executam uma tarefa. ",
+        "Opcionalmente, as funções podem ter parâmetros. <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/Parameter\">Parâmetros</a> são variáveis que têm como escopo a função, que podem receber um valor ao chamar a função. Vários parâmetros podem ser dados separados por vírgulas. ",
+        "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function\">entrada MDN</a>: Declara uma função com os parâmetros especificados."
       ]
     },
     "return": {
-      "description": [
-        "Specifies the value to be returned by a function. For more info checkout <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return\"> the MDN entry for return</a>."
+      "Descrição": [
+        "Especifica o valor a ser retornado por uma função. Para obter mais informações, verifique <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return\">a entrada MDN para return</a>."
       ]
     },
     "boolean": {
-      "description": [
-        "Converts a number or string to its boolean representation. For a number, any non-zero value (positive or negative) evaluates to true, while zero evaluates to false. For a string, the value \"true\" evaluates to true, while any other value evaluates to false. When an array of number or string values is passed in, then a array of booleans of the same length is returned."
+      "Descrição": [
+        "Converte um número ou string em sua representação booleana. Para um número, qualquer valor diferente de zero (positivo ou negativo) é avaliado como true (verdadeiro), enquanto zero é avaliado como false (falso). Para uma string, o valor \ "true \" é avaliado como verdadeiro, enquanto qualquer outro valor é avaliado como falso. Quando uma array de números ou valores de string é passada, então uma array de booleanos do mesmo comprimento é retornada."
       ],
-      "returns": "Boolean: boolean representation of value",
+      "Retorna": "Booleano: representação booleana de valor",
       "params": {
-        "n": "String|Boolean|Number|Array: value to parse"
+        "n": "String|Booleano|Número|Array: valor para analisar"
       }
     },
     "string": {
-      "description": [
-        "A <a href=\"#/p5/string\">string</a> is one of the 7 <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Primitive_values\">primitive data types</a> in Javascript. A string is a series of text characters. In Javascript, a string value must be surrounded by either single-quotation marks(') or double-quotation marks(\"). ",
-        "From <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/string\">the MDN entry</a>: A string is a sequence of characters used to represent text."
+      "Descrição": [
+        "Uma <a href=\"#/p5/string\">string</a> é um dos 7 <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Primitive_values\">tipos de dados primitivos</a> em Javascript. Uma string é uma série de caracteres de texto. Em Javascript, um valor de string deve estar entre aspas simples (') ou aspas duplas (\"). ",
+        "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/string\">entrada MDN</a>: Uma string é uma sequência de caracteres usada para representar texto."
       ]
     },
     "number": {
-      "description": [
-        "A <a href=\"#/p5/number\">number</a> is one of the 7 <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Primitive_values\">primitive data types</a> in Javascript. A number can be a whole number or a decimal number. ",
-        "<a href=\"https://developer.mozilla.org/en-US/docs/Glossary/number\">The MDN entry for number</a>"
+      "Descrição": [
+        "Um <a href=\"#/p5/number\">número</a> é um dos 7 <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Primitive_values\">tipos de dados primitivos</a> em Javascript. Um number pode ser um número inteiro ou decimal. ",
+        "<a href=\"https://developer.mozilla.org/en-US/docs/Glossary/number\">A entrada MDN para um número</a>"
       ]
     },
     "object": {
-      "description": [
-        "From <a href=\"https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics\">MDN's object basics</a>:  An <a href=\"#/p5/object\">object</a> is a collection of related data and/or  functionality (which usually consists of several variables and functions —  which are called properties and methods when they are inside objects.)"
+      "Descrição": [
+        "A partir de um <a href=\"https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics\">objeto básico de MDN</a>:  Um <a href=\"#/p5/object\">objeto</a> é uma coleção de dados relacionados e/ou funcionalidades (que geralmente consistem em várias variáveis e funções - que são chamadas de propriedades e métodos quando estão dentro de objetos.)"
       ]
     },
     "class": {
-      "description": [
-        "Creates and names a <a href=\"#/p5/class\">class</a> which is a template for the creation of <a href=\"#/p5/objects\">objects</a>. ",
-        "From <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class\">the MDN entry</a>: The class declaration creates a new Class with a given name using prototype-based inheritance."
+      "Descrição": [
+        "Cria e nomeia uma <a href=\"#/p5/class\">classe</a> que é um modelo para a criação de <a href=\"#/p5/objects\">objetos</a>. ",
+        "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class\">entrada MDN</a>: A declaração de classe cria uma nova classe com um determinado nome usando herança baseada em protótipo."
       ]
     },
     "for": {
-      "description": [
-        "<a href=\"#/p5/for\">for</a> creates a loop that is useful for executing one section of code multiple times. ",
-        "A 'for loop' consists of three different expressions inside of a parenthesis, all of which are optional.These expressions are used to control the number of times the loop is run.The first expression is a statement that is used to set the initial state for the loop.The second expression is a condition that you would like to check before each loop. If this expression returns false then the loop will exit.The third expression is executed at the end of each loop. These expression are seperated by ; (semi-colon).In case of an empty expression, only a semi-colon is written. ",
-        "The code inside of the loop body (in between the curly braces) is executed between the evaluation of the second and third expression. ",
-        "As with any loop, it is important to ensure that the loop can 'exit', or that the test condition will eventually evaluate to false. The test condition with a <a href=\"#/p5/for\">for</a> loop is the second expression detailed above. Ensuring that this expression can eventually become false ensures that your loop doesn't attempt to run an infinite amount of times, which can crash your browser. ",
-        "From <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for\">the MDN entry</a>: Creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once."
+      "Descrição": [
+        "<a href=\"#/p5/for\">for</a> cria um loop que é útil para executar uma seção de código várias vezes. ",
+        "Um 'loop for' consiste em três expressões diferentes entre parênteses, todas opcionais. Essas expressões são usadas para controlar o número de vezes que o loop é executado. A primeira expressão é uma instrução usada para definir o estado inicial para o loop. A segunda expressão é uma condição que você gostaria de verificar antes de cada loop. Se esta expressão retornar false (falso), então sairá do loop. A terceira expressão é executada no final de cada loop. Essas expressões são separadas por ; (ponto e vírgula). No caso de uma expressão vazia, apenas um ponto e vírgula é escrito. ",
+        "O código dentro do corpo do loop (entre as chaves) é executado entre a avaliação da segunda e da terceira expressão.",
+        "Como acontece com qualquer loop, é importante garantir que o loop possa 'sair' ou que a condição de teste acabe sendo avaliada como false (falsa). A condição de teste com um loop <a href=\"#/p5/for\">for</a> é a segunda expressão detalhada acima. Garantir que essa expressão possa eventualmente se tornar falsa garante que seu loop não tente ser executado uma quantidade infinita de vezes, o que pode travar seu navegador. ",
+        "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for\">entrada MDN</a>: Cria um loop que executa uma instrução especificada até que a condição de teste seja avaliada como falsa. A condição é avaliada após a execução da instrução, resultando na execução da instrução especificada pelo menos uma vez."
       ]
     },
     "while": {
