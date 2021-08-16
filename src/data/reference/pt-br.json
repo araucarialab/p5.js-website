@@ -3100,88 +3100,88 @@
     },
     "plane": {
       "description": [
-        "Draw a plane with given a width and height"
+        "Desenha um plano com largura e altura fornecidas"
       ],
       "params": {
-        "width": "Number: (Optional) width of the plane",
-        "height": "Number: (Optional) height of the plane",
-        "detailX": "Integer: (Optional) Optional number of triangle  subdivisions in x-dimension",
-        "detailY": "Integer: (Optional) Optional number of triangle  subdivisions in y-dimension"
+        "width": "Número (opcional): largura do plano",
+        "height": "Número (opcional): altura do plano",
+        "detailX": "Número (opcional): Número opcional de subdivisões de triângulo na dimensão x",
+        "detailY": "Número (opcional): Número opcional de subdivisões de triângulo na dimensão y"
       }
     },
     "box": {
       "description": [
-        "Draw a box with given width, height and depth"
+        "Desenha uma caixa com largura, altura e profundidade fornecidas"
       ],
       "params": {
-        "width": "Number: (Optional) width of the box",
-        "Height": "Number: (Optional) height of the box",
-        "depth": "Number: (Optional) depth of the box",
-        "detailX": "Integer: (Optional) Optional number of triangle  subdivisions in x-dimension",
-        "detailY": "Integer: (Optional) Optional number of triangle  subdivisions in y-dimension"
+        "width": "Número (opcional): largura da caixa",
+        "Height": "Número (opcional): altura da caixa",
+        "depth": "Número (opcional): profundidade da caixa",
+        "detailX": "Número (opcional): Número opcional de subdivisões de triângulo na dimensão x",
+        "detailY": "Número (opcional): Número opcional de subdivisões de triângulo na dimensão y"
       }
     },
     "sphere": {
       "description": [
-        "Draw a sphere with given radius. ",
-        "DetailX and detailY determines the number of subdivisions in the x-dimension and the y-dimension of a sphere. More subdivisions make the sphere seem smoother. The recommended maximum values are both 24. Using a value greater than 24 may cause a warning or slow down the browser."
+        "Desenha uma esfera com determinado raio.",
+        "DetailX e detailY determinam o número de subdivisões na dimensão x e na dimensão y de uma esfera. Mais subdivisões fazem a esfera parecer mais regular. Os valores máximos recomendados são ambos 24. Usar um valor maior que 24 pode causar um alerta ou tornar o navegador mais lento."
       ],
       "params": {
-        "radius": "Number: (Optional) radius of circle",
-        "detailX": "Integer: (Optional) optional number of subdivisions in x-dimension",
-        "detailY": "Integer: (Optional) optional number of subdivisions in y-dimension"
+        "radius": "Número (opcional): raio do círculo",
+        "detailX": "Número (opcional): Número opcional de subdivisões na dimensão x",
+        "detailY": "Número (opcional): Número opcional de subdivisões na dimensão y"
       }
     },
     "cylinder": {
       "description": [
-        "Draw a cylinder with given radius and height ",
-        "DetailX and detailY determines the number of subdivisions in the x-dimension and the y-dimension of a cylinder. More subdivisions make the cylinder seem smoother. The recommended maximum value for detailX is 24. Using a value greater than 24 may cause a warning or slow down the browser."
+        "Desenha um cilindro com determinado raio e altura ",
+        "DetailX e detailY determinam o número de subdivisões na dimensão x e na dimensão y de um cilindro. Mais subdivisões fazem o cilindro parecer mais regular. O valor máximo recomendado para detailX é 24. Usar um valor maior que 24 pode causar um alerta ou tornar o navegador mais lento."
       ],
       "params": {
-        "radius": "Number: (Optional) radius of the surface",
-        "height": "Number: (Optional) height of the cylinder",
-        "detailX": "Integer: (Optional) number of subdivisions in x-dimension;  default is 24",
-        "detailY": "Integer: (Optional) number of subdivisions in y-dimension;  default is 1",
-        "bottomCap": "Boolean: (Optional) whether to draw the bottom of the cylinder",
-        "topCap": "Boolean: (Optional) whether to draw the top of the cylinder"
+        "radius": "Número (opcional): raio da superfície",
+        "height": "Número (opcional): altura do cilindro",
+        "detailX": "Número (opcional): Número de subdivisões na dimensão x;  o padrão é 24",
+        "detailY": "Número (opcional): Número de subdivisões na dimensão y; o padrão é 1",
+        "bottomCap": "Booleano (opcional): se deve desenhar a base do cilindro",
+        "topCap": "Booleano (opcional): se deve desenhar o topo do cilindro"
       }
     },
     "cone": {
       "description": [
-        "Draw a cone with given radius and height ",
-        "DetailX and detailY determine the number of subdivisions in the x-dimension and the y-dimension of a cone. More subdivisions make the cone seem smoother. The recommended maximum value for detailX is 24. Using a value greater than 24 may cause a warning or slow down the browser."
+        "Desenha um cone com determinado raio e altura ",
+        "DetailX e detailY determinam o número de subdivisões na dimensão x e na dimensão y de um cone. Mais subdivisões fazem o cone parecer mais regular. O valor máximo recomendado para detailX é 24. Usar um valor maior que 24 pode causar um alerta ou tornar o navegador mais lento."
       ],
       "params": {
-        "radius": "Number: (Optional) radius of the bottom surface",
-        "height": "Number: (Optional) height of the cone",
-        "detailX": "Integer: (Optional) number of segments,  the more segments the smoother geometry  default is 24",
-        "detailY": "Integer: (Optional) number of segments,  the more segments the smoother geometry  default is 1",
-        "cap": "Boolean: (Optional) whether to draw the base of the cone"
+        "radius": "Número (opcional): raio da base",
+        "height": "Número (opcional): altura do cone",
+        "detailX": "Número (opcional): Número de segmentos, por padrão é 24, quanto mais segmentos, mais regular sua geometria.",
+        "detailY": "Número (opcional): Número de segmentos, por padrão é 1, quanto mais segmentos, mais regular sua geometria",
+        "cap": "Booleano (opcional): se deve desenhar a base do cone"
       }
     },
     "ellipsoid": {
       "description": [
-        "Draw an ellipsoid with given radius ",
-        "DetailX and detailY determine the number of subdivisions in the x-dimension and the y-dimension of a cone. More subdivisions make the ellipsoid appear to be smoother. Avoid detail number above 150, it may crash the browser."
+        "Desenha um elipsóide com determinado raio",
+        "DetailX e detailY determinam o número de subdivisões na dimensão x e na dimensão y de um cone. Mais subdivisões fazem o elipsóide parecer mais regular. Evite o número do parâmetro acima de 150, pois pode travar o navegador."
       ],
       "params": {
-        "radiusx": "Number: (Optional) x-radius of ellipsoid",
-        "radiusy": "Number: (Optional) y-radius of ellipsoid",
-        "radiusz": "Number: (Optional) z-radius of ellipsoid",
-        "detailX": "Integer: (Optional) number of segments,  the more segments the smoother geometry  default is 24. Avoid detail number above  150, it may crash the browser.",
-        "detailY": "Integer: (Optional) number of segments,  the more segments the smoother geometry  default is 16. Avoid detail number above  150, it may crash the browser."
+        "radiusx": "Número (opcional): raio x do elipsóide",
+        "radiusy": "Número (opcional): raio y do elipsóide",
+        "radiusz": "Número (opcional): raio z do elipsóide",
+        "detailX": "Número (opcional): Número de segmentos, por padrão é 24, quanto mais segmentos, mais regular sua geometria. Evite o número do parâmetro acima de 150, pois pode travar o navegador.",
+        "detailY": "Número (opcional): Número de segmentos, por padrão é 16, quanto mais segmentos, mais regular sua geometria. Evite o número do parâmetro acima de 150, pois pode travar o navegador."
       }
     },
     "torus": {
       "description": [
-        "Draw a torus with given radius and tube radius ",
-        "DetailX and detailY determine the number of subdivisions in the x-dimension and the y-dimension of a torus. More subdivisions make the torus appear to be smoother. The default and maximum values for detailX and detailY are 24 and 16, respectively. Setting them to relatively small values like 4 and 6 allows you to create new shapes other than a torus."
+        "Desenha um toro com determinado raio e raio do tubo ",
+        "DetailX e detailY determinam o número de subdivisões na dimensão x e na dimensão y de um toro. Mais subdivisões fazem o toro parecer mais regular. Os valores padrão e máximos para detailX e detailY são 24 e 16, respectivamente. Configurá-los com valores relativamente pequenos, como 4 e 6, permite criar novas formas além de um toro."
       ],
       "params": {
-        "radius": "Number: (Optional) radius of the whole ring",
-        "tubeRadius": "Number: (Optional) radius of the tube",
-        "detailX": "Integer: (Optional) number of segments in x-dimension,  the more segments the smoother geometry  default is 24",
-        "detailY": "Integer: (Optional) number of segments in y-dimension,  the more segments the smoother geometry  default is 16"
+        "radius": "Número (opcional): raio do anel todo",
+        "tubeRadius": "Número (opcional): raio do tubo",
+        "detailX": "Número (opcional): Número de segmentos na dimensão x, por padrão é 24, quanto mais segmentos, mais regular sua geometria.",
+        "detailY": "Número (opcional): Número de segmentos na dimensão y, por padrão é 16, quanto mais segmentos, mais regular sua geometria."
       }
     },
     "orbitControl": {
