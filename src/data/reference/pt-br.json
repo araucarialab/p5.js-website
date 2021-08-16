@@ -1264,106 +1264,106 @@
     },
     "applyMatrix": {
       "description": [
-        "Multiplies the current matrix by the one specified through the parameters. This is a powerful operation that can perform the equivalent of translate, scale, shear and rotate all at once. You can learn more about transformation matrices on <a href=\"https://en.wikipedia.org/wiki/Transformation_matrix\"> Wikipedia</a>. ",
-        "The naming of the arguments here follows the naming of the <a href= \"https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-transform\"> WHATWG specification</a> and corresponds to a transformation matrix of the form: <blockquote> ",
-        "<img style=\"max-width: 150px\" src=\"assets/transformation-matrix.png\" alt=\"The transformation matrix used when applyMatrix is called\"/> </blockquote>"
+        "Multiplica a matriz atual por aquela especificada nos parâmetros. Esta é uma operação poderosa que pode realizar o equivalente a translação, escala, distorção e rotação, tudo de uma vez. Você pode aprender mais sobre matrizes de transformação em <a href=\"https://en.wikipedia.org/wiki/Transformation_matrix\"> Wikipedia</a>. ",
+        "A nomenclatura dos argumentos aqui segue a nomenclatura da <a href= \"https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-transform\"> especificação WHATWG</a> and corresponds to a transformation matrix of the form: <blockquote> ",
+        "<img style=\"max-width: 150px\" src=\"assets/transformation-matrix.png\" alt=\"a matriz de transformação usada quando applyMatrix é chamado\"/> </blockquote>"
       ],
       "params": {
-        "a": "Number|Array: numbers which define the 2x3 matrix to be multiplied, or an array of numbers",
-        "b": "Number: numbers which define the 2x3 matrix to be multiplied",
-        "c": "Number: numbers which define the 2x3 matrix to be multiplied",
-        "d": "Number: numbers which define the 2x3 matrix to be multiplied",
-        "e": "Number: numbers which define the 2x3 matrix to be multiplied",
-        "f": "Number: numbers which define the 2x3 matrix to be multiplied"
+        "a": "Número|Array: números que definem a matriz 2x3 a ser multiplicada, ou uma matriz de números",
+        "b": "Número: números que definem a matriz 2x3 a ser multiplicada",
+        "c": "Número: números que definem a matriz 2x3 a ser multiplicada",
+        "d": "Número: números que definem a matriz 2x3 a ser multiplicada",
+        "e": "Número: números que definem a matriz 2x3 a ser multiplicada",
+        "f": "Número: números que definem a matriz 2x3 a ser multiplicada"
       }
     },
     "resetMatrix": {
       "description": [
-        "Replaces the current matrix with the identity matrix."
+        "Substitui a matriz atual pela matriz de identidade."
       ]
     },
     "rotate": {
       "description": [
-        "Rotates a shape by the amount specified by the angle parameter. This function accounts for <a href=\"#/p5/angleMode\">angleMode</a>, so angles can be entered in either RADIANS or DEGREES. ",
-        "Objects are always rotated around their relative position to the origin and positive numbers rotate objects in a clockwise direction. Transformations apply to everything that happens after and subsequent calls to the function accumulates the effect. For example, calling rotate(HALF_PI) and then rotate(HALF_PI) is the same as rotate(PI). All tranformations are reset when <a href=\"#/p5/draw\">draw()</a> begins again. ",
-        "Technically, <a href=\"#/p5/rotate\">rotate()</a> multiplies the current transformation matrix by a rotation matrix. This function can be further controlled by the <a href=\"#/p5/push\">push()</a> and <a href=\"#/p5/pop\">pop()</a>."
+        "Gira uma forma pela quantidade especificada pelo parâmetro de ângulo. Esta função é responsável por <a href=\"#/p5/angleMode\">angleMode</a>, então os ângulos podem ser inseridos em RADIANOS ou GRAUS. ",
+        "Os objetos são sempre girados em torno de sua posição relativa à origem e os números positivos giram os objetos no sentido horário. As transformações se aplicam a tudo o que acontece depois e as chamadas subsequentes para a função acumulam o efeito. Por exemplo, chamar rotate(HALF_PI) e então rotate(HALF_PI) é o mesmo que rotate(PI). Todas as transformações são redefinidas quando <a href=\"#/p5/draw\">draw()</a> iniciar novamente. ",
+        "Tecnicamente, <a href=\"#/p5/rotate\">rotate()</a> multiplica a matriz de transformação atual por uma matriz de rotação. Esta função pode ser controlada posteriormente pelo <a href=\"#/p5/push\">push()</a> e <a href=\"#/p5/pop\">pop()</a>."
       ],
       "params": {
-        "angle": "Number: the angle of rotation, specified in radians  or degrees, depending on current angleMode",
-        "axis": "p5.Vector|Number[]: (Optional) (in 3d) the axis to rotate around"
+        "angle": "Número: o ângulo de rotação, especificado em radianos ou graus, dependendo do atual angleMode",
+        "axis": "p5.Vector|Número[] (opcional): (em 3d) eixos de rotação"
       }
     },
     "rotateX": {
       "description": [
-        "Rotates a shape around X axis by the amount specified in angle parameter. The angles can be entered in either RADIANS or DEGREES. ",
-        "Objects are always rotated around their relative position to the origin and positive numbers rotate objects in a clockwise direction. All tranformations are reset when <a href=\"#/p5/draw\">draw()</a> begins again."
+        "Gira uma forma em torno do eixo X pela quantidade especificada no parâmetro de ângulo. Os ângulos podem ser inseridos em RADIANOS ou GRAUS.",
+        "Os objetos são sempre girados em torno de sua posição relativa à origem e os números positivos giram os objetos no sentido horário. Todas as transformações são reiniciadas quando <a href=\"#/p5/draw\">draw()</a> for iterado novamente."
       ],
       "params": {
-        "angle": "Number: the angle of rotation, specified in radians  or degrees, depending on current angleMode"
+        "angle": "Número: o ângulo de rotação, especificado em radianos ou graus, dependendo do atual angleMode"
       }
     },
     "rotateY": {
       "description": [
-        "Rotates a shape around Y axis by the amount specified in angle parameter. The angles can be entered in either RADIANS or DEGREES. ",
-        "Objects are always rotated around their relative position to the origin and positive numbers rotate objects in a clockwise direction. All tranformations are reset when <a href=\"#/p5/draw\">draw()</a> begins again."
+        "Gira uma forma em torno do eixo Y pelo valor especificado no parâmetro de ângulo. Os ângulos podem ser inseridos em RADIANOS ou GRAUS. ",
+        "Os objetos são sempre girados em torno de sua posição relativa à origem e os números positivos giram os objetos no sentido horário. Todas as transformações são reiniciadas quando <a href=\"#/p5/draw\">draw()</a>  for iterado novamente."
       ],
       "params": {
-        "angle": "Number: the angle of rotation, specified in radians  or degrees, depending on current angleMode"
+        "angle": "Número: o ângulo de rotação, especificado em radianos ou graus, dependendo do atual angleMode"
       }
     },
     "rotateZ": {
       "description": [
-        "Rotates a shape around Z axis by the amount specified in angle parameter. The angles can be entered in either RADIANS or DEGREES. ",
-        "This method works in WEBGL mode only. ",
-        "Objects are always rotated around their relative position to the origin and positive numbers rotate objects in a clockwise direction. All tranformations are reset when <a href=\"#/p5/draw\">draw()</a> begins again."
+        "Gira uma forma em torno do eixo Z pelo valor especificado no parâmetro de ângulo. Os ângulos podem ser inseridos em RADIANOS ou GRAUS. ",
+        "Este método apenas funciona em modo WEBGL. ",
+        "Os objetos são sempre girados em torno de sua posição relativa à origem e os números positivos giram os objetos no sentido horário. Todas as transformações são reiniciadas quando <a href=\"#/p5/draw\">draw()</a> for iterado novamente."
       ],
       "params": {
-        "angle": "Number: the angle of rotation, specified in radians  or degrees, depending on current angleMode"
+        "angle": "Número: o ângulo de rotação, especificado em radianos ou graus, dependendo do atual angleMode"
       }
     },
     "scale": {
       "description": [
-        "Increases or decreases the size of a shape by expanding or contracting vertices. Objects always scale from their relative origin to the coordinate system. Scale values are specified as decimal percentages. For example, the function call scale(2.0) increases the dimension of a shape by 200%. ",
-        "Transformations apply to everything that happens after and subsequent calls to the function multiply the effect. For example, calling scale(2.0) and then scale(1.5) is the same as scale(3.0). If <a href=\"#/p5/scale\">scale()</a> is called within <a href=\"#/p5/draw\">draw()</a>, the transformation is reset when the loop begins again. ",
-        "Using this function with the z parameter is only available in WEBGL mode. This function can be further controlled with <a href=\"#/p5/push\">push()</a> and <a href=\"#/p5/pop\">pop()</a>."
+        "Aumenta ou diminui o tamanho de uma forma expandindo ou contraindo vértices. Os objetos sempre são escalonados de sua origem relativa ao sistema de coordenadas. Os valores da escala são especificados como porcentagens decimais. Por exemplo, a chamada de função scale (2.0) aumenta a dimensão de uma forma em 200%. ",
+        "As transformações se aplicam a tudo o que acontece depois e as chamadas subsequentes à função multiplicam o efeito. Por exemplo, chamar escala (2,0) e depois escala (1,5) é o mesmo que escala (3,0). Se <a href=\"#/p5/scale\">scale()</a> é chamado dentro de <a href=\"#/p5/draw\">draw()</a>, a transformação é reiniciada quando o loop for iterado novamente. ",
+        "O uso desta função com o parâmetro z está disponível apenas no modo WEBGL. Esta função pode ser controlada posteriormente com <a href=\"#/p5/push\">push()</a> e <a href=\"#/p5/pop\">pop()</a>."
       ],
       "params": {
-        "s": "Number|p5.Vector|Number[]: percent to scale the object, or percentage to  scale the object in the x-axis if multiple arguments  are given",
-        "y": "Number: (Optional) percent to scale the object in the y-axis",
-        "z": "Number: (Optional) percent to scale the object in the z-axis (webgl only)",
-        "scales": "p5.Vector|Number[]: per-axis percents to scale the object"
+        "s": "Número|p5.Vector|Número[] (opcional): porcentagem para dimensionar o objeto no eixo x se vários argumentos forem fornecidos",
+        "y": "Número (optional): percentual para dimensionar o objeto no eixo y ",
+        "z": "Número (optional): percentual para dimensionar o objeto no eixo z (apenas em webgl)",
+        "scales": "p5.Vector|Número[]: percentagens por eixo para dimensionar o objeto"
       }
     },
     "shearX": {
       "description": [
-        "Shears a shape around the x-axis by the amount specified by the angle parameter. Angles should be specified in the current angleMode. Objects are always sheared around their relative position to the origin and positive numbers shear objects in a clockwise direction. ",
-        "Transformations apply to everything that happens after and subsequent calls to the function accumulates the effect. For example, calling shearX(PI/2) and then shearX(PI/2) is the same as shearX(PI). If <a href=\"#/p5/shearX\">shearX()</a> is called within the <a href=\"#/p5/draw\">draw()</a>, the transformation is reset when the loop begins again. ",
-        "Technically, <a href=\"#/p5/shearX\">shearX()</a> multiplies the current transformation matrix by a rotation matrix. This function can be further controlled by the <a href=\"#/p5/push\">push()</a> and <a href=\"#/p5/pop\">pop()</a> functions."
+        "Corta uma forma em torno do eixo x pelo valor especificado pelo parâmetro de ângulo. Os ângulos devem ser especificados no angleMode atual. Os objetos são sempre cortados em torno de sua posição relativa à origem e os números positivos cortam os objetos no sentido horário. ",
+        "As transformações se aplicam a tudo o que acontece depois e as chamadas subsequentes para a função acumulam o efeito. Por exemplo, chamar shearX(PI/2) e então shearX(PI/2) é o mesmo que shearX(PI). Se <a href=\"#/p5/shearX\">shearX()</a> é chamado dentro de <a href=\"#/p5/draw\">draw()</a>, a transformação é reiniciada quando o loop  for iterado novamente. ",
+        "Tecnicamente, <a href=\"#/p5/shearX\">shearX()</a> multiplica a matriz de transformação atual por uma matriz de rotação. Esta função pode ser controlada posteriormente pelas funções <a href=\"#/p5/push\">push()</a> e <a href=\"#/p5/pop\">pop()</a> ."
       ],
       "params": {
-        "angle": "Number: angle of shear specified in radians or degrees,  depending on current angleMode"
+        "angle": "Número: ângulo de corte especificado em radianos ou graus, dependendo do angleMode atual"
       }
     },
     "shearY": {
       "description": [
-        "Shears a shape around the y-axis the amount specified by the angle parameter. Angles should be specified in the current angleMode. Objects are always sheared around their relative position to the origin and positive numbers shear objects in a clockwise direction. ",
-        "Transformations apply to everything that happens after and subsequent calls to the function accumulates the effect. For example, calling shearY(PI/2) and then shearY(PI/2) is the same as shearY(PI). If <a href=\"#/p5/shearY\">shearY()</a> is called within the <a href=\"#/p5/draw\">draw()</a>, the transformation is reset when the loop begins again. ",
-        "Technically, <a href=\"#/p5/shearY\">shearY()</a> multiplies the current transformation matrix by a rotation matrix. This function can be further controlled by the <a href=\"#/p5/push\">push()</a> and <a href=\"#/p5/pop\">pop()</a> functions."
+        "Corta uma forma em torno do eixo y de acordo com o valor especificado pelo parâmetro de ângulo. Os ângulos devem ser especificados no angleMode atual. Os objetos são sempre cortados em torno de sua posição relativa à origem e os números positivos cortam os objetos no sentido horário. ",
+        "As transformações se aplicam a tudo o que acontece depois e as chamadas subsequentes para a função acumulam o efeito. Por exemplo, chamar shearY (PI/2) e depois shearY(PI/2) é o mesmo que shearY(PI). Se  <a href=\"#/p5/shearY\">shearY()</a> é chamado dentro de <a href=\"#/p5/draw\">draw()</a>, a transformação é reiniciada quando o loop rodar novamente. ",
+        "Tecnicamente, <a href=\"#/p5/shearY\">shearY()</a> multiplica a matriz de transformação atual por uma matriz de rotação. Esta função pode ser controlada posteriormente pelas funções <a href=\"#/p5/push\">push()</a> e <a href=\"#/p5/pop\">pop()</a> ."
       ],
       "params": {
-        "angle": "Number: angle of shear specified in radians or degrees,  depending on current angleMode"
+        "angle": "Número: ângulo de corte especificado em radianos ou graus, dependendo do atual angleMode"
       }
     },
     "translate": {
       "description": [
-        "Specifies an amount to displace objects within the display window. The x parameter specifies left/right translation, the y parameter specifies up/down translation. ",
-        "Transformations are cumulative and apply to everything that happens after and subsequent calls to the function accumulates the effect. For example, calling translate(50, 0) and then translate(20, 0) is the same as translate(70, 0). If <a href=\"#/p5/translate\">translate()</a> is called within <a href=\"#/p5/draw\">draw()</a>, the transformation is reset when the loop begins again. This function can be further controlled by using <a href=\"#/p5/push\">push()</a> and <a href=\"#/p5/pop\">pop()</a>."
+        "Especifica uma quantidade para deslocar objetos na janela de exibição. O parâmetro x especifica a translação esquerda / direita, o parâmetro y especifica a translação para cima / para baixo. ",
+        "As transformações são cumulativas e se aplicam a tudo o que acontece depois e as chamadas subsequentes para a função acumulam o efeito. Por exemplo, chamar a translação (50, 0) e então a translação (20, 0) é o mesmo que a translação de (70, 0). Se <a href=\"#/p5/translate\">translate()</a> for chamado dentro de <a href=\"#/p5/draw\">draw()</a>, a transformação é reiniciada quando o loop for iterado novamente. Esta função pode ser posteriormente controlada usando <a href=\"#/p5/push\">push()</a> e <a href=\"#/p5/pop\">pop()</a>."
       ],
       "params": {
-        "x": "Number: left/right translation",
-        "y": "Number: up/down translation",
-        "z": "Number: (Optional) forward/backward translation (webgl only)",
-        "vector": "p5.Vector: the vector to translate by"
+        "x": "Número: translação esquerda/direita",
+        "y": "Número: translação para cima/ para baixo",
+        "z": "Número (opcional): translação para frente/ para trás (apenas em webgl)",
+        "vector": "p5.Vector: o vetor para translação"
       }
     },
     "storeItem": {
