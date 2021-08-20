@@ -1,8 +1,8 @@
 /*
  * @name Create Graphics
- * @description Creates and returns a new p5.Renderer object. Use this
- * class if you need to draw into an off-screen graphics buffer. The two parameters
- * define the width and height in pixels.
+ * @description Cria e retorna um novo objeto p5.Renderer. Use esta
+ * classe caso você precise desenhar em um buffer gráfico desvínculado da tela. Os dois parâmetros
+ * definem a largura e altura em pixels.
  */
 
 let pg;
@@ -24,6 +24,6 @@ function draw() {
   pg.stroke(255);
   pg.ellipse(mouseX - 150, mouseY - 75, 60, 60);
 
-  //Draw the offscreen buffer to the screen with image()
+  //Desenha o buffer gráfico desvínculado da tela com image()
   image(pg, 150, 75);
 }

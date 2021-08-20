@@ -1,10 +1,10 @@
 /*
  *@name Recursion
- *@description A demonstration of recursion, which means functions call themselves.
- * A recursive function must have a terminating condition, without which it will
- * go into an infinite loop. Notice how the drawCircle() function calls itself 
- * at the end of its block. It continues to do this until the variable "level" is 
- * equal to 1.
+ *@description Uma demonstração de recursão, que significa funções chamando a si mesmas.
+ * Uma função recursiva precisa possuir uma condição terminal, sem esta condição, a função
+ * vai entrar em um loop infinito. Perceba como a função drawCircle() chama a si mesma
+ * no fim do seu bloco. E continua a fazer isto até que a variável "level" seja
+ * igual a 1.
  */
 
 function setup() {
@@ -18,16 +18,16 @@ function draw() {
 }
 
 function drawCircle(x, radius, level) {
-  // 'level' is the variable that terminates the recursion once it reaches 
-  // a certain value (here, 1). If a terminating condition is not 
-  // specified, a recursive function keeps calling itself again and again
-  // until it runs out of stack space - not a favourable outcome! 
+  // 'level' é a variável que finaliza a recursão uma vez que chega
+  // a um determinado valor (aqui, 1). Se a condição terminal não for
+  // especificada, a função recursiva continua chamando a si mesma várias vezes
+  // até que acabe o espaço da pilha (stack) - resultado não favorável!
   const tt = (126 * level) / 4.0;
   fill(tt);
   ellipse(x, height / 2, radius * 2, radius * 2);
   if (level > 1) {  
-    // 'level' decreases by 1 at every step and thus makes the terminating condition
-    // attainable
+    // 'level' diminui na razão de 1 para cada passo e assim faz com que a condição terminal
+    // seja atingível
     level = level - 1;  
     drawCircle(x - radius / 2, radius / 2, level);
     drawCircle(x + radius / 2, radius / 2, level);

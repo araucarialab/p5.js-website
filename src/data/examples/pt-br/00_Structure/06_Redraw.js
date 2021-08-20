@@ -1,13 +1,13 @@
 /*
  * @name Redraw
- * @description The redraw() function makes draw() execute once. In this example,
- * draw() is executed once every time the mouse is clicked.
+ * @description A função redraw() faz o draw executar uma vez. Neste exemplo,
+ * draw() é executada toda vez que o mouse é clicado.
  */
 
 let y;
 
-// The statements in the setup() function
-// execute once when the program begins
+// As instruções na função setup()
+// executam uma vez quando o programa inicia
 function setup() {
   createCanvas(720, 400);
   stroke(255);
@@ -15,10 +15,10 @@ function setup() {
   y = height * 0.5;
 }
 
-// The statements in draw() are executed until the
-// program is stopped. Each statement is executed in
-// sequence and after the last line is read, the first
-// line is executed again.
+// As instruções em draw() são executadas até que
+// o programa seja parado. Cada instrução é executada em
+// sequência e depois que a última linha é lida, a primeira
+// linha é executada novamente.
 function draw() {
   background(0);
   y = y - 4;

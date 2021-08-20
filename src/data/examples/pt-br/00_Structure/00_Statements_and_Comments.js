@@ -1,18 +1,18 @@
 /*
  * @name Comments and Statements
- * @description Statements are the elements that make up programs. The ";" (semi-colon) symbol is used to end statements. It is called the "statement  * terminator". Comments are used for making notes to help people better understand programs. A comment begins with two forward slashes ("//"). (ported from https://processing.org/examples/statementscomments.html)
+ * @description instruções são elementos que constituem programas. O ";" (ponto e vírgula) é usado para determinar o fim das instruções. É chamado de "statement  * terminator". Comentários são usados para fazer notas para ajudar as pessoas a entender melhor os programas. Um comentário começa com duas barras ("//"). (importado de https://processing.org/examples/statementscomments.html)
  */
-// The createCanvas function is a statement that tells the computer 
-// how large to make the window.
-// Each function statement has zero or more parameters. 
-// Parameters are data passed into the function
-// and are used as values for telling the computer what to do.
+// A função createCanvas é uma instrução que orienta o computador
+// sobre o o tamanho que deve ser feita a janela.
+// Cada instrução de função tem zero ou mais parâmetros.
+// Parâmetros são dados passados para a função
+// e são usados como valores para orientar o computador sobre o que deve ser feito.
 function setup() {
    createCanvas(710, 400);
 }
 
-// The background function is a statement that tells the computer
-// which color (or gray value) to make the background of the display window 
+// A função background é uma instrução que orienta o computador
+// sobre qual cor (ou valor cinza) o fundo da tela deve assumir
 function draw() {
    background(204, 153, 0);
 }
