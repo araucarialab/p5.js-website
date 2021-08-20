@@ -63,7 +63,7 @@
   "Material": "Material",
   "Camera": "Câmera",
   "p5": {
-    "descrição": [
+    "description": [
       "Esse é o construtor de p5 instance (instância p5). ",
       "Uma instância p5 contém todas as propriedades e métodos relacionados a um sketch de p5. Ela gerencia os pedidos de um sketch e também pode servir como um parâmetro de node opcional para atrelar um canvas p5 a um node. O sketch gerado usa as novas instances (instâncias) p5 como um novo argumento e pode opcionalmente criar um <a href=\"#/p5/preload\">preload()</a>, <a href=\"#/p5/setup\">setup()</a>, e/ou <a href=\"#/p5/draw\">draw()</a> as propriedades de um sketch que já está rodando. ",
       "Um sketch p5 pode rodar em \"global\" ou \"instance\" modo: \"global\" - todas as propriedades e métodos estão atrelados à janela \"instance\" - todas as propriedades e métodos estão atrelados ao este objeto p5"
@@ -1031,103 +1031,103 @@
       ]
     },
     "let": {
-      "Descrição": [
-        "Cria e nomeia uma nova variável. Uma variável é um contêiner para um valor. ",
-        "Variáveis que são declaradas com <a href=\"#/p5/let\">let</a> terão escopo de bloco. Isso significa que a variável só existe dentro do <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block\"> bloco</a> em que foi criada. ",
+      "description": [
+        "Cria e nomeia uma nova variável. Uma variável é um contêiner para um valor.",
+        "Variáveis que são declaradas com <a href=\"#/p5/let\">let</a> terão escopo de bloco. Isso significa que a variável só existe dentro do <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block\"> bloco</a> em que foi criada.",
         "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let\"> entrada MDN</a>: Declara uma variável local de escopo de bloco, opcionalmente inicializando-a com um valor."
       ]
     },
     "const": {
-      "Descrição": [
+      "description": [
         "Cria e nomeia uma nova constante. Como uma variável criada com <a href=\"#/p5/let\">let</a>, uma constante que é criada com <a href=\"#/p5/const\">const</a> é um contêiner para um valor, no entanto, as constantes não podem ser reatribuídas depois de declaradas. Embora seja digno de nota que, para tipos de dados não primitivos, como objetos e arrays, seus elementos ainda podem ser mutáveis. Portanto, se uma variável é atribuída a um array, você ainda pode adicionar ou remover elementos do array, mas não pode reatribuir outro array a ele. Ainda, ao contrário de <code>let</code>, você não pode declarar variáveis sem valor usando const. ",
         "Constantes têm escopo de bloco. Isso significa que a constante só existe dentro do <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block\"> bloco</a> em que é criada. Uma constante não pode ser declarada novamente dentro de um escopo no qual já existe. ",
         "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const\">entrada MDN</a>: Declara uma constante nomeada somente para leitura. As constantes têm escopo de bloco, muito parecido com as variáveis definidas usando a instrução 'let'. O valor de uma constante não pode ser alterado por meio de reatribuição e não pode ser declarado novamente."
       ]
     },
     "===": {
-      "Descrição": [
+      "description": [
         "O operador de igualdade estrita <a href=\"#/p5/===\">===</a> verifica se dois valores são iguais e do mesmo tipo. ",
         "Uma expressão de comparação sempre avalia como um <a href=\"#/p5/boolean\">booleano</a>. ",
         "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\">entrada MDN</a>: O operador de não identidade retorna true (verdadeiro) se os operandos não são iguais e / ou não são do mesmo tipo. ",
-        "Observação: em alguns exemplos na web, você pode ver um sinal de igual duplo <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Equality\">==</a>, usado para comparação. Este é o operador de igualdade não estrita em Javascript. Ele converterá os dois valores que estão sendo comparados ao mesmo tipo antes de compará-los.."
+        "Observação: em alguns exemplos na web, você pode ver um sinal de igual duplo <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Equality\">==</a>, usado para comparação. Este é o operador de igualdade não estrita em Javascript. Ele converterá os dois valores que estão sendo comparados ao mesmo tipo antes de compará-los."
       ]
     },
     ">": {
-      "Descrição": [
+      "description": [
         "O operador maior que <a href=\"#/p5/>\">></a> é avaliado como true (verdadeiro) se o valor à esquerda for maior que o valor à direita. <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\">Mais informações sobre operadores de comparação no MDN.</a>"
       ]
     },
     ">=": {
-      "Descrição": [
+      "description": [
         "O operador maior que ou igual a <a href=\"#/p5/>=\">>=</a> avalia como true (verdadeiro) se o valor da esquerda for maior ou igual ao valor da direita. ",
         "<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\">Mais informações sobre operadores de comparação no MDN.</a>"
       ]
     },
     "<": {
-      "Descrição": [
+      "description": [
         "O operador menor que <a href=\"#/p5/<\"><</a> avalia como true (verdadeiro) se o valor à esquerda for menor que o valor à direita. ",
         "<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\">Mais informações sobre operadores de comparação no MDN.</a>"
       ]
     },
     "<=": {
-      "Descrição": [
+      "description": [
         "O operador menor que ou igual a <a href=\"#/p5/<=\"><=</a> avalia como true  (verdadeiro) se o valor esquerdo for menor ou igual ao valor direito. ",
         "<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators\">Mais informações sobre operadores de comparação no MDN.</a>"
       ]
     },
     "if-else": {
-      "Descrição": [
+      "description": [
         "A declaração <a href=\"#/p5/if-else\">if-else</a> (se/senão) ajuda a controlar o fluxo do seu código. ",
         "Uma condição é colocada entre parênteses após 'if' (se), quando essa condição é avaliada como <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/truthy\">verdade</a>, o código entre as chaves seguintes é executado. Alternativamente, quando a condição é avalia como <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/Falsy\">falsa</a>, o código entre as chaves do bloco 'else' é executado em seu lugar. Escrever um bloco else é opcional. ",
         "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else\">entrada MDN</a>: A declaração 'if' executa uma instrução se uma condição especificada for verdadeira. Se a condição for falsa, outra instrução pode ser executada."
       ]
     },
     "function": {
-      "Descrição": [
+      "description": [
         "Cria e nomeia uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions\">função</a>. Uma <a href=\"#/p5/function\">função</a> é um conjunto de instruções que executam uma tarefa. ",
         "Opcionalmente, as funções podem ter parâmetros. <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/Parameter\">Parâmetros</a> são variáveis que têm como escopo a função, que podem receber um valor ao chamar a função. Vários parâmetros podem ser dados separados por vírgulas. ",
         "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function\">entrada MDN</a>: Declara uma função com os parâmetros especificados."
       ]
     },
     "return": {
-      "Descrição": [
+      "description": [
         "Especifica o valor a ser retornado por uma função. Para obter mais informações, verifique <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return\">a entrada MDN para return</a>."
       ]
     },
     "boolean": {
-      "Descrição": [
-        "Converte um número ou string em sua representação booleana. Para um número, qualquer valor diferente de zero (positivo ou negativo) é avaliado como true (verdadeiro), enquanto zero é avaliado como false (falso). Para uma string, o valor \ "true \" é avaliado como verdadeiro, enquanto qualquer outro valor é avaliado como falso. Quando uma array de números ou valores de string é passada, então uma array de booleanos do mesmo comprimento é retornada."
+      "description": [
+        "Converte um número ou string em sua representação booleana. Para um número, qualquer valor diferente de zero (positivo ou negativo) é avaliado como true (verdadeiro), enquanto zero é avaliado como false (falso). Para uma string, o valor \"true \" é avaliado como verdadeiro, enquanto qualquer outro valor é avaliado como falso. Quando uma array de números ou valores de string é passada, então uma array de booleanos do mesmo comprimento é retornada."
       ],
-      "Retorna": "Booleano: representação booleana de valor",
+      "returns": "Booleano: representação booleana de valor",
       "params": {
         "n": "String|Booleano|Número|Array: valor para analisar"
       }
     },
     "string": {
-      "Descrição": [
+      "description": [
         "Uma <a href=\"#/p5/string\">string</a> é um dos 7 <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Primitive_values\">tipos de dados primitivos</a> em Javascript. Uma string é uma série de caracteres de texto. Em Javascript, um valor de string deve estar entre aspas simples (') ou aspas duplas (\"). ",
         "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/string\">entrada MDN</a>: Uma string é uma sequência de caracteres usada para representar texto."
       ]
     },
     "number": {
-      "Descrição": [
+      "description": [
         "Um <a href=\"#/p5/number\">número</a> é um dos 7 <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Primitive_values\">tipos de dados primitivos</a> em Javascript. Um number pode ser um número inteiro ou decimal. ",
         "<a href=\"https://developer.mozilla.org/en-US/docs/Glossary/number\">A entrada MDN para um número</a>"
       ]
     },
     "object": {
-      "Descrição": [
+      "description": [
         "A partir de um <a href=\"https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics\">objeto básico de MDN</a>:  Um <a href=\"#/p5/object\">objeto</a> é uma coleção de dados relacionados e/ou funcionalidades (que geralmente consistem em várias variáveis e funções - que são chamadas de propriedades e métodos quando estão dentro de objetos.)"
       ]
     },
     "class": {
-      "Descrição": [
+      "description": [
         "Cria e nomeia uma <a href=\"#/p5/class\">classe</a> que é um modelo para a criação de <a href=\"#/p5/objects\">objetos</a>. ",
         "A partir de uma <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class\">entrada MDN</a>: A declaração de classe cria uma nova classe com um determinado nome usando herança baseada em protótipo."
       ]
     },
     "for": {
-      "Descrição": [
+      "description": [
         "<a href=\"#/p5/for\">for</a> cria um loop que é útil para executar uma seção de código várias vezes. ",
         "Um 'loop for' consiste em três expressões diferentes entre parênteses, todas opcionais. Essas expressões são usadas para controlar o número de vezes que o loop é executado. A primeira expressão é uma instrução usada para definir o estado inicial para o loop. A segunda expressão é uma condição que você gostaria de verificar antes de cada loop. Se esta expressão retornar false (falso), então sairá do loop. A terceira expressão é executada no final de cada loop. Essas expressões são separadas por ; (ponto e vírgula). No caso de uma expressão vazia, apenas um ponto e vírgula é escrito. ",
         "O código dentro do corpo do loop (entre as chaves) é executado entre a avaliação da segunda e da terceira expressão.",
@@ -1144,13 +1144,13 @@
       ]
     },
     "createCanvas": {
-      "Descrição": [
+      "description": [
         "Cria um elemento canvas no documento e define suas dimensões em pixels. Este método deve ser chamado apenas uma vez no início da configuração. Chamar <a href=\"#/p5/createCanvas\">createCanvas</a> mais de uma vez em um sketch resultará em um comportamento muito imprevisível. Se você quiser mais de um canvas de desenho, pode usar o <a href=\"#/p5/createGraphics\">createGraphics</a> (oculto por padrão, mas pode ser mostrado). ",
         "Nota importante: no modo 2D (ou seja, quando <code>p5.Renderer</code> não está definido) a origem (0,0) é posicionada na parte superior esquerda da tela. No modo 3D (ou seja, quando <code>p5.Renderer</code> está definido <code>WEBGL</code>), a origem é posicionada no centro do canvas. Veja <a href=\"https://github.com/processing/p5.js/issues/1545\">esse assunto</a> para mais informações.",
         "As variáveis de sistema largura e altura são definidas pelos parâmetros passados para esta função. Se <a href=\"#/p5/createCanvas\">createCanvas()</a> não for usado, a janela terá um tamanho padrão de 100x100 pixels. ",
         "Para obter mais maneiras de posicionar o canvas, consulte a página wiki <a href='https://github.com/processing/p5.js/wiki/Positioning-your-canvas'> posicionando o canvas</a> ."
       ],
-      "Retorna": "p5.Renderer: ",
+      "returns": "p5.Renderer: ",
       "params": {
         "w": "Número: largura do canvas",
         "h": "Número: altura do canvas",
@@ -1158,10 +1158,9 @@
       }
     },
     "resizeCanvas": {
-      "Descrição": [
+      "description": [
         "Redimensiona o canvas de acordo com a largura e a altura fornecidas. O canvas será limpo e draw será chamada imediatamente, permitindo que o sketch seja renderizado novamente na tela redimensionada."
       ],
-      "params": {
       "params": {
         "w": "Número: largura do canvas",
         "h": "Número: altura do canvas",
@@ -1169,15 +1168,15 @@
       }
     },
     "noCanvas": {
-      "Descrição": [
+      "description": [
         "Remove o canvas padrão para um sketch p5 que não requer um canvas"
       ]
     },
     "createGraphics": {
-      "Descrição": [
+      "description": [
         "Cria e retorna um novo objeto p5.Renderer. Use esta classe se precisar desenhar em um buffer gráfico nos bastidores da tela (off-screen). Os dois parâmetros definem a largura e altura em pixels."
       ],
-      "Retorna": "p5.Graphics: buffer gráfico nos bastidores da tela",
+      "returns": "p5.Graphics: buffer gráfico nos bastidores da tela",
       "params": {
         "w": "Número: largura do buffer gráfico nos bastidores da tela",
         "h": "Número: altura do buffer gráfico nos bastidores da tela",
@@ -1185,7 +1184,7 @@
       }
     },
     "blendMode": {
-      "Descrição": [
+      "description": [
         "Combina os pixels na janela de exibição de acordo com o modo definido. Existe uma escolha dos seguintes modos para misturar os pixels de origem (A) com os pixels que já estão na janela de exibição (B): <ul> <li><code>BLEND</code> - interpolação linear de cores: C = A*fator + B. <b>Este é o modo de mistura padrão. </b></li> <li><code>ADD</code> - soma de A e B</li> <li><code>DARKEST</code> - apenas a cor mais escura aparece: C = min(A*fator, B).</li> <li><code>LIGHTEST</code> - apenas a cor mais clara aparece: C = max(A*fator, B).</li> <li><code>DIFFERENCE</code> - subtrai as cores da imagem subjacente.</li> <li><code>EXCLUSION</code> - similar a <code>DIFFERENCE</code>, porém, menos extremo.</li> <li><code>MULTIPLY</code> - multiplique as cores, o resultado sempre será mais escuro.</li> <li><code>SCREEN</code> - oposto a multiply, usa valores inversos das cores.</li> <li><code>REPLACE</code> - os pixels são inteiramente substituídos pelos outros e não utilizam valores alfa (transparência).</li> <li><code>REMOVE</code> - remove os pixels de B com a força alfa de A.</li> <li><code>OVERLAY</code> - mistura de <code>MULTIPLY</code> e <code>SCREEN </code>. Multiplica valores de escuridão e valores de luz. <em>(2D)</em></li> <li><code>HARD_LIGHT</code> - <code>SCREEN</code> quando maior que 50% cinza, <code>MULTIPLY</code> quando mais baixo. <em>(2D)</em></li> <li><code>SOFT_LIGHT</code> - mistura de <code>DARKEST</code> e <code>LIGHTEST</code>. Funciona como <code>OVERLAY</code>, mas não tão severo. <em>(2D)</em> </li> <li><code>DODGE</code> - clareia os tons claros e aumenta o contraste, ignora os escuros. <em>(2D)</em></li> <li><code>BURN</code> - áreas mais escuras são aplicadas, aumentando o contraste, ignora as luzes. <em>(2D)</em></li> <li><code>SUBTRACT</code> - restante de A e B <em>(3D)</em></li> </ul>  ",
         "<em>(2D)</em> indica que este modo de mistura <b>apenas</b> funciona no renderizador 2D. <em>(3D)</em> indica que este modo de mistura <b>apenas</b> funciona no renderizador WEBGL."
       ],
@@ -1194,7 +1193,7 @@
       }
     },
     "drawingContext": {
-      "Descrição": [
+      "description": [
         "A API do p5.js fornece muitas funcionalidades para a criação de gráficos, mas há algumas funcionalidades nativas do HTML5 Canvas que não são expostas pelo p5. Você ainda pode chamá-lo diretamente usando a variável  <code>drawingContext</code>, como no exemplo mostrado. Isso é o equivalente a chamar <code>canvas.getContext('2d');</code> ou <code>canvas.getContext('webgl');</code>. Veja isto <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D\"> referência para a API nativa do canvas</a> para possíveis funções de desenho que você pode chamar."
       ]
     },
@@ -2958,7 +2957,7 @@
       "description": [
         "Esta função é usada para aplicar uma expressão regular a um trecho de texto e retornar grupos correspondentes (elementos encontrados entre parênteses) como um vetor de Strings. Se não houver correspondências, um valor nulo será retornado. Se nenhum grupo for especificado na expressão regular, mas a sequência corresponder, um vetor de comprimento 1 (com o texto correspondente como o primeiro elemento do vetor) será retornado.",
         "Para usar a função, primeiro verifique se o resultado é nulo. Se o resultado for nulo, então a sequência não coincidiu. Se a sequência coincidiu, um vetor é retornada.",
-        "Se houver grupos (especificados por conjuntos de parênteses) na expressão regular, os conteúdos de cada um serão retornados no vetor. O elemento [0] de uma correspondência de uma expressão regular retorna toda a string correspondente e os grupos de correspondência começam no elemento [1] (o primeiro grupo é [1], o segundo [2] e assim por diante).”
+        "Se houver grupos (especificados por conjuntos de parênteses) na expressão regular, os conteúdos de cada um serão retornados no vetor. O elemento [0] de uma correspondência de uma expressão regular retorna toda a string correspondente e os grupos de correspondência começam no elemento [1] (o primeiro grupo é [1], o segundo [2] e assim por diante)."
       ],
       "returns": "String[]: Vetor de Strings encontrado",
       "params": {
@@ -3038,7 +3037,7 @@
     },
     "splitTokens": {
       "description": [
-        "A função <a href=\"#/p5/splitTokens\">splitTokens()</a> divide uma String em um ou mais delimitadores de caracteres ou \"tokens.\" O parâmetro delim especifica o caractere ou caracteres a serem usados como limite. "
+        "A função <a href=\"#/p5/splitTokens\">splitTokens()</a> divide uma String em um ou mais delimitadores de caracteres ou \"tokens.\" O parâmetro delim especifica o caractere ou caracteres a serem usados como limite. ",
         "Se nenhum caractere delim for especificado, qualquer caractere de espaço em branco será usado para dividir. Os caracteres de espaço em branco incluem tab (\\t), nova linha (\\n), retorno de carro (\\r), alimentação de formulário (\\f), e espaço. "
       ],
       "returns": "String[]: Array de Strings",
@@ -3197,7 +3196,7 @@
     },
     "debugMode": {
       "description": [
-        "debugMode() ajuda a visualizar o espaço 3D adicionando uma grade para indicar onde o "solo" está em um sketch e um ícone de eixo que indica as direções + X, + Y e + Z. Esta função pode ser chamada sem parâmetros para criar um padrão de grade e ícone de eixos, ou pode ser chamada de acordo com os exemplos acima para personalizar o tamanho e a posição da grade e/ou ícone de eixos. A grade é desenhada usando a cor e a espessura do traço definidas por último. Para especificar esses parâmetros, adicione uma chamada para stroke() e strokeWeight() antes do final do loop draw().",
+        "debugMode() ajuda a visualizar o espaço 3D adicionando uma grade para indicar onde o \"solo\" está em um sketch e um ícone de eixo que indica as direções + X, + Y e + Z. Esta função pode ser chamada sem parâmetros para criar um padrão de grade e ícone de eixos, ou pode ser chamada de acordo com os exemplos acima para personalizar o tamanho e a posição da grade e/ou ícone de eixos. A grade é desenhada usando a cor e a espessura do traço definidas por último. Para especificar esses parâmetros, adicione uma chamada para stroke() e strokeWeight() antes do final do loop draw().",
         "Por padrão, a grade percorrerá a origem (0,0,0) do sketch ao longo do plano XZ e o ícone dos eixos será deslocado da origem. Ambos, a grade e ícone de eixos serão dimensionados de acordo com o tamanho do Canvas atual. Observe que, como a grade é executada paralelamente à visualização padrão da câmera, muitas vezes é útil usar o debugMode junto com orbitControl para permitir a visualização completa da grade."
       ],
       "params": {
@@ -3282,7 +3281,7 @@
         "y": "Número: posição do eixo y",
         "z": "Número: posição do eixo z",
         "position": "p5.Vector: a posição da luz",
-        "color": "Número[]|String|p5.Color: Array de cor, string CSS de cor,  ou valor de <a href=\"#/p5.Color\">p5.Color</a>",
+        "color": "Número[]|String|p5.Color: Array de cor, string CSS de cor,  ou valor de <a href=\"#/p5.Color\">p5.Color</a>"
       }
     },
     "lights": {
@@ -3333,8 +3332,7 @@
       "description": [
         "Carregar um modelo 3D de um arquivo OBJ ou STL. ",
         "<a href=\"#/p5/loadModel\">loadModel()</a> deve ser colocado dentro de <a href=\"#/p5/preload\">preload()</a>. Isso permite que o modelo carregue totalmente antes que o resto do seu código seja executado. ",
-        "Uma das limitações dos formatos OBJ e STL é que eles não têm um senso de escala embutido. Isso significa que os modelos exportados de programas diferentes podem ter tamanhos muito diferentes. Se o seu modelo não estiver sendo exibido, tente chamar <a href=\"#/p5/loadModel\">loadModel()</a> com o parâmetro normalize definido como true (verdadeiro).
-Isso redimensionará o modelo para uma escala apropriada para p5. Você também pode fazer alterações adicionais no tamanho final do seu modelo com a função <a href=\"#/p5/scale\">scale()</a> . ",
+        "Uma das limitações dos formatos OBJ e STL é que eles não têm um senso de escala embutido. Isso significa que os modelos exportados de programas diferentes podem ter tamanhos muito diferentes. Se o seu modelo não estiver sendo exibido, tente chamar <a href=\"#/p5/loadModel\">loadModel()</a> com o parâmetro normalize definido como true (verdadeiro).Isso redimensionará o modelo para uma escala apropriada para p5. Você também pode fazer alterações adicionais no tamanho final do seu modelo com a função <a href=\"#/p5/scale\">scale()</a> . ",
         "Além disso, o suporte para arquivos STL coloridos não está presente. Arquivos STL com cor serão renderizados sem propriedades de cor."
       ],
       "returns": "o objeto p5.Geometry: <a href=\"#/p5.Geometry\">p5.Geometry</a>",
@@ -3552,7 +3550,7 @@ Isso redimensionará o modelo para uma escala apropriada para p5. Você também 
         "antialias - indica se deve ou não executar anti-aliasing. Por padrão é false (true no Safari).",
         "premultipliedAlpha - indica que o compositor da página irá assumir que o buffer do desenho contém cores com alfa pré-multiplicado. Por padrão é false (falso).",
         "preserveDrawingBuffer - se true (verdadeiro) os buffers não serão apagados e preservarão seus valores até que sejam apagados ou sobrescritos pelo autor (observe que o p5 apaga automaticamente no loop de desenho - draw). Por padrão é true (verdadeiro).",
-        "perPixelLighting - se true (verdadeiro), a iluminação por pixel será usada na shader de iluminação, caso contrário, a iluminação por vértice será usada. Por padrão é true (verdadeiro).",
+        "perPixelLighting - se true (verdadeiro), a iluminação por pixel será usada na shader de iluminação, caso contrário, a iluminação por vértice será usada. Por padrão é true (verdadeiro)."
       ],
       "params": {
         "key": "String: Nome do atributo",
@@ -3782,7 +3780,7 @@ Isso redimensionará o modelo para uma escala apropriada para p5. Você também 
     },
     "mouseMoved": {
       "description": [
-        "A função <a href=\"#/p5.Element/mouseMoved\">mouseMoved()</a> é chamada uma vez que o mouse se move sobre o elemento. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento.",
+        "A função <a href=\"#/p5.Element/mouseMoved\">mouseMoved()</a> é chamada uma vez que o mouse se move sobre o elemento. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento."
       ],
       "params": {
         "fxn": "Função|Booleano: função a ser disparada quando o mouse mouse se move sobre o elemento. Se <code>false</code> for passado, a função de disparo anterior não será mais disparada. "
@@ -3790,7 +3788,7 @@ Isso redimensionará o modelo para uma escala apropriada para p5. Você também 
     },
     "mouseOver": {
       "description": [
-        "A função <a href=\"#/p5.Element/mouseOver\">mouseOver()</a> é chamada uma vez que o mouse se move para o elemento. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento.",
+        "A função <a href=\"#/p5.Element/mouseOver\">mouseOver()</a> é chamada uma vez que o mouse se move para o elemento. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento."
       ],
       "params": {
         "fxn": "Função|Booleano: função a ser disparada quando o mouse se move para o elemento. Se <code>false</code> for passado, a função de disparo anterior não será mais disparada. "
@@ -3798,7 +3796,7 @@ Isso redimensionará o modelo para uma escala apropriada para p5. Você também 
     },
     "mouseOut": {
       "description": [
-        "A função <a href=\"#/p5.Element/mouseOut\">mouseOut()</a> é chamada uma vez que o mouse se move para fora do elemento. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento.",
+        "A função <a href=\"#/p5.Element/mouseOut\">mouseOut()</a> é chamada uma vez que o mouse se move para fora do elemento. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento."
       ],
       "params": {
         "fxn": "Função|Booleano: função a ser disparada quando o mouse se move para fora do elemento. Se <code>false</code> for passado, a função de disparo anterior não será mais disparada. "
@@ -3806,7 +3804,7 @@ Isso redimensionará o modelo para uma escala apropriada para p5. Você também 
     },
     "touchStarted": {
       "description": [
-        "A função <a href=\"#/p5.Element/touchStarted\">touchStarted()</a> é chamada uma vez que um toque é registrado. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento.",
+        "A função <a href=\"#/p5.Element/touchStarted\">touchStarted()</a> é chamada uma vez que um toque é registrado. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento."
       ],
       "params": {
         "fxn": "Função|Booleano: função a ser disparada quando um toque é registrado. Se <code>false</code> for passado, a função de disparo anterior não será mais disparada. "
@@ -3814,7 +3812,7 @@ Isso redimensionará o modelo para uma escala apropriada para p5. Você também 
     },
     "touchMoved": {
       "description": [
-        "A função <a href=\"#/p5.Element/touchMoved\">touchMoved()</a> é chamada uma vez que um movimento de toque é registrado. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento.",
+        "A função <a href=\"#/p5.Element/touchMoved\">touchMoved()</a> é chamada uma vez que um movimento de toque é registrado. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento."
       ],
       "params": {
         "fxn": "Função|Booleano: função a ser disparada quando um toque se move sobre o elemento. Se <code>false</code> for passado, a função de disparo anterior não será mais disparada. "
@@ -3822,7 +3820,7 @@ Isso redimensionará o modelo para uma escala apropriada para p5. Você também 
     },
     "touchEnded": {
       "description": [
-        "A função <a href=\"#/p5.Element/touchEnded\">touchEnded()</a> é chamada uma vez que um toque é registrado. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento.",
+        "A função <a href=\"#/p5.Element/touchEnded\">touchEnded()</a> é chamada uma vez que um toque é registrado. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento."
       ],
       "params": {
         "fxn": "Função|Booleano: função a ser disparada quando um toque termina sobre o elemento. Se <code>false</code> for passado, a função de disparo anterior não será mais disparada. "
@@ -3830,7 +3828,7 @@ Isso redimensionará o modelo para uma escala apropriada para p5. Você também 
     },
     "dragOver": {
       "description": [
-        "A função <a href=\"#/p5.Element/dragOver\">dragOver()</a> é chamada uma vez que um arquivo é arrastado sobre o elemento. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento.",
+        "A função <a href=\"#/p5.Element/dragOver\">dragOver()</a> é chamada uma vez que um arquivo é arrastado sobre o elemento. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento."
       ],
       "params": {
         "fxn": "Função|Booleano: função a ser disparada quando um arquivo é arrastado sobre o elemento. Se <code>false</code> for passado, a função de disparo anterior não será mais disparada. "
@@ -3838,7 +3836,7 @@ Isso redimensionará o modelo para uma escala apropriada para p5. Você também 
     },
     "dragLeave": {
       "description": [
-        "A função dragLeave() é chamada uma vez que um arquivo arrastado sai da área do elemento. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento.",
+        "A função dragLeave() é chamada uma vez que um arquivo arrastado sai da área do elemento. Isso pode ser usado para anexar funções de escuta de eventos específicos de elemento."
       ],
       "params": {
         "fxn": "Função|Booleano: função a ser disparada quando um arquivo é arrastado para fora do elemento. Se <code>false</code> for passado, a função de disparo anterior não será mais disparada. "
