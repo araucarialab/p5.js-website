@@ -26,6 +26,16 @@ Para facilitar a compreensão, estamos identificando os commits nesse repositór
 
 <br>
 
+## Colaboradores da versão brasileira
+
+[@mardefronteira](https://github.com/mardefronteira)<br>
+[@jlbrsl](https://github.com/jlbrsl)<br>
+[@katzesoundz](https://github.com/katzesoundz)<br>
+[@araucarialab](https://github.com/araucarialab)<br>
+[@tiagohermano](https://github.com/tiagohermano)
+
+<br>
+
 ## Tradução do ReadME original
 ## Como contribuir
 
